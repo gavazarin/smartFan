@@ -1453,6 +1453,44 @@ output {
   }
 }
 
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9 {
+  padding-bottom: 42.85714%;
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+.embed-responsive-1by1 {
+  padding-bottom: 100%;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -2690,6 +2728,8 @@ header .socialMedias_header {
 @media (max-width: 767px) {
   header .socialMedias_header {
     color: #F0F0F0;
+    margin: .5rem 0;
+    padding: 0 1.5rem;
   }
 }
 
@@ -3488,7 +3528,7 @@ header .icon-search {
 }
 
 .homeBanner {
-  height: 30rem;
+  height: 17.5rem;
   width: 100%;
   position: relative;
 }
@@ -3500,6 +3540,8 @@ header .icon-search {
 
 .homeBanner .swiper-slide {
   position: relative;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
 }
 
 .homeBanner .swiper-slide img {
@@ -3558,7 +3600,7 @@ header .icon-search {
 .cards-virarSocio-pagarQuota li {
   width: 100%;
   position: relative;
-  height: 30rem;
+  height: 17.5rem;
   margin-bottom: 3rem;
   overflow: hidden;
   display: flex;
@@ -3566,6 +3608,14 @@ header .icon-search {
   justify-content: center;
   align-items: flex-end;
   align-content: flex-end;
+}
+
+.cards-virarSocio-pagarQuota li:first-child {
+  border-right: 1px solid #FFFFFF;
+}
+
+.cards-virarSocio-pagarQuota li:last-child {
+  border-left: 1px solid #FFFFFF;
 }
 
 .cards-virarSocio-pagarQuota li:hover .bg-card {
@@ -3651,6 +3701,7 @@ header .icon-search {
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .vantagens-socio-container .sou-socio {
@@ -3686,12 +3737,29 @@ header .icon-search {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .vantagens-socio-container .vantagens {
+    margin-top: 3rem;
+  }
+}
+
 .vantagens-socio-container .vantagens__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+}
+
+@media (max-width: 575px) {
+  .vantagens-socio-container .vantagens__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .vantagens-socio-container .vantagens li {
@@ -3702,6 +3770,7 @@ header .icon-search {
   border-radius: 1rem;
   padding: 3rem 1rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .vantagens-socio-container .vantagens li i {
@@ -3713,6 +3782,174 @@ header .icon-search {
 .vantagens-socio-container .vantagens li h2 {
   color: #F34605;
   text-transform: initial;
+}
+
+.vantagens-socio-container .vantagens li .only-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .vantagens-socio-container .vantagens li {
+    height: auto;
+  }
+  .vantagens-socio-container .vantagens li h2 {
+    height: 5rem;
+  }
+  .vantagens-socio-container .vantagens li .only-mobile {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 575px) {
+  .vantagens-socio-container .vantagens li {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  .vantagens-socio-container .vantagens li i {
+    width: 40%;
+  }
+  .vantagens-socio-container .vantagens li h2 {
+    height: auto;
+    margin: 1.5rem;
+    font-size: 2rem;
+  }
+  .vantagens-socio-container .vantagens li .only-mobile {
+    display: block;
+  }
+}
+
+.vantagens-socio-container .vantagens li:hover .vantagens__hover {
+  transform: translateY(0);
+  transition: all .3s ease-in-out;
+}
+
+.vantagens-socio-container .vantagens__hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  background-color: rgba(2, 28, 64, 0.9);
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-end;
+  transform: translateY(100%);
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .vantagens-socio-container .vantagens__hover {
+    display: none;
+  }
+}
+
+.redes-sociais {
+  width: 100%;
+  position: relative;
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.redes-sociais .twitter-clube {
+  width: 40%;
+  height: 35rem;
+  overflow-y: scroll;
+}
+
+.redes-sociais .twitter-clube::-webkit-scrollbar {
+  width: 1.2rem;
+  margin-left: .5rem;
+}
+
+.redes-sociais .twitter-clube::-webkit-scrollbar-track {
+  background: #AFAFAF;
+  border-radius: .5rem;
+}
+
+.redes-sociais .twitter-clube::-webkit-scrollbar-thumb {
+  background: #707070;
+  border-radius: .5rem;
+}
+
+.redes-sociais .twitter-clube::-webkit-scrollbar-thumb:hover {
+  background: #707070;
+}
+
+@media (max-width: 767px) {
+  .redes-sociais .twitter-clube {
+    margin-bottom: 3rem;
+  }
+}
+
+.redes-sociais .youtube-clube {
+  width: 59%;
+}
+
+.sidebar__social-media {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 3rem .5rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 1.5rem;
+}
+
+.sidebar__social-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+
+.sidebar__social-media .icon-social-media {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  position: relative;
+  margin: 0 .5rem;
+  border-radius: 50%;
+  background-color: rgba(33, 33, 33, 0.8);
+  transition: all .3s ease-in-out;
+}
+
+.sidebar__social-media .icon-social-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+@media (max-width: 992px) {
+  .sidebar__social-media .icon-social-media {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1.5rem;
+  }
+}
+
+.sidebar__social-media .icon-social-media:hover {
+  background-color: #212121;
+  transition: all .3s ease-in-out;
 }
 
 .pagarQuotas {
@@ -3768,12 +4005,12 @@ header .icon-search {
   transition: all .3s ease-in-out;
 }
 
-.fluxoPagarQuotas {
+.fluxoPagamentos {
   width: 100%;
   padding-top: 1.5rem;
 }
 
-.fluxoPagarQuotas .row {
+.fluxoPagamentos .row {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3781,15 +4018,15 @@ header .icon-search {
   align-content: center;
 }
 
-.fluxoPagarQuotas h1 {
+.fluxoPagamentos h1 {
   text-align: center;
 }
 
-.fluxoPagarQuotas h2 {
+.fluxoPagamentos h2 {
   margin-bottom: 1.5rem;
 }
 
-.fluxoPagarQuotas__footer {
+.fluxoPagamentos__footer {
   width: 100%;
   position: relative;
   background-color: #F0F0F0;
@@ -3797,7 +4034,7 @@ header .icon-search {
   margin-top: 4.5rem;
 }
 
-.fluxoPagarQuotas__footer ul {
+.fluxoPagamentos__footer ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3811,47 +4048,47 @@ header .icon-search {
   margin-bottom: 3rem;
 }
 
-.fluxoPagarQuotas__footer ul:last-child {
+.fluxoPagamentos__footer ul:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
-  .fluxoPagarQuotas__footer ul {
+  .fluxoPagamentos__footer ul {
     font-size: 1.4rem;
   }
 }
 
-.fluxoPagarQuotas__footer ul li {
+.fluxoPagamentos__footer ul li {
   margin-bottom: 0.5rem;
 }
 
-.fluxoPagarQuotas__footer ul li p {
+.fluxoPagamentos__footer ul li p {
   margin-bottom: 0;
 }
 
-.fluxoPagarQuotas__footer ul li p b {
+.fluxoPagamentos__footer ul li p b {
   font-weight: 700;
 }
 
-.fluxoPagarQuotas__footer ul li a {
+.fluxoPagamentos__footer ul li a {
   color: #F34605;
   border-bottom: 1px solid rgba(243, 69, 5, 0);
   transition: all .3s ease-out;
 }
 
-.fluxoPagarQuotas__footer ul li a:hover {
+.fluxoPagamentos__footer ul li a:hover {
   text-decoration: none;
   border-bottom: 1px solid #f34505;
   transition: all .3s ease-out;
 }
 
 @media (max-width: 575px) {
-  .fluxoPagarQuotas__footer ul li {
+  .fluxoPagamentos__footer ul li {
     margin-bottom: 1rem;
   }
 }
 
-.fluxoPagarQuotas .payList {
+.fluxoPagamentos .payList {
   width: 100%;
   position: relative;
   display: flex;
@@ -3861,7 +4098,7 @@ header .icon-search {
   align-content: center;
 }
 
-.fluxoPagarQuotas .payList ul {
+.fluxoPagamentos .payList ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -3871,7 +4108,7 @@ header .icon-search {
   margin-bottom: 1.5rem;
 }
 
-.fluxoPagarQuotas .payList ul li {
+.fluxoPagamentos .payList ul li {
   margin: 0 1.5rem;
   background-color: #F0F0F0;
   border: 2px solid #03275A;
@@ -3889,30 +4126,30 @@ header .icon-search {
   transition: all .3s ease-in-out;
 }
 
-.fluxoPagarQuotas .payList ul li .meowallet__logo {
+.fluxoPagamentos .payList ul li .meowallet__logo {
   width: 100%;
   display: block;
   text-align: right;
 }
 
-.fluxoPagarQuotas .payList ul li .meowallet__logo img {
+.fluxoPagamentos .payList ul li .meowallet__logo img {
   height: 1.5rem;
   width: auto;
   margin: 0;
 }
 
-.fluxoPagarQuotas .payList ul li img {
+.fluxoPagamentos .payList ul li img {
   width: 15rem;
   margin: .5rem;
 }
 
-.fluxoPagarQuotas .payList ul li p {
+.fluxoPagamentos .payList ul li p {
   width: 100%;
   text-align: center;
   margin-bottom: 0;
 }
 
-.fluxoPagarQuotas .payList ul li a {
+.fluxoPagamentos .payList ul li a {
   color: #F34605;
   font-size: 1.2rem;
   font-weight: 700;
@@ -3921,13 +4158,13 @@ header .icon-search {
   transition: all .3s ease-in;
 }
 
-.fluxoPagarQuotas .payList ul li a:hover {
+.fluxoPagamentos .payList ul li a:hover {
   text-decoration: none;
   border-bottom: 1px solid #F34605;
   transition: all .3s ease-in;
 }
 
-.fluxoPagarQuotas .payList ul li:hover {
+.fluxoPagamentos .payList ul li:hover {
   transform: scale(1);
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -3935,14 +4172,14 @@ header .icon-search {
   transition: all .3s ease-in-out;
 }
 
-.fluxoPagarQuotas .payList ul .select {
+.fluxoPagamentos .payList ul .select {
   background-color: #F0F0F0;
   border: 2px solid #F34605;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   transform: scale(1);
 }
 
-.fluxoPagarQuotas .payList .container-btn {
+.fluxoPagamentos .payList .container-btn {
   margin-top: 3rem;
   display: flex;
   flex-direction: row;
@@ -3951,11 +4188,11 @@ header .icon-search {
   align-content: flex-end;
 }
 
-.fluxoPagarQuotas .payList .container-btn a {
+.fluxoPagamentos .payList .container-btn a {
   margin: 0 .5rem;
 }
 
-.fluxoPagarQuotas .payList .container-btn .btn__verMais {
+.fluxoPagamentos .payList .container-btn .btn__verMais {
   margin-right: 6rem;
 }
 

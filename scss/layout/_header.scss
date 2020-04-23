@@ -35,6 +35,8 @@ header {
     @include font(1.2rem, 300, 1em);
     @include sm {
       color: $white-01;
+      margin: .5rem 0;
+      padding: 0 1.5rem;
     }
     b {
       font-weight: 700;

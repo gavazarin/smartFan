@@ -1,5 +1,5 @@
 .homeBanner {
-  height: 30rem;
+  height: 17.5rem;
   width: 100%;
   position: relative;
   .swiper-container {
@@ -8,6 +8,8 @@
   }
   .swiper-slide {
     position: relative;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
     img {
       width: 100%;
       height: 100%;
@@ -55,10 +57,16 @@
   li {
     width: 100%;
     position: relative;
-    height: 30rem;
+    height: 17.5rem;
     margin-bottom: 3rem;
     overflow: hidden;
     @include flex(row, center, flex-end, flex-end);
+    &:first-child {
+      border-right: 1px solid #FFFFFF;
+    }
+    &:last-child {
+      border-left: 1px solid #FFFFFF;
+    }
     &:hover {
       .bg-card {
         transform: scale(1.1);
