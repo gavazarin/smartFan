@@ -134,7 +134,11 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     @include flex(row, space-between, center, center);
+    flex-wrap: wrap;
     border-radius: .5rem;
+    @include sm {
+      @include flex(column, center, center, center);
+    }
   }
   .twitter-clube {
     width: 40%;
@@ -156,11 +160,22 @@
       background: $gray-02;
     }
     @include sm {
+      width: 50%;
+      margin-bottom: 3rem;
+    }
+    @include xs {
+      width: 100%;
       margin-bottom: 3rem;
     }
   }
   .youtube-clube {
     width: 59%;
+    @include sm {
+      width: 90%;
+    }
+    @include xs {
+      width: 100%;
+    }
   }
 }
 

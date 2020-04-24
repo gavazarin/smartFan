@@ -2694,12 +2694,33 @@ footer .rodape:before {
   left: 0;
 }
 
+@media (max-width: 767px) {
+  footer .rodape .footerList {
+    margin-bottom: 1.5rem;
+  }
+  footer .rodape .footerList li {
+    margin-top: 0;
+  }
+}
+
 footer .rodape .socialmedia_list {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   align-content: center;
+}
+
+@media (max-width: 767px) {
+  footer .rodape .socialmedia_list {
+    order: 2;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 footer .rodape .icon-socialmedia {
@@ -2736,6 +2757,13 @@ footer .rodape .logoSmartmove:before {
   right: auto;
   bottom: auto;
   left: 50%;
+}
+
+@media (max-width: 767px) {
+  footer .rodape .logoSmartmove {
+    order: 3;
+    margin-top: 3rem;
+  }
 }
 
 header {
@@ -3951,7 +3979,18 @@ header .icon-search {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
   border-radius: .5rem;
+}
+
+@media (max-width: 767px) {
+  .redes-sociais__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 .redes-sociais .twitter-clube {
@@ -3981,12 +4020,32 @@ header .icon-search {
 
 @media (max-width: 767px) {
   .redes-sociais .twitter-clube {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .redes-sociais .twitter-clube {
+    width: 100%;
     margin-bottom: 3rem;
   }
 }
 
 .redes-sociais .youtube-clube {
   width: 59%;
+}
+
+@media (max-width: 767px) {
+  .redes-sociais .youtube-clube {
+    width: 90%;
+  }
+}
+
+@media (max-width: 575px) {
+  .redes-sociais .youtube-clube {
+    width: 100%;
+  }
 }
 
 .sidebar__social-media {
@@ -4125,6 +4184,14 @@ header .icon-search {
   background-color: #F0F0F0;
   padding: 1.5rem 0;
   margin-top: 4.5rem;
+}
+
+.fluxoPagamentos__footer .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .fluxoPagamentos__footer ul {

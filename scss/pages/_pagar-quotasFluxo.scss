@@ -16,6 +16,9 @@
     background-color: $white-01;
     padding: 1.5rem 0;
     margin-top: 4.5rem;
+    .row {
+      @include flex(column, center, center, center);
+    }
     ul {
       @include flex(column, center, center, center);
       color: $primary-01;

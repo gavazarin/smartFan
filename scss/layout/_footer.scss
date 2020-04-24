@@ -97,8 +97,21 @@ footer {
       background-color: $secondary-01;
       @include absolute(0, auto, auto, 0);
     }
+    .footerList {
+      @include sm {
+        margin-bottom: 1.5rem;
+        li {
+          margin-top: 0;
+        }
+      }
+    }
     .socialmedia_list {
       @include flex(row, flex-end, center, center);
+      @include sm {
+        order: 2;
+        margin: 1.5rem 0;
+        @include flex(row, center, center, center);
+      }
     }
     .icon-socialmedia {
       width: 1.5rem;
@@ -122,6 +135,10 @@ footer {
         color: #ffffff;
         transform: translateX(-75%);
         @include absolute(-0.75rem, auto, auto, 50%);
+      }
+      @include sm {
+        order: 3;
+        margin-top: 3rem;
       }
     }
   }
