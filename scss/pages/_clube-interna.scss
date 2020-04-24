@@ -119,6 +119,15 @@
   position: relative;
   margin-top: 4.5rem;
   flex-wrap: wrap;
+  h1 {
+    margin-bottom: .5rem;
+  }
+  .hashtags_clubes {
+    @include font(1.8rem, 300, 1.2em);
+    font-style: italic;
+    text-transform: initial;
+    margin-bottom: 1rem;
+  }
   &__container {
     width: 100%;
     background-color: $white-01;

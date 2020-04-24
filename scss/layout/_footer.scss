@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   background: $primary-dark;
-  padding-top: 2rem;
+  padding-top: 3rem;
   border-top: .5rem solid $secondary-01;
   .row {
     @include flex(row, space-between, center, center);
@@ -84,7 +84,7 @@ footer {
   }
   .rodape {
     background-color: rgb(0, 14, 34);
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding: 1.5rem 0;
     position: relative;
     .row {
@@ -115,6 +115,13 @@ footer {
         img {
           height: 100%;
         }
+      }
+      &:before {
+        content: 'Powered by:';
+        @include font(1rem, 300, 1.2em);
+        color: #ffffff;
+        transform: translateX(-75%);
+        @include absolute(-0.75rem, auto, auto, 50%);
       }
     }
   }

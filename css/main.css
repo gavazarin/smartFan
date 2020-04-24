@@ -2534,7 +2534,7 @@ table .btn {
 footer {
   width: 100%;
   background: #021C40;
-  padding-top: 2rem;
+  padding-top: 3rem;
   border-top: 0.5rem solid #F34605;
 }
 
@@ -2669,7 +2669,7 @@ footer .payList li img {
 
 footer .rodape {
   background-color: #000e22;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 1.5rem 0;
   position: relative;
 }
@@ -2722,6 +2722,20 @@ footer .rodape .logoSmartmove a {
 
 footer .rodape .logoSmartmove a img {
   height: 100%;
+}
+
+footer .rodape .logoSmartmove:before {
+  content: 'Powered by:';
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  color: #ffffff;
+  transform: translateX(-75%);
+  position: absolute;
+  top: -0.75rem;
+  right: auto;
+  bottom: auto;
+  left: 50%;
 }
 
 header {
@@ -3912,6 +3926,19 @@ header .icon-search {
   position: relative;
   margin-top: 4.5rem;
   flex-wrap: wrap;
+}
+
+.redes-sociais h1 {
+  margin-bottom: .5rem;
+}
+
+.redes-sociais .hashtags_clubes {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  font-style: italic;
+  text-transform: initial;
+  margin-bottom: 1rem;
 }
 
 .redes-sociais__container {
