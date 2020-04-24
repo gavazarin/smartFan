@@ -2534,7 +2534,7 @@ table .btn {
 footer {
   width: 100%;
   background: #021C40;
-  padding: 2rem 0;
+  padding-top: 2rem;
   border-top: 0.5rem solid #F34605;
 }
 
@@ -2544,26 +2544,6 @@ footer .row {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-}
-
-footer .logoSmartmove {
-  text-align: center;
-}
-
-footer .logoSmartmove a {
-  height: 4rem;
-  display: inline-block;
-}
-
-footer .logoSmartmove a img {
-  height: auto;
-}
-
-@media (max-width: 575px) {
-  footer .logoSmartmove {
-    order: 3;
-    margin-top: 1.5rem;
-  }
 }
 
 footer .footerList {
@@ -2594,11 +2574,18 @@ footer .footerList li {
   color: #F0F0F0;
 }
 
+footer .footerList li a {
+  border-bottom: 1px solid rgba(240, 240, 240, 0);
+  transition: all .3s ease-out;
+}
+
 footer .footerList li:last-child {
   margin-bottom: 0;
 }
 
 footer .footerList li:hover a {
+  border-bottom: 1px solid #f0f0f0;
+  transition: all .3s ease-in;
   color: #F0F0F0;
   text-decoration: none;
 }
@@ -2609,16 +2596,29 @@ footer .footerList li:hover a {
   }
 }
 
-footer .footerList .icon-socialmedia {
-  width: 2rem;
-  display: inline-block;
-  padding: 3px 5px;
-  border: 1px solid #F0F0F0;
-  border-radius: 3px;
+footer .footerList span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
 }
 
-footer .footerList .icon-socialmedia img {
-  width: 100%;
+footer .footerList__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+footer .footerList__center li {
+  text-align: center;
+}
+
+footer .footerList__center span {
+  margin-bottom: 1rem;
 }
 
 footer .payList {
@@ -2627,6 +2627,7 @@ footer .payList {
   justify-content: flex-end;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 footer .payList .logo-visa {
@@ -2664,6 +2665,63 @@ footer .payList li img {
   footer .payList li {
     width: 4rem;
   }
+}
+
+footer .rodape {
+  background-color: #000e22;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+footer .rodape .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+footer .rodape:before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #F34605;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+
+footer .rodape .socialmedia_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+footer .rodape .icon-socialmedia {
+  width: 1.5rem;
+  display: inline-block;
+}
+
+footer .rodape .icon-socialmedia img {
+  width: 100%;
+}
+
+footer .rodape .logoSmartmove {
+  text-align: center;
+}
+
+footer .rodape .logoSmartmove a {
+  height: 2.5rem;
+  display: inline-block;
+}
+
+footer .rodape .logoSmartmove a img {
+  height: 100%;
 }
 
 header {
@@ -3853,12 +3911,29 @@ header .icon-search {
   width: 100%;
   position: relative;
   margin-top: 4.5rem;
+  flex-wrap: wrap;
+}
+
+.redes-sociais h1 {
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: #F34605;
+  margin-bottom: .5rem;
+}
+
+.redes-sociais__container {
+  width: 100%;
+  background-color: #F0F0F0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  flex-wrap: wrap;
+  border: 2px solid #F34605;
+  border-radius: .5rem;
 }
 
 .redes-sociais .twitter-clube {
