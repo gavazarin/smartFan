@@ -119,20 +119,12 @@
   position: relative;
   margin-top: 4.5rem;
   flex-wrap: wrap;
-  h1 {
-    display: block;
-    width: 100%;
-    text-align: left;
-    color: $secondary-01;
-    margin-bottom: .5rem;
-  }
   &__container {
     width: 100%;
     background-color: $white-01;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     @include flex(row, space-between, center, center);
-    border: 2px solid $secondary-01;
     border-radius: .5rem;
   }
   .twitter-clube {

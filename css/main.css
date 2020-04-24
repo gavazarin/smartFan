@@ -3914,14 +3914,6 @@ header .icon-search {
   flex-wrap: wrap;
 }
 
-.redes-sociais h1 {
-  display: block;
-  width: 100%;
-  text-align: left;
-  color: #F34605;
-  margin-bottom: .5rem;
-}
-
 .redes-sociais__container {
   width: 100%;
   background-color: #F0F0F0;
@@ -3932,7 +3924,6 @@ header .icon-search {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  border: 2px solid #F34605;
   border-radius: .5rem;
 }
 
