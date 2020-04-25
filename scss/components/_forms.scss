@@ -2,6 +2,9 @@ form {
   width: 100%;
   margin-top: 1.5rem;
   @include flex(column, flex-start, center, flex-start);
+  fieldset {
+    border: none;
+  }
   .container-input {
     width: 100%;
     position: relative;

@@ -145,6 +145,17 @@
   }
 }
 
+.modal-msg {
+  i {
+    display: inline-block;
+    height: 4.5rem;
+    margin-bottom: 1.5rem;
+    img {
+      height: 100%;
+    }
+  }
+}
+
 .esqueci-senha {
   @include font(1.3rem, 900, 1.2em);
   color: $primary-01;
@@ -161,7 +172,8 @@
     transform-origin: 0 0;
     transition: all .3s ease-in;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     color: $primary-01;
     text-decoration: none;
     &:before {

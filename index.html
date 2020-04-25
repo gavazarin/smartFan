@@ -194,10 +194,22 @@
     <div class="swiper-container">
 
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/banner_boaVista.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/banner_noGame.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/banner_smartFan_primary.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/gilVicente_fullScreen.jpg" alt=""></div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/banner_boaVistaFC.jpg" alt="">
+            <!-- <div class="container infos-banner">
+              <div class="row">
+                <ul>
+                  <li class="infos-banner__name">Boavista Futebol Clube</li>
+                  <li class="infos-banner__logo"><img src="images/logo-1boavistafc.png" alt="Logo Boavista Futebol Clube"></li>
+                </ul>
+              </div>
+            </div> -->
+          </a>
+        </div>
+        <div class="swiper-slide"><img src="images/banner_CDNMadeira.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/banner_FCPorto.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/banner_GDChaves.jpg" alt=""></div>
       </div>
 
       <div class="swiper-pagination"></div>
@@ -649,7 +661,7 @@
                           </svg>
                         </span>
                         <!-- smv-langrepltext-widgetname="userfrommember" -->
-                        <p smv-langtext="pisco_privacy">Li e concordo com a Política de Privacidade.</p>
+                        <p smv-langtext="pisco_privacy" smv-langrepltext-widgetname="userfrommember">Li e <strong>CONCORDO</strong> com a <a href="javascript:smv_piscoEXIT_Privacy('userfrommember')">Política de Privacidade</a>.</p>
                       </label>
                     </li>
 
@@ -775,6 +787,79 @@
           </button>
         </div>
 
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL EXTERNAL OPS ================= -->
+  <div id="modalExternalOps" class="modal-login-container mostrar" style="display: none;">
+    <div class="modal-content">
+      <a href="javascript:fecharModal('modalExternalOps')" class="closeModal"><img src="https://dev.smartfan.tickets/wp-content/themes/smv-smartfan/images/svg/close-popUp.svg" alt=""></a>
+
+      <div smv-type="widgetcontainer" smv-widget="externalops" smv-param="">
+        <div smv-type="widgetpage" id="smv_wp_externalops">
+          <div class="modal-msg" smv-type="wextopsarea" id="smv_extops_wip" style="display:none">
+            <i><img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/wait-icon.svg" alt=""></i>
+            <h2 smv-langtext="wiptext">Aguarda por favor...</h2>
+          </div>
+
+
+          <div class="modal-msg" smv-type="wextopsarea" id="smv_extops_result_nok">
+            <i><img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/error-icon.svg" alt=""></i>
+            <h2 id="smvExtOpsNOKmsg" smv-langtext="err_INVALID_REQUEST_ID">Pedido inválido.</h2>
+
+            <button id="smvExtOpsNOKbt" type="button" class="btn btn__orange" style="display:none"> <span id="smvExtOpsNOKbtText" smv-langtext="btback">Voltar</span> </button>
+          </div>
+
+          <div class="modal-msg" smv-type="wextopsarea" id="smv_extops_result_ok" style="display:none ">
+            <i><img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/check-icon.svg" alt=""></i>
+            <h2 id="smvExtOpsOKmsg" smv-langtext="ok_extops_msg">Operação concluída com sucesso.</h2>
+            <button id="smvExtOpsOKbt" type="button" class="btn btn__orange"><span id="smvExtOpsOKbtText " smv-langtext="btcontinue ">continuar</span></button>
+          </div>
+
+          <section class="recuperar-senha " smv-type="wextopsarea " id="smv_extops_pwdreset " style="display:none ">
+            <form name="smv_fUserPwdReset " id="smv_fUserPwdReset " novalidate="novalidate ">
+              <h2 smv-langtext="userpwdresetfrase ">Escolhe uma nova senha</h2>
+
+              <fieldset>
+                <div class="container-input email ">
+                  <label for="smv_pwdResetEmail " class="form-label ">E-mail</label>
+                  <input id="smv_pwdResetEmail " type="text " disabled="disabled ">
+                </div>
+                <div class="item-form senha ">
+                  <label for="smv_upwdreset_Pwd " class="form-label ">Senha</label>
+                  <input name="smv_upwdreset_Pwd " id="smv_upwdreset_Pwd " type="password " smv-langplaceholder="plholderpwd ">
+                </div>
+              </fieldset>
+
+              <button type="button " class="btn btn__orange " onclick="javascript:smv_UserPwdReset() "> <span smv-langtext="btresetpwd ">Definir password</span></button>
+            </form>
+          </section>
+
+          <section class="recuperar-senha " smv-type="wextopsarea " id="smv_extops_userreqcod " style="display: none;">
+            <form name="smv_fExtOpUserReqCod " id="smv_fExtOpUserReqCod " novalidate="novalidate ">
+              <h2 smvlangtext="extopscodfrase ">Coloca o código que recebe por email</h2>
+
+              <fieldset>
+                <div class="item-form email ">
+                  <label for="smv_extopureq_Cod " smv-langtext="lblcodigo ">Código</label>
+                  <input name="smv_extopureq_Cod " id="smv_extopureq_Cod " type="text " maxlength="10 ">
+                </div>
+              </fieldset>
+
+              <button type="button " class="btn btn__orange " onclick="javascript:smv_UserConfirmNewCodeReq() "><span smv-langtext="btnext ">Avançar</span></button>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <div class="modal-msg " smv-type="widgetloading " smv-widget="externalops " style="display: none; ">
+        <ul class="logos-content ">
+          <li></li>
+          <li></li>
+        </ul>
+        <i></i>
+        <h2>Aguarde por favor...</h2>
       </div>
     </div>
   </div>

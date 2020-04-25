@@ -101,6 +101,14 @@
       text-align: left;
       margin-left: 1.5rem;
       margin-bottom: 0;
+      a {
+        color: $secondary-01;
+        &:hover,
+        &:focus {
+          color: $secondary-01;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
