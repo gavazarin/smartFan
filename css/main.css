@@ -4061,7 +4061,7 @@ header .icon-search {
   padding-bottom: 1.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
@@ -4119,6 +4119,7 @@ header .icon-search {
 
 .redes-sociais .youtube-clube {
   width: 59%;
+  margin-left: 1%;
 }
 
 @media (max-width: 767px) {

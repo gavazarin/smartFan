@@ -133,7 +133,7 @@
     background-color: $white-01;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    @include flex(row, space-between, center, center);
+    @include flex(row, center, center, center);
     flex-wrap: wrap;
     border-radius: .5rem;
     @include sm {
@@ -170,6 +170,7 @@
   }
   .youtube-clube {
     width: 59%;
+    margin-left: 1%;
     @include sm {
       width: 90%;
     }
