@@ -1,3 +1,14 @@
+.load-screen {
+  width: 100%;
+  height: 100%;
+  background: url(../images/loading.gif) no-repeat center center $black-01;
+  background-size: 100px auto;
+  position: fixed;
+  opacity: 0.8;
+  z-index: 2000;
+  text-align: center;
+}
+
 .homeBanner {
   height: 17.5rem;
   width: 100%;

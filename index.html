@@ -11,6 +11,8 @@
 </head>
 
 <body>
+  <div class="load-screen" id="smv_loading" style="display:none;"></div>
+
   <header>
     <img src="images/svg/pattern_smartFan.svg" alt="Pattern SmartFan" class="pattern__smartFan">
 
@@ -63,7 +65,7 @@
 
           <div class="list_clubs">
             <ul class="list_clubs_01">
-              <li>
+              <li class="club__select">
                 <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
               </li>
               <li>
@@ -510,8 +512,8 @@
         </div>
 
         <div class="sidebar col-lg-3 col-md-10">
-          <a href="#" class="sidebar__ad col-lg-12 col-md-5">
-            <img src="images/ficaEmCasa_tv.jpg" alt="Anúncio - Fique em casa">
+          <a href="https://covid19.min-saude.pt/" target="_blank" class="sidebar__ad col-lg-12 col-md-5">
+            <img title="Informações gerais - Covid 19" src="images/corona.jpg" alt="Informações gerais - Covid 19">
           </a>
           <div class="sidebar__noticias col-lg-12 col-md-5">
             <h1>Notícias</h1>
@@ -555,6 +557,7 @@
         </ul>
 
         <ul class="payList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li class="logo-multibanco"><img src="images/svg/multibanco-white.svg" alt="MEO Wallet"></li>
           <li class="logo-meowallet"><img src="images/svg/meowallet-blue.svg" alt="MEO Wallet"></li>
           <li class="logo-visa"><img src="images/payment-visa.png" alt="Visa"></li>
           <li class="logo-mastercard"><img src="images/payment-mastercard.png" alt="Mastercard"></li>

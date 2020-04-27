@@ -16,6 +16,21 @@
   }
 }
 
+.payreturn__multibanco {
+  border: 2px solid $secondary-02;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 1.5rem 0 0;
+  margin-bottom: 1.5rem;
+  img {
+    height: 4rem;
+    width: auto;
+  }
+  table {
+    margin-bottom: 0;
+  }
+}
+
 .accordion-detalhes {
   @include flex(row, center, center, center);
   flex-wrap: wrap;
