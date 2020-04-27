@@ -1677,17 +1677,56 @@ form .btn {
   margin-top: .5rem;
 }
 
-.info-cartao {
+.container-input .info-cartao {
   position: absolute;
   top: 0;
   right: 0.5rem;
   bottom: auto;
   left: auto;
+  display: inline-block;
   cursor: pointer;
 }
 
-.info-cartao img {
+.container-input .info-cartao img {
   width: 1.8rem;
+}
+
+.container-input .info-cartao .member-card {
+  width: 35rem;
+  height: auto;
+  z-index: 22;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  transform: translate(100%, 0);
+  display: none;
+  transition: all .3s ease-in-out;
+  animation-name: animation-card;
+  animation-duration: .4s;
+}
+
+.container-input .info-cartao .member-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.container-input .info-cartao:hover .member-card {
+  display: inline-block;
+  transition: all .3s ease-in-out;
+}
+
+@keyframes animation-card {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
 }
 
 .btn {
@@ -3259,10 +3298,6 @@ header .icon-search {
   }
 }
 
-.modal-msg {
-  padding: 3rem;
-}
-
 .modal-login-container.mostrar {
   display: flex;
   flex-direction: column;
@@ -3436,6 +3471,10 @@ header .icon-search {
 
 .nav_tabs .infos-socio img {
   width: 4rem;
+}
+
+.modal-msg {
+  padding: 3rem;
 }
 
 .modal-msg i {

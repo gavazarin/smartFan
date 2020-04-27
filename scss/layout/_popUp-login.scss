@@ -24,10 +24,6 @@
   }
 }
 
-.modal-msg {
-  padding: 3rem;
-}
-
 .modal-login-container.mostrar {
   @include flex(column, flex-start, center, center);
 }
@@ -147,6 +143,7 @@
 
 // ESTILO DO MODAL EXTERNALOPS
 .modal-msg {
+  padding: 3rem;
   i {
     display: inline-block;
     height: 4.5rem;
