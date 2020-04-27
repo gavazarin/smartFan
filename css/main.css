@@ -4538,7 +4538,7 @@ header .icon-search {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .accordion-detalhes label {
