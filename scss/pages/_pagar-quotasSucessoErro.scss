@@ -1,5 +1,6 @@
 .pagamento_sucesso {
   @include flex(column, center, center, center);
+  margin-bottom: 1.5rem;
   i {
     margin-bottom: 1.5rem;
   }
@@ -18,7 +19,7 @@
 .accordion-detalhes {
   @include flex(row, center, center, center);
   flex-wrap: wrap;
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
   label {
     order: 1; // Put the labels first
     @include flex(row, center, center, center);

@@ -1,6 +1,7 @@
 .fluxoPagamentos {
   width: 100%;
   padding-top: 1.5rem;
+  min-height: 50vh;
   .row {
     @include flex(column, center, center, center);
   }

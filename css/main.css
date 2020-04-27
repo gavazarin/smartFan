@@ -4246,6 +4246,7 @@ header .icon-search {
 .fluxoPagamentos {
   width: 100%;
   padding-top: 1.5rem;
+  min-height: 50vh;
 }
 
 .fluxoPagamentos .row {
@@ -4508,6 +4509,7 @@ header .icon-search {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .pagamento_sucesso i {
@@ -4538,7 +4540,7 @@ header .icon-search {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
 }
 
 .accordion-detalhes label {
