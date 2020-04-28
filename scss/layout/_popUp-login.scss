@@ -103,6 +103,7 @@
     }
     form {
       width: 60%;
+      margin: 0 auto;
       @include md {
         width: 100%;
       }
