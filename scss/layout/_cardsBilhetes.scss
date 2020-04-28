@@ -54,6 +54,16 @@
         }
       }
     }
+    .liga__active {
+      a {
+        img {
+          opacity: 1;
+        }
+        &:before {
+          transform: scale(1);
+        }
+      }
+    }
   }
 }
 

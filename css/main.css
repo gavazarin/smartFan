@@ -2010,11 +2010,11 @@ table tbody tr:nth-child(even) {
   background: #f5f5f5;
 }
 
-table tbody .totalpayment {
+table tbody tr.totalpayment {
   background: #212121;
 }
 
-table tbody .totalpayment td {
+table tbody tr.totalpayment td {
   color: #F0F0F0;
 }
 
@@ -2274,6 +2274,14 @@ table .btn {
 .bilhetes__container .nav__ligas a:hover:before {
   transform: scale(1, 1);
   transition: all .3s ease-in;
+}
+
+.bilhetes__container .nav__ligas .liga__active a img {
+  opacity: 1;
+}
+
+.bilhetes__container .nav__ligas .liga__active a:before {
+  transform: scale(1);
 }
 
 .jornada {
@@ -4597,7 +4605,7 @@ header .icon-search {
   border-radius: .5rem;
   text-align: center;
   padding: 1.5rem 0 0;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .payreturn__multibanco img {
