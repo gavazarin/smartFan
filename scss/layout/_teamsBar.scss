@@ -45,14 +45,15 @@
         border-right: 2px solid $secondary-02;
       }
       img {
-        opacity: .6;
+        // opacity: .6;
+        opacity: 1;
       }
-      .club__select {
-        img {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
+      // .club__select {
+      //   img {
+      //     opacity: 1;
+      //     transform: scale(1);
+      //   }
+      // }
     }
     .list_clubs_02 {
       padding-right: 0;

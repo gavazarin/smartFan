@@ -2074,6 +2074,28 @@ table .btn {
   border-bottom: 2px solid #212121;
 }
 
+.tab table td:first-child {
+  text-align: left;
+}
+
+.tab table td:last-child {
+  text-align: right;
+}
+
+@media (max-width: 575px) {
+  .tab table td {
+    text-align: right;
+  }
+}
+
+.tab table tr.totalpayment {
+  background: #212121;
+}
+
+.tab table tr.totalpayment td {
+  color: #F0F0F0;
+}
+
 .bannerFullScreen {
   width: 100%;
   height: 17.5rem;
@@ -3289,7 +3311,7 @@ header .icon-search {
 }
 
 .modal-content {
-  width: 30%;
+  width: 45%;
   background-color: #FFFFFF;
   position: relative;
 }
@@ -3420,6 +3442,16 @@ header .icon-search {
 
 .nav_tabs .tab-content h3 {
   width: 80%;
+}
+
+.nav_tabs .tab-content form {
+  width: 60%;
+}
+
+@media (max-width: 992px) {
+  .nav_tabs .tab-content form {
+    width: 100%;
+  }
 }
 
 .nav_tabs .listTeams_popUp {
@@ -3672,12 +3704,7 @@ header .icon-search {
 }
 
 .teamsBar .list_clubs ul img {
-  opacity: .6;
-}
-
-.teamsBar .list_clubs ul .club__select img {
   opacity: 1;
-  transform: scale(1);
 }
 
 .teamsBar .list_clubs .list_clubs_02 {
