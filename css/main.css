@@ -3606,6 +3606,20 @@ header .icon-search {
   box-shadow: 2px 2px 26px -6px rgba(0, 0, 0, 0.75);
 }
 
+.registo_captcha {
+  margin-bottom: 1.5rem;
+}
+
+.userfrommember {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+
 .registo-finalizado {
   padding: 3rem 1.5rem;
 }

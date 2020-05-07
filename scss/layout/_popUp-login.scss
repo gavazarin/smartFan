@@ -220,6 +220,16 @@
   }
 }
 
+.registo_captcha {
+  margin-bottom: 1.5rem;
+}
+
+.userfrommember {
+  width: 100%;
+  margin-top: 1.5rem;
+  @include flex(column, flex-start, center, flex-start);
+}
+
 .registo-finalizado {
   padding: 3rem 1.5rem;
   i {
