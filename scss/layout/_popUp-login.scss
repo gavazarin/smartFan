@@ -98,11 +98,14 @@
     @include sm {
       padding: 1.5rem;
     }
+    h2 {
+      margin: 1rem 0;
+    }
     h3 {
       width: 80%;
     }
     form {
-      width: 60%;
+      width: 70%;
       margin: 0 auto;
       @include md {
         width: 100%;
@@ -111,22 +114,36 @@
   }
   .listTeams_popUp {
     width: 100%;
-    @include flex(row, center, center, center);
+    @include flex(row, center, flex-start, flex-start);
     flex-wrap: wrap;
     border: none;
-    margin-bottom: 1.5rem;
+    margin: 2rem 0;
     li {
       width: auto;
+      @include flex(column, center, center, center);
       padding: 5px;
+      span {
+        width: 7rem;
+        @include font(1.2rem, 300, 1.2em);
+        text-align: center;
+        margin-top: .5rem;
+        display: none;
+      }
+    }
+    img {
+      width: 4rem;
     }
     .team-select {
       background-color: $white-01;
       border: 1px solid $secondary-01;
       border-radius: 5px;
     }
-    img {
-      width: 2.5rem;
-    }
+  }
+  .team-select-name {
+    @include font(1.6rem, 900, 1.2em);
+    text-transform: uppercase;
+    color: $secondary-01;
+    animation: nameTeam .3s ease-in;
   }
   .infos-socio {
     @include flex(row, center, center, center);
@@ -165,7 +182,7 @@
   @include font(1.3rem, 900, 1.2em);
   color: $primary-01;
   text-align: left;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   position: relative;
   &:before {
     content: '';
@@ -185,6 +202,21 @@
       transform: scale(1, 1);
       transition: all .3s ease-in;
     }
+  }
+}
+
+.link-registo {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  position: relative;
+  &:after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: rgba(21, 21, 21, .2);
+    // opacity: .1;
+    @include absolute(0, 25%, auto, auto);
+    box-shadow: 2px 2px 26px -6px rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -249,5 +281,16 @@
   }
   100% {
     transform: rotate(180deg);
+  }
+}
+
+@keyframes nameTeam {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }

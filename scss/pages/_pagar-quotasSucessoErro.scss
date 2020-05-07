@@ -89,3 +89,17 @@
     border-top: 2px solid $primary-01;
   }
 }
+
+.clube-detalhes {
+  text-align: center;
+  img {
+    width: auto;
+    height: 7rem;
+    margin: 1.5rem 0;
+  }
+  p {
+    color: $black-01;
+    @include font(1.4rem, 900, 1.2em);
+    text-transform: uppercase;
+  }
+}

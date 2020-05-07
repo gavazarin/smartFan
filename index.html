@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="includes/swiper.min.css">
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 </head>
 
 <body>
@@ -196,6 +198,11 @@
     <div class="swiper-container">
 
       <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="index.html">
+            <img src="images/banner_smartFan.jpg" alt="SmartFan">
+          </a>
+        </div>
         <div class="swiper-slide">
           <a href="#">
             <img src="images/banner_boaVistaFC.jpg" alt="Boavista Futebol Clube">
@@ -680,11 +687,13 @@
                   <!-- <span class="input-validate ">Obrigatório!</span> -->
                 </div>
 
-                <a href="# " class="esqueci-senha">esqueci a password</a>
+                <a href="# " class="esqueci-senha">Recuperar a password</a>
 
                 <a href="# " class="btn btn__orange ">
                   <span>entrar</span>
                 </a>
+
+                <a href="#" class="esqueci-senha link-registo">Ainda não tens conta Smartfan? Regista-te aqui.</a>
               </form>
             </div>
           </li>
@@ -708,7 +717,7 @@
                   <li>
                     <a href="# "><img src="images/logo-1gilvicentefc.png " alt="Gil Vicente Futebol Clube "></a>
                   </li>
-                  <li>
+                  <li class="team-select">
                     <a href="# "><img src="images/logo-1osbelenenses.png " alt="Clube de Futebol Os Belenenses "></a>
                   </li>
                   <li>
@@ -736,6 +745,8 @@
                     <a href="# "><img src="images/logo-2varzimsc.png " alt="Varzim Sport Club "></a>
                   </li>
                 </ul>
+
+                <p class="team-select-name">Belenenses SAD</p>
 
                 <div class="container-input ">
                   <label for="numero-socio " class="form-label ">Número de Sócio</label>
@@ -854,7 +865,7 @@
         </ul>
 
         <!-- CONCLUÍDO -->
-        <div class="registo-finalizado " style="display: none; ">
+        <div class="registo-finalizado " style="display:none ">
           <i><img src="images/svg/check-icon.svg " alt="Ícone de confirmação "></i>
 
           <h2>Login efetuado com sucesso!</h2>
@@ -876,13 +887,13 @@
         </div>
 
         <!-- WAIT -->
-        <div class="registo-finalizado " style="display:none ">
+        <div class="registo-finalizado " style="display:none; ">
           <i class="icon-animate "><img src="images/svg/wait-icon.svg " alt=" "></i>
           <h2>Aguarde por favor...</h2>
         </div>
 
         <!-- CÓDIGO E-MAIL -->
-        <div class="registo-finalizado " style="display:none; ">
+        <div class="registo-finalizado " style="display:none;">
           <h2 smv-langtext="codefromemailtext ">Coloque o código que recebeu por email</h2>
 
           <form>

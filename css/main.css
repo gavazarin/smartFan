@@ -1673,10 +1673,6 @@ form span.input-validate {
   border: none;
 }
 
-form .btn {
-  margin-top: .5rem;
-}
-
 .container-input .info-cartao {
   position: absolute;
   top: 0;
@@ -3440,12 +3436,16 @@ header .icon-search {
   }
 }
 
+.nav_tabs .tab-content h2 {
+  margin: 1rem 0;
+}
+
 .nav_tabs .tab-content h3 {
   width: 80%;
 }
 
 .nav_tabs .tab-content form {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -3460,16 +3460,35 @@ header .icon-search {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
   border: none;
-  margin-bottom: 1.5rem;
+  margin: 2rem 0;
 }
 
 .nav_tabs .listTeams_popUp li {
   width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   padding: 5px;
+}
+
+.nav_tabs .listTeams_popUp li span {
+  width: 7rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  text-align: center;
+  margin-top: .5rem;
+  display: none;
+}
+
+.nav_tabs .listTeams_popUp img {
+  width: 4rem;
 }
 
 .nav_tabs .listTeams_popUp .team-select {
@@ -3478,8 +3497,13 @@ header .icon-search {
   border-radius: 5px;
 }
 
-.nav_tabs .listTeams_popUp img {
-  width: 2.5rem;
+.nav_tabs .team-select-name {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #F34605;
+  animation: nameTeam .3s ease-in;
 }
 
 .nav_tabs .infos-socio {
@@ -3534,7 +3558,7 @@ header .icon-search {
   line-height: 1.2em;
   color: #03275A;
   text-align: left;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
@@ -3561,6 +3585,25 @@ header .icon-search {
 .esqueci-senha:hover:before, .esqueci-senha:focus:before {
   transform: scale(1, 1);
   transition: all .3s ease-in;
+}
+
+.link-registo {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  position: relative;
+}
+
+.link-registo:after {
+  content: '';
+  width: 50%;
+  height: 2px;
+  background-color: rgba(21, 21, 21, 0.2);
+  position: absolute;
+  top: 0;
+  right: 25%;
+  bottom: auto;
+  left: auto;
+  box-shadow: 2px 2px 26px -6px rgba(0, 0, 0, 0.75);
 }
 
 .registo-finalizado {
@@ -3628,6 +3671,17 @@ header .icon-search {
   }
   100% {
     transform: rotate(180deg);
+  }
+}
+
+@keyframes nameTeam {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -4727,6 +4781,24 @@ header .icon-search {
   align-items: center;
   align-content: center;
   border-top: 2px solid #03275A;
+}
+
+.clube-detalhes {
+  text-align: center;
+}
+
+.clube-detalhes img {
+  width: auto;
+  height: 7rem;
+  margin: 1.5rem 0;
+}
+
+.clube-detalhes p {
+  color: #212121;
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1.2em;
+  text-transform: uppercase;
 }
 
 html {
