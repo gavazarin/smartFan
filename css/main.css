@@ -2379,6 +2379,12 @@ table .btn {
   transition: all .3s ease-out;
 }
 
+@media (max-width: 992px) {
+  .jogos__item--infos .div-hover {
+    display: none;
+  }
+}
+
 .jogos__item--infos:hover .div-hover {
   transform: translateY(0);
   transition: all .3s ease-out;

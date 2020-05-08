@@ -112,6 +112,9 @@
       border-radius: 1rem;
       transform: translateY(100%);
       transition: all .3s ease-out;
+      @include md {
+        display: none;
+      }
     }
     &:hover {
       .div-hover {
