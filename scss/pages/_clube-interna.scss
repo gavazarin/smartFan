@@ -195,32 +195,54 @@
 
 .sidebar__social-media {
   width: 100%;
-  margin-top: 3rem;
-  padding: 3rem .5rem;
   position: relative;
-  @include flex(row, center, center, center);
-  border-radius: 1.5rem;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-    @include absolute(0, auto, auto, 0);
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  position: relative;
+  @include flex(column, center, center, center);
+  color: $primary-01;
+  &:before {
+    content: '';
+    width: 60%;
+    height: 1px;
+    background-color: $black-01;
+    opacity: .2;
+    @include absolute(0, 20%, auto, auto);
+  }
+  .clube-social-media {
+    @include flex(row, center, center, center);
+    margin: 1.5rem 0;
+    li {
+      margin: 0 .5rem;
+      @include font(1.8rem, 300, 1.2em);
+      strong {
+        font-weight: 900;
+      }
+    }
+    img {
+      width: auto;
+      height: 4rem;
+    }
+  }
+  .links-social-media {
+    @include flex(row, center, center, center);
+    margin: 1.5rem 0;
+    li {
+      margin: 0 1rem;
+    }
   }
   .icon-social-media {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     display: inline-block;
     position: relative;
-    margin: 0 .5rem;
-    border-radius: 50%;
-    background-color: rgba(33, 33, 33, .8);
+    // margin: 0 .5rem;
     transition: all .3s ease-in-out;
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      padding: 1rem;
+      border-radius: .5rem;
     }
     @include md {
       width: 5rem;
@@ -228,7 +250,7 @@
       margin: 0 1.5rem;
     }
     &:hover {
-      background-color: rgba(33, 33, 33, 1);
+      transform: scale(.9);
       transition: all .3s ease-in-out;
     }
   }
