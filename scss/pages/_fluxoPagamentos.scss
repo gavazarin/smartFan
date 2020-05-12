@@ -2,6 +2,7 @@
   width: 100%;
   padding-top: 1.5rem;
   min-height: 50vh;
+  @include flex(column, space-between, center, center);
   .row {
     @include flex(column, center, center, center);
   }

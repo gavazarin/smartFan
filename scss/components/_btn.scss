@@ -35,6 +35,9 @@
       padding: 1.5rem 3rem;
     }
   }
+  &__marginTop {
+    margin-top: 3rem;
+  }
   &:hover,
   &:focus {
     color: $white-01;

@@ -1772,6 +1772,10 @@ form span.input-validate {
   }
 }
 
+.btn__marginTop {
+  margin-top: 3rem;
+}
+
 .btn:hover, .btn:focus {
   color: #F0F0F0;
   text-decoration: none;
@@ -4203,6 +4207,21 @@ header .icon-search {
   }
 }
 
+.container-img-clube {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.container-img-clube a {
+  display: inline-block;
+}
+
+.container-img-clube img {
+  width: 100%;
+  height: auto;
+}
+
 .redes-sociais {
   width: 100%;
   position: relative;
@@ -4416,6 +4435,11 @@ header .icon-search {
   width: 100%;
   padding-top: 1.5rem;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .fluxoPagamentos .row {
