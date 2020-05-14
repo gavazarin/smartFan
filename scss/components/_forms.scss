@@ -12,7 +12,8 @@ form {
     padding-bottom: 1rem;
     text-align: left;
   }
-  input {
+  input,
+  select {
     width: 100%;
     padding: .75rem 1.5rem;
     border: 2px solid $gray-01;
