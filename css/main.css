@@ -3659,6 +3659,15 @@ header .icon-search {
 
 .registo-finalizado {
   padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.registo-finalizado form {
+  width: 70%;
 }
 
 .registo-finalizado i {
@@ -3677,6 +3686,15 @@ header .icon-search {
 
 .recuperar-senha {
   padding: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.recuperar-senha form {
+  width: 70%;
 }
 
 .recuperar-senha h2 {
