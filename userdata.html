@@ -285,16 +285,39 @@
               <input type="radio" name="tabs_userdata" class="rd_userdata_tabs" id="dados-contato">
               <label for="dados-contato" class="label-userdata col-lg-3">Dados de Contato</label>
               <div class="tab-content col-lg-9">
-                <form class="col-lg-7">
+                <form class="col-lg-6">
                   <div class="container-input">
                     <label for="pais">País</label>
                     <select name="pais" id="pais" aria-placeholder="Selecione">
-                    <option value="#"></option>
-                    <option value="Portugal">Portugal</option>
-                    <option value="Outro">Outro</option>
-                  </select>
+                      <option value="#"></option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Outro">Outro</option>
+                    </select>
                     <!-- <span>obrigatório</span> -->
                   </div>
+
+                  <!-- Código Postal - Portugal -->
+                  <div class="container-input codigo-postal-pt">
+                    <label for="codigo-postal">Código postal</label>
+                    <input type="text" class="col-lg-4">
+                    <input type="text" class="col-lg-3">
+                  </div>
+
+                  <div class="container-input">
+                    <input type="text">
+                  </div>
+                  <!-- Fim Código Postal - Portugal -->
+
+                  <!-- Código Postal - resto Mundo -->
+                  <!-- <div class="container-input">
+                    <label for="codigo-postal">Código postal</label>
+                    <input type="text">
+                  </div> -->
+                  <!-- Fim Código Postal - resto Mundo -->
+
+                  <a href="#" class="btn btn__orange">
+                    <span>salvar</span>
+                  </a>
                 </form>
 
               </div>

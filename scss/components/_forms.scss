@@ -10,6 +10,8 @@ form {
     position: relative;
     margin-bottom: .5rem;
     padding-bottom: 1rem;
+    @include flex(row, flex-start, center, center);
+    flex-wrap: wrap;
     text-align: left;
   }
   input,

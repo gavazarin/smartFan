@@ -1623,6 +1623,12 @@ form .container-input {
   position: relative;
   margin-bottom: .5rem;
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
   text-align: left;
 }
 
@@ -5013,10 +5019,8 @@ header .icon-search {
 
 .userdata {
   margin-bottom: 3rem;
-}
-
-.tabs_userdata {
   position: relative;
+  height: 65vh;
 }
 
 .tabs_userdata .rd_userdata_tabs {
@@ -5070,6 +5074,7 @@ header .icon-search {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  animation: mostrarTabContent .3s ease-in;
 }
 
 .tabs_userdata .li-tabs {
@@ -5098,6 +5103,21 @@ header .icon-search {
   justify-content: center;
   align-items: flex-end;
   align-content: flex-end;
+}
+
+.tabs_userdata .tab-content .codigo-postal-pt input {
+  margin-right: .5rem;
+}
+
+@keyframes mostrarTabContent {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
 }
 
 html {
