@@ -121,7 +121,7 @@
     li {
       width: auto;
       @include flex(column, center, center, center);
-      padding: 5px;
+      padding: .6rem;
       span {
         width: 7rem;
         @include font(1.2rem, 300, 1.2em);
@@ -136,7 +136,7 @@
     .team-select {
       background-color: $white-01;
       border: 1px solid $secondary-01;
-      border-radius: 5px;
+      border-radius: 50%;
     }
   }
   .team-select-name {

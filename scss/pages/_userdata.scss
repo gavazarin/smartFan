@@ -56,6 +56,12 @@
   margin-bottom: 3rem;
   position: relative;
   height: 65vh;
+  @include md {
+    height: 75vh;
+  }
+  @include xs {
+    height: auto;
+  }
 }
 
 .tabs_userdata {
@@ -69,6 +75,10 @@
     padding: .5rem 0;
     margin-bottom: .5rem;
     position: relative;
+    @include sm {
+      padding: .75rem 0;
+      margin-bottom: .75rem;
+    }
     &:before {
       content: '';
       width: 100%;
@@ -98,6 +108,9 @@
   }
   .li-tabs {
     @include flex(row, flex-start, flex-start, flex-start);
+    @include xs {
+      @include flex(column, flex-start, flex-start, flex-start);
+    }
   }
   .tab-content {
     width: 100%;
@@ -107,11 +120,24 @@
       margin-top: 0;
       margin-bottom: 1.5rem;
       @include flex(column, center, flex-end, flex-end);
+      @include xs {
+        padding: 1.5rem 0;
+      }
     }
     .codigo-postal-pt {
       input {
         margin-right: .5rem;
       }
+    }
+    p {
+      width: 100%;
+      @include font(1.6rem, 300, 1.2em);
+      color: $primary-01;
+      margin-bottom: 1.5rem;
+    }
+    @include xs {
+      position: relative;
+      border-bottom: 1px solid #21212150;
     }
   }
 }

@@ -10,7 +10,8 @@
   ul {
     @include flex(row, center, center, center);
     li {
-      margin: 0 .5rem;
+      margin: 0 .2rem;
+      padding: 3px;
     }
     a {
       display: inline-block;
@@ -45,12 +46,13 @@
         border-right: 2px solid $secondary-02;
       }
       img {
-        opacity: .6;
-        // opacity: 1;
+        opacity: 1;
       }
       .club__select {
+        background-color: $white-01;
+        border: 1px solid $secondary-01;
+        border-radius: 50%;
         img {
-          opacity: 1;
           transform: scale(1);
         }
       }
