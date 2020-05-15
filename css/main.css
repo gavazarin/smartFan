@@ -5150,13 +5150,20 @@ header .icon-search {
   margin-right: .5rem;
 }
 
-.tabs_userdata .tab-content p {
+.tabs_userdata .tab-content .codigo-postal-pt p {
   width: 100%;
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.2em;
   color: #03275A;
   margin-bottom: 1.5rem;
+  padding: 0 .5rem;
+}
+
+@media (max-width: 992px) {
+  .tabs_userdata .tab-content .codigo-postal-pt p {
+    margin-top: 1.5rem;
+  }
 }
 
 @media (max-width: 575px) {

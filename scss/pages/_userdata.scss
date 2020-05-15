@@ -128,12 +128,16 @@
       input {
         margin-right: .5rem;
       }
-    }
-    p {
-      width: 100%;
-      @include font(1.6rem, 300, 1.2em);
-      color: $primary-01;
-      margin-bottom: 1.5rem;
+      p {
+        width: 100%;
+        @include font(1.6rem, 300, 1.2em);
+        color: $primary-01;
+        margin-bottom: 1.5rem;
+        padding: 0 .5rem;
+        @include md {
+          margin-top: 1.5rem;
+        }
+      }
     }
     @include xs {
       position: relative;
