@@ -109,11 +109,33 @@ header {
       &__logado {
         @include font(1.2rem, 300, 1.2em);
         text-align: center;
+        @include flex(row, center, center, center);
+        .icon-user {
+          display: inline-block;
+          height: 3rem;
+          padding: 5px;
+          background-color: $white-01;
+          border: 1px solid $secondary-01;
+          border-radius: 50%;
+          margin-right: 1rem;
+          img {
+            height: 100%;
+          }
+        }
         b {
           font-weight: 900;
         }
-        p {
-          margin-bottom: .5rem;
+        .user-dropdown {
+          margin-bottom: 0;
+          cursor: pointer;
+          i {
+            display: inline-block;
+            width: 1.5rem;
+            margin-left: 3px;
+            img {
+              width: 100%;
+            }
+          }
         }
         a {
           @include font(1.2rem, 700, 1.2em);
