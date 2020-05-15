@@ -142,7 +142,7 @@
   .team-select-name {
     @include font(1.6rem, 900, 1.2em);
     text-transform: uppercase;
-    color: $secondary-01;
+    color: #404040;
     animation: nameTeam .3s ease-in;
   }
   .infos-socio {

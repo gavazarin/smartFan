@@ -21,7 +21,7 @@
     height: auto;
     position: relative;
     @include flex(row, flex-start, flex-start, center);
-    margin-bottom: -3rem;
+    // margin-bottom: -3rem;
     a {
       width: 10rem;
       height: 10rem;
@@ -45,8 +45,8 @@
       }
     }
     h1 {
-      margin-top: 2rem;
-      margin-left: 1.5rem;
+      // margin-top: 2rem;
+      // margin-left: 1.5rem;
       color: $white-01;
     }
   }
@@ -106,6 +106,10 @@
     @include flex(column, flex-start, center, center);
     animation: mostrarTabContent .3s ease-in;
   }
+  .rd_userdata_tabs:checked~.tab-content__clubes {
+    @include flex(row, flex-start, flex-start, flex-start);
+    animation: mostrarTabContent .3s ease-in;
+  }
   .li-tabs {
     @include flex(row, flex-start, flex-start, flex-start);
     @include xs {
@@ -125,23 +129,151 @@
       }
     }
     .codigo-postal-pt {
-      input {
-        margin-right: .5rem;
-      }
+      @include flex(row, flex-start, center, center);
+      margin-bottom: 1.5rem;
       p {
         width: 100%;
         @include font(1.6rem, 300, 1.2em);
         color: $primary-01;
+        margin-bottom: 0rem;
+        // padding: 0 .5rem;
+        @include sm {
+          margin: 1.5rem 0;
+          padding: 0 .5rem;
+        }
+      }
+    }
+    .clube__socio {
+      width: 100%;
+      @include flex(column, center, center, center);
+      &--infos {
+        @include flex(row, center, center, center);
+        color: $primary-01;
+        @include font(1.6rem, 300, 1.2em);
+        margin-bottom: 2.4rem;
+        strong {
+          font-weight: 900;
+        }
+        img {
+          width: 6rem;
+          margin: 0 .8rem;
+        }
+        ul {
+          margin: 0 .8rem;
+          li {
+            margin: .5rem 0;
+          }
+        }
+      }
+    }
+    .clube__fan {
+      width: 100%;
+      @include flex(column, center, center, center);
+      h1 {
+        margin-top: 0;
+      }
+      &__list {
+        @include flex(row, center, center, center);
         margin-bottom: 1.5rem;
-        padding: 0 .5rem;
-        @include md {
-          margin-top: 1.5rem;
+        li {
+          margin: 0 .5rem;
+        }
+        img {
+          width: 4rem;
+        }
+      }
+    }
+    &__conta {
+      @include flex(column, flex-start, flex-start, flex-start);
+      margin-bottom: 1.5rem;
+      .email-pwd-atual {
+        margin-bottom: 3rem;
+        @include flex(column, flex-start, flex-start, flex-start);
+        color: $primary-01;
+        @include font(1.6rem, 300, 1.2em);
+        span {
+          margin-bottom: .5rem;
         }
       }
     }
     @include xs {
       position: relative;
       border-bottom: 1px solid #21212150;
+    }
+  }
+}
+
+// MODAL CLUBE FAN
+.clube-fan-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 111;
+  @include absolute(0, auto, auto, 0);
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.clube-fan-container.mostrar {
+  @include flex(column, center, center, center);
+  padding: 3rem 0;
+}
+
+.close-clubes-fan {
+  width: 1.3rem;
+  height: 1.3rem;
+  display: inline-block;
+  opacity: .5rem;
+  z-index: 222;
+  @include absolute(1rem, 1.5rem, auto, auto);
+  transition: all .3s ease-in;
+  &:hover {
+    transform: scale(.9);
+    transition: all .3s ease-in;
+  }
+}
+
+.clube-fan-content {
+  width: 30%;
+  background-color: #FFF;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  border-radius: .5rem;
+  // animation: modal .6s;
+  .row {
+    @include flex(column, center, center, center);
+  }
+  h1 {
+    width: 60%;
+    margin: 0;
+    text-align: center;
+    .destaque {
+      color: $secondary-01;
+    }
+  }
+  .clubes-fan__list {
+    width: 100%;
+    max-height: 70vh;
+    padding: 1.5rem;
+    margin-bottom: .5rem;
+    overflow-y: scroll;
+    @include flex(row, flex-start, flex-start, flex-start);
+    flex-wrap: wrap;
+    li {
+      width: 100%;
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      cursor: pointer;
+      img {
+        width: 100%;
+      }
+    }
+    .clube-fan__select {
+      background: $white-01;
+      border: 2px solid $secondary-01;
+      border-radius: 50%;
     }
   }
 }
