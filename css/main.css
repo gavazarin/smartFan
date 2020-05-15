@@ -2987,7 +2987,6 @@ header .navMenu {
   width: 100%;
   background-color: #03275A;
   padding: 1.5rem 0;
-  overflow: hidden;
 }
 
 header .navMenu .row {
@@ -3069,6 +3068,7 @@ header .navMenu .menu__logado {
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 header .navMenu .menu__logado .icon-user {
@@ -3089,26 +3089,95 @@ header .navMenu .menu__logado b {
   font-weight: 900;
 }
 
+header .navMenu .menu__logado input {
+  display: none;
+}
+
+header .navMenu .menu__logado input:checked ~ .user-dropdown__list {
+  display: block;
+}
+
+header .navMenu .menu__logado input:checked ~ label i {
+  transform: rotate(-180deg);
+  transition: all .3s ease-out;
+}
+
+header .navMenu .menu__logado label {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
 header .navMenu .menu__logado .user-dropdown {
   margin-bottom: 0;
-  cursor: pointer;
 }
 
 header .navMenu .menu__logado .user-dropdown i {
   display: inline-block;
   width: 1.5rem;
   margin-left: 3px;
+  transition: all .3s ease-in;
 }
 
 header .navMenu .menu__logado .user-dropdown i img {
   width: 100%;
 }
 
-header .navMenu .menu__logado a {
+header .navMenu .menu__logado .user-dropdown__list {
+  animation: open-user-dropdown .3s ease-out;
+  background-color: #F0F0F0;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  box-shadow: 2px 10px 23px 5px rgba(0, 0, 0, 0.3);
+  display: none;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  transform: translateY(100%);
+  z-index: 99;
+}
+
+header .navMenu .menu__logado .user-dropdown__list li {
+  position: relative;
+}
+
+header .navMenu .menu__logado .user-dropdown__list li:before {
+  content: '';
+  width: 50%;
+  height: 1px;
+  background-color: rgba(21, 21, 21, 0.3);
+  position: absolute;
+  top: auto;
+  right: 25%;
+  bottom: 0;
+  left: auto;
+}
+
+header .navMenu .menu__logado .user-dropdown__list li:last-child a {
+  color: #F34605;
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1.2em;
+}
+
+header .navMenu .menu__logado .user-dropdown__list li:last-child:before {
+  display: none;
+}
+
+header .navMenu .menu__logado .user-dropdown__list a {
+  color: #03275A;
+  display: inline-block;
+  padding: 1rem 1.5rem;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.2em;
-  color: #F34605;
+  transition: all .3s ease-in;
+}
+
+header .navMenu .menu__logado .user-dropdown__list a:hover {
+  transform: scale(0.9);
+  transition: all .3s ease-in;
 }
 
 header .navMenu .menu__logado:before {
@@ -3272,6 +3341,17 @@ header .navMenu-mobile .btnMenu__close img {
 
 header .icon-search {
   width: 2rem;
+}
+
+@keyframes open-user-dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
 }
 
 .politicaCookies {
@@ -5258,21 +5338,25 @@ header .icon-search {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .tabs_userdata .tab-content .clube__fan h1 {
+  width: 100%;
+  text-align: center;
   margin-top: 0;
 }
 
 .tabs_userdata .tab-content .clube__fan__list {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
 
@@ -5282,6 +5366,21 @@ header .icon-search {
 
 .tabs_userdata .tab-content .clube__fan__list img {
   width: 4rem;
+}
+
+.tabs_userdata .tab-content .clube__fan .not-fan {
+  border: 2px solid #03275A;
+  border-radius: .5rem;
+  color: #F34605;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  padding: .8rem;
+  text-align: center;
+}
+
+.tabs_userdata .tab-content .clube__fan .not-fan strong {
+  font-weight: 900;
 }
 
 @media (max-width: 767px) {

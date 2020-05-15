@@ -61,7 +61,7 @@ header {
     width: 100%;
     background-color: $primary-01;
     padding: 1.5rem 0;
-    overflow: hidden;
+    // overflow: hidden;
     .row {
       @include flex(row, space-between, center, center);
       position: relative;
@@ -110,6 +110,7 @@ header {
         @include font(1.2rem, 300, 1.2em);
         text-align: center;
         @include flex(row, center, center, center);
+        flex-wrap: wrap;
         .icon-user {
           display: inline-block;
           height: 3rem;
@@ -125,22 +126,77 @@ header {
         b {
           font-weight: 900;
         }
+        input {
+          display: none;
+        }
+        input:checked~.user-dropdown__list {
+          display: block;
+        }
+        input:checked~label i {
+          transform: rotate(-180deg);
+          transition: all .3s ease-out;
+        }
+        label {
+          cursor: pointer;
+          margin-bottom: 0;
+        }
         .user-dropdown {
           margin-bottom: 0;
-          cursor: pointer;
           i {
             display: inline-block;
             width: 1.5rem;
             margin-left: 3px;
+            transition: all .3s ease-in;
             img {
               width: 100%;
             }
           }
         }
-        a {
-          @include font(1.2rem, 700, 1.2em);
-          color: $secondary-01;
+        .user-dropdown__list {
+          animation: open-user-dropdown .3s ease-out;
+          background-color: $white-01;
+          border-bottom-left-radius: .5rem;
+          border-bottom-right-radius: .5rem;
+          box-shadow: 2px 10px 23px 5px rgba(0, 0, 0, 0.3);
+          display: none;
+          @include absolute(auto, 0, 0, auto);
+          transform: translateY(100%);
+          z-index: 99;
+          li {
+            position: relative;
+            &:before {
+              content: '';
+              width: 50%;
+              height: 1px;
+              background-color: rgba(21, 21, 21, .3);
+              @include absolute(auto, 25%, 0, auto);
+            }
+            &:last-child {
+              a {
+                color: $secondary-01;
+                @include font(1.1rem, 900, 1.2em);
+              }
+              &:before {
+                display: none;
+              }
+            }
+          }
+          a {
+            color: $primary-01;
+            display: inline-block;
+            padding: 1rem 1.5rem;
+            @include font(1.2rem, 700, 1.2em);
+            transition: all .3s ease-in;
+            &:hover {
+              transform: scale(.9);
+              transition: all .3s ease-in;
+            }
+          }
         }
+        // a {
+        //   @include font(1.2rem, 700, 1.2em);
+        //   color: $secondary-01;
+        // }
         &:before {
           display: none;
         }
@@ -269,5 +325,16 @@ header {
   }
   .icon-search {
     width: 2rem;
+  }
+}
+
+@keyframes open-user-dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100%);
   }
 }

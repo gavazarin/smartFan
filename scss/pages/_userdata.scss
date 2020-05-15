@@ -179,18 +179,33 @@
     }
     .clube__fan {
       width: 100%;
-      @include flex(column, center, center, center);
+      @include flex(column, flex-start, flex-start, flex-start);
       h1 {
+        width: 100%;
+        text-align: center;
         margin-top: 0;
       }
       &__list {
-        @include flex(row, center, center, center);
+        width: 100%;
+        @include flex(row, space-around, center, center);
+        flex-wrap: wrap;
         margin-bottom: 1.5rem;
         li {
           margin: 0 .5rem;
         }
         img {
           width: 4rem;
+        }
+      }
+      .not-fan {
+        border: 2px solid $primary-01;
+        border-radius: .5rem;
+        color: $secondary-01;
+        @include font(1.6rem, 300, 1.4em);
+        padding: .8rem;
+        text-align: center;
+        strong {
+          font-weight: 900;
         }
       }
       @include sm {

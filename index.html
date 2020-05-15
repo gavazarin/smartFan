@@ -44,9 +44,23 @@
               <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
             </li>
             <li class="menu__item menu__btn" style="display:none;"><a href="#" class="btn-login btn btn__blue">login</a></li>
+
             <li class="menu__item menu__logado">
               <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
-              <p class="user-dropdown">Olá, <span><b>Usuário</b></span>! <i><img src="images/svg/icon-down.svg" alt=""></i></p>
+              <input id="user-dropdown" type="checkbox">
+              <label for="user-dropdown"><p class="user-dropdown">
+                Olá, <span><b>Usuário</b></span>! <i><img src="images/svg/icon-down.svg" alt=""></i></p>
+              </label>
+
+              <ul class="user-dropdown__list">
+                <li>
+                  <a href="userdata.html">Perfil</a>
+                </li>
+                <li>
+                  <a href="#">Sair</a>
+                </li>
+              </ul>
+
               <!-- <a href="#" class="btn__verMais">sair</a> -->
             </li>
           </ul>
