@@ -108,6 +108,7 @@
   }
   .rd_userdata_tabs:checked~.tab-content__clubes {
     @include flex(row, flex-start, flex-start, flex-start);
+    flex-wrap: wrap;
     animation: mostrarTabContent .3s ease-in;
   }
   .li-tabs {
@@ -165,6 +166,9 @@
           }
         }
       }
+      @include sm {
+        margin: 1.5rem 0;
+      }
     }
     .clube__fan {
       width: 100%;
@@ -181,6 +185,9 @@
         img {
           width: 4rem;
         }
+      }
+      @include sm {
+        margin: 1.5rem 0;
       }
     }
     &__conta {
@@ -244,6 +251,12 @@
   // animation: modal .6s;
   .row {
     @include flex(column, center, center, center);
+  }
+  @include md {
+    width: 70%;
+  }
+  @include xs {
+    width: 90%;
   }
   h1 {
     width: 60%;

@@ -5105,6 +5105,7 @@ header .icon-search {
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  flex-wrap: wrap;
   animation: mostrarTabContent .3s ease-in;
 }
 
@@ -5216,6 +5217,12 @@ header .icon-search {
   margin: .5rem 0;
 }
 
+@media (max-width: 767px) {
+  .tabs_userdata .tab-content .clube__socio {
+    margin: 1.5rem 0;
+  }
+}
+
 .tabs_userdata .tab-content .clube__fan {
   width: 100%;
   display: flex;
@@ -5244,6 +5251,12 @@ header .icon-search {
 
 .tabs_userdata .tab-content .clube__fan__list img {
   width: 4rem;
+}
+
+@media (max-width: 767px) {
+  .tabs_userdata .tab-content .clube__fan {
+    margin: 1.5rem 0;
+  }
 }
 
 .tabs_userdata .tab-content__conta {
@@ -5337,6 +5350,18 @@ header .icon-search {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+@media (max-width: 992px) {
+  .clube-fan-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  .clube-fan-content {
+    width: 90%;
+  }
 }
 
 .clube-fan-content h1 {
