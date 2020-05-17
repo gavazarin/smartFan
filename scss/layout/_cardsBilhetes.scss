@@ -1,73 +1,95 @@
-.bilhetes__container {
-  .title__ligas {
-    @include flex(row, flex-start, center, center);
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-    @include md {
-      @include flex(row, space-between, center, center);
-    }
-    @include sm {
-      @include flex(column, center, center, center);
+// .title__ligas {
+//   @include flex(row, flex-start, center, center);
+//   flex-wrap: wrap;
+//   margin-bottom: 3rem;
+//   @include md {
+//     @include flex(row, space-between, center, center);
+//   }
+//   @include sm {
+//     @include flex(column, center, center, center);
+//   }
+// }
+.nav__ligas {
+  @include flex(row, center, center, center);
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  @include sm {
+    width: 100%;
+    margin: 1.5rem 0;
+    @include flex(row, space-between, center, center);
+  }
+  li {
+    margin: 0 .5rem;
+  }
+}
+
+.pc-tab {
+  input {
+    display: none;
+  }
+  section {
+    .tab1,
+    .tab2,
+    .tab3,
+    .tab4 {
+      display: none;
     }
   }
-  .nav__ligas {
-    @include flex(row, center, center, center);
-    flex-wrap: wrap;
-    margin-left: 6rem;
+}
+
+#tab1:checked~section .tab1,
+#tab2:checked~section .tab2,
+#tab3:checked~section .tab3,
+#tab4:checked~section .tab4 {
+  display: block;
+  animation: entrar-tab-content .3s ease-in;
+}
+
+#tab1:checked~nav .tab1 label,
+#tab2:checked~nav .tab2 label,
+#tab3:checked~nav .tab3 label,
+#tab4:checked~nav .tab4 label {
+  img {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+  }
+  &:before {
+    transform: scale(1, 1);
+    transition: all .3s ease-in;
+  }
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  img {
+    height: 4.2rem;
+    opacity: .7;
+    transition: all .3s ease-in-out;
     @include sm {
-      width: 100%;
-      margin: 1.5rem 0;
-      @include flex(row, space-between, center, center);
+      height: 3rem;
     }
-    li {
-      margin: 0 .5rem;
-    }
-    a {
-      display: inline-block;
-      position: relative;
-      img {
-        height: 4.2rem;
-        opacity: .7;
-        transition: all .3s ease-in-out;
-        @include sm {
-          height: 3rem;
-        }
-      }
-      &:before {
-        content: '';
-        width: 100%;
-        height: 3px;
-        background-color: $secondary-01;
-        @include absolute(auto, auto, -1rem, 0);
-        transform: scale(0, 1);
-        transform-origin: 0 0;
-        transition: all .3s ease-in;
-      }
-      &:hover {
-        img {
-          opacity: 1;
-          transition: all .3s ease-in-out;
-        }
-        &:before {
-          transform: scale(1, 1);
-          transition: all .3s ease-in;
-        }
-      }
-    }
-    .liga__active {
-      a {
-        img {
-          opacity: 1;
-        }
-        &:before {
-          transform: scale(1);
-        }
-      }
+  }
+  &:before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: $secondary-01;
+    @include absolute(auto, auto, -1rem, 0);
+    transform: scale(0, 1);
+    transform-origin: 0 0;
+    transition: all .3s ease-in;
+  }
+  &:hover {
+    img {
+      opacity: 1;
+      transition: all .3s ease-in-out;
     }
   }
 }
 
 .jornada {
+  width: 100%;
   color: $secondary-01;
   @include font(1.6rem, 900, 1em);
   padding-left: 1rem;
@@ -178,5 +200,16 @@
     color: $secondary-01;
     margin: 0 .5rem;
     text-align: center;
+  }
+}
+
+@keyframes entrar-tab-content {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

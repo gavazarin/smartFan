@@ -144,13 +144,6 @@
         }
       }
     }
-    .termos-condicoes {
-      @include font(1.3rem, 300, 1.2em);
-      color: $primary-01;
-      strong {
-        font-weight: 900;
-      }
-    }
     .clube__socio {
       width: 100%;
       @include flex(column, center, center, center);
@@ -213,9 +206,10 @@
       }
     }
     &__conta {
-      @include flex(column, flex-start, flex-start, flex-start);
+      @include flex(column, flex-start, flex-end, flex-end);
       margin-bottom: 1.5rem;
       .email-pwd-atual {
+        width: 100%;
         margin-bottom: 3rem;
         @include flex(column, flex-start, flex-start, flex-start);
         color: $primary-01;
@@ -223,6 +217,14 @@
         span {
           margin-bottom: .5rem;
         }
+      }
+    }
+    .termos-condicoes {
+      @include font(1.3rem, 300, 1.2em);
+      color: $primary-01;
+      margin-bottom: 3rem;
+      strong {
+        font-weight: 900;
       }
     }
     @include xs {
