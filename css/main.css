@@ -5349,7 +5349,25 @@ header .icon-search {
 }
 
 .tabs_userdata .tab-content .clube__socio--infos ul li {
-  margin: .5rem 0;
+  margin: .8rem 0;
+}
+
+.tabs_userdata .tab-content .clube__socio--infos ul .aviso-quotas {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.tabs_userdata .tab-content .clube__socio--infos ul .quotas-atrasadas strong {
+  color: #F34605;
+}
+
+.tabs_userdata .tab-content .clube__socio--infos ul .icon-quotas {
+  width: 2rem;
+  margin: 0;
+  margin-right: .8rem;
 }
 
 @media (max-width: 767px) {
