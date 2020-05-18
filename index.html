@@ -199,10 +199,25 @@
           <li class="menuMobile__list__item">
             <a href="#"><img src="images/svg/search.svg" alt="" class="icon-search"></a>
           </li>
-          <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
-          <li class="menu__item menu__logado" style="display:none;">
-            <p>Olá, <span><b>Usuário</b></span>!</p>
-            <a href="#" class="btn__verMais">sair</a>
+          <li class="menu__item menu__btn" style="display:none;"><a href="#" class="btn-login btn btn__blue">login</a></li>
+
+          <li class="menu__item menu__logado">
+            <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+            <input id="user-dropdown" type="checkbox">
+            <label for="user-dropdown"><p class="user-dropdown">
+              Olá, <span><b>Usuário</b></span>! <i><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
+            </label>
+
+            <ul class="user-dropdown__list">
+              <li>
+                <a href="userdata.html">Perfil</a>
+              </li>
+              <li>
+                <a href="#">Sair</a>
+              </li>
+            </ul>
+
+            <!-- <a href="#" class="btn__verMais">sair</a> -->
           </li>
         </ul>
       </div>
@@ -588,22 +603,25 @@
                       </ul>
                     </li>
                   </ul>
-                  <div class="jogos__verMais col-lg-12">
+                  <!-- <div class="jogos__verMais col-lg-12">
                     <a href="#" class="btn__verMais">ver mais</a>
-                  </div>
+                  </div> -->
                 </div>
+
                 <div class="tab2">
                   <div class="no-games col-lg-12">
                     <img src="images/svg/no-game.svg" alt="">
                     <h1> Não há jogos disponíveis!</h1>
                   </div>
                 </div>
+
                 <div class="tab3">
                   <div class="no-games col-lg-12">
                     <img src="images/svg/no-game.svg" alt="">
                     <h1> Não há jogos disponíveis!</h1>
                   </div>
                 </div>
+
                 <div class="tab4">
                   <div class="no-games col-lg-12">
                     <img src="images/svg/no-game.svg" alt="">

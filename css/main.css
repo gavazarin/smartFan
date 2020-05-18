@@ -2220,18 +2220,6 @@ table .btn {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 767px) {
-  .nav__ligas {
-    width: 100%;
-    margin: 1.5rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-  }
-}
-
 .nav__ligas li {
   margin: 0 .5rem;
 }
@@ -2326,6 +2314,15 @@ label:hover img {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .jogos {
+    margin-bottom: 1.5rem;
+  }
+  .jogos:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .jogos__item {
@@ -2484,6 +2481,18 @@ label:hover img {
   color: #F34605;
   margin: 0 .5rem;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .no-games h1 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  .no-games h1 {
+    width: 65%;
+  }
 }
 
 @keyframes entrar-tab-content {
@@ -3062,7 +3071,20 @@ header .navMenu .menu__item:hover:before {
   transition: all .3s ease-in;
 }
 
-header .navMenu .menu__logado {
+header .navMenu .menu__btn {
+  background-color: #1A7DD7;
+  border-radius: .5rem;
+}
+
+header .navMenu .menu__btn .btn {
+  color: #F0F0F0;
+}
+
+header .navMenu .menu__btn:before {
+  display: none;
+}
+
+header .menu__logado {
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2em;
@@ -3075,7 +3097,15 @@ header .navMenu .menu__logado {
   flex-wrap: wrap;
 }
 
-header .navMenu .menu__logado .icon-user {
+@media (max-width: 767px) {
+  header .menu__logado {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+}
+
+header .menu__logado .icon-user {
   display: inline-block;
   height: 3rem;
   padding: 5px;
@@ -3085,48 +3115,55 @@ header .navMenu .menu__logado .icon-user {
   margin-right: 1rem;
 }
 
-header .navMenu .menu__logado .icon-user img {
+header .menu__logado .icon-user img {
   height: 100%;
 }
 
-header .navMenu .menu__logado b {
+@media (max-width: 767px) {
+  header .menu__logado .icon-user {
+    height: 4rem;
+    border: 2px solid #F34605;
+  }
+}
+
+header .menu__logado b {
   font-weight: 900;
 }
 
-header .navMenu .menu__logado input {
+header .menu__logado input {
   display: none;
 }
 
-header .navMenu .menu__logado input:checked ~ .user-dropdown__list {
+header .menu__logado input:checked ~ .user-dropdown__list {
   display: block;
 }
 
-header .navMenu .menu__logado input:checked ~ label i {
+header .menu__logado input:checked ~ label i {
   transform: rotate(-180deg);
   transition: all .3s ease-out;
 }
 
-header .navMenu .menu__logado label {
+header .menu__logado label {
   cursor: pointer;
   margin-bottom: 0;
 }
 
-header .navMenu .menu__logado .user-dropdown {
+header .menu__logado .user-dropdown {
   margin-bottom: 0;
 }
 
-header .navMenu .menu__logado .user-dropdown i {
+header .menu__logado .user-dropdown i {
   display: inline-block;
   width: 1.5rem;
   margin-left: 3px;
   transition: all .3s ease-in;
 }
 
-header .navMenu .menu__logado .user-dropdown i img {
+header .menu__logado .user-dropdown i img {
   width: 100%;
 }
 
-header .navMenu .menu__logado .user-dropdown__list {
+header .menu__logado .user-dropdown__list {
   animation: open-user-dropdown .3s ease-out;
   background-color: #F0F0F0;
   border-bottom-left-radius: .5rem;
@@ -3142,11 +3179,11 @@ header .navMenu .menu__logado .user-dropdown__list {
   z-index: 99;
 }
 
-header .navMenu .menu__logado .user-dropdown__list li {
+header .menu__logado .user-dropdown__list li {
   position: relative;
 }
 
-header .navMenu .menu__logado .user-dropdown__list li:before {
+header .menu__logado .user-dropdown__list li:before {
   content: '';
   width: 50%;
   height: 1px;
@@ -3158,18 +3195,18 @@ header .navMenu .menu__logado .user-dropdown__list li:before {
   left: auto;
 }
 
-header .navMenu .menu__logado .user-dropdown__list li:last-child a {
+header .menu__logado .user-dropdown__list li:last-child a {
   color: #F34605;
   font-size: 1.1rem;
   font-weight: 900;
   line-height: 1.2em;
 }
 
-header .navMenu .menu__logado .user-dropdown__list li:last-child:before {
+header .menu__logado .user-dropdown__list li:last-child:before {
   display: none;
 }
 
-header .navMenu .menu__logado .user-dropdown__list a {
+header .menu__logado .user-dropdown__list a {
   color: #03275A;
   display: inline-block;
   padding: 1rem 1.5rem;
@@ -3179,25 +3216,12 @@ header .navMenu .menu__logado .user-dropdown__list a {
   transition: all .3s ease-in;
 }
 
-header .navMenu .menu__logado .user-dropdown__list a:hover {
+header .menu__logado .user-dropdown__list a:hover {
   transform: scale(0.9);
   transition: all .3s ease-in;
 }
 
-header .navMenu .menu__logado:before {
-  display: none;
-}
-
-header .navMenu .menu__btn {
-  background-color: #1A7DD7;
-  border-radius: .5rem;
-}
-
-header .navMenu .menu__btn .btn {
-  color: #F0F0F0;
-}
-
-header .navMenu .menu__btn:before {
+header .menu__logado:before {
   display: none;
 }
 
@@ -3265,6 +3289,64 @@ header .navMenu-mobile .menuMobile ul li a:hover {
 header .navMenu-mobile .menuMobile .menu__logado a {
   color: #F34605;
   font-size: 2rem;
+}
+
+header .navMenu-mobile .menuMobile .menu__logado .user-dropdown__list {
+  animation: open-user-dropdown .3s ease-out;
+  background-color: #F0F0F0;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  box-shadow: 2px 10px 23px 5px rgba(0, 0, 0, 0.3);
+  display: none;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  transform: translateY(100%);
+  z-index: 99;
+}
+
+header .navMenu-mobile .menuMobile .menu__logado .user-dropdown__list li {
+  position: relative;
+}
+
+header .navMenu-mobile .menuMobile .menu__logado .user-dropdown__list li:before {
+  content: '';
+  width: 50%;
+  height: 1px;
+  background-color: rgba(21, 21, 21, 0.3);
+  position: absolute;
+  top: auto;
+  right: 25%;
+  bottom: 0;
+  left: auto;
+}
+
+header .navMenu-mobile .menuMobile .menu__logado .user-dropdown__list li:last-child a {
+  color: #F34605;
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1.2em;
+}
+
+header .navMenu-mobile .menuMobile .menu__logado .user-dropdown__list li:last-child:before {
+  display: none;
+}
+
+header .navMenu-mobile .menuMobile .menu__logado .user-dropdown__list a {
+  color: #03275A;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  transition: all .3s ease-in;
+}
+
+header .navMenu-mobile .menuMobile .menu__logado .user-dropdown__list a:hover {
+  transform: scale(0.9);
+  transition: all .3s ease-in;
 }
 
 header .navMenu-mobile .menu_open {

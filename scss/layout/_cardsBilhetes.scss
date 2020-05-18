@@ -13,11 +13,11 @@
   @include flex(row, center, center, center);
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
-  @include sm {
-    width: 100%;
-    margin: 1.5rem 0;
-    @include flex(row, space-between, center, center);
-  }
+  // @include sm {
+  //   width: 100%;
+  //   margin: 1.5rem 0;
+  //   @include flex(row, space-between, center, center);
+  // }
   li {
     margin: 0 .5rem;
   }
@@ -100,6 +100,12 @@ label {
   position: relative;
   @include flex(row, flex-start, center, center);
   flex-wrap: wrap;
+  @include sm {
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   &__item {
     padding: 0 .5rem;
     text-align: left;
@@ -200,6 +206,16 @@ label {
     color: $secondary-01;
     margin: 0 .5rem;
     text-align: center;
+  }
+  @include sm {
+    h1 {
+      width: 50%;
+    }
+  }
+  @include xs {
+    h1 {
+      width: 65%;
+    }
   }
 }
 
