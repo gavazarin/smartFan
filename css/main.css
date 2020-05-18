@@ -2224,6 +2224,10 @@ table .btn {
   margin: 0 .5rem;
 }
 
+.pc-tab {
+  width: 100%;
+}
+
 .pc-tab input {
   display: none;
 }
@@ -2493,6 +2497,14 @@ label:hover img {
   .no-games h1 {
     width: 65%;
   }
+}
+
+.pag_comprar-ingresso .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 @keyframes entrar-tab-content {
@@ -5592,6 +5604,12 @@ header .icon-search {
   background: #F0F0F0;
   border: 2px solid #F34605;
   border-radius: 50%;
+}
+
+.span-aviso {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2em;
 }
 
 .modal-content .modal-msg {

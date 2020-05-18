@@ -253,6 +253,10 @@
                   <div class="email-pwd-atual">
                     <h2>email</h2>
                     <span>taveira.joao@gmail.com</span>
+                    <span id="smv_UserChangeMailText" smv-langtext="umailchangefrase" smv-externallogin="NONE" class="span-aviso">
+                      Existe um pedido de alteração para confirmar 
+                      <a href="javascript:smv_udataChangeMailDetails()" class="btn__verMais">(ver mais)</a>
+                    </span>
                     <a href="#" class="btn__verMais">editar</a>
                   </div>
 
@@ -664,6 +668,37 @@
           </button>
         </div>
       </nav>
+    </div>
+  </div>
+
+  <!-- ================= MODAL ALTERAR E-MAIL ================= -->
+  <div id="smv-modal-changemaildetails" smv-ismodal="1" smv-modalcontainer="smv_wp_userdata" class="modal-login-container mostrar" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-msg">
+        <h2 smv-langtext="headusernewemail">Alterar e-mail</h2>
+
+        <p smv-langtext="modalumailchangedetails" smv-langrepltext-email="teste.testudo1234567@gmail.com">Está pendente de confirmação um pedido de alteração de e-mail para teste.testudo1234567@gmail.com.</p>
+        <p>Até este pedido de alteração ser confirmado, o e-mail mantém-se o atual.</p>
+
+        <p smv-langtext="modalumailtimelimit" smv-langrepltext-limitdate="19-05-2020 12:28">A alteração pode ser confirmada até 19-05-2020 12:28</p>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+        <p></p>
+        <p></p>
+
+        <div style="display:inline-block">
+          <button type="button" class="btn btn__orange" onclick="smv_closeModalDiv('smv-modal-changemaildetails')">
+            <span smv-langtext="btclose">Fechar</span>
+          </button>
+          <button type="button" class="btn btn__orange" onclick="javascript:smv_userRefreshDataFromChangeMail()">
+            <span smv-langtext="btrefresh">Atualizar</span>
+          </button>
+          <button type="button" class="btn btn__orange" onclick="javascript:smv_UserCancelEmailChange()">
+            <span smv-langtext="btcancel">Cancelar</span>
+          </button>
+
+        </div>
+      </div>
     </div>
   </div>
 

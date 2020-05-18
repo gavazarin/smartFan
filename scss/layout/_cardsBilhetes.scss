@@ -24,6 +24,7 @@
 }
 
 .pc-tab {
+  width: 100%;
   input {
     display: none;
   }
@@ -216,6 +217,12 @@ label {
     h1 {
       width: 65%;
     }
+  }
+}
+
+.pag_comprar-ingresso {
+  .row {
+    @include flex(column, center, center, center);
   }
 }
 

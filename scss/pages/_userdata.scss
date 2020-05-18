@@ -334,6 +334,22 @@
   }
 }
 
+.span-aviso {
+  @include font(1.4rem, 700, 1.2em);
+}
+
+//modal alterar email + pwd
+.modal-content {
+  .modal-msg {
+    @include flex(column, center, center, center);
+    p {
+      width: 75%;
+      @include font(1.6rem, 300, 1.2em);
+      color: $primary-01;
+    }
+  }
+}
+
 @keyframes mostrarTabContent {
   0% {
     opacity: 0;
