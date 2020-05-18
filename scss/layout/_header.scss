@@ -261,59 +261,10 @@ header {
           }
         }
       }
-      .menu__logado {
-        position: relative;
+      .menu__item__sair {
         a {
           color: $secondary-01;
-          font-size: 2rem;
-        }
-        input:checked~.user-dropdown__list {
-          display: block;
-        }
-        .user-dropdown__list {
-          width: 50%;
-          animation: open-user-dropdown .3s ease-out;
-          background-color: $white-01;
-          border-bottom-left-radius: .5rem;
-          border-bottom-right-radius: .5rem;
-          box-shadow: 2px 10px 23px 5px rgba(0, 0, 0, 0.3);
-          display: none;
-          @include absolute(auto, 25%, 0, auto);
-          padding: 0;
-          transform: translate(0, 110%);
-          z-index: 99;
-          li {
-            position: relative;
-            padding: 1.5rem;
-            margin: 0;
-            &:before {
-              content: '';
-              width: 50%;
-              height: 1px;
-              background-color: rgba(21, 21, 21, .3);
-              @include absolute(auto, 25%, 0, auto);
-            }
-            &:last-child {
-              a {
-                color: $secondary-01;
-                @include font(1.2rem, 900, 1.2em);
-              }
-              &:before {
-                display: none;
-              }
-            }
-          }
-          a {
-            color: $primary-01;
-            display: inline-block;
-            padding: 1rem 1.5rem;
-            @include font(1.4rem, 700, 1.2em);
-            transition: all .3s ease-in;
-            &:hover {
-              transform: scale(.9);
-              transition: all .3s ease-in;
-            }
-          }
+          text-transform: lowercase;
         }
       }
     }

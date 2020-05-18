@@ -48,6 +48,9 @@
       margin-top: 2rem;
       margin-left: 1.5rem;
       color: $white-01;
+      @include xs {
+        width: 55%;
+      }
     }
   }
 }
@@ -177,6 +180,9 @@
         width: 100%;
         text-align: center;
         margin-top: 0;
+        .destaque {
+          color: $secondary-01;
+        }
       }
       &__list {
         width: 100%;
