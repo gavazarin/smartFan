@@ -5594,6 +5594,22 @@ header .icon-search {
   border-radius: 50%;
 }
 
+.modal-content .modal-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.modal-content .modal-msg p {
+  width: 75%;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  color: #03275A;
+}
+
 @keyframes mostrarTabContent {
   0% {
     opacity: 0;
