@@ -2210,6 +2210,140 @@ table .btn {
   }
 }
 
+.cards-virarSocio-pagarQuota {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.cards-virarSocio-pagarQuota li {
+  width: 100%;
+  position: relative;
+  height: 25rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.cards-virarSocio-pagarQuota li:first-child {
+  border-right: 1px solid #FFFFFF;
+}
+
+.cards-virarSocio-pagarQuota li:last-child {
+  border-left: 1px solid #FFFFFF;
+}
+
+.cards-virarSocio-pagarQuota li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 21, 21, 0.5);
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  transition: all .3s ease-in-out;
+}
+
+.cards-virarSocio-pagarQuota li:hover .bg-card {
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+
+.cards-virarSocio-pagarQuota li:hover:before {
+  background-color: rgba(21, 21, 21, 0.2);
+  transition: all .3s ease-in-out;
+}
+
+.cards-virarSocio-pagarQuota .bg-card {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: -1;
+  transform-origin: center;
+  transition: all .3s ease-in-out;
+}
+
+.cards-virarSocio-pagarQuota .infos__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1.5rem;
+  z-index: 5;
+}
+
+@media (max-width: 992px) {
+  .cards-virarSocio-pagarQuota .infos__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.cards-virarSocio-pagarQuota p {
+  width: 90%;
+  color: #F0F0F0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cards-virarSocio-pagarQuota p b {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.3em;
+}
+
+.cards-virarSocio-pagarQuota p span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 992px) {
+  .cards-virarSocio-pagarQuota p {
+    width: 80%;
+  }
+}
+
+.cards-lugares-cativos .cards-virarSocio-pagarQuota li {
+  height: 30rem;
+  border: 2px solid #FFFFFF;
+}
+
+.cards-lugares-cativos .infos__container {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+  .cards-lugares-cativos p {
+    width: 100%;
+  }
+}
+
 .nav__ligas {
   display: flex;
   flex-direction: row;
@@ -4156,98 +4290,6 @@ header .icon-search {
 .homeBanner .swiper-button-next:after {
   font-size: 3rem;
   color: #F0F0F0;
-}
-
-.cards-virarSocio-pagarQuota {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.cards-virarSocio-pagarQuota li {
-  width: 100%;
-  position: relative;
-  height: 17.5rem;
-  margin-bottom: 3rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: flex-end;
-}
-
-.cards-virarSocio-pagarQuota li:first-child {
-  border-right: 1px solid #FFFFFF;
-}
-
-.cards-virarSocio-pagarQuota li:last-child {
-  border-left: 1px solid #FFFFFF;
-}
-
-.cards-virarSocio-pagarQuota li:hover .bg-card {
-  transform: scale(1.1);
-  transition: all .3s ease-in-out;
-}
-
-.cards-virarSocio-pagarQuota .bg-card {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  z-index: -1;
-  transform-origin: center;
-  transition: all .3s ease-in-out;
-}
-
-.cards-virarSocio-pagarQuota .infos__container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  padding-bottom: 1.5rem;
-}
-
-@media (max-width: 992px) {
-  .cards-virarSocio-pagarQuota .infos__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-}
-
-.cards-virarSocio-pagarQuota p {
-  width: 65%;
-  color: #F0F0F0;
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.3em;
-  text-align: left;
-}
-
-.cards-virarSocio-pagarQuota p b {
-  font-weight: 900;
-}
-
-@media (max-width: 992px) {
-  .cards-virarSocio-pagarQuota p {
-    width: 80%;
-  }
 }
 
 .proximos-jogos {
