@@ -3405,7 +3405,7 @@ header .navMenu-mobile .menuMobile {
   overflow: scroll;
   transform: translateX(100%);
   transition: all .3s ease-out;
-  z-index: 5;
+  z-index: 10;
 }
 
 header .navMenu-mobile .menuMobile ul {
@@ -3527,6 +3527,23 @@ header .icon-search {
     opacity: 1;
     transform: translateY(100%);
   }
+}
+
+.politica-termos h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.politica-termos h2 {
+  text-align: left;
+}
+
+.politica-termos .list-numerada li {
+  list-style: decimal-leading-zero;
+}
+
+.politica-termos .list-bullet li {
+  list-style: disc;
 }
 
 .politicaCookies {
