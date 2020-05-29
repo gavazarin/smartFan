@@ -3892,6 +3892,8 @@ header .icon-search {
   align-items: center;
   align-content: center;
   padding: .6rem;
+  transform: scale(0.9);
+  transition: all .3s ease-in;
 }
 
 .nav_tabs .listTeams_popUp li span {
@@ -3904,6 +3906,11 @@ header .icon-search {
   display: none;
 }
 
+.nav_tabs .listTeams_popUp li:hover {
+  transform: scale(1);
+  transition: all .3s ease-in;
+}
+
 .nav_tabs .listTeams_popUp img {
   width: 4rem;
 }
@@ -3912,6 +3919,7 @@ header .icon-search {
   background-color: #F0F0F0;
   border: 1px solid #F34605;
   border-radius: 50%;
+  transform: scale(1);
 }
 
 .nav_tabs .team-select-name {
@@ -4135,7 +4143,7 @@ header .icon-search {
 }
 
 .teamsBar {
-  padding: 5px 0;
+  padding: 0px 0 3rem 0;
 }
 
 @media (max-width: 767px) {
@@ -4147,7 +4155,7 @@ header .icon-search {
 .teamsBar .row {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
@@ -4171,7 +4179,20 @@ header .icon-search {
 
 .teamsBar .list_ligas {
   padding-right: 1.5rem;
-  border-right: 2px solid #dbdbdb;
+  position: relative;
+}
+
+.teamsBar .list_ligas:before {
+  content: '';
+  height: 4rem;
+  width: 1px;
+  background-color: #44536f;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  transform: translateY(-50%);
 }
 
 .teamsBar .list_ligas a:hover img {
@@ -4204,10 +4225,6 @@ header .icon-search {
   padding: 0 1.5rem;
 }
 
-.teamsBar .list_clubs ul:nth-child(1) {
-  border-right: 2px solid #F37402;
-}
-
 .teamsBar .list_clubs ul img {
   opacity: 1;
 }
@@ -4222,6 +4239,23 @@ header .icon-search {
   transform: scale(1);
 }
 
+.teamsBar .list_clubs .list_clubs_01 {
+  position: relative;
+}
+
+.teamsBar .list_clubs .list_clubs_01:before {
+  content: '';
+  height: 4rem;
+  width: 1px;
+  background-color: #44536f;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  transform: translateY(-50%);
+}
+
 .teamsBar .list_clubs .list_clubs_02 {
   padding-right: 0;
 }
@@ -4230,7 +4264,48 @@ header .icon-search {
   margin-right: 0;
 }
 
-.teamsBar .list_clubs a:hover img {
+.teamsBar .list_clubs .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.teamsBar .list_clubs .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #F34605;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.teamsBar .list_clubs .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #F34605 transparent transparent transparent;
+}
+
+.teamsBar .list_clubs .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.teamsBar .list_clubs .tooltip:hover img {
   opacity: 1;
   transform: scale(1);
   transition: all .3s ease-in-out;
@@ -4998,6 +5073,16 @@ header .icon-search {
   border: 2px solid #F34605;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   transform: scale(1);
+}
+
+.fluxoPagamentos .payList .input-validate {
+  border: 2px solid #F34605;
+  border-radius: .5rem;
+  color: #F34605;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding: 1rem 1.5rem;
 }
 
 .fluxoPagamentos .payList .container-btn {

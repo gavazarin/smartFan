@@ -122,12 +122,18 @@
       width: auto;
       @include flex(column, center, center, center);
       padding: .6rem;
+      transform: scale(.9);
+      transition: all .3s ease-in;
       span {
         width: 7rem;
         @include font(1.2rem, 300, 1.2em);
         text-align: center;
         margin-top: .5rem;
         display: none;
+      }
+      &:hover {
+        transform: scale(1);
+        transition: all .3s ease-in;
       }
     }
     img {
@@ -137,6 +143,7 @@
       background-color: $white-01;
       border: 1px solid $secondary-01;
       border-radius: 50%;
+      transform: scale(1);
     }
   }
   .team-select-name {

@@ -124,6 +124,13 @@
         transform: scale(1);
       }
     }
+    .input-validate {
+      border: 2px solid $secondary-01;
+      border-radius: .5rem;
+      color: $secondary-01;
+      @include font(1.4rem, 700, 1.2em);
+      padding: 1rem 1.5rem;
+    }
     .container-btn {
       margin-top: 3rem;
       @include flex(row, center, flex-end, flex-end);
