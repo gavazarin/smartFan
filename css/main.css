@@ -3529,21 +3529,92 @@ header .icon-search {
   }
 }
 
+.politica-termos {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #212121;
+}
+
 .politica-termos h1 {
+  font-size: 2.2rem;
   width: 100%;
   text-align: center;
 }
 
 .politica-termos h2 {
+  font-size: 1.8rem;
   text-align: left;
+  margin-bottom: 1.5rem;
 }
 
-.politica-termos .list-numerada li {
-  list-style: decimal-leading-zero;
+.politica-termos strong {
+  font-weight: 900;
+}
+
+.politica-termos a {
+  color: #212121;
+  text-decoration: underline;
+  transition: all .3s ease-in;
+}
+
+.politica-termos a:hover {
+  color: #03275A;
+  transition: all .3s ease-in;
+}
+
+.politica-termos .list-geral__item {
+  margin-bottom: 3rem;
+}
+
+.politica-termos .list-interna {
+  padding-left: 3rem;
+}
+
+.politica-termos .list-bullet,
+.politica-termos .list-latin,
+.politica-termos .list-roman {
+  margin-left: 6rem;
+  margin-bottom: 1rem;
+}
+
+.politica-termos .list-bullet li,
+.politica-termos .list-latin li,
+.politica-termos .list-roman li {
+  margin-bottom: .5rem;
+}
+
+.politica-termos .list-bullet li p,
+.politica-termos .list-latin li p,
+.politica-termos .list-roman li p {
+  margin-bottom: 0;
 }
 
 .politica-termos .list-bullet li {
   list-style: disc;
+}
+
+.politica-termos .list-latin li {
+  list-style: lower-latin;
+}
+
+.politica-termos .list-roman li {
+  list-style: lower-roman;
+}
+
+.politica-termos dl {
+  margin-left: 3rem;
+}
+
+.politica-termos dl dt {
+  font-weight: 900;
+}
+
+.politica-termos .number-list {
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1.4em;
+  margin-right: 1rem;
 }
 
 .politicaCookies {

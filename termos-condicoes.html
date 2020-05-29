@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartFan - Comprar Bilhetes</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+  <header>
+    <img src="images/svg/pattern_smartFan.svg" alt="" class="pattern__smartFan">
+
+    <div class="container">
+      <div class="row">
+        <ul class="socialMedias_header">
+          <li>
+            SmartFAN<b>.Tickets</b>
+          </li>
+          <li>
+            <a href="#"><img src="images/svg/flag-portugal.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="navMenu col-lg-12">
+      <img src="images/svg/pattern_smartFan-white.svg" alt="" class="pattern__smartFan">
+      <div class="container">
+        <div class="row">
+          <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt=""></a>
+
+          <ul class="menu">
+            <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
+            <!-- <li class="menu__item"><a href="#comprar-bilhetes">comprar bilhetes</a></li> -->
+            <li class="menu__item">
+              <a href="#"><img src="images/svg/search_white.svg" alt="" class="icon-search"></a>
+            </li>
+            <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
+            <li class="menu__item menu__logado" style="display:none;">
+              <p>Olá, <span><b>Usuário</b></span>!</p>
+              <a href="#" class="btn__verMais">sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="teamsBar">
+      <div class="container">
+        <div class="row">
+          <ul class="list_ligas">
+            <li>
+              <a href="#"><img src="images/liga_federacao_portuguesa.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/liga_portugal.png" alt=""></a>
+            </li>
+          </ul>
+
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li>
+                <a href="#"><img src="images/logo-1boavistafc.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1fcporto.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1gilvicentefc.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1osbelenenses.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1rioavefc.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1sporting.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1vitoriafc.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1vitoriasc.png" alt=""></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_02">
+              <li>
+                <a href="#"><img src="images/logo-2cdnmadeira.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2gdchaves.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2sccovilha.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2varzimsc.png" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== MENU MOBILE ==== -->
+    <nav class="navMenu-mobile col-md-12">
+      <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt=""></a>
+
+      <a href="#menuMobile" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu-white.svg" alt="Abrir Menu"></a>
+
+      <div id="#menuMobile" class="menuMobile">
+        <div class="container-btn">
+          <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
+        </div>
+
+        <section class="teamsBar teamsBar__mobile">
+          <ul class="list_ligas">
+            <li>
+              <a href="#"><img src="images/liga_federacao_portuguesa.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/liga_portugal.png" alt=""></a>
+            </li>
+          </ul>
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li>
+                <a href="#"><img src="images/logo-1boavistafc.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1fcporto.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1gilvicentefc.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1osbelenenses.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1rioavefc.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1sporting.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1vitoriafc.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1vitoriasc.png" alt=""></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_02">
+              <li>
+                <a href="#"><img src="images/logo-2cdnmadeira.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2gdchaves.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2sccovilha.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2varzimsc.png" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <ul class="menuMobile__list">
+          <li class="menuMobile__list__item"><a href="pagar-quotas.html">pagar quotas</a></li>
+          <!-- <li class="menuMobile__list__item"><a href="#comprar-bilhetes">comprar bilhetes</a></li> -->
+          <li class="menuMobile__list__item">
+            <a href="#"><img src="images/svg/search.svg" alt="" class="icon-search"></a>
+          </li>
+          <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
+          <li class="menu__item menu__logado" style="display:none;">
+            <p>Olá, <span><b>Usuário</b></span>!</p>
+            <a href="#" class="btn__verMais">sair</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="politica-termos">
+    <div class="container">
+      <div class="row">
+        <h1>TERMOS E CONDIÇÕES GERAIS DE UTILIZAÇÃO</h1>
+        <ul class="list-geral">
+          <li class="list-geral__item">
+            <h2>1. OBJETO</h2>
+            <ul class="list-interna">
+              <li>
+                <p>
+                  <span class="number-list">1.1</span> Os presentes Termos e Condições de Utilização estabelecem as regras e obrigações que regem o acesso e a utilização da rede de plataformas digitais SMARTFAN, nomeadamente o Website SMARTFAN.TICKETS.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">1.2</span> No contexto dos Termos e Condições, a designação “SMARTFAN” significa e inclui, salvo indicação expressa em contrário, todas as plataformas e serviços digitais acessíveis em computadores, telemóveis,
+                  tablets ou quaisquer outros dispositivos do mesmo tipo, que compõem a rede de serviços SMARTFAN, nomeadamente, os portais SMARTFAN.TICKETS, SMARTFAN.NET e SMARTFAN.STORE, e outros que possam vir a ser disponibilizados e integrados na
+                  referida rede.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">1.3</span> As plataformas SMARTFAN.TICKETS, SMARTFAN.NET e SMARTFAN.STORE pertencem e encontram-se registados em nome da SMARTMOVE, Serviços de Mobilidade S.A. NIPC: 580670080 com sede na Av. D. Afonso Henriques,
+                  1462 Edificio Olympus II, 4450-013 - Matosinhos, sendo a entidade responsável pelo tratamento de dados pessoais para efeitos destes Termos e Condições, Política de Privacidade, Política de Cookies e Condições de Venda.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">1.4</span> Os presentes Termos e Condições de Utilização têm por objectivo definir as condições de utilização, acesso e utilização dos serviços de venda de bilhetes para jogos, espectáculos e divertimentos públicos,
+                  pagamento de quotas e outras compras de produtos e serviços disponibilizados no Website SMARTFAN.TICKETS.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">1.5</span> A navegação no Website SMARTFAN.TICKETS, bem como a compra electrónica de qualquer bilhete para jogos, espetáculos ou divertimentos público, ou outros serviços disponibilizados neste Website, implica
+                  a aceitação dos presentes Termos e Condições de Utilização.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">1.6</span> A SMARTMOVE S.A reserva-se o direito de modificar a qualquer momento, sem aviso prévio, a apresentação, conteúdos e serviços do Website SMARTFAN.TICKETS. Essas modificações e atualizações servirão
+                  para uma melhoria do Website e, simultaneamente, dos serviços oferecidos ao Utilizador que, caso não concorde com as modificações e atualizações introduzidas, poderá cessar a utilização do referido Website.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">1.7</span> A SMARTMOVE S.A reserva-se o direito de alterar os presentes Termos e Condições de Utilização, sem aviso prévio, sendo quaisquer alterações publicadas no Website SMARTFAN.TICKETS.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">1.8</span> A consulta dos Termos e Condições de Venda está disponíveis aqui, bem com a consulta da Política de Privacidade aqui e Política de Cookies aqui.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">1.9</span> Os presentes Termos e Condições de Utilização aplicam-se a todos os Utilizadores, independentemente da sua nacionalidade ou do seu local de residência.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-geral__item">
+            <h2>2. Registo de Utilizador</h2>
+            <ul class="list-interna">
+              <li>
+                <p>
+                  <span class="number-list">2.1</span> Para ter acesso aos serviços disponibilizados no Website SMARTFAN.TICKETS, o Utilizador deverá aceder à área de login do site, tendo para isso de efetuar o seu registo prévio no site. O Utilizador
+                  concorda em assumir a responsabilidade dos seus dados de login, tais como o endereço de e-mail e palavra-passe. Para tal, terá de preencher o formulário de registo, introduzindo os dados pessoais identificados nos campos próprios disponibilizados
+                  para o efeito, indicando também um endereço de e-mail válido, bem como uma palavra-passe e aceitando os presentes Termos e Condições de Utilização.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">2.2</span> O Utilizador é responsável pela guarda, confidencialidade e correta utilização da sua informação pessoal e das suas credenciais de acesso neste Website, e não deverá partilhar a mesma com terceiros
+                  por forma a impedir que estes acedam à sua conta em SMARTFAN.TICKETS.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">2.3</span> Nessas circunstâncias, o Utilizador será responsável por criar o seu nome de Utilizador e palavra-passe. O Utilizador será ainda responsável pela prestação de informação específica, a qual deverá
+                  ser correta e atualizada. O Utilizador não poderá escolher um nome de utilizador pertencente a terceiro com o intuito de utilizar a sua identidade. O Utilizador não poderá, do mesmo modo, utilizar o nome de utilizador de um terceiro
+                  sem o seu consentimento expresso.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">2.4</span> O Utilizador também poderá efetuar o seu registo no Website SMARTFAN.TICKETS através de serviços de registo facultados por terceiros, como o Google ou Facebook, que são regulados por termos e condições
+                  e políticas de privacidade próprias, pelo que a SMARTMOVE.S.A aconselha a leitura dos respetivos termos e condições e políticas de privacidade antes de se registar e/ou iniciar sessão neste Website recorrendo a esses referidos serviços.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">2.5</span> O registo é único e aplicável a todos os websites da rede SMARTFAN. O Utilizador terá acesso à sua área pessoal, podendo modificar os seus dados sempre que entender. Qualquer compra ou pagamento de
+                  serviço no Website SMARTFAN.TICKETS obriga o Utilizador a efetuar um registo neste Website, criando a sua conta que também dará acesso aos outros Websites da rede, nomeadamente SMARTFAN.NET e SMARTFAN.STORE.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">2.6</span> Ao efetuar o registo o Utilizador concorda que:
+                </p>
+                <ul class="list-bullet">
+                  <li>
+                    <p>Cumprirá escrupulosamente os presentes Termos e Condições;</p>
+                  </li>
+                  <li>
+                    <p>O seu registo é pessoal e intransmissível, não podendo ser utilizado por qualquer outra pessoa no acesso aos conteúdos e serviços digitais deste Website;</p>
+                  </li>
+                  <li>
+                    <p>Assumirá um comportamento responsável sendo estritamente proibida a utilização deste Website para quaisquer fins ilegais ou de qualquer outro tipo, que possam ser considerados lesivos da imagem e bom nome da SMARTMOVE S.A. ou de terceiros;</p>
+                  </li>
+                  <li>
+                    <p>Agirá sempre de boa fé, quer relativamente à SMARTMOVE.SA , quer relativamente aos restantes Utilizadores, sendo estritamente proibido aceder a uma área/conta não autorizada e respectiva informação;</p>
+                  </li>
+                  <li>
+                    <p>Não publicará ou utilizará informação e conteúdos falsos, injuriosos, difamatórios, obscenos, injuriosos, xenófobos e/ou de qualquer outra índole que violem os princípios gerais de direito e a ordem pública; </p>
+                  </li>
+                  <li>
+                    <p>Entrará de imediato em contacto com a SMARTMOVE S.A., caso se aperceba de qualquer uso não autorizado dos seus dados de login;</p>
+                  </li>
+                  <li>
+                    <p>Não utilizará quaisquer ferramentas ou qualquer outro meio tecnológico, seja através de programação informática, de utilização de software existente ou outros mecanismos automáticos ou manuais destinadas ou capazes de copiar ou alterar,
+                      total ou parcialmente, os Conteúdos e Serviços disponibilizados, bem como o seu bom e correto funcionamento e, bem assim, as que sejam capazes de permitir o acesso não autorizado ao Website SMARTFAN.TICKETS ou outro da mesma rede;</p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">2.7</span> A SMARTMOVE S.A reserva-se o direito a eliminar a conta do Utilizador que incumpra qualquer uma das Obrigações mencionadas.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">2.8</span> O Utilizador é inteira e exclusivamente responsável por quaisquer ações efetuadas através da sua conta de Utilizador, diretamente ou mediante terceiros autorizados pelo Utilizador. A SMARTMOVE S.A
+                  adotou as medidas técnicas e organizacionais adequadas a salvaguardar a segurança das informações e serviços por si prestados através do Website SMARTFAN.TICKETS, e assegurar a integridade de todos os dados, bem como para evitar riscos
+                  de disseminação, destruição ou perda de dados e informação confidencial ou não confidencial dos seus Utilizadores, constantes do Website, ou relacionados com o acesso não autorizado ou em incumprimento das disposições legais aplicáveis
+                  aos referidos dados pessoais e informação.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-geral__item">
+            <h2>3. Conteúdos</h2>
+            <ul class="list-interna">
+              <li>
+                <p><span class="number-list">3.1</span> O Website SMARTFAN.TICKETS disponibiliza conteúdos de texto, informação, mensagens, comentários, gráficos, fotografias, ilustrações, software, áudio e vídeo na condição da aceitação, sem quaisquer reservas,
+                  condições ou modificações, dos presentes termos e condições de utilização.</p>
+              </li>
+
+              <li>
+                <p><span class="number-list">3.2</span> O Website SMARTFAN.TICKETS destina-se a disponibilizar informação e serviços na área do Desporto, Entretenimento e Cultura, promovendo o desenvolvimento da atividade dos seus Parceiros com a prestação
+                  de serviços de interesse como sejam a venda de bilhetes para jogos/espetáculos, eventos, inscrição em programas de sócios/associados, pagamentos de quotas e outros serviços.</p>
+              </li>
+              <li>
+                <p><span class="number-list">3.3</span> O Website SMARTFAN.TICKETS disponibiliza um conjunto de informações relativas aos serviços e produtos disponibilizados no âmbito das suas atividades, com o objetivo de, por conta dos respetivos Parceiros,
+                  promover, divulgar e vender, junto de associados e público em geral todos os serviços e produtos disponibilizados pelos referidos Parceiros.
+                </p>
+              </li>
+              <li>
+                <p><span class="number-list">3.4</span> O Website SMARTFAN.TICKETS recorre a "Cookies" para melhoria e personalização de experiências de utilização. Caso pretenda desativar esta funcionalidade, ou modificar as regras de utilização de cookies
+                  no seu dispositivo de acesso, consulte a <a href="politica-cookies.html">Política de Cookies</a>.</p>
+              </li>
+              <li>
+                <p><span class="number-list">3.5</span> Os dados ou conteúdos que nos sejam fornecidos ou entregues, seja através de correio electrónico, envio de ficheiros ou por qualquer outro modo ou suporte, serão considerados não confidenciais e não
+                  reservados. Ao enviar conteúdos de qualquer tipo para este Website, o Utilizador concede, de forma automática e imediata, à SMARTMOVE SA todos os direitos e propriedades sobre esses mesmos conteúdos, concordando na sua livre utilização.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-geral__item">
+            <h2>4. Direitos de Autor e Propriedade Intelectual</h2>
+            <ul class="list-interna">
+              <li>
+                <p><span class="number-list">4.1</span> Todos os conteúdos, páginas, produtos e serviços disponíveis nos websites da rede SMARTFAN, incluindo o Website SMARTFAN.TICKETS, estão licenciados ou são operados de forma autorizada pela SMARTMOVE
+                  S.A, e pertencem à SMARTMOVE S.A..
+                </p>
+              </li>
+              <li>
+                <p><span class="number-list">4.2</span> O Utilizador reconhece que todos os conteúdos e serviços disponibilizados pelo Website SMARTFAN.TICKETS são propriedade da SMARTMOVE.SA ou de terceiros que tenham autorizado a sua utilização para uso
+                  nos websites da rede SMARTFAN e encontram-se protegidos pelos direitos de autor e conexos e demais legislações e regulamentações nacionais e internacionais aplicáveis.</p>
+              </li>
+              <li>
+                <p><span class="number-list">4.3</span> Para todos os conteúdos, textos, imagens, fotografias, desenhos ou ilustrações, publicidade, marcas e logótipos e quaisquer outros materiais disponibilizados no Website SMARTFAN.TICKETS, é expressamente
+                  interdita a sua cópia, imitação, reprodução, modificação, difusão, ou transmissão, por qualquer meio e suporte, venda, utilização, publicação ou distribuição ou qualquer outra forma de uso total ou parcial, para fins comerciais ou não
+                  comerciais, não especificamente autorizada pela SMARTMOVE S.A</p>
+              </li>
+              <li>
+                <p><span class="number-list">4.4</span> A SMARTMOVE S.A autoriza os Utilizadores a utilizar, visualizar, imprimir, descarregar e armazenar os conteúdos de texto informativos e promocionais desde que, sem qualquer modificação ou alteração,
+                  além de mencionada a fonte de origem e autores dos mesmos, e desde que o seu uso se destine a fins pessoais, profissionais ou públicos, não comerciais, insuscetíveis de causar dano à SMARTMOVE S.A ou a algum dos seus Parceiros ou Terceiros.
+                  Poderão ser disponibilizados neste Website conteúdos específicos como imagens, vídeos, logótipos ou outros que podem ser alvo de direitos de copyright dos seus fornecedores e/ou proprietários.</p>
+              </li>
+              <li>
+                <p><span class="number-list">4.5</span> A SMARTMOVE S.A não tolerará quaisquer infrações de direitos de propriedade intelectual, industrial ou direitos de personalidade e/ou propriedade alheios.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-geral__item">
+            <h2>5 . Exclusão de Responsabilidade</h2>
+            <ul class="list-interna">
+              <li>
+                <p>
+                  <span class="number-list">5.1</span> A SMARTMOVE S.A não se responsabiliza por danos (se existentes) resultantes da incorreta utilização do Website SMARTFAN.TICKETS ou de quaisquer outros da rede SMARTFAN, bem como de qualquer um dos
+                  conteúdos nele publicados ou por danos (se existentes) causados por vírus, ficheiros danificados, erros, omissões, interrupções do serviço, cancelamento de conteúdos, acesso ou outras questões relacionadas com internet, prestadores de
+                  serviços ou com a ligação telefónica e/ou de dados, acessos não autorizados, alterações de dados, ou relacionados com a inexistência e/ou deficiente funcionamento de dispositivos eletrónicos do Utilizador.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">5.2</span> Sem prejuízo, a SMARTMOVE S.A não poderá ser responsabilizada por qualquer suspensão, interrupção de acesso ou correta visualização de conteúdos que venha a ocorrer em consequência de quaisquer factos
+                  e não está sujeito a reclamações, penalizações, prejuízos, danos diretos ou indiretos, lucros cessantes de qualquer tipo que possam surgir quer do uso ou incapacidade do Website SMARTFAN.TICKETS, quer ainda do acesso não autorizado ou
+                  da alteração do mesmo.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">5.3</span> A SMARTMOVE S.A não é responsável em qualquer caso pelas situações de caso fortuito ou motivos de força maior, resultantes de eventos imprevistos de qualquer ordem, não passíveis de serem evitados
+                  ou situações que criem a impossibilidade de cumprir a prestação do serviço que não pode ser em qualquer caso imputável à SMARTMOVE S.A, nomeadamente em situações como catástrofes naturais, atentados terroristas, guerra, epidemias, entre
+                  outros.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">5.4</span> A SMARTMOVE S.A garante que adotou as medidas necessárias e a implementação das melhores práticas, dentro das suas possibilidades e do estado atual da tecnologia, para garantir o funcionamento normal
+                  do Website SMARTFAN.TICKETS, mas não garante a compatibilidade dos conteúdos existentes no mesmo com todos os sistemas operativos de computadores e navegadores de internet (browsers) atualmente existentes ou que possam vir a existir.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">5.5</span> O Website SMARTFAN.TICKETS integra uma rede pública de comunicações eletrónicas suscetível de utilização simultânea por vários utilizadores, e como tal, sujeitas a possíveis picos de acesso resultando
+                  em sobrecargas de sistemas informáticos, pelo que a SMARTMOVE S.A não garante a prestação sem interrupções, perda de informação ou atrasos ou defeitos em tais situações ou de força maior (situações de natureza extraordinária ou imprevisível,
+                  alheias à SMARTMOVE S.A, e que pela mesma não possam ser controladas).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">5.6</span> A disponibilização pelo Website SMARTFAN.TICKETS de ligações (“Links”) para sites da internet de terceiros ou para conteúdos disponibilizados por terceiros noutros Websites é incluída apenas para
+                  fins informativos e prestação dos serviços, sendo disponibilizados para conveniência do Utilizador e processamento dos serviços.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">5.7</span> A SMARTMOVE S.A não exerce qualquer controlo sobre Websites de terceiros e, por isso, não se responsabiliza por tais Websites ou pelos respetivos conteúdos ou produtos (incluindo sem limitar, a referência
+                  a redes sociais) e não se responsabiliza por quaisquer danos ou prejuízos que possam resultar da utilização dos Websites de terceiros pelo Utilizador, bem como quanto ao tratamento de dados pessoais durante as operações de navegação
+                  na internet. O acesso a qualquer Website de terceiros, mediante uma ligação existente no Website SMARTFAN.TICKETS, será efetuado por exclusiva responsabilidade e risco do Utilizador.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">5.8</span> O Utilizador deverá, assim, prestar atenção quando aceder a Websites de terceiros através de ligações existentes no Website SMARTFAN.TICKETS e ler com atenção os respetivos termos e condições e políticas
+                  de privacidade.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-geral__item">
+            <h2>6. Publicidade e Patrocínios</h2>
+            <ul class="list-interna">
+              <li>
+                <p>
+                  <span class="number-list">6.1</span> O Website SMARTFAN.TICKETS pode conter publicidade e presença de patrocinadores. A SMARTMOVE S.A ressalva que os anunciantes e os patrocinadores são responsáveis por garantir que os conteúdos recebidos
+                  para inclusão neste Website estão em conformidade com as leis, códigos e regulamentos em vigor.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">6.2</span> A SMARTMOVE S.A exclui e declina qualquer tipo de responsabilidade por qualquer erro ou imprecisão que o material publicitário ou de patrocínio possa conter.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="number-list">6.3</span> A relação do Utilizador com terceiros elementos através dos serviços do Website SMARTFAN.TICKETS e quaisquer termos, condições e garantias relativamente a esses terceiros, nomeadamente anunciantes
+                  e patrocinadores ou por disponibilização de promoções ou publicidade, são da exclusiva responsabilidade do Utilizador e respetivos terceiros.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-geral__item">
+            <h2>7. Proteção de dados</h2>
+            <ul class="list-interna">
+              <li>
+                <p>
+                  A política de privacidade da SMARTMOVE S.A e aplicável na utilização do Website SMARTFAN.TICKETS, relativamente ao tratamento de dados pessoais que nos sejam disponibilizados, está disponível <a href="https://www.vsports.pt/politica_privacidade.php"
+                    target="_blank">aqui</a>, tal como a Política de Cookies aqui e as Condições de Venda aqui e fazem parte integrante destes Termos e Condições de Utilização, sendo recomendado a respetiva consulta e leitura.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-geral__item">
+            <h2>8. Contacto</h2>
+            <ul class="list-interna">
+              <li>
+                <p>
+                  Para o esclarecimento de qualquer questão relacionada com os presentes termos e condições de utilização do site do Público, o Utilizador deverá contactar a SMARTMOVE S.A. o e-mail: <a href="mailto:helpdesk@smartticketing.pt">helpdesk@smartticketing.pt</a>
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li><a href="#">Termos e Compromissos</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+
+        <ul class="footerList footerList__center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li>
+            <span>Apoio ao cliente</span>
+            <a href="mailto:helpdesk@smartticketing.pt">helpdesk@smartticketing.pt</a>
+          </li>
+        </ul>
+
+        <ul class="payList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li class="logo-meowallet"><img src="images/svg/meowallet-blue.svg" alt="MEO Wallet"></li>
+          <li class="logo-visa"><img src="images/payment-visa.png" alt="Visa"></li>
+          <li class="logo-mastercard"><img src="images/payment-mastercard.png" alt="Mastercard"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <span>SmartFan.Tickets</span>
+              <a href="#">contato@contato.pt</a>
+            </li>
+          </ul>
+
+          <div class="logoSmartmove col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg" alt="Smartmove"></a>
+          </div>
+
+          <ul class="socialmedia_list col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank" class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL LOGIN ================= -->
+  <div id="modalLogin" class="modal-login-container">
+    <div class="modal-content">
+      <nav class="nav_tabs">
+        <a href="#" class="closeModal"><img src="images/svg/close-popUp.svg" alt=""></a>
+        <ul>
+          <!-------- ENTRAR ------->
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="entrar" checked>
+            <label for="entrar" class="tab_label" checked>login</label>
+
+            <div class="tab-content">
+              <h2>Insere o teu e-mail e password e faz login!</h2>
+              <form>
+                <div class="container-input">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" name="email" class="input-validate">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <div class="container-input">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" name="password">
+                  <!-- <span class="input-validate">Obrigatório!</span> -->
+                </div>
+
+                <a href="#" class="esqueci-senha">esqueci a password</a>
+
+                <a href="#" class="btn btn__orange">
+                  <span>entrar</span>
+                </a>
+              </form>
+            </div>
+          </li>
+
+          <!------- REGISTAR ------->
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="registrar">
+            <label for="registrar" class="tab_label">registo</label>
+
+            <div class="tab-content">
+              <h2>Escolhe o teu clube, insere os teus dados de sócio e regista-te!</h2>
+
+              <ul class="listTeams_popUp">
+                <li>
+                  <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1fcporto.png" alt="Futebol Clube do Porto"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1osbelenenses.png" alt="Clube de Futebol Os Belenenses"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+                </li>
+              </ul>
+
+              <form>
+                <div class="container-input">
+                  <label for="numero-socio" class="form-label">Número de Sócio</label>
+                  <input type="text" name="numero-socio" id="numero-socio">
+                  <!-- <span class="input-validate">Obrigatório!</span> -->
+                </div>
+
+                <div class="container-input">
+                  <label for="ultimos-digitos" class="form-label">Últimos 5 dígitos do código de barras</label>
+                  <input type="number" name="ultimos-digitos" id="ultimos-digitos">
+                  <!-- <span class="input-validate">Obrigatório!</span> -->
+                  <i class="info-cartao"><img src="images/svg/information.svg" alt="Informação sobre o cartão de sócio"></i>
+                </div>
+
+                <a href="#" class="btn btn__orange">
+                  <span>validar</span>
+                </a>
+              </form>
+            </div>
+
+            <!-------- CONFIRMAR SENHA/EMAIL -------->
+            <!-- <div class="tab-content">
+              <h2>Insere o teu e-mail e password</h2>
+
+              <ul class="infos-socio">
+                <li><img src="images/logo-1gilvicentefc.png" alt=""></li>
+                <li>
+                  <span>Gabriel Vazarin Perez</span>
+                  <span>33325-9</span>
+                </li>
+              </ul>
+
+              <form>
+                <div class="container-input">
+                  <label for="email-socio">E-mail</label>
+                  <input type="email" name="email-socio" id="email-socio">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <div class="container-input">
+                  <label for="password-socio">Password</label>
+                  <input type="number" name="password-socio" id="password-socio">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <div class="container-input">
+                  <label for="confirmar-password">Confirme a password</label>
+                  <input type="number" name="confirmar-password" id="confirmar-password" class="input-validate">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <a href="#" class="btn btn__orange">
+                  <span>registar</span>
+                </a>
+              </form>
+            </div> -->
+          </li>
+        </ul>
+
+        <!-- CONCLUÍDO -->
+        <div class="cadastro-finalizado alert-link" style="display:none;">
+          <i><img src="images/svg/check-icon.svg" alt="Ícone de confirmação"></i>
+
+          <h2>Login efetuado com sucesso!</h2>
+
+          <button class="btn btn__blue">
+            <span>continuar</span>
+          </button>
+        </div>
+
+        <!-- ERRO -->
+        <div class="cadastro-finalizado alert-link" style="display: none;">
+          <i><img src="images/svg/error-icon.svg" alt="Ícone de erro"></i>
+
+          <h2>Os dados de login estão inválidos. Por favor, verifique os dados</h2>
+
+          <button class="btn btn__orange">
+            <span>voltar</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <script src="js/menu.js"></script>
+  <script src="js/popUpLogin.js"></script>
+</body>
+
+</html>
