@@ -2115,6 +2115,7 @@ table .btn {
   justify-content: center;
   align-items: center;
   align-content: center;
+  z-index: 1;
 }
 
 @media (max-width: 767px) {
@@ -3049,7 +3050,6 @@ footer .rodape .logoSmartmove:before {
 header {
   width: 100%;
   position: relative;
-  overflow: hidden;
   padding-top: .5rem;
   border-bottom: 3px solid #F37402;
 }
@@ -3062,7 +3062,7 @@ header {
 
 header .pattern__smartFan {
   position: absolute;
-  top: 50%;
+  top: 0;
   right: auto;
   bottom: auto;
   left: 0;
@@ -3142,13 +3142,13 @@ header .socialMedias_header img {
   }
 }
 
-header .navMenu {
+.navMenu {
   width: 100%;
   background-color: #03275A;
   padding: 1.5rem 0;
 }
 
-header .navMenu .row {
+.navMenu .row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3158,15 +3158,15 @@ header .navMenu .row {
 }
 
 @media (max-width: 767px) {
-  header .navMenu {
+  .navMenu {
     display: none;
   }
 }
 
-header .navMenu .menu {
+.navMenu .menu {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   font-size: 1.2rem;
@@ -3175,17 +3175,26 @@ header .navMenu .menu {
   text-transform: uppercase;
 }
 
-header .navMenu .menu__item {
+.navMenu .menu__list--ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.navMenu .menu__item {
   margin-left: 3rem;
   position: relative;
   color: #F0F0F0;
+  cursor: pointer;
 }
 
-header .navMenu .menu__item a {
+.navMenu .menu__item a {
   color: #F0F0F0;
 }
 
-header .navMenu .menu__item:before {
+.navMenu .menu__item:before {
   content: '';
   width: 100%;
   height: .2rem;
@@ -3200,37 +3209,79 @@ header .navMenu .menu__item:before {
   transition: all .3s ease-in;
 }
 
-header .navMenu .menu__item--active:before {
+.navMenu .menu__item--active:before {
   transform: scale(1, 1);
 }
 
-header .navMenu .menu__item:hover {
+.navMenu .menu__item:hover {
   transition: all .3s ease-in;
 }
 
-header .navMenu .menu__item:hover a {
+.navMenu .menu__item:hover a {
   text-decoration: none;
 }
 
-header .navMenu .menu__item:hover:before {
+.navMenu .menu__item:hover:before {
   transform: scale(1, 1);
   transition: all .3s ease-in;
 }
 
-header .navMenu .menu__btn {
+.navMenu .menu .menu__item--desportos {
+  margin-left: 0;
+}
+
+.navMenu .menu .menu__item--desportos p {
+  margin-bottom: 0;
+}
+
+.navMenu .menu .menu__item--desportos i {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1rem;
+  transition: all .3s ease-out;
+}
+
+.navMenu .menu .menu__item--desportos i img {
+  width: 100%;
+  height: 100%;
+}
+
+.navMenu .menu .menu__item--desportos label {
+  margin-bottom: 0;
+}
+
+.navMenu .menu__btn {
   background-color: #1A7DD7;
   border-radius: .5rem;
 }
 
-header .navMenu .menu__btn .btn {
+.navMenu .menu__btn .btn {
   color: #F0F0F0;
 }
 
-header .navMenu .menu__btn:before {
+.navMenu .menu__btn:before {
   display: none;
 }
 
-header .menu__logado {
+#menu-desporto {
+  display: none;
+}
+
+#menu-desporto:checked ~ .teamsBar__header {
+  display: block;
+  padding: 1.5rem 0;
+  animation: entrar-tab-content .3s ease-in;
+}
+
+#menu-desporto:checked ~ nav .menu__item--desportos:before {
+  transform: scale(1, 1);
+}
+
+#menu-desporto:checked ~ nav .menu__item--desportos .icon-down {
+  transform: rotate(-180deg);
+}
+
+.menu__logado {
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2em;
@@ -3244,14 +3295,14 @@ header .menu__logado {
 }
 
 @media (max-width: 767px) {
-  header .menu__logado {
+  .menu__logado {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.2em;
   }
 }
 
-header .menu__logado .icon-user {
+.menu__logado .icon-user {
   display: inline-block;
   height: 3rem;
   padding: 5px;
@@ -3261,55 +3312,59 @@ header .menu__logado .icon-user {
   margin-right: 1rem;
 }
 
-header .menu__logado .icon-user img {
+.menu__logado .icon-user img {
   height: 100%;
 }
 
 @media (max-width: 767px) {
-  header .menu__logado .icon-user {
+  .menu__logado .icon-user {
     height: 4rem;
     border: 2px solid #F34605;
   }
 }
 
-header .menu__logado b {
+.menu__logado b {
   font-weight: 900;
 }
 
-header .menu__logado input {
+.menu__logado input {
   display: none;
 }
 
-header .menu__logado input:checked ~ .user-dropdown__list {
-  display: block;
+.menu__logado input:checked ~ .user-dropdown__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 
-header .menu__logado input:checked ~ label i {
+.menu__logado input:checked ~ label i {
   transform: rotate(-180deg);
   transition: all .3s ease-out;
 }
 
-header .menu__logado label {
+.menu__logado label {
   cursor: pointer;
   margin-bottom: 0;
 }
 
-header .menu__logado .user-dropdown {
+.menu__logado .user-dropdown {
   margin-bottom: 0;
 }
 
-header .menu__logado .user-dropdown i {
+.menu__logado .user-dropdown i {
   display: inline-block;
   width: 1.5rem;
   margin-left: 3px;
   transition: all .3s ease-in;
 }
 
-header .menu__logado .user-dropdown i img {
+.menu__logado .user-dropdown i img {
   width: 100%;
 }
 
-header .menu__logado .user-dropdown__list {
+.menu__logado .user-dropdown__list {
   animation: open-user-dropdown .3s ease-out;
   background-color: #F0F0F0;
   border-bottom-left-radius: .5rem;
@@ -3325,11 +3380,11 @@ header .menu__logado .user-dropdown__list {
   z-index: 99;
 }
 
-header .menu__logado .user-dropdown__list li {
+.menu__logado .user-dropdown__list li {
   position: relative;
 }
 
-header .menu__logado .user-dropdown__list li:before {
+.menu__logado .user-dropdown__list li:before {
   content: '';
   width: 50%;
   height: 1px;
@@ -3341,18 +3396,18 @@ header .menu__logado .user-dropdown__list li:before {
   left: auto;
 }
 
-header .menu__logado .user-dropdown__list li:last-child a {
+.menu__logado .user-dropdown__list li:last-child a {
   color: #F34605;
   font-size: 1.1rem;
   font-weight: 900;
   line-height: 1.2em;
 }
 
-header .menu__logado .user-dropdown__list li:last-child:before {
+.menu__logado .user-dropdown__list li:last-child:before {
   display: none;
 }
 
-header .menu__logado .user-dropdown__list a {
+.menu__logado .user-dropdown__list a {
   color: #03275A;
   display: inline-block;
   padding: 1rem 1.5rem;
@@ -3362,23 +3417,23 @@ header .menu__logado .user-dropdown__list a {
   transition: all .3s ease-in;
 }
 
-header .menu__logado .user-dropdown__list a:hover {
+.menu__logado .user-dropdown__list a:hover {
   transform: scale(0.9);
   transition: all .3s ease-in;
 }
 
-header .menu__logado:before {
+.menu__logado:before {
   display: none;
 }
 
-header .navMenu-mobile {
+.navMenu-mobile {
   width: 100%;
   display: none;
   overflow-x: hidden;
 }
 
 @media (max-width: 767px) {
-  header .navMenu-mobile {
+  .navMenu-mobile {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -3388,7 +3443,7 @@ header .navMenu-mobile {
   }
 }
 
-header .navMenu-mobile .menuMobile {
+.navMenu-mobile .menuMobile {
   width: 100%;
   height: 100%;
   background-color: #F0F0F0;
@@ -3408,7 +3463,7 @@ header .navMenu-mobile .menuMobile {
   z-index: 10;
 }
 
-header .navMenu-mobile .menuMobile ul {
+.navMenu-mobile .menuMobile ul {
   width: 100%;
   padding: 1.5rem 0;
   font-size: 2rem;
@@ -3418,62 +3473,62 @@ header .navMenu-mobile .menuMobile ul {
   text-align: center;
 }
 
-header .navMenu-mobile .menuMobile ul li {
+.navMenu-mobile .menuMobile ul li {
   margin: 3rem 0;
 }
 
-header .navMenu-mobile .menuMobile ul li a {
+.navMenu-mobile .menuMobile ul li a {
   transition: all .3s ease-out;
   color: #03275A;
 }
 
-header .navMenu-mobile .menuMobile ul li a:hover {
+.navMenu-mobile .menuMobile ul li a:hover {
   color: #AFAFAF;
   text-decoration: none;
   transition: all .3s ease-out;
 }
 
-header .navMenu-mobile .menuMobile .menu__item__sair a {
+.navMenu-mobile .menuMobile .menu__item__sair a {
   color: #F34605;
   text-transform: lowercase;
 }
 
-header .navMenu-mobile .menu_open {
+.navMenu-mobile .menu_open {
   transform: translateX(0);
   transition: all .3s ease-out;
 }
 
-header .navMenu-mobile .container-btn {
+.navMenu-mobile .container-btn {
   width: 100%;
   text-align: right;
 }
 
-header .navMenu-mobile .btnMenu {
+.navMenu-mobile .btnMenu {
   display: inline-block;
   padding: .5rem;
   z-index: 2;
   transition: all .3s ease-out;
 }
 
-header .navMenu-mobile .btnMenu img {
+.navMenu-mobile .btnMenu img {
   width: 2rem;
 }
 
-header .navMenu-mobile .btnMenu:hover {
+.navMenu-mobile .btnMenu:hover {
   transform: scale(0.9);
   transition: all .3s ease-out;
 }
 
-header .navMenu-mobile .btnMenu__close {
+.navMenu-mobile .btnMenu__close {
   margin-bottom: 1.5rem;
 }
 
-header .navMenu-mobile .btnMenu__close img {
+.navMenu-mobile .btnMenu__close img {
   width: 1.5rem;
 }
 
 @media (max-width: 767px) {
-  header .navMenu-mobile .teamsBar__mobile {
+  .navMenu-mobile .teamsBar__mobile {
     display: block;
     background: none;
     display: flex;
@@ -3483,16 +3538,16 @@ header .navMenu-mobile .btnMenu__close img {
     align-content: flex-start;
     flex-wrap: wrap;
   }
-  header .navMenu-mobile .teamsBar__mobile ul {
+  .navMenu-mobile .teamsBar__mobile ul {
     padding: 0;
   }
-  header .navMenu-mobile .teamsBar__mobile ul li {
+  .navMenu-mobile .teamsBar__mobile ul li {
     margin: 1.5rem 0;
   }
-  header .navMenu-mobile .teamsBar__mobile .list_ligas img {
+  .navMenu-mobile .teamsBar__mobile .list_ligas img {
     height: 7rem;
   }
-  header .navMenu-mobile .teamsBar__mobile .list_clubs {
+  .navMenu-mobile .teamsBar__mobile .list_clubs {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -3500,21 +3555,21 @@ header .navMenu-mobile .btnMenu__close img {
     align-content: center;
     flex-wrap: wrap;
   }
-  header .navMenu-mobile .teamsBar__mobile .list_clubs ul {
+  .navMenu-mobile .teamsBar__mobile .list_clubs ul {
     flex-wrap: wrap;
   }
-  header .navMenu-mobile .teamsBar__mobile .list_clubs ul:nth-child(1) {
+  .navMenu-mobile .teamsBar__mobile .list_clubs ul:nth-child(1) {
     border-right: none;
   }
-  header .navMenu-mobile .teamsBar__mobile .list_clubs ul li {
+  .navMenu-mobile .teamsBar__mobile .list_clubs ul li {
     margin: 1.5rem .5rem;
   }
-  header .navMenu-mobile .teamsBar__mobile .list_clubs img {
+  .navMenu-mobile .teamsBar__mobile .list_clubs img {
     height: 4rem;
   }
 }
 
-header .icon-search {
+.icon-search {
   width: 2rem;
 }
 
@@ -3529,7 +3584,19 @@ header .icon-search {
   }
 }
 
+@keyframes icon-up-rotate {
+  0% {
+    opacity: 0;
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-180deg);
+  }
+}
+
 .politica-termos {
+  z-index: 1;
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.4em;
@@ -4320,6 +4387,21 @@ header .icon-search {
 @media (max-width: 992px) {
   .teamsBar .list_clubs {
     width: 100%;
+  }
+}
+
+.teamsBar__header {
+  display: none;
+}
+
+@keyframes open-teamBar {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
