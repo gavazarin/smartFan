@@ -3057,6 +3057,7 @@ header {
 @media (max-width: 767px) {
   header {
     background-color: #03275A;
+    overflow: hidden;
   }
 }
 
@@ -3446,8 +3447,8 @@ header .socialMedias_header img {
 .navMenu-mobile .menuMobile {
   width: 100%;
   height: 100%;
-  background-color: #F0F0F0;
-  color: #03275A;
+  background-color: #021C40;
+  color: #F0F0F0;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -3456,7 +3457,7 @@ header .socialMedias_header img {
   align-content: center;
   top: 0;
   left: 0;
-  padding: 4.5rem 2rem 2rem;
+  padding: 3rem 2rem 2rem;
   overflow: scroll;
   transform: translateX(100%);
   transition: all .3s ease-out;
@@ -3479,7 +3480,7 @@ header .socialMedias_header img {
 
 .navMenu-mobile .menuMobile ul li a {
   transition: all .3s ease-out;
-  color: #03275A;
+  color: #F0F0F0;
 }
 
 .navMenu-mobile .menuMobile ul li a:hover {
@@ -3521,6 +3522,11 @@ header .socialMedias_header img {
 
 .navMenu-mobile .btnMenu__close {
   margin-bottom: 1.5rem;
+  position: absolute;
+  top: 4.5rem;
+  right: 1.5rem;
+  bottom: auto;
+  left: auto;
 }
 
 .navMenu-mobile .btnMenu__close img {
@@ -3537,6 +3543,7 @@ header .socialMedias_header img {
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 3rem;
   }
   .navMenu-mobile .teamsBar__mobile ul {
     padding: 0;
@@ -3544,8 +3551,25 @@ header .socialMedias_header img {
   .navMenu-mobile .teamsBar__mobile ul li {
     margin: 1.5rem 0;
   }
+  .navMenu-mobile .teamsBar__mobile .list_ligas {
+    position: relative;
+  }
   .navMenu-mobile .teamsBar__mobile .list_ligas img {
-    height: 7rem;
+    height: 4rem;
+  }
+  .navMenu-mobile .teamsBar__mobile .list_ligas:before {
+    display: none;
+  }
+  .navMenu-mobile .teamsBar__mobile .list_ligas:after {
+    content: '';
+    height: 1px;
+    width: 50%;
+    background-color: #F0F0F0;
+    position: absolute;
+    top: 0;
+    right: 25%;
+    bottom: auto;
+    left: auto;
   }
   .navMenu-mobile .teamsBar__mobile .list_clubs {
     display: flex;
@@ -3566,6 +3590,9 @@ header .socialMedias_header img {
   }
   .navMenu-mobile .teamsBar__mobile .list_clubs img {
     height: 4rem;
+  }
+  .navMenu-mobile .teamsBar__mobile .list_clubs_01:before {
+    display: none;
   }
 }
 
@@ -4392,17 +4419,6 @@ header .socialMedias_header img {
 
 .teamsBar__header {
   display: none;
-}
-
-@keyframes open-teamBar {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
 }
 
 .load-screen {
