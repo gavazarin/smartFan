@@ -28,6 +28,9 @@ header {
     img {
       width: 15rem;
     }
+    @include md {
+      text-align: center;
+    }
   }
   .socialMedias_header {
     width: 100%;

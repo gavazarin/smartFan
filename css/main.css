@@ -3093,6 +3093,12 @@ header .marca img {
   width: 15rem;
 }
 
+@media (max-width: 992px) {
+  header .marca {
+    text-align: center;
+  }
+}
+
 header .socialMedias_header {
   width: 100%;
   margin-bottom: .5rem;
@@ -4240,18 +4246,13 @@ header .socialMedias_header img {
   padding: 0px 0 3rem 0;
 }
 
-@media (max-width: 767px) {
-  .teamsBar {
-    display: none;
-  }
-}
-
 .teamsBar .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .teamsBar ul {
@@ -4260,6 +4261,7 @@ header .socialMedias_header img {
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .teamsBar ul li {
@@ -4313,6 +4315,7 @@ header .socialMedias_header img {
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .teamsBar .list_clubs ul {
@@ -4333,6 +4336,12 @@ header .socialMedias_header img {
   transform: scale(1);
 }
 
+@media (max-width: 767px) {
+  .teamsBar .list_clubs ul {
+    padding: 0;
+  }
+}
+
 .teamsBar .list_clubs .list_clubs_01 {
   position: relative;
 }
@@ -4348,6 +4357,15 @@ header .socialMedias_header img {
   bottom: auto;
   left: auto;
   transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .teamsBar .list_clubs .list_clubs_01 {
+    margin-bottom: 1.5rem;
+  }
+  .teamsBar .list_clubs .list_clubs_01::before {
+    display: none;
+  }
 }
 
 .teamsBar .list_clubs .list_clubs_02 {
@@ -4932,6 +4950,56 @@ header .socialMedias_header img {
   transition: all .3s ease-in-out;
 }
 
+.last-game,
+.classificacao {
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.last-game h1,
+.classificacao h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.last-game:before,
+.classificacao:before {
+  content: '';
+  width: 60%;
+  height: 1px;
+  background-color: #212121;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  bottom: auto;
+  left: auto;
+}
+
+.classificacao th,
+.classificacao td {
+  width: auto;
+  text-align: left;
+}
+
+.classificacao td {
+  font-weight: 300;
+  text-transform: none;
+}
+
+.classificacao td:nth-child(1), .classificacao td:nth-child(4) {
+  font-weight: 900;
+}
+
+.classificacao .time-destaque {
+  background-color: rgba(243, 114, 2, 0.8);
+}
+
+.classificacao .time-destaque td {
+  font-weight: 900;
+}
+
 .pagarQuotas {
   width: 100%;
   position: relative;
@@ -5419,6 +5487,7 @@ header .socialMedias_header img {
   align-items: center;
   align-content: center;
   margin-bottom: 5rem;
+  z-index: 1;
 }
 
 @media (max-width: 767px) {

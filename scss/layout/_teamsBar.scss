@@ -1,14 +1,16 @@
 .teamsBar {
   // background-color: #FFFFFF;
   padding: 0px 0 3rem 0;
-  @include sm {
-    display: none;
-  }
+  // @include sm {
+  //   display: none;
+  // }
   .row {
     @include flex(row, center, center, center);
+    flex-wrap: wrap;
   }
   ul {
     @include flex(row, center, center, center);
+    flex-wrap: wrap;
     li {
       margin: 0 .2rem;
       padding: 3px;
@@ -49,6 +51,7 @@
   }
   .list_clubs {
     @include flex(row, center, center, center);
+    flex-wrap: wrap;
     ul {
       padding: 0 1.5rem;
       img {
@@ -62,6 +65,9 @@
           transform: scale(1);
         }
       }
+      @include sm {
+        padding: 0;
+      }
     }
     .list_clubs_01 {
       position: relative;
@@ -72,6 +78,12 @@
         background-color: #44536f;
         @include absolute(50%, 0, auto, auto);
         transform: translateY(-50%);
+      }
+      @include sm {
+        margin-bottom: 1.5rem;
+        &::before {
+          display: none;
+        }
       }
     }
     .list_clubs_02 {
