@@ -5535,6 +5535,37 @@ header .socialMedias_header img {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .banner-quemSomos {
+    height: 17.5rem;
+  }
+}
+
+.quem-somos {
+  margin-bottom: 3rem;
+}
+
+.quem-somos .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.quem-somos p {
+  width: 75%;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+@media (max-width: 767px) {
+  .quem-somos p {
+    width: 100%;
+  }
+}
+
 .bannerUserData {
   width: 100%;
   height: 17.5rem;
