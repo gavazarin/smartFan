@@ -4682,13 +4682,13 @@ header .socialMedias_header img {
   line-height: 1em;
 }
 
-.proximos-jogos .pc-tab .jogos {
+.proximos-jogos .jogos {
   width: 49%;
   display: inline-block;
 }
 
 @media (max-width: 767px) {
-  .proximos-jogos .pc-tab .jogos {
+  .proximos-jogos .jogos {
     width: 100%;
   }
 }
@@ -5326,8 +5326,6 @@ header .socialMedias_header img {
 }
 
 .fluxoPagamentos .payList .input-validate {
-  border: 2px solid #F34605;
-  border-radius: .5rem;
   color: #F34605;
   font-size: 1.4rem;
   font-weight: 700;

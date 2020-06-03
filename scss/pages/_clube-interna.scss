@@ -7,13 +7,11 @@
   .jornada {
     @include font(1.4rem, 900, 1em);
   }
-  .pc-tab {
-    .jogos {
-      width: 49%;
-      display: inline-block;
-      @include sm {
-        width: 100%;
-      }
+  .jogos {
+    width: 49%;
+    display: inline-block;
+    @include sm {
+      width: 100%;
     }
   }
 }
