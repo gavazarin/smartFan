@@ -677,19 +677,14 @@
       <div class="modal-msg">
         <h2 smv-langtext="headusernewemail">Alterar e-mail</h2>
 
-        <p smv-langtext="modalumailchangedetails" smv-langrepltext-email="teste.testudo1234567@gmail.com">Está pendente de confirmação um pedido de alteração de e-mail para teste.testudo1234567@gmail.com.</p>
-        <p>Até este pedido de alteração ser confirmado, o e-mail mantém-se o atual.</p>
-
-        <p smv-langtext="modalumailtimelimit" smv-langrepltext-limitdate="19-05-2020 12:28">A alteração pode ser confirmada até 19-05-2020 12:28</p>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
-        <p></p>
-        <p></p>
+        <form name="smv_fUserData_Email" id="smv_fUserData_Email" class="form-contato col-lg-12 col-md-12" novalidate="novalidate">
+          <div class="container-input col-lg-12 col-md-12">
+            <label for="smv_udata_Email" class="form-label" smv-langtext="lblemail">E-mail</label>
+            <input name="smv_udata_Email" id="smv_udata_Email" onblur="javascript:smv_fieldTrim('smv_udata_Email')" type="email" value="teste.testudo12345678@gmail.com" smv-inival="teste.testudo12345678@gmail.com" autocapitalize="none" autocorrect="off" maxlength="75">
+          </div>
+        </form>
 
         <div style="display:inline-block">
-          <button type="button" class="btn btn__orange" onclick="smv_closeModalDiv('smv-modal-changemaildetails')">
-            <span smv-langtext="btclose">Fechar</span>
-          </button>
           <button type="button" class="btn btn__orange" onclick="javascript:smv_userRefreshDataFromChangeMail()">
             <span smv-langtext="btrefresh">Atualizar</span>
           </button>

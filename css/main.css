@@ -3070,6 +3070,7 @@ footer .rodape:before {
   }
   footer .rodape .footerList li {
     margin-top: 0;
+    text-align: center;
   }
 }
 
@@ -5978,7 +5979,6 @@ header .socialMedias_header img {
 @media (max-width: 575px) {
   .tabs_userdata .tab-content {
     position: relative;
-    border-bottom: 1px solid #21212150;
   }
 }
 
@@ -6115,6 +6115,18 @@ header .socialMedias_header img {
   font-weight: 300;
   line-height: 1.2em;
   color: #03275A;
+}
+
+@media (max-width: 575px) {
+  .modal-content {
+    width: 100%;
+  }
+  .modal-content .modal-msg {
+    padding: 3rem .5rem;
+  }
+  .modal-content .modal-msg form {
+    padding: 0;
+  }
 }
 
 @keyframes mostrarTabContent {

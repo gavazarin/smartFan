@@ -249,7 +249,7 @@
     }
     @include xs {
       position: relative;
-      border-bottom: 1px solid #21212150;
+      // border-bottom: 1px solid #21212150;
     }
   }
 }
@@ -347,6 +347,15 @@
       width: 75%;
       @include font(1.6rem, 300, 1.2em);
       color: $primary-01;
+    }
+  }
+  @include xs {
+    width: 100%;
+    .modal-msg {
+      padding: 3rem .5rem;
+      form {
+        padding: 0;
+      }
     }
   }
 }
