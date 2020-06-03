@@ -1,11 +1,5 @@
-.banner-quemSomos {
-  @include sm {
-    height: 17.5rem;
-  }
-}
-
 .quem-somos {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
   .row {
     @include flex(column, center, center, center);
   }

@@ -2275,6 +2275,31 @@ table .btn {
   }
 }
 
+.banner-hero h1 {
+  color: #F0F0F0;
+  font-size: 2.4rem;
+  padding-bottom: .5rem;
+  position: relative;
+}
+
+.banner-hero h1:before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #F0F0F0;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .banner-hero {
+    height: 17.5rem;
+  }
+}
+
 .cards-virarSocio-pagarQuota {
   width: 100%;
   position: relative;
@@ -3694,6 +3719,7 @@ header .socialMedias_header img {
 
 .politica-termos {
   z-index: 1;
+  margin-top: 3rem;
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.4em;
@@ -5535,14 +5561,8 @@ header .socialMedias_header img {
   text-transform: uppercase;
 }
 
-@media (max-width: 767px) {
-  .banner-quemSomos {
-    height: 17.5rem;
-  }
-}
-
 .quem-somos {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .quem-somos .row {
