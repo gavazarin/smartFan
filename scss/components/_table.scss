@@ -111,3 +111,60 @@ table {
     }
   }
 }
+
+.classificacao {
+  th,
+  td {
+    width: auto;
+    text-align: left;
+  }
+  td {
+    font-weight: 300;
+    text-transform: none;
+    &:nth-child(1),
+    &:nth-child(4) {
+      font-weight: 900;
+    }
+  }
+  .time-destaque {
+    background-color: rgba(243, 114, 2, 0.8);
+    td {
+      font-weight: 900;
+    }
+  }
+  @include xs {
+    width: 75%;
+    table {
+      thead {
+        clip: auto;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+      }
+      tr {
+        border-bottom: 2px solid #ddd;
+        border-radius: 0;
+        @include flex(row, space-between, center, center);
+        margin-bottom: 0;
+      }
+      th,
+      td {
+        width: auto;
+        &:nth-child(2) {
+          width: 60%;
+        }
+      }
+      td {
+        border-bottom: 1px solid #ddd;
+        display: inline-block;
+        text-align: left;
+        &:before {
+          display: none;
+        }
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}

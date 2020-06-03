@@ -1,9 +1,5 @@
 .teamsBar {
-  // background-color: #FFFFFF;
   padding: 0px 0 3rem 0;
-  // @include sm {
-  //   display: none;
-  // }
   .row {
     @include flex(row, center, center, center);
     flex-wrap: wrap;
@@ -30,6 +26,9 @@
       background-color: #44536f;
       @include absolute(50%, 0, auto, auto);
       transform: translateY(-50%);
+      @include md {
+        display: none;
+      }
     }
     a {
       &:hover {

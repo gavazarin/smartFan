@@ -7,6 +7,15 @@
   .jornada {
     @include font(1.4rem, 900, 1em);
   }
+  .pc-tab {
+    .jogos {
+      width: 49%;
+      display: inline-block;
+      @include sm {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .vantagens-socio-container {
@@ -258,11 +267,11 @@
 
 .last-game,
 .classificacao {
+  width: 100%;
   padding-top: 1.5rem;
   margin-top: 1.5rem;
   position: relative;
   h1 {
-    text-align: center;
     margin-top: 0;
   }
   &:before {
@@ -272,34 +281,5 @@
     background-color: $black-01;
     opacity: .2;
     @include absolute(0, 20%, auto, auto);
-  }
-}
-
-.classificacao {
-  th,
-  td {
-    width: auto;
-    text-align: left;
-  }
-  td {
-    font-weight: 300;
-    text-transform: none;
-    &:nth-child(1),
-    &:nth-child(4) {
-      font-weight: 900;
-    }
-  }
-  .time-destaque {
-    // background-color: rgba(3, 39, 90, 0.4);
-    background-color: rgba(243, 114, 2, 0.8);
-    td {
-      font-weight: 900;
-    }
-    // .vice {
-    //   background-color: rgba(26, 124, 215, 0.3);
-    // }
-    // .zona-rebaixamento {
-    //   background-color: rgba(243, 114, 2, 0.7);
-    // }
   }
 }

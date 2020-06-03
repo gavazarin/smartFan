@@ -1583,7 +1583,7 @@ h1 {
   line-height: 1.2em;
   color: #03275A;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
 }
 
 h2 {
@@ -2104,6 +2104,70 @@ table .btn {
 
 .tab table tr.totalpayment td {
   color: #F0F0F0;
+}
+
+.classificacao th,
+.classificacao td {
+  width: auto;
+  text-align: left;
+}
+
+.classificacao td {
+  font-weight: 300;
+  text-transform: none;
+}
+
+.classificacao td:nth-child(1), .classificacao td:nth-child(4) {
+  font-weight: 900;
+}
+
+.classificacao .time-destaque {
+  background-color: rgba(243, 114, 2, 0.8);
+}
+
+.classificacao .time-destaque td {
+  font-weight: 900;
+}
+
+@media (max-width: 575px) {
+  .classificacao {
+    width: 75%;
+  }
+  .classificacao table thead {
+    clip: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+  .classificacao table tr {
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 0;
+  }
+  .classificacao table th,
+  .classificacao table td {
+    width: auto;
+  }
+  .classificacao table th:nth-child(2),
+  .classificacao table td:nth-child(2) {
+    width: 60%;
+  }
+  .classificacao table td {
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    text-align: left;
+  }
+  .classificacao table td:before {
+    display: none;
+  }
+  .classificacao table td:last-child {
+    border-bottom: 0;
+  }
 }
 
 .bannerFullScreen {
@@ -4291,6 +4355,12 @@ header .socialMedias_header img {
   transform: translateY(-50%);
 }
 
+@media (max-width: 992px) {
+  .teamsBar .list_ligas:before {
+    display: none;
+  }
+}
+
 .teamsBar .list_ligas a:hover img {
   transform: scale(1);
   transition: all .3s ease-in-out;
@@ -4584,6 +4654,17 @@ header .socialMedias_header img {
   font-size: 1.4rem;
   font-weight: 900;
   line-height: 1em;
+}
+
+.proximos-jogos .pc-tab .jogos {
+  width: 49%;
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .proximos-jogos .pc-tab .jogos {
+    width: 100%;
+  }
 }
 
 .vantagens-socio-container {
@@ -4952,6 +5033,7 @@ header .socialMedias_header img {
 
 .last-game,
 .classificacao {
+  width: 100%;
   padding-top: 1.5rem;
   margin-top: 1.5rem;
   position: relative;
@@ -4959,7 +5041,6 @@ header .socialMedias_header img {
 
 .last-game h1,
 .classificacao h1 {
-  text-align: center;
   margin-top: 0;
 }
 
@@ -4975,29 +5056,6 @@ header .socialMedias_header img {
   right: 20%;
   bottom: auto;
   left: auto;
-}
-
-.classificacao th,
-.classificacao td {
-  width: auto;
-  text-align: left;
-}
-
-.classificacao td {
-  font-weight: 300;
-  text-transform: none;
-}
-
-.classificacao td:nth-child(1), .classificacao td:nth-child(4) {
-  font-weight: 900;
-}
-
-.classificacao .time-destaque {
-  background-color: rgba(243, 114, 2, 0.8);
-}
-
-.classificacao .time-destaque td {
-  font-weight: 900;
 }
 
 .pagarQuotas {

@@ -292,1405 +292,408 @@
     <div class="container">
       <div class="row">
         <div class="mainContent col-lg-9 col-md-12">
-          <div class="pagarQuotas">
-            <!--Boavista FC -->
-            <!-- <section class="proximos-jogos">
-              <h1>Próximos Jogos</h1>
 
-              <ul class="jogos">
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 25</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube">
-                      <span>Boavista FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bessa Sec. XXI</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1moreirense.png" alt="Moreirense Futebol Clube">
-                      <span>Moreirense FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+          <div smv-type="widgetcontainer" smv-widget="games" smv-param="">
+            <div smv-type="widgetpage" id="smv_wp_games">
+              <div class="load-screen" smv-type="loader" smv-widget="games" style="display:none"></div>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 27</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube">
-                      <span>Boavista FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bessa Sec. XXI</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube">
-                      <span>Vitória FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+              <section class="proximos-jogos">
+                <h1 smv-langtext="headgamesteam">Próximos Jogos</h1>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 28</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1fcporto.png" alt="FC Porto">
-                      <span>FC Porto</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Dragão</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube">
-                      <span>Boavista FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                <div class="pc-tab">
+                  <input checked="checked" type="radio" name="pct" id="tab1">
+                  <input type="radio" name="pct" id="tab2">
+                  <input type="radio" name="pct" id="tab3">
+                  <input type="radio" name="pct" id="tab4">
+                  <nav>
+                    <ul class="nav__ligas">
+                      <li class="tab1">
+                        <label for="tab1"><img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/liga_nos.png" alt="Liga NOS"></label>
+                      </li>
+                      <li class="tab2">
+                        <label for="tab2"><img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/liga_ledman.png" alt="Liga Ledman"></label>
+                      </li>
+                      <li class="tab3">
+                        <label for="tab3"><img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/liga_taca_de_portugal.png" alt="Taça de Portugal"></label>
+                      </li>
+                      <li class="tab4">
+                        <label for="tab4"><img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/liga_allianz_cup.png" alt="Allianz Cup"></label>
+                      </li>
+                    </ul>
+                  </nav>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 29</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube">
-                      <span>Boavista FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bessa Sec. XXI</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1santaClara.png" alt="Santa Clara">
-                      <span>Santa Clara</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                  <section>
+                    <div class="tab1">
+                      <div id="smv_games_listcontainer">
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 25</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1portimonense.png?ts=3101527212" alt="Portimonense">
+                                <span>Portimonense</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 31</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube">
-                      <span>Boavista FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bessa Sec. XXI</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1maritimo.png" alt="Marítimo da Madeira">
-                      <span>Marítimo M.</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                    <span smv-langtext="xweekdayabrv3">Qua</span>, <span>03 </span><span smv-langtext="xmonthabrv06">Jun</span>
+                                    <span>19:00</span>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 34</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube">
-                      <span>Boavista FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bessa Sec. XXI</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave FC">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-            </section> -->
+                                  </li>
+                                  <li class="infos__list--local">Estadio Municipal De Portimao</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527212" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
 
-            <!--FC Porto -->
-            <!-- <section class="proximos-jogos">
-              <h1>Próximos Jogos</h1>
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 26</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527212" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-              <ul class="jogos">
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 26</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1fcporto.png" alt="FC Porto">
-                      <span>FC Porto</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Dragão</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1maritimo.png" alt="Marítimo da Madeira">
-                      <span>Marítimo M.</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                    <span smv-langtext="xweekdayabrv2">Ter</span>, <span>09 </span><span smv-langtext="xmonthabrv06">Jun</span>
+                                    <span>21:00</span>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 28</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1fcporto.png" alt="FC Porto">
-                      <span>FC Porto</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Dragão</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube">
-                      <span>Boavista FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                  </li>
+                                  <li class="infos__list--local">Estádio Cidade Barcelos</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1FCFamalicao.png?ts=3101527212" alt="FC Famalicão">
+                                <span>FC Famalicão</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 30</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1fcporto.png" alt="FC Porto">
-                      <span>FC Porto</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Dragão</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Os Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 27</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1maritimo.png?ts=3101527213" alt="Marítimo M.">
+                                <span>Marítimo M.</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 32</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1fcporto.png" alt="FC Porto">
-                      <span>FC Porto</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Dragão</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                    <span smv-langtext="xweekdayabrv1">Seg</span>, <span>15 </span><span smv-langtext="xmonthabrv06">Jun</span>
+                                    <span>19:00</span>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 33</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1fcporto.png" alt="FC Porto">
-                      <span>FC Porto</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Dragão</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1moreirense.png" alt="Moreirense FC">
-                      <span>Moreirense FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-            </section> -->
+                                  </li>
+                                  <li class="infos__list--local">Estádio Do Maritimo</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527213" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
 
-            <!--Gil Vicente FC -->
-            <!-- <section class="proximos-jogos">
-              <h1>Próximos Jogos</h1>
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 28</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527213" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-              <ul class="jogos">
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 26</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Cidade de Barcelos</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1FCFamalicao.png" alt="FC Familicão">
-                      <span>FC Famalicão</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                    <span smv-langtext="xweekdayabrv0">Dom</span>, <span>21 </span><span smv-langtext="xmonthabrv06">Jun</span>
+                                    <span>21:00</span>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 28</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Cidade de Barcelos</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1cdaves.png" alt="CD Aves">
-                      <span>CD Aves</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                  </li>
+                                  <li class="infos__list--local">Estádio Cidade Barcelos</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1cdaves.png?ts=3101527213" alt="Aves">
+                                <span>Aves</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 29</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio José Alvalade</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 29</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1sporting.png?ts=3101527213" alt="Sporting CP">
+                                <span>Sporting CP</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 30</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Cidade de Barcelos</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave FC">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                    <span smv-langtext="xweekdayabrv3">Qua</span>, <span>01 </span><span smv-langtext="xmonthabrv07">Jul</span>
+                                    <span>21:15</span>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 31</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriasc.png" alt="Vitória SC">
-                      <span>Vitória SC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio D. Afonso Henriques</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                  </li>
+                                  <li class="infos__list--local">Estádio José Alvalade</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527213" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 32</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Cidade de Barcelos</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1cdtondela.png" alt="CD Tondela">
-                      <span>CD Tondela</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 30</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527214" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 33</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Os Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Nacional do Jamor</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                    <span smv-langtext="xweekdayabrv0">Dom</span>, <span>05 </span><span smv-langtext="xmonthabrv07">Jul</span>
+                                    <span>17:00</span>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 34</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Cidade de Barcelos</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1FCPFerreira.png" alt="FC P.Ferreira">
-                      <span>FC P.Ferreira</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-            </section> -->
+                                  </li>
+                                  <li class="infos__list--local">Estádio Cidade Barcelos</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1rioavefc.png?ts=3101527214" alt="Rio Ave FC">
+                                <span>Rio Ave FC</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
 
-            <!--Os Belenenses SAD -->
-            <!-- <section class="proximos-jogos">
-              <h1>Próximos Jogos</h1>
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 31</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1vitoriasc.png?ts=3101527214" alt="Vitória SC">
+                                <span>Vitória SC</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-              <ul class="jogos">
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 26</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Nacional do Jamor</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriasc.png" alt="Vitória SC">
-                      <span>Vitória SC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                    <span smv-langtext="xweekdayabrv5">Sex</span>, <span>10 </span><span smv-langtext="xmonthabrv07">Jul</span>
+                                    <span>17:00</span>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 28</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Nacional do Jamor</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                  </li>
+                                  <li class="infos__list--local">Estádio D. Afonso Henriques</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527214" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 29</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Nacional do Jamor</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1cdtondela.png" alt="CD Tondela">
-                      <span>CD Tondela</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 32</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527214" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 30</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1fcporto.png" alt="FC Porto">
-                      <span>FC Porto</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Dragão</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                    <span smv-langtext="xweekdayabrv2">Ter</span>, <span>14 </span><span smv-langtext="xmonthabrv07">Jul</span>
+                                    <span>21:30</span>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 31</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Nacional do Jamor</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1moreirense.png" alt="Moreirense FC">
-                      <span>Moreirense FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                  </li>
+                                  <li class="infos__list--local">Estádio Cidade Barcelos</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1cdtondela.png?ts=3101527214" alt="Tondela">
+                                <span>Tondela</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 33</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Nacional do Jamor</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 33</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1osbelenenses.png?ts=3101527214" alt="Os Belenenses SAD">
+                                <span>Os Belenenses SAD</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 34</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória FC">
-                      <span>Vitória FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bonfim</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Os Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-            </section> -->
+                                    <span smv-langtext="xweekdayabrv0">Dom</span>, <span>19 </span><span smv-langtext="xmonthabrv07">Jul</span>
+                                    <span>19:00</span>
 
-            <!--Rio Ave FC -->
-            <!-- <section class="proximos-jogos">
-              <h1>Próximos Jogos</h1>
+                                  </li>
+                                  <li class="infos__list--local">Estadio Nacional</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527214" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
 
-              <ul class="jogos">
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 25</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave FC">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Rio Ave Futebol Clube</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1FCPFerreira.png" alt="FC P.Ferreira">
-                      <span>FC P.Ferreira</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 34</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=3101527214" alt="Gil Vicente FC">
+                                <span>Gil Vicente FC</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 27</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave FC">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Rio Ave Futebol Clube</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1slbenfica.png" alt="SL Benfica">
-                      <span>SL Benfica</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
+                                    <span smv-langtext="xweekdayabrv0">Dom</span>, <span>26 </span><span smv-langtext="xmonthabrv07">Jul</span>
+                                    <span>16:00</span>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 28</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube">
-                      <span>Vitória FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estadio do Bonfim</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
+                                  </li>
+                                  <li class="infos__list--local">Estádio Cidade Barcelos</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1FCPFerreira.png?ts=3101527214" alt="FC P.Ferreira">
+                                <span>FC P.Ferreira</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn__orange" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn__orange btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="jogos__verMais col-lg-12">
+                        <a href="javascript:smv_games_More()" class="btn__verMais" id="smv_gamesmorelink" style="display: none;">ver mais</a>
+                      </div>
                     </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 29</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave FC">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Rio Ave Futebol Clube</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1scbraga.png" alt="SC Braga">
-                      <span>SC Braga</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
+                    <div class="tab2">
+                      <div class="no-games col-lg-12">
+                        <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/no-game.svg" alt="">
+                        <h1> Não há jogos disponíveis!</h1>
+                      </div>
                     </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 30</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Cidade de Barcelos</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave FC">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
+                    <div class="tab3">
+                      <div class="no-games col-lg-12">
+                        <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/no-game.svg" alt="">
+                        <h1> Não há jogos disponíveis!</h1>
+                      </div>
                     </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
 
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 31</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave FC">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Rio Ave Futebol Clube</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1portimonense.png" alt="Portimonense">
-                      <span>Portimonense</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
+                    <div class="tab4">
+                      <div class="no-games col-lg-12">
+                        <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/no-game.svg" alt="">
+                        <h1> Não há jogos disponíveis!</h1>
+                      </div>
                     </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 33</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave FC">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Rio Ave Futebol Clube</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1santaClara.png" alt="Santa Clara">
-                      <span>Santa Clara</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 34</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube">
-                      <span>Boavista FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bessa Sec. XXI</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave FC">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-            </section> -->
-
-            <!--Sporting CP -->
-            <!-- <section class="proximos-jogos">
-              <h1>Próximos Jogos</h1>
-
-              <ul class="jogos">
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 25</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriasc.png" alt="Vitória SC">
-                      <span>Vitória SC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio D. Afonso Henriques</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 26</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio José Alvalade</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1FCPFerreira.png" alt="FC P.Ferreira">
-                      <span>FC P.Ferreira</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 27</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio José Alvalade</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1cdtondela.png" alt="CD Tondela">
-                      <span>CD Tondela</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 28</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio Nacional do Jamor</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 29</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio José Alvalade</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente FC">
-                      <span>Gil Vicente FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 31</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio José Alvalade</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1santaClara.png" alt="Santa Clara">
-                      <span>Santa Clara</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 32</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1fcporto.png" alt="FC Porto">
-                      <span>FC Porto</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Dragão</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 33</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio José Alvalade</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória FC">
-                      <span>Vitória FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-            </section> -->
-
-            <!-- Vitória FC -->
-            <section class="proximos-jogos">
-              <h1>Próximos Jogos</h1>
-
-              <ul class="jogos">
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 26</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube">
-                      <span>Vitória FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estadio do Bonfim</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1santaClara.png" alt="Santa Clara">
-                      <span>Santa Clara</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 27</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube">
-                      <span>Boavista FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bessa Sec. XXI</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube">
-                      <span>Vitória FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 28</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube">
-                      <span>Vitória FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estadio do Bonfim</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube">
-                      <span>Rio Ave FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 29</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriasc.png" alt="Vitória SC">
-                      <span>Vitória SC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio D. Afonso Henriques</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube">
-                      <span>Vitória FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer">comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 30</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube">
-                      <span>Vitória FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estadio do Bonfim</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1FCPFerreira.png" alt="Futebol Clube Paços de Ferreira">
-                      <span>FC P.Ferreira</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 32</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória FC">
-                      <span>Vitória FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bonfim</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1FCFamalicao.png" alt="FC Famalicao">
-                      <span>FC Famalicao</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 33</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1sporting.png" alt="Sporting CP">
-                      <span>Sporting CP</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio José Alvalade</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória FC">
-                      <span>Vitória FC</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="jogos__item col-lg-4 col-md-6 col-sm-12">
-                  <p class="jornada">Jornada 34</p>
-                  <ul class="jogos__item--infos">
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1vitoriafc.png" alt="Vitória FC">
-                      <span>Vitória FC</span>
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                      <ul class="infos__list">
-                        <li class="infos__list--liga">Liga NOS</li>
-                        <li class="infos__list--data">A Definir</li>
-                        <li class="infos__list--local">Estádio do Bonfim</li>
-                      </ul>
-                    </li>
-                    <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <img src="images/logo-1osbelenenses.png" alt="Os Belenenses">
-                      <span>Belenenses</span>
-                    </li>
-                    <div class="div-hover">
-                      <a href="#" class="btn btn__orange">comprar bilhetes</a>
-                    </div>
-                    <div class="div-btnMobile col-md-12">
-                      <a href="#" class="btn btn__orange btn__fullContainer" disabled>comprar bilhetes</a>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-            </section>
+                  </section>
+                </div>
+              </section>
+            </div>
 
             <!-- Vitória SC -->
             <!-- <section class="proximos-jogos">
