@@ -58,7 +58,7 @@
   position: relative;
   ul {
     @include flex(row, center, center, center);
-    border-bottom: 2px solid $secondary-01;
+    border-bottom: 2px solid #FFFFFF;
     li {
       width: 50%;
       @include flex(row, center, center, center);
@@ -72,8 +72,8 @@
     display: block;
     cursor: pointer;
     text-align: center;
-    background-color: $secondary-01;
-    color: $white-01;
+    background-color: rgb(223, 223, 223);
+    color: $secondary-01;
     margin: 0;
   }
   .rd_tabs {
@@ -81,7 +81,7 @@
     position: absolute;
   }
   .rd_tabs:checked~label {
-    background-color: $white-01;
+    background-color: #FFFFFF;
     color: $secondary-01;
   }
   .rd_tabs:checked~.tab-content {

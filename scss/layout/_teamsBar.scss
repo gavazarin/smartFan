@@ -51,6 +51,9 @@
   .list_clubs {
     @include flex(row, center, center, center);
     flex-wrap: wrap;
+    @include sm {
+      @include flex(column, center, center, center);
+    }
     ul {
       padding: 0 1.5rem;
       img {
