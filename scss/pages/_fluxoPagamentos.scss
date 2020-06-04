@@ -145,6 +145,12 @@
   }
 }
 
+.formas-pagamento {
+  .item-form {
+    padding: 0;
+  }
+}
+
 .quotasTotal {
   @include font(1.4rem, 700, 1.2em);
   text-transform: lowercase;
