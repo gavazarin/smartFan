@@ -92,6 +92,7 @@
     border-bottom: none;
     &__item {
       width: 100%;
+      flex-wrap: wrap;
     }
     .cbx {
       @include flex(row, flex-start, center, center);
@@ -109,6 +110,9 @@
           text-decoration: none;
         }
       }
+    }
+    .input-validate {
+      margin-bottom: 1.5rem;
     }
   }
 }

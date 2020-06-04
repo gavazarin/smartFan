@@ -1947,6 +1947,7 @@ form span.input-validate {
 
 .termos-condicoes .checkbox-periodo__item {
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .termos-condicoes .checkbox-periodo .cbx {
@@ -1971,6 +1972,10 @@ form span.input-validate {
 .termos-condicoes .checkbox-periodo p a:hover, .termos-condicoes .checkbox-periodo p a:focus {
   color: #F34605;
   text-decoration: none;
+}
+
+.termos-condicoes .checkbox-periodo .input-validate {
+  margin-bottom: 1.5rem;
 }
 
 @keyframes wave {
