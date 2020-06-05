@@ -3191,7 +3191,11 @@ header .marca img {
 
 @media (max-width: 992px) {
   header .marca {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 }
 
@@ -3549,18 +3553,15 @@ header .socialMedias_header img {
 .navMenu-mobile .menuMobile {
   width: 100%;
   min-height: 100%;
+  height: 100%;
   background-color: #021C40;
   color: #F0F0F0;
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
   top: 0;
   left: 0;
   padding: 3rem 2rem 2rem;
-  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   transform: translateX(100%);
   transition: all .3s ease-out;
   z-index: 10;
