@@ -31,6 +31,19 @@
   }
 }
 
+.payreturn__mbway {
+  border: 2px solid $secondary-02;
+  border-radius: .5rem;
+  @include font(1.6rem, 700, 1.4em);
+  text-align: center;
+  padding: 0 1.5rem 1.5rem;
+  margin-bottom: 3rem;
+  img {
+    height: 10rem;
+    width: auto;
+  }
+}
+
 .accordion-detalhes {
   @include flex(row, center, center, center);
   flex-wrap: wrap;

@@ -3015,7 +3015,7 @@ footer .payList .logo-meowallet {
 }
 
 footer .payList li {
-  width: 3rem;
+  width: 2.5rem;
   margin-left: 1rem;
 }
 
@@ -5484,6 +5484,22 @@ header .socialMedias_header img {
 
 .payreturn__multibanco table {
   margin-bottom: 0;
+}
+
+.payreturn__mbway {
+  border: 2px solid #F37402;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-align: center;
+  padding: 0 1.5rem 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.payreturn__mbway img {
+  height: 10rem;
+  width: auto;
 }
 
 .accordion-detalhes {
