@@ -3962,7 +3962,7 @@ header .socialMedias_header img {
 }
 
 .closeModal {
-  width: 1.5rem;
+  width: 3rem;
   height: auto;
   display: inline-block;
   position: absolute;
@@ -3970,6 +3970,10 @@ header .socialMedias_header img {
   right: 0;
   bottom: auto;
   left: auto;
+  padding: .6rem;
+  background-color: #FFFFFF;
+  border: 1px solid #F34605;
+  border-radius: 50%;
   transition: all .3s ease-in-out;
 }
 
@@ -4183,6 +4187,13 @@ header .socialMedias_header img {
 
 .modal-msg i img {
   height: 100%;
+}
+
+.modal-msg .txt_small {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin-top: .5rem;
 }
 
 .esqueci-senha {

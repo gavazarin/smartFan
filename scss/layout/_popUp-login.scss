@@ -35,10 +35,14 @@
 }
 
 .closeModal {
-  width: 1.5rem;
+  width: 3rem;
   height: auto;
   display: inline-block;
   @include absolute(-4rem, 0, auto, auto);
+  padding: .6rem;
+  background-color: #FFFFFF;
+  border: 1px solid $secondary-01;
+  border-radius: 50%;
   transition: all .3s ease-in-out;
   img {
     width: 100%;
@@ -182,6 +186,10 @@
     img {
       height: 100%;
     }
+  }
+  .txt_small {
+    @include font(1.2rem, 300, 1.2em);
+    margin-top: .5rem;
   }
 }
 

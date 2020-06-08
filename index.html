@@ -1224,14 +1224,17 @@
 
 
           <div class="modal-msg" smv-type="wextopsarea" id="smv_extops_result_nok">
-            <i><img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/error-icon.svg" alt=""></i>
-            <h2 id="smvExtOpsNOKmsg" smv-langtext="err_INVALID_REQUEST_ID">Pedido inválido.</h2>
+            <i><img src="images/svg/error-icon.svg" alt=""></i>
+            <!-- <h2 id="smvExtOpsNOKmsg" smv-langtext="err_INVALID_REQUEST_ID">Pedido inválido.</h2> -->
+            <h2 id="smv-modalmsg-t1">Foi enviado um e-mail para concluir o processo.
+              <div class="txt_small">Se não receberes o e-mail dentro de alguns minutos, verifica a tua caixa de spam/lixo electrónico.</div>
+            </h2>
 
             <button id="smvExtOpsNOKbt" type="button" class="btn btn__orange" style="display:none"> <span id="smvExtOpsNOKbtText" smv-langtext="btback">Voltar</span> </button>
           </div>
 
           <div class="modal-msg" smv-type="wextopsarea" id="smv_extops_result_ok" style="display:none ">
-            <i><img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/check-icon.svg" alt=""></i>
+            <i><img src="images/svg/check-icon.svg" alt=""></i>
             <h2 id="smvExtOpsOKmsg" smv-langtext="ok_extops_msg">Operação concluída com sucesso.</h2>
             <button id="smvExtOpsOKbt" type="button" class="btn btn__orange"><span id="smvExtOpsOKbtText " smv-langtext="btcontinue ">continuar</span></button>
           </div>
