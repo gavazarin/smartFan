@@ -5391,6 +5391,10 @@ header .socialMedias_header img {
   height: 10rem;
 }
 
+.formas-pagamento .container-input div {
+  margin-bottom: 3rem;
+}
+
 .quotasTotal {
   font-size: 1.4rem;
   font-weight: 700;
