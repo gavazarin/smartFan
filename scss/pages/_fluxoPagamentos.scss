@@ -146,8 +146,12 @@
 }
 
 .formas-pagamento {
+  @include flex(column, center, center, center);
   .item-form {
     padding: 0;
+  }
+  img {
+    height: 10rem;
   }
 }
 

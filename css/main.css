@@ -5375,8 +5375,20 @@ header .socialMedias_header img {
   margin-right: 6rem;
 }
 
+.formas-pagamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .formas-pagamento .item-form {
   padding: 0;
+}
+
+.formas-pagamento img {
+  height: 10rem;
 }
 
 .quotasTotal {

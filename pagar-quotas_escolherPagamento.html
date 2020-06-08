@@ -239,18 +239,19 @@
 
       <div id="smv_area_paymetdetails" smv-type="wmemberfeesarea" style="display: none;">
         <div class="row">
-          <div class="formas-pagamento col-lg-5">
+          <div class="formas-pagamento col-lg-12">
             <h1 class="title-pag" smv-langtext="headpaydatapaymet">Escolhe o modo de pagamento</h1>
+            <img smv-langsrc="xpaymethodimgsrc_MBWAY" smv-langtitle="xpayname" alt="MBWay" src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/mbway.png">
             <form name="smv_fPayDetail_MBWay" id="smv_fPayDetail_MBWay" smv-paymethod="MBWAY" smv-type="fpaymethoddetails" novalidate="novalidate">
               <div class="container-input">
-                <label for="smv_PMDMBW_MobileCountry" smv-langtext="lblmobilecountry">pais</label>
-                <select id="smv_PMDMBW_MobileCountry" name="smv_PMDMBW_MobileCountry" onchange="smv_uData_ChangeCountry('smv_udata_', true,true)" smv-inival="" disabled="disabled">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <label for="smv_PMDMBW_MobileCountry" smv-langtext="lblmobilecountry">pais</label>
+                  <select id="smv_PMDMBW_MobileCountry" name="smv_PMDMBW_MobileCountry" onchange="smv_uData_ChangeCountry('smv_udata_', true,true)" smv-inival="" disabled="disabled">
                     <option value="182" smv-isdefaultcountry="true" smv-countrycode="PT" smv-langtext="xcountry182" smv-langtext-default="Portugal" selected="selected">Portugal</option>
                 </select>
-              </div>
+                </div>
 
-              <div class="container-input">
-                <div class="item-form numero-cartao col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                   <label for="smv_PMDMBW_Mobile" class="form-label" smv-langtext="lblmobile">Telemóvel</label>
                   <!-- PMDCC = PAY METHOD DETAILS CREDIT CARD -->
                   <input type="tel" name="smv_PMDMBW_Mobile" id="smv_PMDMBW_Mobile" maxlength="25">
