@@ -47,6 +47,49 @@ header {
     }
     li {
       margin-left: 1.5rem;
+      position: relative;
+    }
+    input {
+      display: none;
+    }
+    input:checked~.language-dropdown-list {
+      display: block;
+    }
+    .language-dropdown {
+      position: relative;
+    }
+    .language-dropdown-list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(25%);
+      z-index: 15;
+      display: none;
+      li {
+        text-align: right;
+        background-color: $white-01;
+        @include font(1.2rem, 300, 1.2em);
+        text-transform: uppercase;
+        border-bottom: .5px solid $primary-01;
+        transition: all .3s ease-in-out;
+        a {
+          width: auto;
+          display: inline-block;
+          padding: 1.6rem;
+          cursor: pointer;
+          img {
+            height: 1.5rem;
+          }
+        }
+        &:hover {
+          background-color: #2e2e2d;
+          transition: all .3s ease-in-out;
+          a {
+            color: $white-01;
+            text-decoration: none;
+          }
+        }
+      }
     }
     a {
       display: inline-block;

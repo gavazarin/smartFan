@@ -24,8 +24,20 @@
           <li>
             SmartFAN<b>.Tickets</b>
           </li>
+
           <li>
-            <a href="#"><img src="images/svg/flag-portugal.svg" alt="Idioma portugês"></a>
+            <input id="language-dropdown" type="checkbox">
+            <label for="language-dropdown" class="language-dropdown">
+              <img src="images/svg/flag-portugal.svg" alt="Idioma português">
+            </label>
+            <ul class="language-dropdown-list">
+              <li>
+                <a onclick="setLanguage('pt');"><img src="images/svg/flag-portugal.svg" alt=""></a>
+              </li>
+              <li>
+                <a onclick="setLanguage('en');"><img src="images/svg/flag-uk.svg" alt=""></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

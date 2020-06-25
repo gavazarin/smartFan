@@ -3235,6 +3235,60 @@ header .socialMedias_header b {
 
 header .socialMedias_header li {
   margin-left: 1.5rem;
+  position: relative;
+}
+
+header .socialMedias_header input {
+  display: none;
+}
+
+header .socialMedias_header input:checked ~ .language-dropdown-list {
+  display: block;
+}
+
+header .socialMedias_header .language-dropdown {
+  position: relative;
+}
+
+header .socialMedias_header .language-dropdown-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(25%);
+  z-index: 15;
+  display: none;
+}
+
+header .socialMedias_header .language-dropdown-list li {
+  text-align: right;
+  background-color: #F0F0F0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  border-bottom: 0.5px solid #03275A;
+  transition: all .3s ease-in-out;
+}
+
+header .socialMedias_header .language-dropdown-list li a {
+  width: auto;
+  display: inline-block;
+  padding: 1.6rem;
+  cursor: pointer;
+}
+
+header .socialMedias_header .language-dropdown-list li a img {
+  height: 1.5rem;
+}
+
+header .socialMedias_header .language-dropdown-list li:hover {
+  background-color: #2e2e2d;
+  transition: all .3s ease-in-out;
+}
+
+header .socialMedias_header .language-dropdown-list li:hover a {
+  color: #F0F0F0;
+  text-decoration: none;
 }
 
 header .socialMedias_header a {
