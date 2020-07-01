@@ -5177,6 +5177,102 @@ header .socialMedias_header img {
   left: auto;
 }
 
+.error-404 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+  padding-top: 6rem;
+}
+
+.error-404 .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.error-404 .icon-404 {
+  text-align: center;
+  padding-right: 3rem;
+}
+
+.error-404 .icon-404 img {
+  width: 90%;
+}
+
+.error-404 .text-error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.error-404 .text-error404 h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1.2em;
+  color: #F34605;
+  margin: 0;
+  text-align: left;
+}
+
+.error-404 .text-error404 h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.2em;
+  margin: 0;
+  text-align: left;
+}
+
+.error-404 .text-error404 p {
+  color: #03275A;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.error-404 .text-error404 p a {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 767px) {
+  .error-404 {
+    padding: 3rem 0;
+  }
+  .error-404 .icon-404 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .error-404 .icon-404 img {
+    width: 50%;
+  }
+  .error-404 .text-error404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .error-404 .text-error404 h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .error-404 .text-error404 h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .error-404 .text-error404 p {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}
+
 .pagarQuotas {
   width: 100%;
   position: relative;
