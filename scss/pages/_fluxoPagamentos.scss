@@ -3,11 +3,13 @@
   padding-top: 1.5rem;
   min-height: 50vh;
   @include flex(column, space-between, center, center);
+  background-color: #FFFFFF;
   .row {
     @include flex(column, center, center, center);
   }
   h1 {
     text-align: center;
+    border:none;
   }
   h2 {
     margin-bottom: 1.5rem;

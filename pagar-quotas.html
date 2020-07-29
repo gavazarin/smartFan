@@ -20,87 +20,144 @@
           <li>
             SmartFAN<b>.Tickets</b>
           </li>
+
           <li>
-            <a href="#"><img src="images/svg/flag-portugal.svg" alt="Idioma portugês"></a>
+            <input id="language-dropdown" type="checkbox">
+            <label for="language-dropdown" class="language-dropdown">
+              <img src="images/svg/flag-portugal.svg" alt="Idioma português">
+            </label>
+            <ul class="language-dropdown-list">
+              <li>
+                <a onclick="setLanguage('pt');"><img src="images/svg/flag-portugal.svg" alt=""></a>
+              </li>
+              <li>
+                <a onclick="setLanguage('en');"><img src="images/svg/flag-uk.svg" alt=""></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
 
+    <input id="menu-desporto" type="checkbox">
     <nav class="navMenu col-lg-12">
       <img src="images/svg/pattern_smartFan-white.svg" alt="Pattern SmartFan" class="pattern__smartFan">
       <div class="container">
         <div class="row">
-          <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt="Logo do SmartFan"></a>
+          <a href="index.html" class="marca col-lg-2"><img src="images/svg/logo_smartFan-white.svg"
+              alt="Logo do SmartFan"></a>
 
-          <ul class="menu">
-            <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
-            <li class="menu__item"><a href="#comprar-bilhetes">comprar bilhetes</a></li>
-            <li class="menu__item">
-              <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
+          <ul class="menu col-lg-10">
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <li class="menu__item menu__item--desportos">
+                  <label for="menu-desporto">
+                    <p>futebol <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
+                  </label>
+                </li>
+              </ul>
             </li>
-            <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
-            <li class="menu__item menu__logado" style="display:none;">
-              <p>Olá, <span><b>Usuário</b></span>!</p>
-              <a href="#" class="btn__verMais">sair</a>
+
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
+                <li class="menu__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+                <li class="menu__item">
+                  <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
+                </li>
+                <li class="menu__item menu__btn" style="display:none;"><a href="#"
+                    class="btn-login btn btn__blue">login</a></li>
+
+                <li class="menu__item menu__logado">
+                  <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+                  <input id="user-dropdown" type="checkbox">
+                  <label for="user-dropdown">
+                    <p class="user-dropdown">
+                      Olá, <span><b>Usuário</b></span>! <i><img src="images/svg/icon-down.svg" alt=""></i></p>
+                  </label>
+
+                  <ul class="user-dropdown__list">
+                    <li>
+                      <a href="userdata.html">Perfil</a>
+                    </li>
+                    <li>
+                      <a href="#">Sair</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="teamsBar">
+    <section class="teamsBar teamsBar__header">
       <div class="container">
         <div class="row">
           <ul class="list_ligas">
             <li>
-              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png" alt="Federação Portuguesa de Futebol"></a>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa-black.png"
+                  alt="Federação Portuguesa de Futebol"></a>
             </li>
             <li>
-              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png" alt="Liga Portugal"></a>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal-black.png"
+                  alt="Liga Portugal"></a>
             </li>
           </ul>
 
           <div class="list_clubs">
             <ul class="list_clubs_01">
               <li>
-                <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Boavista FC</span><img
+                    src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1fcporto.png" alt="Futebol Clube do Porto"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
+                    alt="Futebol Clube do Porto"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Gil Vicente FC</span><img
+                    src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1osbelenenses.png" alt="Clube de Futebol Os Belenenses"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Os Belenenses</span><img
+                    src="images/logo-1osbelenenses.png" alt="Os Belenenses"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Rio Ave FC</span><img
+                    src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
+                    src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
+                    src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
               </li>
             </ul>
 
             <ul class="list_clubs_02">
               <li>
-                <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">CD Nacional</span><img
+                    src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">GD Chaves</span><img
+                    src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">SC Covilhã</span><img
+                    src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
+                    src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
               </li>
             </ul>
           </div>
@@ -112,20 +169,24 @@
     <nav class="navMenu-mobile col-md-12">
       <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt="SmartFan"></a>
 
-      <a href="#menuMobile" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu-white.svg" alt="Abrir Menu"></a>
+      <a href="#" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu-white.svg" alt="Abrir Menu"></a>
 
       <div id="#menuMobile" class="menuMobile">
-        <div class="container-btn">
-          <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
-        </div>
+        <!-- <div class="container-btn">
+        </div> -->
+        <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
+
+        <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt="Logo do SmartFan"></a>
 
         <section class="teamsBar teamsBar__mobile">
           <ul class="list_ligas">
             <li>
-              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png" alt="Federação Portuguesa de Futebol"></a>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png"
+                  alt="Federação Portuguesa de Futebol"></a>
             </li>
             <li>
-              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png" alt="Liga Portugal"></a>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png"
+                  alt="Liga Portugal"></a>
             </li>
           </ul>
 
@@ -176,14 +237,25 @@
 
         <ul class="menuMobile__list">
           <li class="menuMobile__list__item"><a href="pagar-quotas.html">pagar quotas</a></li>
-          <li class="menuMobile__list__item"><a href="#comprar-bilhetes">comprar bilhetes</a></li>
-          <li class="menuMobile__list__item">
+          <li class="menuMobile__list__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+          <li class="menuMobile__list__item"><a href="userdata.html">perfil</a></li>
+          <!-- <li class="menuMobile__list__item">
             <a href="#"><img src="images/svg/search.svg" alt="" class="icon-search"></a>
+          </li> -->
+          <li class="menu__item menu__btn" style="display:none;"><a href="#" class="btn-login btn btn__blue">login</a>
           </li>
-          <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
-          <li class="menu__item menu__logado" style="display:none;">
-            <p>Olá, <span><b>Usuário</b></span>!</p>
-            <a href="#" class="btn__verMais">sair</a>
+
+          <li class="menu__item menu__logado">
+            <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+            <p class="user-dropdown">
+              Olá, <span><b>Usuário</b></span>!
+            </p>
+
+            <!-- <a href="#" class="btn__verMais">sair</a> -->
+          </li>
+
+          <li class="menu__item menu__item__sair">
+            <a href="#">Sair</a>
           </li>
         </ul>
       </div>
@@ -205,7 +277,8 @@
             <img src="images/banner_boaVistaFC.jpg" alt="Boavista Futebol Clube">
             <ul class="slide-content">
               <li class="slide-content__name">Boavista Futebol Clube</li>
-              <li class="slide-content__logo"><img src="images/logo-1boavistafc.png" alt="Logo Boavista Futebol Clube"></li>
+              <li class="slide-content__logo"><img src="images/logo-1boavistafc.png" alt="Logo Boavista Futebol Clube">
+              </li>
             </ul>
           </a>
         </div>
@@ -214,7 +287,8 @@
             <img src="images/banner_CDNMadeira.jpg" alt="Clube Desportivo Nacional">
             <ul class="slide-content">
               <li class="slide-content__name">Clube Desportivo Nacional</li>
-              <li class="slide-content__logo"><img src="images/logo-2cdnmadeira.png" alt="Logo Clube Desportivo Nacional"></li>
+              <li class="slide-content__logo"><img src="images/logo-2cdnmadeira.png"
+                  alt="Logo Clube Desportivo Nacional"></li>
             </ul>
           </a>
         </div>
@@ -223,7 +297,8 @@
             <img src="images/banner_FCPorto.jpg" alt="Futebol Clube do Porto">
             <ul class="slide-content">
               <li class="slide-content__name">Futebol Clube do Porto</li>
-              <li class="slide-content__logo"><img src="images/logo-1fcporto.png" alt="Logo Futebol Clube do Porto"></li>
+              <li class="slide-content__logo"><img src="images/logo-1fcporto.png" alt="Logo Futebol Clube do Porto">
+              </li>
             </ul>
           </a>
         </div>
@@ -232,7 +307,8 @@
             <img src="images/banner_GDChaves.jpg" alt="Grupo Desportivo de Chaves">
             <ul class="slide-content">
               <li class="slide-content__name">Grupo Desportivo de Chaves</li>
-              <li class="slide-content__logo"><img src="images/logo-2gdchaves.png" alt="Logo Grupo Desportivo de Chaves"></li>
+              <li class="slide-content__logo"><img src="images/logo-2gdchaves.png"
+                  alt="Logo Grupo Desportivo de Chaves"></li>
             </ul>
           </a>
         </div>
@@ -241,7 +317,8 @@
             <img src="images/banner_GilVicenteFC.jpg" alt="Gil Vicente Futebol Clube">
             <ul class="slide-content">
               <li class="slide-content__name">Gil Vicente Futebol Clube</li>
-              <li class="slide-content__logo"><img src="images/logo-1gilvicentefc.png" alt="Logo Gil Vicente Futebol Clube"></li>
+              <li class="slide-content__logo"><img src="images/logo-1gilvicentefc.png"
+                  alt="Logo Gil Vicente Futebol Clube"></li>
             </ul>
           </a>
         </div>
@@ -250,7 +327,8 @@
             <img src="images/banner_OsBelenenses.jpg" alt="Os Belenenses SAD">
             <ul class="slide-content">
               <li class="slide-content__name">Os Belenenses SAD</li>
-              <li class="slide-content__logo"><img src="images/logo-1osbelenenses.png" alt="Logo Os Belenenses SAD"></li>
+              <li class="slide-content__logo"><img src="images/logo-1osbelenenses.png" alt="Logo Os Belenenses SAD">
+              </li>
             </ul>
           </a>
         </div>
@@ -259,7 +337,8 @@
             <img src="images/banner_RioAveFC.jpg" alt="Rio Ave Futebol Clube">
             <ul class="slide-content">
               <li class="slide-content__name">Rio Ave Futebol Clube</li>
-              <li class="slide-content__logo"><img src="images/logo-1rioavefc.png" alt="Logo Rio Ave Futebol Clube"></li>
+              <li class="slide-content__logo"><img src="images/logo-1rioavefc.png" alt="Logo Rio Ave Futebol Clube">
+              </li>
             </ul>
           </a>
         </div>
@@ -268,7 +347,8 @@
             <img src="images/banner_SCCovilha.jpg" alt="Sporting Clube da Covilhã">
             <ul class="slide-content">
               <li class="slide-content__name">Sporting Clube da Covilhã</li>
-              <li class="slide-content__logo"><img src="images/logo-2sccovilha.png" alt="Logo Sporting Clube da Covilhã"></li>
+              <li class="slide-content__logo"><img src="images/logo-2sccovilha.png"
+                  alt="Logo Sporting Clube da Covilhã"></li>
             </ul>
           </a>
         </div>
@@ -277,7 +357,8 @@
             <img src="images/banner_SportingCP.jpg" alt="Sporting Clube de Portugal">
             <ul class="slide-content">
               <li class="slide-content__name">Sporting Clube de Portugal</li>
-              <li class="slide-content__logo"><img src="images/logo-1sporting.png" alt="Logo Sporting Clube de Portugal"></li>
+              <li class="slide-content__logo"><img src="images/logo-1sporting.png"
+                  alt="Logo Sporting Clube de Portugal"></li>
             </ul>
           </a>
         </div>
@@ -295,7 +376,8 @@
             <img src="images/banner_VitoriaFC.jpg" alt="Vitória Futebol Clube">
             <ul class="slide-content">
               <li class="slide-content__name">Vitória Futebol Clube</li>
-              <li class="slide-content__logo"><img src="images/logo-1vitoriafc.png" alt="Logo Vitória Futebol Clube"></li>
+              <li class="slide-content__logo"><img src="images/logo-1vitoriafc.png" alt="Logo Vitória Futebol Clube">
+              </li>
             </ul>
           </a>
         </div>
@@ -336,7 +418,8 @@
               </li>
               <li class="pagarQuotas__list__item col-lg-3 col-md-4 col-sm-6">
                 <ul class="pagarQuotas__list__content">
-                  <li><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Da Madeira" class="logo-clube"></li>
+                  <li><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Da Madeira"
+                      class="logo-clube"></li>
                   <li>
                     <h3>Clube Desportivo Nacional Da Madeira</h3>
                   </li>
@@ -401,19 +484,24 @@
             <ul>
               <li>
                 <h2><b>Liga Portugal</b></h2>
-                <p><a href="https://www.ligaportugal.pt/pt/epocas/20192020/noticias/institucional/suspensao-da-liga-nos-e-ligapro-por-tempo-indeterminado/" target="_blank">Suspensão da Liga NOS e LigaPRO por tempo indeterminado.</a></p>
+                <p><a
+                    href="https://www.ligaportugal.pt/pt/epocas/20192020/noticias/institucional/suspensao-da-liga-nos-e-ligapro-por-tempo-indeterminado/"
+                    target="_blank">Suspensão da Liga NOS e LigaPRO por tempo indeterminado.</a></p>
               </li>
               <li>
                 <h2><b>Gil Vicente FC</b></h2>
-                <p><a href="https://gilvicentefc.pt/2020/03/12/encerramento-do-atendimento-ao-publico/" target="_blank">Encerramento do atendimento ao público.</a></p>
+                <p><a href="https://gilvicentefc.pt/2020/03/12/encerramento-do-atendimento-ao-publico/"
+                    target="_blank">Encerramento do atendimento ao público.</a></p>
               </li>
               <li>
                 <h2><b>Boavista FC</b></h2>
-                <p><a href="https://boavistafc.pt/noticias/institucional/suspensao-de-atividades-devido-ao-coronavirus/" target="_blank">Suspensão de atividades devido ao Coronavírus.</a></p>
+                <p><a href="https://boavistafc.pt/noticias/institucional/suspensao-de-atividades-devido-ao-coronavirus/"
+                    target="_blank">Suspensão de atividades devido ao Coronavírus.</a></p>
               </li>
               <li>
                 <h2><b>Vitória SC</b></h2>
-                <p><a href="https://www.vitoriasc.pt/pt/news/index/view/comunicado-covid-19-actualizacao" target="_blank">Comunicado COVID-19.</a></p>
+                <p><a href="https://www.vitoriasc.pt/pt/news/index/view/comunicado-covid-19-actualizacao"
+                    target="_blank">Comunicado COVID-19.</a></p>
               </li>
             </ul>
           </div>
@@ -456,12 +544,14 @@
           </ul>
 
           <div class="logoSmartmove col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg" alt="Smartmove"></a>
+            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg"
+                alt="Smartmove"></a>
           </div>
 
           <ul class="socialmedia_list col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <li>
-              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank" class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
+              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank"
+                class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
             </li>
           </ul>
         </div>
@@ -562,7 +652,8 @@
                   <label for="ultimos-digitos" class="form-label">Últimos 5 dígitos do código de barras</label>
                   <input type="number" name="ultimos-digitos" id="ultimos-digitos">
                   <!-- <span class="input-validate">Obrigatório!</span> -->
-                  <i class="info-cartao"><img src="images/svg/information.svg" alt="Informação sobre o cartão de sócio"></i>
+                  <i class="info-cartao"><img src="images/svg/information.svg"
+                      alt="Informação sobre o cartão de sócio"></i>
                 </div>
 
                 <a href="#" class="btn btn__orange">

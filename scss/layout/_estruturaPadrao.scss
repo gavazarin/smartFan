@@ -27,6 +27,9 @@
     &__noticias {
       margin-top: 3rem;
       @include flex(column, flex-start, center, center);
+      h1{
+        width: 100%;
+      }
       ul {
         margin: 1.5rem 0;
         padding-right: 1.5rem;

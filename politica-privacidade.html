@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <img src="images/svg/pattern_smartFan.svg" alt="" class="pattern__smartFan">
+    <img src="images/svg/pattern_smartFan.svg" alt="Pattern SmartFan" class="pattern__smartFan">
 
     <div class="container">
       <div class="row">
@@ -21,87 +21,144 @@
           <li>
             SmartFAN<b>.Tickets</b>
           </li>
+
           <li>
-            <a href="#"><img src="images/svg/flag-portugal.svg" alt=""></a>
+            <input id="language-dropdown" type="checkbox">
+            <label for="language-dropdown" class="language-dropdown">
+              <img src="images/svg/flag-portugal.svg" alt="Idioma português">
+            </label>
+            <ul class="language-dropdown-list">
+              <li>
+                <a onclick="setLanguage('pt');"><img src="images/svg/flag-portugal.svg" alt=""></a>
+              </li>
+              <li>
+                <a onclick="setLanguage('en');"><img src="images/svg/flag-uk.svg" alt=""></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
 
+    <input id="menu-desporto" type="checkbox">
     <nav class="navMenu col-lg-12">
-      <img src="images/svg/pattern_smartFan-white.svg" alt="" class="pattern__smartFan">
+      <img src="images/svg/pattern_smartFan-white.svg" alt="Pattern SmartFan" class="pattern__smartFan">
       <div class="container">
         <div class="row">
-          <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt=""></a>
+          <a href="index.html" class="marca col-lg-2"><img src="images/svg/logo_smartFan-white.svg"
+              alt="Logo do SmartFan"></a>
 
-          <ul class="menu">
-            <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
-            <!-- <li class="menu__item"><a href="#comprar-bilhetes">comprar bilhetes</a></li> -->
-            <li class="menu__item">
-              <a href="#"><img src="images/svg/search_white.svg" alt="" class="icon-search"></a>
+          <ul class="menu col-lg-10">
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <li class="menu__item menu__item--desportos">
+                  <label for="menu-desporto">
+                    <p>futebol <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
+                  </label>
+                </li>
+              </ul>
             </li>
-            <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
-            <li class="menu__item menu__logado" style="display:none;">
-              <p>Olá, <span><b>Usuário</b></span>!</p>
-              <a href="#" class="btn__verMais">sair</a>
+
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
+                <li class="menu__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+                <li class="menu__item">
+                  <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
+                </li>
+                <li class="menu__item menu__btn" style="display:none;"><a href="#"
+                    class="btn-login btn btn__blue">login</a></li>
+
+                <li class="menu__item menu__logado">
+                  <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+                  <input id="user-dropdown" type="checkbox">
+                  <label for="user-dropdown">
+                    <p class="user-dropdown">
+                      Olá, <span><b>Usuário</b></span>! <i><img src="images/svg/icon-down.svg" alt=""></i></p>
+                  </label>
+
+                  <ul class="user-dropdown__list">
+                    <li>
+                      <a href="userdata.html">Perfil</a>
+                    </li>
+                    <li>
+                      <a href="#">Sair</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="teamsBar">
+    <section class="teamsBar teamsBar__header">
       <div class="container">
         <div class="row">
           <ul class="list_ligas">
             <li>
-              <a href="#"><img src="images/liga_federacao_portuguesa.png" alt=""></a>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa-black.png"
+                  alt="Federação Portuguesa de Futebol"></a>
             </li>
             <li>
-              <a href="#"><img src="images/liga_portugal.png" alt=""></a>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal-black.png"
+                  alt="Liga Portugal"></a>
             </li>
           </ul>
 
           <div class="list_clubs">
             <ul class="list_clubs_01">
               <li>
-                <a href="#"><img src="images/logo-1boavistafc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Boavista FC</span><img
+                    src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1fcporto.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
+                    alt="Futebol Clube do Porto"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1gilvicentefc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Gil Vicente FC</span><img
+                    src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1osbelenenses.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Os Belenenses</span><img
+                    src="images/logo-1osbelenenses.png" alt="Os Belenenses"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1rioavefc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Rio Ave FC</span><img
+                    src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1sporting.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
+                    src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriafc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriasc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
+                    src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
               </li>
             </ul>
 
             <ul class="list_clubs_02">
               <li>
-                <a href="#"><img src="images/logo-2cdnmadeira.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">CD Nacional</span><img
+                    src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2gdchaves.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">GD Chaves</span><img
+                    src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2sccovilha.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">SC Covilhã</span><img
+                    src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2varzimsc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
+                    src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
               </li>
             </ul>
           </div>
@@ -111,64 +168,69 @@
 
     <!-- ==== MENU MOBILE ==== -->
     <nav class="navMenu-mobile col-md-12">
-      <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt=""></a>
+      <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt="SmartFan"></a>
 
-      <a href="#menuMobile" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu-white.svg" alt="Abrir Menu"></a>
+      <a href="#" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu-white.svg" alt="Abrir Menu"></a>
 
       <div id="#menuMobile" class="menuMobile">
-        <div class="container-btn">
-          <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
-        </div>
+        <!-- <div class="container-btn">
+        </div> -->
+        <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
+
+        <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt="Logo do SmartFan"></a>
 
         <section class="teamsBar teamsBar__mobile">
           <ul class="list_ligas">
             <li>
-              <a href="#"><img src="images/liga_federacao_portuguesa.png" alt=""></a>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png"
+                  alt="Federação Portuguesa de Futebol"></a>
             </li>
             <li>
-              <a href="#"><img src="images/liga_portugal.png" alt=""></a>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png"
+                  alt="Liga Portugal"></a>
             </li>
           </ul>
+
           <div class="list_clubs">
             <ul class="list_clubs_01">
               <li>
-                <a href="#"><img src="images/logo-1boavistafc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1fcporto.png" alt=""></a>
+                <a href="#"><img src="images/logo-1fcporto.png" alt="Futebol Clube do Porto"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1gilvicentefc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1osbelenenses.png" alt=""></a>
+                <a href="#"><img src="images/logo-1osbelenenses.png" alt="Clube de Futebol Os Belenenses"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1rioavefc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1sporting.png" alt=""></a>
+                <a href="#"><img src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriafc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriasc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
               </li>
             </ul>
 
             <ul class="list_clubs_02">
               <li>
-                <a href="#"><img src="images/logo-2cdnmadeira.png" alt=""></a>
+                <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2gdchaves.png" alt=""></a>
+                <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2sccovilha.png" alt=""></a>
+                <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2varzimsc.png" alt=""></a>
+                <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
               </li>
             </ul>
           </div>
@@ -176,14 +238,25 @@
 
         <ul class="menuMobile__list">
           <li class="menuMobile__list__item"><a href="pagar-quotas.html">pagar quotas</a></li>
-          <!-- <li class="menuMobile__list__item"><a href="#comprar-bilhetes">comprar bilhetes</a></li> -->
-          <li class="menuMobile__list__item">
+          <li class="menuMobile__list__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+          <li class="menuMobile__list__item"><a href="userdata.html">perfil</a></li>
+          <!-- <li class="menuMobile__list__item">
             <a href="#"><img src="images/svg/search.svg" alt="" class="icon-search"></a>
+          </li> -->
+          <li class="menu__item menu__btn" style="display:none;"><a href="#" class="btn-login btn btn__blue">login</a>
           </li>
-          <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
-          <li class="menu__item menu__logado" style="display:none;">
-            <p>Olá, <span><b>Usuário</b></span>!</p>
-            <a href="#" class="btn__verMais">sair</a>
+
+          <li class="menu__item menu__logado">
+            <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+            <p class="user-dropdown">
+              Olá, <span><b>Usuário</b></span>!
+            </p>
+
+            <!-- <a href="#" class="btn__verMais">sair</a> -->
+          </li>
+
+          <li class="menu__item menu__item__sair">
+            <a href="#">Sair</a>
           </li>
         </ul>
       </div>
@@ -205,8 +278,12 @@
             <ul class="list-interna">
               <li>
                 <p>
-                  <span class="number-list">1.1</span> Os Websites SMARTFAN.TICKETS, SMARTFAN.NET e SMARTFAN.STORE pertencem e encontram-se registados em nome da SMARTMOVE, Serviços de Mobilidade S.A. NIPC: 580670080 com sede na Av. D. Afonso Henriques,
-                  1462 Edificio Olympus II, 4450-013 - Matosinhos, sendo esta a entidade responsável pelo tratamento de dados pessoais para efeitos destes Termos e Condições, Política de Privacidade, Política de Cookies e Condições de Venda.
+                  <span class="number-list">1.1</span> Os Websites SMARTFAN.TICKETS, SMARTFAN.NET e SMARTFAN.STORE
+                  pertencem e encontram-se registados em nome da SMARTMOVE, Serviços de Mobilidade S.A. NIPC: 580670080
+                  com sede na Av. D. Afonso Henriques,
+                  1462 Edificio Olympus II, 4450-013 - Matosinhos, sendo esta a entidade responsável pelo tratamento de
+                  dados pessoais para efeitos destes Termos e Condições, Política de Privacidade, Política de Cookies e
+                  Condições de Venda.
                 </p>
               </li>
             </ul>
@@ -217,24 +294,35 @@
             <ul class="list-interna">
               <li>
                 <p>
-                  <span class="number-list">2.1</span> A presente Política de Privacidade aplica-se aos dados pessoais que tenham sido diretamente fornecidos pelo Utilizador no registo e utilização do Website SMARTFAN.TICKETS ou outro Website de serviços
+                  <span class="number-list">2.1</span> A presente Política de Privacidade aplica-se aos dados pessoais
+                  que tenham sido diretamente fornecidos pelo Utilizador no registo e utilização do Website
+                  SMARTFAN.TICKETS ou outro Website de serviços
                   da rede SMARTFAN, propriedade da SMARTMOVE S.A.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">2.2</span> Este documento visa esclarecer os Utilizadores do Website SMARTFAN.TICKETS relativamente aos dados pessoais que recolhemos, o motivo dessa recolha, bem como as opções que disponibilizamos para que
-                  os titulares desses dados acedam, retifiquem ou eliminem a informação, entre outras informações relevantes.
+                  <span class="number-list">2.2</span> Este documento visa esclarecer os Utilizadores do Website
+                  SMARTFAN.TICKETS relativamente aos dados pessoais que recolhemos, o motivo dessa recolha, bem como as
+                  opções que disponibilizamos para que
+                  os titulares desses dados acedam, retifiquem ou eliminem a informação, entre outras informações
+                  relevantes.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">2.3</span> O Website SMARTFAN.TICKETS está integrado numa rede integrada de serviços SMARTFAN, com acesso unificado por conta digital, permitindo acesso a múltiplos serviços, informações, promoções e notificações.
+                  <span class="number-list">2.3</span> O Website SMARTFAN.TICKETS está integrado numa rede integrada de
+                  serviços SMARTFAN, com acesso unificado por conta digital, permitindo acesso a múltiplos serviços,
+                  informações, promoções e notificações.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">2.4</span> As regras previstas nesta Política de Privacidade complementam as regras, em matéria de proteção e tratamento de dados pessoais, previstas nos <a href="termos-condicoes.html">Termos e Condições</a>                  de Utilização, Política de Cookies e Condições de Venda, que regulam a oferta dos diversos produtos e serviços disponibilizados no Website SMARFAN.TICKETS e correspondem ao estabelecido na Lei da Proteção de Dados Pessoais (“LPDP”) e
+                  <span class="number-list">2.4</span> As regras previstas nesta Política de Privacidade complementam as
+                  regras, em matéria de proteção e tratamento de dados pessoais, previstas nos <a
+                    href="termos-condicoes.html">Termos e Condições</a> de Utilização, Política de Cookies e Condições
+                  de Venda, que regulam a oferta dos diversos produtos e serviços disponibilizados no Website
+                  SMARFAN.TICKETS e correspondem ao estabelecido na Lei da Proteção de Dados Pessoais (“LPDP”) e
                   no Regulamento Geral de Proteção de Dados (Regulamento (UE) 2016/679 ("RGPD").
                 </p>
               </li>
@@ -245,13 +333,20 @@
             <h2>3. O QUE ABRANGE ESTA POLÍTICA DE PRIVACIDADE?</h2>
             <ul class="list-interna">
               <li>
-                <p><span class="number-list">3.1</span> Esta Política de Privacidade aplica-se exclusivamente à recolha e tratamento de dados pessoais efetuada no Website SMARTFAN.TICKETS. Quaisquer outros websites de terceiros com ligações (links) a este
-                  Website não são da responsabilidade da SMARTMOVE S.A, e por isso, esta Política de Privacidade não lhes é aplicável.</p>
+                <p><span class="number-list">3.1</span> Esta Política de Privacidade aplica-se exclusivamente à recolha
+                  e tratamento de dados pessoais efetuada no Website SMARTFAN.TICKETS. Quaisquer outros websites de
+                  terceiros com ligações (links) a este
+                  Website não são da responsabilidade da SMARTMOVE S.A, e por isso, esta Política de Privacidade não
+                  lhes é aplicável.</p>
               </li>
 
               <li>
-                <p><span class="number-list">3.2</span> Os nossos serviços são prestados em estrita parceria com clubes desportivos, e outras entidades organizadoras e promotores de eventos, nomeadamente aqueles que fazem parte das entidades desportivas
-                  e outros parceiros da SMARTMOVE S.A, pelo que, por vezes, poderão aplicar-se Políticas de Privacidade dessas entidades desportivas, e outros organizadores e clube/promotores. Essas Políticas estarão disponíveis nos respetivos websites
+                <p><span class="number-list">3.2</span> Os nossos serviços são prestados em estrita parceria com clubes
+                  desportivos, e outras entidades organizadoras e promotores de eventos, nomeadamente aqueles que fazem
+                  parte das entidades desportivas
+                  e outros parceiros da SMARTMOVE S.A, pelo que, por vezes, poderão aplicar-se Políticas de Privacidade
+                  dessas entidades desportivas, e outros organizadores e clube/promotores. Essas Políticas estarão
+                  disponíveis nos respetivos websites
                   dos clubes, organizadores e clube/promotores.</p>
               </li>
             </ul>
@@ -261,53 +356,84 @@
             <h2>4. DADOS PESSOAIS</h2>
             <ul class="list-interna">
               <li>
-                <p><span class="number-list">4.1</span> São considerados "dados pessoais" qualquer informação, relativa a uma pessoa singular identificada ou identificável (“titular dos dados”) e independentemente do respetivo suporte, relativa a uma pessoa
+                <p><span class="number-list">4.1</span> São considerados "dados pessoais" qualquer informação, relativa
+                  a uma pessoa singular identificada ou identificável (“titular dos dados”) e independentemente do
+                  respetivo suporte, relativa a uma pessoa
                   singular identificada ou identificável.
                 </p>
               </li>
               <li>
-                <p><span class="number-list">4.2</span> É considerada identificável a pessoa que possa ser identificada direta ou indiretamente, designadamente através de um identificador, como por exemplo um nome, um número de identificação, identificadores
+                <p><span class="number-list">4.2</span> É considerada identificável a pessoa que possa ser identificada
+                  direta ou indiretamente, designadamente através de um identificador, como por exemplo um nome, um
+                  número de identificação, identificadores
                   por via eletrónica ou por um outro qualquer elemento que permita essa mesma identificação.</p>
               </li>
               <li>
-                <p><span class="number-list">4.3</span> Nos termos legais esta proteção não abrange os dados de pessoas coletivas. </p>
+                <p><span class="number-list">4.3</span> Nos termos legais esta proteção não abrange os dados de pessoas
+                  coletivas. </p>
               </li>
               <li>
-                <p><span class="number-list">4.4</span> Com a aceitação da presente Política de Privacidade o Utilizador presta o seu consentimento informado, expresso, livre e inequívoco para que os dados pessoais fornecidos através do Website SMARTFAN.TICKETS
-                  sejam por este processados e utilizados para prestação dos serviços disponibilizados, e cujo tratamento nos termos da LPDP e do RGPD cumpre as medidas de segurança técnicas e organizativas adequadas.</p>
+                <p><span class="number-list">4.4</span> Com a aceitação da presente Política de Privacidade o Utilizador
+                  presta o seu consentimento informado, expresso, livre e inequívoco para que os dados pessoais
+                  fornecidos através do Website SMARTFAN.TICKETS
+                  sejam por este processados e utilizados para prestação dos serviços disponibilizados, e cujo
+                  tratamento nos termos da LPDP e do RGPD cumpre as medidas de segurança técnicas e organizativas
+                  adequadas.</p>
               </li>
               <li>
-                <p><span class="number-list">4.5</span> A disponibilização dos dados pessoais solicitados no Website SMARTFAN.TICKETS destinam-se à gestão da atividade do Website, o que inclui utilização de dados para melhoria de serviços, produtos, e personalização
-                  de experiências, permitindo assim processar e entregar a encomenda do Utiizador, bem como notificá-lo sobre o estado da mesma, para além de o poder identificar como Utiizador registado do website, com a criação da respetiva conta digital.</p>
+                <p><span class="number-list">4.5</span> A disponibilização dos dados pessoais solicitados no Website
+                  SMARTFAN.TICKETS destinam-se à gestão da atividade do Website, o que inclui utilização de dados para
+                  melhoria de serviços, produtos, e personalização
+                  de experiências, permitindo assim processar e entregar a encomenda do Utiizador, bem como notificá-lo
+                  sobre o estado da mesma, para além de o poder identificar como Utiizador registado do website, com a
+                  criação da respetiva conta digital.</p>
               </li>
               <li>
-                <p><span class="number-list">4.6</span> O Website SMARTFAN.TICKETS recolhe e trata de forma exata os dados pessoais adequados, pertinentes e limitados para gerir de forma eficaz a respetiva atividade e proporcionar as melhores experiências
+                <p><span class="number-list">4.6</span> O Website SMARTFAN.TICKETS recolhe e trata de forma exata os
+                  dados pessoais adequados, pertinentes e limitados para gerir de forma eficaz a respetiva atividade e
+                  proporcionar as melhores experiências
                   com os seus produtos e serviços.</p>
               </li>
               <li>
-                <p><span class="number-list">4.7</span> Os dados pessoais recolhidos contribuem assim também para a elaboração de um perfil de Utilizador, possibilitando que a sua experiência de utiização do website SMARTFAN.TICKETS seja sempre melhorada
+                <p><span class="number-list">4.7</span> Os dados pessoais recolhidos contribuem assim também para a
+                  elaboração de um perfil de Utilizador, possibilitando que a sua experiência de utiização do website
+                  SMARTFAN.TICKETS seja sempre melhorada
                   e cada vez mais personalizada.</p>
               </li>
               <li>
-                <p><span class="number-list">4.8</span> Os dados pessoais podem também ser utilizados para efeitos de comunicação com o Utilizador, o que inclui a prestação de informações sobre a conta do Utilizador, atualizações de segurança, respostas
-                  a reclamações e sugestões, difusão de informações, a comunicação de campanhas, promoções, publicidade e notícias diversas sobre todas as atividades desenvolvidas no Website SMARTFAN.TICKETS, bem como para a realização de estudos de mercado
+                <p><span class="number-list">4.8</span> Os dados pessoais podem também ser utilizados para efeitos de
+                  comunicação com o Utilizador, o que inclui a prestação de informações sobre a conta do Utilizador,
+                  atualizações de segurança, respostas
+                  a reclamações e sugestões, difusão de informações, a comunicação de campanhas, promoções, publicidade
+                  e notícias diversas sobre todas as atividades desenvolvidas no Website SMARTFAN.TICKETS, bem como para
+                  a realização de estudos de mercado
                   e inquéritos de satisfação.</p>
               </li>
               <li>
-                <p><span class="number-list">4.9</span> O Website SMARTFAN.TICKETS indica explicitamente sempre que existam dados pessoais obrigatórios para a conclusão de um processo (venda, inscrição ou outro). O Utilizador pode recusar fornecê-los, mas
-                  se optar por não disponibilizar os dados necessários ao fornecimento de um produto ou serviço, poderá não conseguir utilizar esse produto ou funcionalidade. </p>
+                <p><span class="number-list">4.9</span> O Website SMARTFAN.TICKETS indica explicitamente sempre que
+                  existam dados pessoais obrigatórios para a conclusão de um processo (venda, inscrição ou outro). O
+                  Utilizador pode recusar fornecê-los, mas
+                  se optar por não disponibilizar os dados necessários ao fornecimento de um produto ou serviço, poderá
+                  não conseguir utilizar esse produto ou funcionalidade. </p>
               </li>
               <li>
-                <p><span class="number-list">4.10</span> No momento da recolha dos dados pessoais, salvo nos campos em que for indicado o contrário, o Utilizador poderá, voluntariamente, disponibilizar dados pessoais opcionais, sem que a falta de resposta
-                  implique um decréscimo na qualidade ou quantidade dos serviços correspondentes (a menos que esteja explicitamente indicada outra informação). Não obstante, a falta de resposta aos dados, considerados obrigatórios, implicará a impossibilidade
+                <p><span class="number-list">4.10</span> No momento da recolha dos dados pessoais, salvo nos campos em
+                  que for indicado o contrário, o Utilizador poderá, voluntariamente, disponibilizar dados pessoais
+                  opcionais, sem que a falta de resposta
+                  implique um decréscimo na qualidade ou quantidade dos serviços correspondentes (a menos que esteja
+                  explicitamente indicada outra informação). Não obstante, a falta de resposta aos dados, considerados
+                  obrigatórios, implicará a impossibilidade
                   de aceder ao serviço para o qual os dados foram solicitados. </p>
               </li>
               <li>
-                <p><span class="number-list">4.11</span> A informação é também usada para prevenir ou detetar eventuais fraudes e abusos, e ao mesmo tempo, permitir que terceiras entidades se encarreguem, em nosso nome, de funções logísticas e técnicas,
+                <p><span class="number-list">4.11</span> A informação é também usada para prevenir ou detetar eventuais
+                  fraudes e abusos, e ao mesmo tempo, permitir que terceiras entidades se encarreguem, em nosso nome, de
+                  funções logísticas e técnicas,
                   entre outras.</p>
               </li>
               <li>
-                <p><span class="number-list">4.12</span> Poderá sempre anular o seu registo enviando e-mail para <a href="mailto:helpdesk@smartticketing.pt">helpdesk@smartticketing.pt</a>.</p>
+                <p><span class="number-list">4.12</span> Poderá sempre anular o seu registo enviando e-mail para <a
+                    href="mailto:helpdesk@smartticketing.pt">helpdesk@smartticketing.pt</a>.</p>
               </li>
             </ul>
           </li>
@@ -317,18 +443,24 @@
             <ul class="list-interna">
               <li>
                 <p>
-                  <span class="number-list">5.1</span> Os dados pessoais são recolhidos para determinadas finalidades e não podem ser tratados posteriormente de uma forma incompatível com essas mesmas finalidades, salvo se houver consentimento explicíto
-                  por parte do Utilizador, não podendo ser processados para quaisquer outros fins que não os aqui especificados.
+                  <span class="number-list">5.1</span> Os dados pessoais são recolhidos para determinadas finalidades e
+                  não podem ser tratados posteriormente de uma forma incompatível com essas mesmas finalidades, salvo se
+                  houver consentimento explicíto
+                  por parte do Utilizador, não podendo ser processados para quaisquer outros fins que não os aqui
+                  especificados.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">5.2</span> O tratamento posterior para fins de arquivo de interesse público, ou para fins de investigação cientifica ou histórica ou para fins estatísticos não é considerado incompatível com as finalidades iniciais.
+                  <span class="number-list">5.2</span> O tratamento posterior para fins de arquivo de interesse público,
+                  ou para fins de investigação cientifica ou histórica ou para fins estatísticos não é considerado
+                  incompatível com as finalidades iniciais.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">5.3</span> Os dados pessoais que tratamos através desta página serão unicamente utilizados para as seguintes finalidades:
+                  <span class="number-list">5.3</span> Os dados pessoais que tratamos através desta página serão
+                  unicamente utilizados para as seguintes finalidades:
                 </p>
                 <ul class="list-roman">
                   <li>
@@ -350,7 +482,8 @@
                     <p>Verificar, manter e desenvolver sistemas e análises estatísticas;</p>
                   </li>
                   <li>
-                    <p>Comunicações e Notificações (caso tenha dado o seu consentimento para o tratamento dos seus dados pessoais para esta finalidade);</p>
+                    <p>Comunicações e Notificações (caso tenha dado o seu consentimento para o tratamento dos seus dados
+                      pessoais para esta finalidade);</p>
                   </li>
                   <li>
                     <p>Prevenção e combate à fraude;</p>
@@ -368,14 +501,22 @@
               </li>
               <li>
                 <p>
-                  <span class="number-list">5.4</span> Existem ligações ("links") para os websites das entidades, clubes desportivos, promotores e outros parceiros da SMARTMOVE S.A que podem ser de interesse para o Utilizador, não sendo a SMARTMOVE S.A
-                  responsabilizada pela forma como estas entidades desportivas ou outras tratam a proteção da privacidade ou os dados recolhidos do Utilizador na sua relação de associado, membro ou qualquer outro tipo de relacionamento.
+                  <span class="number-list">5.4</span> Existem ligações ("links") para os websites das entidades, clubes
+                  desportivos, promotores e outros parceiros da SMARTMOVE S.A que podem ser de interesse para o
+                  Utilizador, não sendo a SMARTMOVE S.A
+                  responsabilizada pela forma como estas entidades desportivas ou outras tratam a proteção da
+                  privacidade ou os dados recolhidos do Utilizador na sua relação de associado, membro ou qualquer outro
+                  tipo de relacionamento.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">5.5</span> A SMARTMOVE S.A garante a confidencialidade de todos os dados fornecidos pelos seus Utilizadores. Não obstante a SMARTMOVE S.A proceder à recolha e ao tratamento de dados pessoais de forma segura
-                  e que impede a sua perda ou manipulação, utilizando as técnicas mais rigorosas e adequadas para o efeito, informamos que a recolha em redes não protegidas e não seguras permite a circulação dos dados pessoais sem as devidas condições
+                  <span class="number-list">5.5</span> A SMARTMOVE S.A garante a confidencialidade de todos os dados
+                  fornecidos pelos seus Utilizadores. Não obstante a SMARTMOVE S.A proceder à recolha e ao tratamento de
+                  dados pessoais de forma segura
+                  e que impede a sua perda ou manipulação, utilizando as técnicas mais rigorosas e adequadas para o
+                  efeito, informamos que a recolha em redes não protegidas e não seguras permite a circulação dos dados
+                  pessoais sem as devidas condições
                   de segurança, correndo o risco de ser copiados, alterados e utilizados por terceiros não autorizados.
                 </p>
               </li>
@@ -387,40 +528,63 @@
             <ul class="list-interna">
               <li>
                 <p>
-                  <span class="number-list">6.1</span> Depois de se registar no Website SMARTFAN.TICKETS e caso tenha dado a sua autorização para esse efeito, poderão ser-lhe endereçadas via e-mail informações de cariz informativo, desportivo e/ou comercial.
-                  Poderá cancelar este serviço a qualquer momento, devendo, para esse efeito, enviar uma mensagem de correio eletrónico para o seguinte endereço eletrónico: <a href="mailto:helpdesk@smartticketing.pt">helpdesk@smartticketing.pt</a>.
+                  <span class="number-list">6.1</span> Depois de se registar no Website SMARTFAN.TICKETS e caso tenha
+                  dado a sua autorização para esse efeito, poderão ser-lhe endereçadas via e-mail informações de cariz
+                  informativo, desportivo e/ou comercial.
+                  Poderá cancelar este serviço a qualquer momento, devendo, para esse efeito, enviar uma mensagem de
+                  correio eletrónico para o seguinte endereço eletrónico: <a
+                    href="mailto:helpdesk@smartticketing.pt">helpdesk@smartticketing.pt</a>.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">6.2</span> O Utilizador declara conhecer e aceitar que todos seus dados recolhidos durante a utilização do Website SMARTFAN.TICKETS e em função da sua relação de associado com uma ou mais entidades desportivas
-                  ou de qualquer outro tipo com o mesmo modelo de relacionamento, nomeadamente os dados do seu cartão de sócio ou de membro e outros dados necessários à sua utilização, e os seus dados pessoais fornecidos por si para efeito do Registo
-                  no Website SMARTFAN.TICKETS e criação de conta SMARTFAN são privados e sigilosos, não sendo monitorizados, editados ou fornecidos a terceiros, excepto:
+                  <span class="number-list">6.2</span> O Utilizador declara conhecer e aceitar que todos seus dados
+                  recolhidos durante a utilização do Website SMARTFAN.TICKETS e em função da sua relação de associado
+                  com uma ou mais entidades desportivas
+                  ou de qualquer outro tipo com o mesmo modelo de relacionamento, nomeadamente os dados do seu cartão de
+                  sócio ou de membro e outros dados necessários à sua utilização, e os seus dados pessoais fornecidos
+                  por si para efeito do Registo
+                  no Website SMARTFAN.TICKETS e criação de conta SMARTFAN são privados e sigilosos, não sendo
+                  monitorizados, editados ou fornecidos a terceiros, excepto:
                 </p>
                 <ul class="list-latin">
                   <li>
-                    <p>No estritamente necessário à atividade funcional dos Serviços de Pagamento de Quotas, Venda de Bilhetes ou outros serviços disponibilizados na rede de serviços SMARTFAN e no Website SMARTFAN.TICKETS;</p>
+                    <p>No estritamente necessário à atividade funcional dos Serviços de Pagamento de Quotas, Venda de
+                      Bilhetes ou outros serviços disponibilizados na rede de serviços SMARTFAN e no Website
+                      SMARTFAN.TICKETS;</p>
                   </li>
                   <li>
-                    <p>Os dados que no âmbito das funcionalidades dos Serviços o Utilizador tiver decidido tornar públicos;</p>
+                    <p>Os dados que no âmbito das funcionalidades dos Serviços o Utilizador tiver decidido tornar
+                      públicos;</p>
                   </li>
                   <li>
-                    <p>A pedido de entidades judiciais competentes no âmbito de investigação criminal ou processo judicial, caso seja necessário atuar para assegurar o cumprimento dos presentes Termos e Condições de Serviço, proteger os interesses dos Utilizadores
-                      ou assegurar a integridade do Pagamento de Quotas, Venda de Bilhetes e outros serviços disponibilizados no Website SMARTFAN.TICKETS.</p>
+                    <p>A pedido de entidades judiciais competentes no âmbito de investigação criminal ou processo
+                      judicial, caso seja necessário atuar para assegurar o cumprimento dos presentes Termos e Condições
+                      de Serviço, proteger os interesses dos Utilizadores
+                      ou assegurar a integridade do Pagamento de Quotas, Venda de Bilhetes e outros serviços
+                      disponibilizados no Website SMARTFAN.TICKETS.</p>
                   </li>
                 </ul>
               </li>
               <li>
                 <p>
-                  <span class="number-list">6.3</span> O Website SMARTFAN.TICKETS mantém uma base de dados com o registo dos seus Utilizadores. Os dados presentes são unicamente os dados prestados pelos próprios na altura do seu registo e criação de conta
-                  digital, sendo recolhidos e processados automaticamente, nos termos legais pela SMARTMOVE S.A, entidade responsável pelo respetivo tratamento.
+                  <span class="number-list">6.3</span> O Website SMARTFAN.TICKETS mantém uma base de dados com o registo
+                  dos seus Utilizadores. Os dados presentes são unicamente os dados prestados pelos próprios na altura
+                  do seu registo e criação de conta
+                  digital, sendo recolhidos e processados automaticamente, nos termos legais pela SMARTMOVE S.A,
+                  entidade responsável pelo respetivo tratamento.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">6.4</span> O período de tempo durante o qual os dados são armazenados e conservados varia de acordo com a finalidade para a qual a informação é tratada. De qualquer forma, estes serão apenas armazenados pelo
-                  tempo mínimo necessário à sua utilização. Os dados que sejam exclusivamente tratados para fins de arquivo de interesse público, ou para fins de investigação cientifica ou histórica ou para fins estatísticos podem ser conservados por
-                  períodos mais longos, desde que sujeitos à aplicação das medidas técnicas e organizativas adequadas exigidas nos termos do regime legal da proteção de dados pessoais.
+                  <span class="number-list">6.4</span> O período de tempo durante o qual os dados são armazenados e
+                  conservados varia de acordo com a finalidade para a qual a informação é tratada. De qualquer forma,
+                  estes serão apenas armazenados pelo
+                  tempo mínimo necessário à sua utilização. Os dados que sejam exclusivamente tratados para fins de
+                  arquivo de interesse público, ou para fins de investigação cientifica ou histórica ou para fins
+                  estatísticos podem ser conservados por
+                  períodos mais longos, desde que sujeitos à aplicação das medidas técnicas e organizativas adequadas
+                  exigidas nos termos do regime legal da proteção de dados pessoais.
                 </p>
               </li>
             </ul>
@@ -431,72 +595,102 @@
             <ul class="list-interna">
               <li>
                 <p>
-                  <span class="number-list">7.1</span> A SMARTMOVE S.A declara que implementou e continuará a implementar as medidas de natureza técnica e organizativa necessárias para garantir a segurança e confidencialidade dos dados pessoais que lhe
-                  sejam fornecidos e para evitar o acesso a dados ou a utilização indevida dos mesmos, por pessoas não autorizadas, visando evitar a sua alteração, perda e tratamento não autorizado, tendo em conta o estado atual da tecnologia, a natureza
-                  dos dados armazenados e os riscos a que estão expostos, ficando o Utilizador consciente e aceitando que as medidas de segurança em serviços on-line não são inexpugnáveis.
+                  <span class="number-list">7.1</span> A SMARTMOVE S.A declara que implementou e continuará a
+                  implementar as medidas de natureza técnica e organizativa necessárias para garantir a segurança e
+                  confidencialidade dos dados pessoais que lhe
+                  sejam fornecidos e para evitar o acesso a dados ou a utilização indevida dos mesmos, por pessoas não
+                  autorizadas, visando evitar a sua alteração, perda e tratamento não autorizado, tendo em conta o
+                  estado atual da tecnologia, a natureza
+                  dos dados armazenados e os riscos a que estão expostos, ficando o Utilizador consciente e aceitando
+                  que as medidas de segurança em serviços on-line não são inexpugnáveis.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.2</span> Todos os dados pessoais serão inseridos num Servidor Seguro podendo o Utilizador verificar que o seu browser é seguro através da visualização do símbolo de um cadeado ou caso o endereço inicie com
+                  <span class="number-list">7.2</span> Todos os dados pessoais serão inseridos num Servidor Seguro
+                  podendo o Utilizador verificar que o seu browser é seguro através da visualização do símbolo de um
+                  cadeado ou caso o endereço inicie com
                   "https" em vez de "http".
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.3</span> Todos os dados pessoais são tratados unicamente pelos trabalhadores cuja intervenção seja necessária para a prestação do serviço estando os mesmos obrigados ao dever de sigilo e confidencialidade.
-                  Existindo a possibilidade de a informação ser revelada a terceiros, estes devem ser obrigados a guardar a devida confidencialidade em conformidade com o previsto neste documento.
+                  <span class="number-list">7.3</span> Todos os dados pessoais são tratados unicamente pelos
+                  trabalhadores cuja intervenção seja necessária para a prestação do serviço estando os mesmos obrigados
+                  ao dever de sigilo e confidencialidade.
+                  Existindo a possibilidade de a informação ser revelada a terceiros, estes devem ser obrigados a
+                  guardar a devida confidencialidade em conformidade com o previsto neste documento.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.4</span> A SMARTMOVE S.A notificará, sem demora, o Utilizador do Website SMARTFAN.TICKETS sempre que haja uma violação dos seus dados pessoais, suscetível de implicar um elevado risco para os seus direitos
+                  <span class="number-list">7.4</span> A SMARTMOVE S.A notificará, sem demora, o Utilizador do Website
+                  SMARTFAN.TICKETS sempre que haja uma violação dos seus dados pessoais, suscetível de implicar um
+                  elevado risco para os seus direitos
                   e liberdades.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.5</span> Dada a natureza dos serviços disponibilizados no Website SMARTFAN.TICKETS e existindo ligações ("links") para sites de terceiros como entidades desportivas, clubes, promotores e outras parceiros da
-                  SMARTMOVE S.A que podem ser de interesse para o Utilizador, não poderá a SMARTMOVE S.A ser responsabilizada pela forma como estas entidades desportivas ou outras tratam a proteção da privacidade ou os dados recolhidos do Utilizador na
+                  <span class="number-list">7.5</span> Dada a natureza dos serviços disponibilizados no Website
+                  SMARTFAN.TICKETS e existindo ligações ("links") para sites de terceiros como entidades desportivas,
+                  clubes, promotores e outras parceiros da
+                  SMARTMOVE S.A que podem ser de interesse para o Utilizador, não poderá a SMARTMOVE S.A ser
+                  responsabilizada pela forma como estas entidades desportivas ou outras tratam a proteção da
+                  privacidade ou os dados recolhidos do Utilizador na
                   sua relação de associado ou membro com essas entidades terceiras.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.6</span> Depois de se registar como Utilizador no Portal SMARTFAN. TICKETS e caso tenha dado a sua autorização para esse efeito, poderão ser-lhe endereçadas via e-mail ou por meio de notificações, informações
+                  <span class="number-list">7.6</span> Depois de se registar como Utilizador no Portal SMARTFAN. TICKETS
+                  e caso tenha dado a sua autorização para esse efeito, poderão ser-lhe endereçadas via e-mail ou por
+                  meio de notificações, informações
                   de cariz informativo, desportivo e/ou comercial.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.7</span> De acordo com o disposto na Decreto-Lei n.º 7/2004, de 7 de janeiro, no caso de o Utilizador desejar deixar de receber comunicações comerciais poderá cancelar este serviço a qualquer altura, devendo,
-                  para esse efeito, enviar uma mensagem de correio eletrónico para o Portal online <a href="mailto:helpdesk@smartticketing.pt">helpdesk@smartticketing.pt</a>.
+                  <span class="number-list">7.7</span> De acordo com o disposto na Decreto-Lei n.º 7/2004, de 7 de
+                  janeiro, no caso de o Utilizador desejar deixar de receber comunicações comerciais poderá cancelar
+                  este serviço a qualquer altura, devendo,
+                  para esse efeito, enviar uma mensagem de correio eletrónico para o Portal online <a
+                    href="mailto:helpdesk@smartticketing.pt">helpdesk@smartticketing.pt</a>.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.8</span> O titular dos dados tem também o direito de aceder, atualizar, editar ou eliminar os seus dados pessoais, o que poderá fazer alterando os dados na área pessoal do website SMARTFAN.TICKETS.
+                  <span class="number-list">7.8</span> O titular dos dados tem também o direito de aceder, atualizar,
+                  editar ou eliminar os seus dados pessoais, o que poderá fazer alterando os dados na área pessoal do
+                  website SMARTFAN.TICKETS.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.9</span> O Website SMARTFAN.TICKETS poderá partilhar dados pessoais de Utilizadores com terceiros com o seu consentimento ou para a prestação de determinados serviços ou fornecimento de determinados produtos.
+                  <span class="number-list">7.9</span> O Website SMARTFAN.TICKETS poderá partilhar dados pessoais de
+                  Utilizadores com terceiros com o seu consentimento ou para a prestação de determinados serviços ou
+                  fornecimento de determinados produtos.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.10</span> A SMARTMOVE S.A. pode também partilhar os dados pessoais de Utilizadores do Website SMARTFAN.TICKETS quando exigido por lei, por razões de segurança e interesse público e para proteger os seus direitos
+                  <span class="number-list">7.10</span> A SMARTMOVE S.A. pode também partilhar os dados pessoais de
+                  Utilizadores do Website SMARTFAN.TICKETS quando exigido por lei, por razões de segurança e interesse
+                  público e para proteger os seus direitos
                   e a propriedade da SMARTMOVE S.A.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.11</span> Em caso algum serão cedidos dados pessoais de Utilizadores, sob qualquer forma ou suporte, a outras pessoas ou outras entidades, sem o consentimento prévio do titular dos dados.
+                  <span class="number-list">7.11</span> Em caso algum serão cedidos dados pessoais de Utilizadores, sob
+                  qualquer forma ou suporte, a outras pessoas ou outras entidades, sem o consentimento prévio do titular
+                  dos dados.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">7.12</span> Os dados dos Utilizadores do Portal online SMARTFAN.TICKETS não são processados para quaisquer outros fins que não os aqui especificados.
+                  <span class="number-list">7.12</span> Os dados dos Utilizadores do Portal online SMARTFAN.TICKETS não
+                  são processados para quaisquer outros fins que não os aqui especificados.
                 </p>
               </li>
             </ul>
@@ -540,12 +734,14 @@
           </ul>
 
           <div class="logoSmartmove col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg" alt="Smartmove"></a>
+            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg"
+                alt="Smartmove"></a>
           </div>
 
           <ul class="socialmedia_list col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <li>
-              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank" class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
+              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank"
+                class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
             </li>
           </ul>
         </div>
@@ -646,7 +842,8 @@
                   <label for="ultimos-digitos" class="form-label">Últimos 5 dígitos do código de barras</label>
                   <input type="number" name="ultimos-digitos" id="ultimos-digitos">
                   <!-- <span class="input-validate">Obrigatório!</span> -->
-                  <i class="info-cartao"><img src="images/svg/information.svg" alt="Informação sobre o cartão de sócio"></i>
+                  <i class="info-cartao"><img src="images/svg/information.svg"
+                      alt="Informação sobre o cartão de sócio"></i>
                 </div>
 
                 <a href="#" class="btn btn__orange">

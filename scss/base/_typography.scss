@@ -7,7 +7,9 @@ h1 {
   @include font(2.2rem, 900, 1.2em);
   color: $primary-01;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  // display: block;
+  border-bottom: 2px solid $secondary-01;
 }
 
 h2 {

@@ -1,6 +1,6 @@
 .error-404 {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: #ffffff;
   position: relative;
   padding-top: 6rem;
@@ -21,6 +21,7 @@
       color: $secondary-01;
       margin: 0;
       text-align: left;
+      border:none;
     }
     h2 {
       @include font(1.8rem, 900, 1.2em);

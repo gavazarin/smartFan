@@ -1547,7 +1547,7 @@ a span:focus {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1840px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -1583,7 +1583,8 @@ h1 {
   line-height: 1.2em;
   color: #03275A;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  border-bottom: 2px solid #F34605;
 }
 
 h2 {
@@ -2287,6 +2288,7 @@ table .btn {
   padding-bottom: .5rem;
   position: relative;
   text-align: center;
+  border: none;
 }
 
 .banner-hero h1 span {
@@ -2724,6 +2726,7 @@ label:hover img {
   color: #F34605;
   margin: 0 .5rem;
   text-align: center;
+  border: none;
 }
 
 @media (max-width: 767px) {
@@ -2851,6 +2854,10 @@ label:hover img {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+}
+
+.estruturaPadrao .sidebar__noticias h1 {
+  width: 100%;
 }
 
 .estruturaPadrao .sidebar__noticias ul {
@@ -4795,6 +4802,7 @@ header .socialMedias_header img {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  margin: 4.5rem auto;
 }
 
 .vantagens-socio-container .sou-socio {
@@ -4812,6 +4820,7 @@ header .socialMedias_header img {
 .vantagens-socio-container .sou-socio h1,
 .vantagens-socio-container .sou-socio p {
   color: #F0F0F0;
+  border: none;
 }
 
 .vantagens-socio-container .sou-socio p {
@@ -4989,6 +4998,7 @@ header .socialMedias_header img {
   align-content: center;
   flex-wrap: wrap;
   border-radius: .5rem;
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 767px) {
@@ -5154,7 +5164,7 @@ header .socialMedias_header img {
 .classificacao {
   width: 100%;
   padding-top: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   position: relative;
 }
 
@@ -5179,7 +5189,7 @@ header .socialMedias_header img {
 
 .error-404 {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: #ffffff;
   position: relative;
   padding-top: 6rem;
@@ -5217,6 +5227,7 @@ header .socialMedias_header img {
   color: #F34605;
   margin: 0;
   text-align: left;
+  border: none;
 }
 
 .error-404 .text-error404 h2 {
@@ -5284,7 +5295,8 @@ header .socialMedias_header img {
 }
 
 .pagarQuotas h1 {
-  text-align: center;
+  width: 100%;
+  padding-bottom: .5rem;
 }
 
 .pagarQuotas__list {
@@ -5335,6 +5347,7 @@ header .socialMedias_header img {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  background-color: #FFFFFF;
 }
 
 .fluxoPagamentos .row {
@@ -5347,6 +5360,7 @@ header .socialMedias_header img {
 
 .fluxoPagamentos h1 {
   text-align: center;
+  border: none;
 }
 
 .fluxoPagamentos h2 {
@@ -5880,6 +5894,7 @@ header .socialMedias_header img {
   margin-top: 2rem;
   margin-left: 1.5rem;
   color: #F0F0F0;
+  border: none;
 }
 
 @media (max-width: 575px) {
@@ -6286,8 +6301,9 @@ header .socialMedias_header img {
 }
 
 .clube-fan-content h1 {
-  width: 60%;
+  width: 80%;
   margin: 0;
+  padding-bottom: .5rem;
   text-align: center;
 }
 

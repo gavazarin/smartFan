@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <img src="images/svg/pattern_smartFan.svg" alt="" class="pattern__smartFan">
+    <img src="images/svg/pattern_smartFan.svg" alt="Pattern SmartFan" class="pattern__smartFan">
 
     <div class="container">
       <div class="row">
@@ -21,87 +21,144 @@
           <li>
             SmartFAN<b>.Tickets</b>
           </li>
+
           <li>
-            <a href="#"><img src="images/svg/flag-portugal.svg" alt=""></a>
+            <input id="language-dropdown" type="checkbox">
+            <label for="language-dropdown" class="language-dropdown">
+              <img src="images/svg/flag-portugal.svg" alt="Idioma português">
+            </label>
+            <ul class="language-dropdown-list">
+              <li>
+                <a onclick="setLanguage('pt');"><img src="images/svg/flag-portugal.svg" alt=""></a>
+              </li>
+              <li>
+                <a onclick="setLanguage('en');"><img src="images/svg/flag-uk.svg" alt=""></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
 
+    <input id="menu-desporto" type="checkbox">
     <nav class="navMenu col-lg-12">
-      <img src="images/svg/pattern_smartFan-white.svg" alt="" class="pattern__smartFan">
+      <img src="images/svg/pattern_smartFan-white.svg" alt="Pattern SmartFan" class="pattern__smartFan">
       <div class="container">
         <div class="row">
-          <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt=""></a>
+          <a href="index.html" class="marca col-lg-2"><img src="images/svg/logo_smartFan-white.svg"
+              alt="Logo do SmartFan"></a>
 
-          <ul class="menu">
-            <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
-            <!-- <li class="menu__item"><a href="#comprar-bilhetes">comprar bilhetes</a></li> -->
-            <li class="menu__item">
-              <a href="#"><img src="images/svg/search_white.svg" alt="" class="icon-search"></a>
+          <ul class="menu col-lg-10">
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <li class="menu__item menu__item--desportos">
+                  <label for="menu-desporto">
+                    <p>futebol <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
+                  </label>
+                </li>
+              </ul>
             </li>
-            <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
-            <li class="menu__item menu__logado" style="display:none;">
-              <p>Olá, <span><b>Usuário</b></span>!</p>
-              <a href="#" class="btn__verMais">sair</a>
+
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
+                <li class="menu__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+                <li class="menu__item">
+                  <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
+                </li>
+                <li class="menu__item menu__btn" style="display:none;"><a href="#"
+                    class="btn-login btn btn__blue">login</a></li>
+
+                <li class="menu__item menu__logado">
+                  <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+                  <input id="user-dropdown" type="checkbox">
+                  <label for="user-dropdown">
+                    <p class="user-dropdown">
+                      Olá, <span><b>Usuário</b></span>! <i><img src="images/svg/icon-down.svg" alt=""></i></p>
+                  </label>
+
+                  <ul class="user-dropdown__list">
+                    <li>
+                      <a href="userdata.html">Perfil</a>
+                    </li>
+                    <li>
+                      <a href="#">Sair</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="teamsBar">
+    <section class="teamsBar teamsBar__header">
       <div class="container">
         <div class="row">
           <ul class="list_ligas">
             <li>
-              <a href="#"><img src="images/liga_federacao_portuguesa.png" alt=""></a>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa-black.png"
+                  alt="Federação Portuguesa de Futebol"></a>
             </li>
             <li>
-              <a href="#"><img src="images/liga_portugal.png" alt=""></a>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal-black.png"
+                  alt="Liga Portugal"></a>
             </li>
           </ul>
 
           <div class="list_clubs">
             <ul class="list_clubs_01">
               <li>
-                <a href="#"><img src="images/logo-1boavistafc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Boavista FC</span><img
+                    src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1fcporto.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
+                    alt="Futebol Clube do Porto"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1gilvicentefc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Gil Vicente FC</span><img
+                    src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1osbelenenses.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Os Belenenses</span><img
+                    src="images/logo-1osbelenenses.png" alt="Os Belenenses"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1rioavefc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Rio Ave FC</span><img
+                    src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1sporting.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
+                    src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriafc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriasc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
+                    src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
               </li>
             </ul>
 
             <ul class="list_clubs_02">
               <li>
-                <a href="#"><img src="images/logo-2cdnmadeira.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">CD Nacional</span><img
+                    src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2gdchaves.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">GD Chaves</span><img
+                    src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2sccovilha.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">SC Covilhã</span><img
+                    src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2varzimsc.png" alt=""></a>
+                <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
+                    src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
               </li>
             </ul>
           </div>
@@ -111,64 +168,69 @@
 
     <!-- ==== MENU MOBILE ==== -->
     <nav class="navMenu-mobile col-md-12">
-      <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt=""></a>
+      <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt="SmartFan"></a>
 
-      <a href="#menuMobile" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu-white.svg" alt="Abrir Menu"></a>
+      <a href="#" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu-white.svg" alt="Abrir Menu"></a>
 
       <div id="#menuMobile" class="menuMobile">
-        <div class="container-btn">
-          <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
-        </div>
+        <!-- <div class="container-btn">
+        </div> -->
+        <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
+
+        <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt="Logo do SmartFan"></a>
 
         <section class="teamsBar teamsBar__mobile">
           <ul class="list_ligas">
             <li>
-              <a href="#"><img src="images/liga_federacao_portuguesa.png" alt=""></a>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png"
+                  alt="Federação Portuguesa de Futebol"></a>
             </li>
             <li>
-              <a href="#"><img src="images/liga_portugal.png" alt=""></a>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png"
+                  alt="Liga Portugal"></a>
             </li>
           </ul>
+
           <div class="list_clubs">
             <ul class="list_clubs_01">
               <li>
-                <a href="#"><img src="images/logo-1boavistafc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1fcporto.png" alt=""></a>
+                <a href="#"><img src="images/logo-1fcporto.png" alt="Futebol Clube do Porto"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1gilvicentefc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1osbelenenses.png" alt=""></a>
+                <a href="#"><img src="images/logo-1osbelenenses.png" alt="Clube de Futebol Os Belenenses"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1rioavefc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1sporting.png" alt=""></a>
+                <a href="#"><img src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriafc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriasc.png" alt=""></a>
+                <a href="#"><img src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
               </li>
             </ul>
 
             <ul class="list_clubs_02">
               <li>
-                <a href="#"><img src="images/logo-2cdnmadeira.png" alt=""></a>
+                <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2gdchaves.png" alt=""></a>
+                <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2sccovilha.png" alt=""></a>
+                <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-2varzimsc.png" alt=""></a>
+                <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
               </li>
             </ul>
           </div>
@@ -176,14 +238,25 @@
 
         <ul class="menuMobile__list">
           <li class="menuMobile__list__item"><a href="pagar-quotas.html">pagar quotas</a></li>
-          <!-- <li class="menuMobile__list__item"><a href="#comprar-bilhetes">comprar bilhetes</a></li> -->
-          <li class="menuMobile__list__item">
+          <li class="menuMobile__list__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+          <li class="menuMobile__list__item"><a href="userdata.html">perfil</a></li>
+          <!-- <li class="menuMobile__list__item">
             <a href="#"><img src="images/svg/search.svg" alt="" class="icon-search"></a>
+          </li> -->
+          <li class="menu__item menu__btn" style="display:none;"><a href="#" class="btn-login btn btn__blue">login</a>
           </li>
-          <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
-          <li class="menu__item menu__logado" style="display:none;">
-            <p>Olá, <span><b>Usuário</b></span>!</p>
-            <a href="#" class="btn__verMais">sair</a>
+
+          <li class="menu__item menu__logado">
+            <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+            <p class="user-dropdown">
+              Olá, <span><b>Usuário</b></span>!
+            </p>
+
+            <!-- <a href="#" class="btn__verMais">sair</a> -->
+          </li>
+
+          <li class="menu__item menu__item__sair">
+            <a href="#">Sair</a>
           </li>
         </ul>
       </div>
@@ -205,39 +278,55 @@
             <ul class="list-interna">
               <li>
                 <p>
-                  <span class="number-list">1.1</span> Ao visitar e utilizar o Website SMARTFAN.TICKETS, serão recolhidas informações por via da utilização de "Cookies". Os "Cookies" são pequenos ficheiros com informação relevante, retendo apenas informação
-                  relacionada com preferências, não incluindo, como tal, dados pessoais, que ficam armazenados no computador quando se visita determinados websites, permitindo uma navegação mais rápida e eficiente numa posterior utilização.
+                  <span class="number-list">1.1</span> Ao visitar e utilizar o Website SMARTFAN.TICKETS, serão
+                  recolhidas informações por via da utilização de "Cookies". Os "Cookies" são pequenos ficheiros com
+                  informação relevante, retendo apenas informação
+                  relacionada com preferências, não incluindo, como tal, dados pessoais, que ficam armazenados no
+                  computador quando se visita determinados websites, permitindo uma navegação mais rápida e eficiente
+                  numa posterior utilização.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">1.2</span> Os "Cookies" são descarregados para o dispositivo do utilizador quando visita o Website SMARTFAN.TICKETS , tendo como principal objetivo o de reconhecer o utilizador sempre que ele acede a este Website,
+                  <span class="number-list">1.2</span> Os "Cookies" são descarregados para o dispositivo do utilizador
+                  quando visita o Website SMARTFAN.TICKETS , tendo como principal objetivo o de reconhecer o utilizador
+                  sempre que ele acede a este Website,
                   permitindo também melhorar a experiência de utilização do mesmo.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">1.3</span> Os "Cookies" não danificam o equipamento/dispositivo do utilizador e, se estiverem ativados na configuração do seu navegador de internet ("browser"), ajudam a identificar e resolver possíveis erros
+                  <span class="number-list">1.3</span> Os "Cookies" não danificam o equipamento/dispositivo do
+                  utilizador e, se estiverem ativados na configuração do seu navegador de internet ("browser"), ajudam a
+                  identificar e resolver possíveis erros
                   na operação do site.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">1.4</span> O uso de "Cookies" é uma prática normal entre os websites disponíveis na Internet, sendo que a maioria dos navegadores da Internet ("browsers") permite que um Utilizador possa aceitar, recusar ou
+                  <span class="number-list">1.4</span> O uso de "Cookies" é uma prática normal entre os websites
+                  disponíveis na Internet, sendo que a maioria dos navegadores da Internet ("browsers") permite que um
+                  Utilizador possa aceitar, recusar ou
                   apagar "Cookies" através da seleção das definições apropriadas.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">1.5</span> Ao aceder ao Website SMARTFAN.TICKETS, o utilizador aceita expressamente o uso deste tipo de "Cookies" nos seus dispositivos, e caso desative a sua utilização a sua navegação no site poderá não ser
+                  <span class="number-list">1.5</span> Ao aceder ao Website SMARTFAN.TICKETS, o utilizador aceita
+                  expressamente o uso deste tipo de "Cookies" nos seus dispositivos, e caso desative a sua utilização a
+                  sua navegação no site poderá não ser
                   otimizada e algumas das funcionalidades disponíveis no site poderão não funcionar corretamente.
                 </p>
               </li>
               <li>
                 <p>
-                  <span class="number-list">1.6</span> As regras previstas nesta Política de "Cookies" complementam as regras, em matéria de proteção e tratamento de dados pessoais, previstas nos <a href="https://portugalstore.fpf.pt/pt/terms-conditions"
-                    target="_blank">Termos e Condições</a> de Utilização, Política de Privacidade e Condições de Venda, que regulam a oferta dos diversos produtos e serviços disponibilizados no Website SMARFAN.TICKETS e correspondem ao estabelecido na Lei
-                  da Proteção de Dados Pessoais (“LPDP”) e no Regulamento Geral de Proteção de Dados (Regulamento (UE) 2016/679 ("RGPD").
+                  <span class="number-list">1.6</span> As regras previstas nesta Política de "Cookies" complementam as
+                  regras, em matéria de proteção e tratamento de dados pessoais, previstas nos <a
+                    href="https://portugalstore.fpf.pt/pt/terms-conditions" target="_blank">Termos e Condições</a> de
+                  Utilização, Política de Privacidade e Condições de Venda, que regulam a oferta dos diversos produtos e
+                  serviços disponibilizados no Website SMARFAN.TICKETS e correspondem ao estabelecido na Lei
+                  da Proteção de Dados Pessoais (“LPDP”) e no Regulamento Geral de Proteção de Dados (Regulamento (UE)
+                  2016/679 ("RGPD").
                 </p>
               </li>
             </ul>
@@ -252,49 +341,79 @@
                 <dl class="tipos-cookies">
                   <dt>"Cookies" necessários</dt>
                   <dd>
-                    <p>Alguns "Cookies", criados e geridos pela SMARTMOVE S.A e exclusivos para o funcionamento deste Website, são necessários e essenciais para aceder a determinadas áreas e funcionalidades do Website. Permitem a navegação no website e a
-                      utilização das suas aplicações, tal como aceder a áreas seguras do site através de login. Sem estes "Cookies", os serviços que o exijam não podem ser normalmente prestados.</p>
+                    <p>Alguns "Cookies", criados e geridos pela SMARTMOVE S.A e exclusivos para o funcionamento deste
+                      Website, são necessários e essenciais para aceder a determinadas áreas e funcionalidades do
+                      Website. Permitem a navegação no website e a
+                      utilização das suas aplicações, tal como aceder a áreas seguras do site através de login. Sem
+                      estes "Cookies", os serviços que o exijam não podem ser normalmente prestados.</p>
                   </dd>
 
                   <dt>"Cookies" para utilização analítica </dt>
                   <dd>
-                    <p>Estes "Cookies" são utilizados para o acompanhamento e análise do comportamento dos Utilizadores deste Website e monitorizar o desempenho deste, permitindo assim melhorar a experiência ao Utilizador, e permitir a elaboração de perfis
-                      de navegação, personalizando a oferta, destacar artigos ou serviços do site mais procurados pelos Utilizadores, bem como permitir também identificar e corrigir quaisquer anomalias que possam ser detetadas. Estes "Cookies" são utilizados
-                      apenas para efeitos de criação e análise estatística, sem recolha de informação de caráter pessoal.</p>
-                    <p>Para além de "Cookies" próprios e para efeito de análises estatísticas de utilização do website, a SMARTMOVE S.A recorre à Google Analytics, ferramenta de análise Google que permite entender o envolvimento e a utilização, pelos Utilizadores,
-                      do website e respetivas funcionalidades. Para saber mais informação sobre as políticas de privacidade Google e como pode gerir que informação a Google pode aceder visite
-                      <a href="https://www.google.com/policies/privacy/" target="_blank">https://www.google.com/policies/privacy/</a>.</p>
+                    <p>Estes "Cookies" são utilizados para o acompanhamento e análise do comportamento dos Utilizadores
+                      deste Website e monitorizar o desempenho deste, permitindo assim melhorar a experiência ao
+                      Utilizador, e permitir a elaboração de perfis
+                      de navegação, personalizando a oferta, destacar artigos ou serviços do site mais procurados pelos
+                      Utilizadores, bem como permitir também identificar e corrigir quaisquer anomalias que possam ser
+                      detetadas. Estes "Cookies" são utilizados
+                      apenas para efeitos de criação e análise estatística, sem recolha de informação de caráter
+                      pessoal.</p>
+                    <p>Para além de "Cookies" próprios e para efeito de análises estatísticas de utilização do website,
+                      a SMARTMOVE S.A recorre à Google Analytics, ferramenta de análise Google que permite entender o
+                      envolvimento e a utilização, pelos Utilizadores,
+                      do website e respetivas funcionalidades. Para saber mais informação sobre as políticas de
+                      privacidade Google e como pode gerir que informação a Google pode aceder visite
+                      <a href="https://www.google.com/policies/privacy/"
+                        target="_blank">https://www.google.com/policies/privacy/</a>.</p>
                   </dd>
 
                   <dt>"Cookies" de suporte a funcionalidades </dt>
                   <dd>
-                    <p>Este tipo de Cookies, criados pela SMARTMOVE S.A, permitem relembrar as preferências do Utilizador relativamente à utilização do Website, guardando-as de forma a permitir uma personalização da experiência do utilizador no Website,
-                      de forma que não seja necessário voltar a configurar o website com as suas preferências cada vez que voltar a visitá-lo, como por exemplo para relembrar ao utilizador os últimos produtos consultados, visualizar conteúdos personalizados
-                      e ofertas promocionais de acordo com a navegação (por exemplo, se o utilizador vier de sites de parceiros/terceiros).</p>
+                    <p>Este tipo de Cookies, criados pela SMARTMOVE S.A, permitem relembrar as preferências do
+                      Utilizador relativamente à utilização do Website, guardando-as de forma a permitir uma
+                      personalização da experiência do utilizador no Website,
+                      de forma que não seja necessário voltar a configurar o website com as suas preferências cada vez
+                      que voltar a visitá-lo, como por exemplo para relembrar ao utilizador os últimos produtos
+                      consultados, visualizar conteúdos personalizados
+                      e ofertas promocionais de acordo com a navegação (por exemplo, se o utilizador vier de sites de
+                      parceiros/terceiros).</p>
                   </dd>
 
                   <dt>Cookies para promoções e publicidade</dt>
                   <dd>
-                    <p>Este tipo de Cookies, da responsabilidade de terceiros, nomeadamente agências de publicidade, centrais de meios ou entidades similares e são utilizados para apresentar anúncios/publicidade e/ou promoções ou enviar informações adaptadas
-                      aos interesses do utilizador do Website SAMRTFAN.TICKETS ou fora deste Website durante a sua navegação na Internet. São usados para limitar o número de vezes que um anúncio é visualizado e ajudam a medir a eficácia de uma campanha
+                    <p>Este tipo de Cookies, da responsabilidade de terceiros, nomeadamente agências de publicidade,
+                      centrais de meios ou entidades similares e são utilizados para apresentar anúncios/publicidade
+                      e/ou promoções ou enviar informações adaptadas
+                      aos interesses do utilizador do Website SAMRTFAN.TICKETS ou fora deste Website durante a sua
+                      navegação na Internet. São usados para limitar o número de vezes que um anúncio é visualizado e
+                      ajudam a medir a eficácia de uma campanha
                       publicitária.
                     </p>
                   </dd>
 
                   <dt>Cookies de redes sociais </dt>
                   <dd>
-                    <p>Este tipo de "Cookies" de redes sociais destinam-se a permitir que os utilizadores do Website SMARTFAN.TICKETS possam partilhar páginas e conteúdos deste Website nas diversas redes sociais de terceiros, bem como publicar o "gosto"
+                    <p>Este tipo de "Cookies" de redes sociais destinam-se a permitir que os utilizadores do Website
+                      SMARTFAN.TICKETS possam partilhar páginas e conteúdos deste Website nas diversas redes sociais de
+                      terceiros, bem como publicar o "gosto"
                       ou "like" de determinado conteúdo ou serviço.</p>
-                    <p>Para isso, os "plug-in" de redes sociais fazem uso de "Cookies" para rastrear a navegação dos utilizadores, sejam utilizadores dessas plataformas ou não, e para verificar se estão ou não ligados à rede social durante a navegação. Estes
+                    <p>Para isso, os "plug-in" de redes sociais fazem uso de "Cookies" para rastrear a navegação dos
+                      utilizadores, sejam utilizadores dessas plataformas ou não, e para verificar se estão ou não
+                      ligados à rede social durante a navegação. Estes
                       "Cookies" também permitem segmentar as ofertas de publicidade nessas plataformas.</p>
-                    <p>Para obter mais informações sobre o uso de dados pessoais em relação às redes sociais, devem ser consultadas as políticas de privacidade das redes sociais de terceiros em questão, não cabendo à SMARTMOVE nenhum tipo de responsabilidade
+                    <p>Para obter mais informações sobre o uso de dados pessoais em relação às redes sociais, devem ser
+                      consultadas as políticas de privacidade das redes sociais de terceiros em questão, não cabendo à
+                      SMARTMOVE nenhum tipo de responsabilidade
                       sobre esse tipo de utilização.</p>
                   </dd>
 
                   <dt>Cookies e identificadores de equipamento para proteção de transações</dt>
                   <dd>
-                    <p>Durante um processo de compra, a SMARTMOVE S.A ou os seus prestadores de serviços agindo em seu nome, podem criar "Cookies" ou recolher informações sobre o dispositivo do utilizador, incluindo informações (atributos técnicos) necessárias
-                      para o reconhecimento do mesmo (computador, tablet ou smartphone) com a exclusiva finalidade de proteger todas as transações (prevenção de riscos de fraude). </p>
+                    <p>Durante um processo de compra, a SMARTMOVE S.A ou os seus prestadores de serviços agindo em seu
+                      nome, podem criar "Cookies" ou recolher informações sobre o dispositivo do utilizador, incluindo
+                      informações (atributos técnicos) necessárias
+                      para o reconhecimento do mesmo (computador, tablet ou smartphone) com a exclusiva finalidade de
+                      proteger todas as transações (prevenção de riscos de fraude). </p>
                   </dd>
                 </dl>
               </li>
@@ -306,60 +425,88 @@
             <ul class="list-interna">
               <li>
                 <h4><span class="number-list">3.1</span> "Cookies" permanentes</h4>
-                <p>Ficam armazenados nos dispositivos de acesso do Utilizador (pc, smartphone ou tablet) ao nível do navegador de internet ("browser") e são utilizados sempre que este fizer uma nova visita ao Website, por forma a direcionar a navegação de
-                  acordo com as preferências do Utilizador. Estes dados poderão ser acedidos e tratados durante um período definido pelo responsável do cookie.</p>
+                <p>Ficam armazenados nos dispositivos de acesso do Utilizador (pc, smartphone ou tablet) ao nível do
+                  navegador de internet ("browser") e são utilizados sempre que este fizer uma nova visita ao Website,
+                  por forma a direcionar a navegação de
+                  acordo com as preferências do Utilizador. Estes dados poderão ser acedidos e tratados durante um
+                  período definido pelo responsável do cookie.</p>
               </li>
 
               <li>
                 <h4><span class="number-list">3.2</span> "Cookies" de sessão</h4>
-                <p>São "Cookies" temporários que permanecem no navegador de internet ("browser") do Utilizador até este sair do Website. A informação obtida permite identificar problemas e fornecer uma melhor experiência de navegação.</p>
+                <p>São "Cookies" temporários que permanecem no navegador de internet ("browser") do Utilizador até este
+                  sair do Website. A informação obtida permite identificar problemas e fornecer uma melhor experiência
+                  de navegação.</p>
               </li>
               <li>
-                <p><span class="number-list">3.3</span> A SMARTMOVE S.A pode recorrer a tecnologias de seguimento para saber se determinadas mensagens de correio eletrónico enviadas pelo Website SMARTFAN.TICKETS foram lidas, se clicou nas mesmas ou se as
+                <p><span class="number-list">3.3</span> A SMARTMOVE S.A pode recorrer a tecnologias de seguimento para
+                  saber se determinadas mensagens de correio eletrónico enviadas pelo Website SMARTFAN.TICKETS foram
+                  lidas, se clicou nas mesmas ou se as
                   reencaminhou.
                 </p>
               </li>
               <li>
-                <p><span class="number-list">3.4</span> As newsletters, comunicações e notificações enviadas podem, para fins estatísticos, conter "Cookies" que permitem identificar se são abertas e quais os cliques em ligações ("links") dentro de cada tipo
-                  de mensagem. Tal como referido na Política de Privacidade do Website SMARTFAN.TICKETS (ver aqui), o Utilizador pode, a qualquer momento, solicitar a remoção dos seus dados pessoais ou a exclusão do serviço de envio de comunicações.</p>
+                <p><span class="number-list">3.4</span> As newsletters, comunicações e notificações enviadas podem, para
+                  fins estatísticos, conter "Cookies" que permitem identificar se são abertas e quais os cliques em
+                  ligações ("links") dentro de cada tipo
+                  de mensagem. Tal como referido na Política de Privacidade do Website SMARTFAN.TICKETS (ver aqui), o
+                  Utilizador pode, a qualquer momento, solicitar a remoção dos seus dados pessoais ou a exclusão do
+                  serviço de envio de comunicações.</p>
               </li>
               <li>
-                <p><span class="number-list">3.5</span> Este tipo de tecnologias permitem-nos tornar as nossas comunicações mais úteis e interessantes. Se não pretende que confirmemos se abriu as nossas mensagens, se clicou nas mesmas ou se as reencaminhou,
-                  é necessário desativar esta função, uma vez que não serão enviadas quaisquer tipos de mensagens com a função de seguimento desativada.</p>
+                <p><span class="number-list">3.5</span> Este tipo de tecnologias permitem-nos tornar as nossas
+                  comunicações mais úteis e interessantes. Se não pretende que confirmemos se abriu as nossas mensagens,
+                  se clicou nas mesmas ou se as reencaminhou,
+                  é necessário desativar esta função, uma vez que não serão enviadas quaisquer tipos de mensagens com a
+                  função de seguimento desativada.</p>
               </li>
               <li>
-                <p><span class="number-list">3.6</span> Este Website utiliza "Cookies" com funções específicas para melhorar e monitorizar a experiência de utilização, podendo ficar armazenados até 30 dias, conforme a função a que se destinem.</p>
+                <p><span class="number-list">3.6</span> Este Website utiliza "Cookies" com funções específicas para
+                  melhorar e monitorizar a experiência de utilização, podendo ficar armazenados até 30 dias, conforme a
+                  função a que se destinem.</p>
               </li>
               <li>
-                <p><span class="number-list">3.7</span> Como a maioria dos Websites disponíveis na Internet, o Website SMARTFAN.TICKETS recorre a "Cookies" para:</p>
+                <p><span class="number-list">3.7</span> Como a maioria dos Websites disponíveis na Internet, o Website
+                  SMARTFAN.TICKETS recorre a "Cookies" para:</p>
                 <ul class="list-bullet">
                   <li>
                     <p>Certificar-se de que todas as páginas estão a funcionar corretamente;</p>
                   </li>
                   <li>
-                    <p>Armazenar as preferências do utilizador, assim como o idioma selecionado e o tamanho da fonte;</p>
+                    <p>Armazenar as preferências do utilizador, assim como o idioma selecionado e o tamanho da fonte;
+                    </p>
                   </li>
                   <li>
                     <p>Descobrir os detalhes da experiência de navegação do utilizador;</p>
                   </li>
                   <li>
-                    <p>Recolher informação estatística anónima, como por exemplo, as páginas que o utilizador visita e quanto tempo permanece em cada página.</p>
+                    <p>Recolher informação estatística anónima, como por exemplo, as páginas que o utilizador visita e
+                      quanto tempo permanece em cada página.</p>
                   </li>
                 </ul>
               </li>
               <li>
-                <p><span class="number-list">3.8</span> O Website SMARTFAN.TICKETS recolhe informações técnicas do dispositivo do utilizador sempre que este visita este website. As informações são obtidas através do navegador da Internet ("browser") e dizem
-                  respeito ao endereço IP, sistema operativo, resolução do ecrã e motor de busca da Internet utilizado para o acesso.</p>
+                <p><span class="number-list">3.8</span> O Website SMARTFAN.TICKETS recolhe informações técnicas do
+                  dispositivo do utilizador sempre que este visita este website. As informações são obtidas através do
+                  navegador da Internet ("browser") e dizem
+                  respeito ao endereço IP, sistema operativo, resolução do ecrã e motor de busca da Internet utilizado
+                  para o acesso.</p>
               </li>
               <li>
-                <p><span class="number-list">3.9</span> A SMARTMOVE S.A não assume qualquer responsabilidade por problemas legais ou técnicos causados pelo incumprimento por parte do Utilizador das recomendações indicadas. A presente comunicação destina-se
-                  a conhecimento e utilização pelos utilizadores e, por conseguinte, não deve ser utilizada para qualquer outra finalidade.</p>
+                <p><span class="number-list">3.9</span> A SMARTMOVE S.A não assume qualquer responsabilidade por
+                  problemas legais ou técnicos causados pelo incumprimento por parte do Utilizador das recomendações
+                  indicadas. A presente comunicação destina-se
+                  a conhecimento e utilização pelos utilizadores e, por conseguinte, não deve ser utilizada para
+                  qualquer outra finalidade.</p>
               </li>
               <li>
-                <p><span class="number-list">3.10</span> A SMARTMOVE S.A não se responsabiliza pelo conteúdo e veracidade das políticas de privacidade de terceiros incluídas na presente política de cookies.</p>
+                <p><span class="number-list">3.10</span> A SMARTMOVE S.A não se responsabiliza pelo conteúdo e
+                  veracidade das políticas de privacidade de terceiros incluídas na presente política de cookies.</p>
               </li>
               <li>
-                <p><span class="number-list">3.11</span> Deve entender-se que o utilizador aceita o uso de "Cookies" e os termos contidos nesta Política de "Cookies" se continuar a utilizar e navegar no Website SMARTFAN.TICKETS sem antes proceder à sua desativação.</p>
+                <p><span class="number-list">3.11</span> Deve entender-se que o utilizador aceita o uso de "Cookies" e
+                  os termos contidos nesta Política de "Cookies" se continuar a utilizar e navegar no Website
+                  SMARTFAN.TICKETS sem antes proceder à sua desativação.</p>
               </li>
             </ul>
           </li>
@@ -368,27 +515,39 @@
             <h2>4. CONFIGURAÇÃO DE "COOKIES" </h2>
             <ul class="list-interna">
               <li>
-                <p><span class="number-list">4.1</span> Todos os navegadores de internet ("browsers") permitem ao Utilizador configurar a utilização de "Cookies", nomeadamente através da seleção das definições apropriadas no respetivo navegador relativamente
+                <p><span class="number-list">4.1</span> Todos os navegadores de internet ("browsers") permitem ao
+                  Utilizador configurar a utilização de "Cookies", nomeadamente através da seleção das definições
+                  apropriadas no respetivo navegador relativamente
                   a privacidade e segurança.
                 </p>
-                <p>No entanto, é importante destacar que a desativação dos "Cookies" pode impedir que alguns serviços deste Website SMARTFAN.TICKETS funcionem corretamente, afetando, total ou parcialmente, a navegação e utilização pretendidas.</p>
+                <p>No entanto, é importante destacar que a desativação dos "Cookies" pode impedir que alguns serviços
+                  deste Website SMARTFAN.TICKETS funcionem corretamente, afetando, total ou parcialmente, a navegação e
+                  utilização pretendidas.</p>
               </li>
               <li>
-                <p><span class="number-list">4.2</span> As definições de "Cookies" podem ser alteradas nas preferências do navegador de internet ("browser"), seguindo as indicações constantes nas ligações ("links"), para os websites de suporte oficiais dos
-                  navegadores principais para que o utilizador possa decidir se aceita ou não o uso de "Cookies" e de que forma pretende definir a sua utilização.</p>
-                <p>Todos os navegadores de internet ("browsers") permitem que o utilizador aceite, recuse ou apague os "Cookies", nomeadamente através da seleção das configurações apropriadas no seu navegador de internet "browser". O utilizador pode configurar
+                <p><span class="number-list">4.2</span> As definições de "Cookies" podem ser alteradas nas preferências
+                  do navegador de internet ("browser"), seguindo as indicações constantes nas ligações ("links"), para
+                  os websites de suporte oficiais dos
+                  navegadores principais para que o utilizador possa decidir se aceita ou não o uso de "Cookies" e de
+                  que forma pretende definir a sua utilização.</p>
+                <p>Todos os navegadores de internet ("browsers") permitem que o utilizador aceite, recuse ou apague os
+                  "Cookies", nomeadamente através da seleção das configurações apropriadas no seu navegador de internet
+                  "browser". O utilizador pode configurar
                   os "Cookies" no menu "Opções" ou "Preferências" do seu navegador de internet ("browser").</p>
                 <ul class="list-bullet">
                   <li>
-                    <p><strong>Internet Explorer</strong>: Ferramentas -> Opções de Internet -> Privacidade -> Configuração.</p>
+                    <p><strong>Internet Explorer</strong>: Ferramentas -> Opções de Internet -> Privacidade ->
+                      Configuração.</p>
                     <p>Para mais informações, pode consultar o suporte da Microsoft ou a Ajuda do navegador. </p>
                   </li>
                   <li>
-                    <p><strong>Firefox</strong>: Ferramentas -> Opções -> Privacidade -> Historial -> Configuração Personalizada.</p>
+                    <p><strong>Firefox</strong>: Ferramentas -> Opções -> Privacidade -> Historial -> Configuração
+                      Personalizada.</p>
                     <p>Para mais informações, pode consultar o apoio da Mozilla ou a Ajuda do navegador. </p>
                   </li>
                   <li>
-                    <p><strong>Chrome</strong>: Configuração -> Mostrar opções avançadas -> Privacidade -> Configuração de conteúdo.</p>
+                    <p><strong>Chrome</strong>: Configuração -> Mostrar opções avançadas -> Privacidade -> Configuração
+                      de conteúdo.</p>
                     <p>Para mais informações, pode consultar o centro de ajuda do Google ou a Ajuda do navegador.</p>
                   </li>
                   <li>
@@ -405,8 +564,11 @@
             <ul class="list-interna">
               <li>
                 <p>
-                  A SMARTMOVE reserva-se no direito de atualizar ou modificar, sem aviso prévio, a presente Política de "Cookies" de forma a adaptá-la às alterações legislativas, pelo que é aconselhada a sua leitura regular bem como a das Políticas de Privacidade e "Cookies"
-                  dos clubes, promotores e outras entidades parceiras do Website SMARTFAN.TICKETS, não podendo a SMARTMOVE ser responsabilizada pela sua possível alteração.
+                  A SMARTMOVE reserva-se no direito de atualizar ou modificar, sem aviso prévio, a presente Política de
+                  "Cookies" de forma a adaptá-la às alterações legislativas, pelo que é aconselhada a sua leitura
+                  regular bem como a das Políticas de Privacidade e "Cookies"
+                  dos clubes, promotores e outras entidades parceiras do Website SMARTFAN.TICKETS, não podendo a
+                  SMARTMOVE ser responsabilizada pela sua possível alteração.
                 </p>
               </li>
             </ul>
@@ -451,12 +613,14 @@
           </ul>
 
           <div class="logoSmartmove col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg" alt="Smartmove"></a>
+            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg"
+                alt="Smartmove"></a>
           </div>
 
           <ul class="socialmedia_list col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <li>
-              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank" class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
+              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank"
+                class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
             </li>
           </ul>
         </div>
@@ -557,7 +721,8 @@
                   <label for="ultimos-digitos" class="form-label">Últimos 5 dígitos do código de barras</label>
                   <input type="number" name="ultimos-digitos" id="ultimos-digitos">
                   <!-- <span class="input-validate">Obrigatório!</span> -->
-                  <i class="info-cartao"><img src="images/svg/information.svg" alt="Informação sobre o cartão de sócio"></i>
+                  <i class="info-cartao"><img src="images/svg/information.svg"
+                      alt="Informação sobre o cartão de sócio"></i>
                 </div>
 
                 <a href="#" class="btn btn__orange">
