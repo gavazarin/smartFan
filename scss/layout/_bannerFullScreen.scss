@@ -4,6 +4,13 @@
   position: relative;
   @include flex(column, center, center, center);
   z-index: 1;
+  // &:before{
+  //   content: '';
+  //   height: 100%;
+  //   width: 100%;
+  //   background-color: rgba(0,0,0,.2);
+  //   @include absolute(0, auto, auto, 0);
+  // }
   @include sm {
     height: auto;
     padding: 1.5rem 0;
@@ -17,6 +24,7 @@
     z-index: -1;
   }
   .infos-banner {
+    z-index: 2;
     ul {
       width: 100%;
       @include flex(row, flex-end, center, center);

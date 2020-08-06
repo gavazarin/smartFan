@@ -2209,6 +2209,10 @@ table .btn {
   z-index: -1;
 }
 
+.bannerFullScreen .infos-banner {
+  z-index: 2;
+}
+
 .bannerFullScreen .infos-banner ul {
   width: 100%;
   display: flex;
@@ -2863,7 +2867,7 @@ label:hover img {
 .estruturaPadrao .sidebar__noticias ul {
   margin: 1.5rem 0;
   padding-right: 1.5rem;
-  height: 33rem;
+  height: 40rem;
   overflow-y: scroll;
 }
 
