@@ -1,7 +1,7 @@
 .fluxoPagamentos {
   width: 100%;
   padding-top: 1.5rem;
-  min-height: 50vh;
+  min-height: 80vh;
   @include flex(column, space-between, center, center);
   background-color: #FFFFFF;
   .row {

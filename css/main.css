@@ -2806,6 +2806,7 @@ label:hover img {
 .estruturaPadrao {
   position: relative;
   padding: 3rem 0;
+  background-color: #FFFFFF;
 }
 
 .estruturaPadrao .row {
@@ -2848,7 +2849,6 @@ label:hover img {
 }
 
 .estruturaPadrao .sidebar__noticias {
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -5163,8 +5163,6 @@ header .socialMedias_header img {
 .last-game,
 .classificacao {
   width: 100%;
-  padding-top: 1.5rem;
-  margin-top: 3rem;
   position: relative;
 }
 
@@ -5173,8 +5171,12 @@ header .socialMedias_header img {
   margin-top: 0;
 }
 
-.last-game:before,
-.classificacao:before {
+.last-game {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+.last-game:before {
   content: '';
   width: 60%;
   height: 1px;
@@ -5341,7 +5343,7 @@ header .socialMedias_header img {
 .fluxoPagamentos {
   width: 100%;
   padding-top: 1.5rem;
-  min-height: 50vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -1,6 +1,7 @@
 .estruturaPadrao {
   position: relative;
   padding: 3rem 0;
+  background-color: #FFFFFF;
   .row {
     @include flex(row, center, flex-start, flex-start);
   }
@@ -25,7 +26,6 @@
       }
     }
     &__noticias {
-      margin-top: 3rem;
       @include flex(column, flex-start, center, center);
       h1{
         width: 100%;

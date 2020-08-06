@@ -269,12 +269,15 @@
 .last-game,
 .classificacao {
   width: 100%;
-  padding-top: 1.5rem;
-  margin-top: 3rem;
   position: relative;
   h1 {
     margin-top: 0;
   }
+}
+
+.last-game{
+  margin-top: 3rem;
+  padding-top: 1.5rem;
   &:before {
     content: '';
     width: 60%;
