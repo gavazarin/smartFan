@@ -5227,6 +5227,58 @@ header .socialMedias_header img {
   left: auto;
 }
 
+.check-new-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 4.5rem;
+}
+
+.check-new-number h1 {
+  width: 100%;
+}
+
+.check-new-number form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin-bottom: 3rem;
+}
+
+.check-new-number form .container-input {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.check-new-number form .btn {
+  margin-left: .8rem;
+}
+
+.check-new-number p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.check-new-number p .span-number {
+  font-weight: 900;
+  color: #03275A;
+}
+
+.check-new-number p strong {
+  font-weight: 900;
+}
+
+.check-new-number .p-erro {
+  color: #F34605;
+}
+
 .error-404 {
   width: 100%;
   min-height: 80vh;

@@ -287,3 +287,37 @@
     @include absolute(0, 20%, auto, auto);
   }
 }
+
+.check-new-number{
+  @include flex(column, flex-start, center, center);
+  margin-bottom:4.5rem;
+  h1{
+    width:100%;
+  }
+  form{
+    @include flex(row, center, flex-end, flex-end);
+    margin-bottom: 3rem;
+    .container-input{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    .btn{
+      margin-left:.8rem;
+    }
+  }
+  p{
+    @include font(1.8rem, 300, 1.4em);
+    text-transform: uppercase;
+    color:$black-01;
+    .span-number{
+      font-weight: 900;
+      color:$primary-01;
+    }
+    strong{
+      font-weight: 900;
+    }
+  }
+  .p-erro{
+    color:$secondary-01;
+  }
+}
