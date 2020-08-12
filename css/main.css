@@ -5333,6 +5333,15 @@ header .socialMedias_header img {
   align-content: center;
 }
 
+.row_faq h2 {
+  transition: all .3s ease-out;
+}
+
+.row_faq h2:hover {
+  color: #021C40;
+  transition: all .3s ease-out;
+}
+
 .lista-faq {
   padding-left: 3rem;
 }

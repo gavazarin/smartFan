@@ -1,6 +1,13 @@
 .row_faq {
   min-height: 60vh;
   @include flex(column, flex-start, center, center);
+  h2{
+    transition: all .3s ease-out;
+    &:hover{
+      color:$primary-dark;
+      transition: all .3s ease-out;
+    }
+  }
 }
 
 .lista-faq {
