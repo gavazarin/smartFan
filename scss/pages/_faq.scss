@@ -1,0 +1,69 @@
+.row_faq {
+  min-height: 60vh;
+  @include flex(column, flex-start, center, center);
+}
+
+.lista-faq {
+  padding-left: 3rem;
+
+  li {
+    margin: 0.8rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    @include font(1.6rem, 900, 1.4em);
+    text-align: left;
+    text-transform: none;
+    color: $black-01;
+    opacity: 0.7;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      opacity: 1;
+      transition: all 0.3s ease-out;
+    }
+
+    &[aria-expanded="true"] {
+      opacity: 1;
+    }
+  }
+
+  .collapse {
+    margin-bottom: 1.6rem;
+    padding-left: 3rem;
+  }
+
+  .bullet-list,
+  .simple-list,
+  .arrow-list, 
+  .decimal-list {
+    padding-left: 6rem;
+  }
+
+  .bullet-list {
+    li {
+      list-style-type: disc;
+    }
+  }
+
+  .arrow-list {
+    li {
+      list-style-type: circle;
+    }
+  }
+
+  .decimal-list {
+    li {
+      list-style-type: decimal;
+    }
+  }
+
+  .p-destaque {
+    color: $primary-01;
+    margin-bottom: 0rem;
+  }
+}
