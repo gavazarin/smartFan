@@ -315,9 +315,6 @@
         font-size: 1.8rem;
         text-align: left;
       }
-      .btn__verMais{
-        margin-left: .8rem;
-      }
     }
   }
   form{
@@ -328,8 +325,11 @@
       margin-bottom: 0;
     }
     .btn{
-      margin-left:.8rem;
+      margin-left:1.2rem;
     }
+  }
+  .btn__verMais{
+    margin-left: .8rem;
   }
   p{
     @include font(1.8rem, 300, 1.4em);
