@@ -294,6 +294,29 @@
   h1{
     width:100%;
   }
+  &-content{
+    @include flex(row, center, flex-start, flex-start);
+    flex-wrap: wrap;
+    text-align: right;
+    padding-top:1.5rem;
+    i{
+      display: inline-block;
+      width:auto;
+      height:20rem;
+      img{
+        height: 100%;
+      }
+    }
+    &-text{
+      padding-top:2rem;
+      text-align: left;
+      h2{
+        width:50%;
+        font-size: 1.8rem;
+        text-align: left;
+      }
+    }
+  }
   form{
     @include flex(row, center, flex-end, flex-end);
     margin-bottom: 3rem;
@@ -321,3 +344,4 @@
     color:$secondary-01;
   }
 }
+

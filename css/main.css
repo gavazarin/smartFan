@@ -5240,6 +5240,38 @@ header .socialMedias_header img {
   width: 100%;
 }
 
+.check-new-number-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  text-align: right;
+  padding-top: 1.5rem;
+}
+
+.check-new-number-content i {
+  display: inline-block;
+  width: auto;
+  height: 20rem;
+}
+
+.check-new-number-content i img {
+  height: 100%;
+}
+
+.check-new-number-content-text {
+  padding-top: 2rem;
+  text-align: left;
+}
+
+.check-new-number-content-text h2 {
+  width: 50%;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
 .check-new-number form {
   display: flex;
   flex-direction: row;
