@@ -5272,6 +5272,10 @@ header .socialMedias_header img {
   text-align: left;
 }
 
+.check-new-number-content-text .btn__verMais {
+  margin-left: .8rem;
+}
+
 .check-new-number form {
   display: flex;
   flex-direction: row;
