@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar Ingressos - Smartfan.Tickets</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+  <header class="header-ingresso">
+    <div class="header-ingresso-top">
+      <div class="container">
+        <div class="row">
+          <ul class="header-ingresso-top-nav">
+            <li class="nav-logo col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <a href="index.html">
+                <img src="images/svg/logo_smartFan.svg" alt="" class="">
+              </a>
+            </li>
+
+            <li class="nav-title col-lg-4 col-md-4 col-sm-4 col-xs-8">
+              <h1>Comprar Ingresso</h1>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-ingresso-info">
+      <div class="container">
+        <ul class="game-info">
+          <li class="game-info-item1">8ª Semana - 2º Turno</li>
+          <li class="game-info-item2">Gil Vicente - Boavista</li>
+          <li class="game-info-item3">Quinta-feira, 26 de agosto - 19h00</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="bilhetes-content">
+    <div class="container">
+      <div class="row">
+        <ul class="breadcrumb col-lg-12">
+          <li class="breadcrumb-item breadcrumb-item-active">
+            <a href="#"><span>Escolher Ingresso</span></a>
+            <i><img src="images/svg/chevron-right.svg" alt=""></i>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#"><span>Dados</span></a>
+            <i><img src="images/svg/chevron-right.svg" alt=""></i>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#"><span>Pagamento</span></a>
+            <i><img src="images/svg/chevron-right.svg" alt=""></i>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#"><span>Confirmação</span></a>
+          </li>
+        </ul>
+        <h2 class="title-breadcrumb">Escolher Ingresso</h2>
+      </div>
+    </div>
+
+    <section class="escolher-ingresso">
+      <div class="container">
+        <div class="row">
+          <div class="escolher-ingresso-content col-lg-10">
+            <div class="escolher-ingresso-box col-lg-3">
+              <ul class="ingressos-arquibancada accordion" id="accordionIngressos">
+                <li id="headingOne">
+                  <button class="ingressos-arquibancada-number ingressos-arquibancada-number-select"
+                    data-toggle="collapse" data-target="#A13" role="button" aria-expanded="true" aria-controls="A13">
+                    <span>A13</span> <span>R$10,00</span>
+                  </button>
+                  <ul id="A13" class="collapse show ingresso-type" aria-labelledby="headingOne"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$5,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="headingTwo">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#A11" role="button"
+                    aria-expanded="false" aria-controls="A11">
+                    <span>A11</span> <span>R$10,00</span>
+                  </button>
+                  <ul id="A11" class="collapse show ingresso-type" aria-labelledby="headingTwo"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$5,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="headingThree">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#A9" role="button"
+                    aria-expanded="false" aria-controls="A9">
+                    <span>A9</span> <span>R$10,00</span>
+                  </button>
+                  <ul id="A9" class="collapse show ingresso-type" aria-labelledby="headingThree"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$5,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="headingFour">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#A7" role="button"
+                    aria-expanded="false" aria-controls="A7">
+                    <span>A7</span> <span>R$10,00</span>
+                  </button>
+                  <ul id="A7" class="collapse show ingresso-type" aria-labelledby="headingFour"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$5,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li id="headingFive">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#B15" role="button"
+                    aria-expanded="false" aria-controls="B15">
+                    <span>B15</span> <span>R$20,00</span>
+                  </button>
+                  <ul id="B15" class="collapse show ingresso-type" aria-labelledby="headingFive"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$20,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li id="headingSix">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#B17" role="button"
+                    aria-expanded="false" aria-controls="B17">
+                    <span>B17</span> <span>R$20,00</span>
+                  </button>
+                  <ul id="B17" class="collapse show ingresso-type" aria-labelledby="headingSix"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$20,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li id="headingSeven">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#GS02" role="button"
+                    aria-expanded="false" aria-controls="GS02">
+                    <span>GS02</span> <span>R$20,00</span>
+                  </button>
+                  <ul id="GS02" class="collapse show ingresso-type" aria-labelledby="headingSeven"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$20,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li id="headingEight">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#GS04" role="button"
+                    aria-expanded="false" aria-controls="GS04">
+                    <span>GS04</span> <span>R$20,00</span>
+                  </button>
+                  <ul id="GS04" class="collapse show ingresso-type" aria-labelledby="headingEight"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$20,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li id="headingNine">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#GS05" role="button"
+                    aria-expanded="false" aria-controls="GS05">
+                    <span>GS05</span> <span>R$20,00</span>
+                  </button>
+                  <ul id="GS05" class="collapse show ingresso-type" aria-labelledby="headingNine"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$20,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li id="headingTen">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#GS06" role="button"
+                    aria-expanded="false" aria-controls="GS06">
+                    <span>GS06</span> <span>R$20,00</span>
+                  </button>
+                  <ul id="GS06" class="collapse show ingresso-type" aria-labelledby="headingTen"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$20,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li id="headingEleven">
+                  <button class="ingressos-arquibancada-number" data-toggle="collapse" data-target="#GS07" role="button"
+                    aria-expanded="false" aria-controls="GS07">
+                    <span>GS07</span> <span>R$20,00</span>
+                  </button>
+                  <ul id="GS07" class="collapse show ingresso-type" aria-labelledby="headingEleven"
+                    data-parent="#accordionIngressos">
+                    <li>
+                      <ul class="ingresso-type-list">
+                        <li>
+                          <span>Inteira</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$20,00</span>
+                        </li>
+                        <li>
+                          <span>Meia-Entrada</span>
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span>R$10,00</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="escolher-ingresso-ginasio col-lg-9">
+              <img src="images/01maracana_setores_disponiveis.jpg" alt="">
+            </div>
+
+            <div class="container-btn col-lg-12">
+              <a href="index.html" class="btn__verMais">
+                cancelar
+              </a>
+              <a href="ingressos_dados.html" class="btn btn__blue">
+                <span>Avançar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <footer>
+    <section class="teamsBar">
+      <div class="container">
+        <div class="row">
+          <ul class="list_ligas">
+            <li>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png"
+                  alt="Federação Portuguesa de Futebol"></a>
+            </li>
+            <li>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png"
+                  alt="Liga Portugal"></a>
+            </li>
+          </ul>
+
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Boavista FC</span><img
+                    src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
+                    alt="Futebol Clube do Porto"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Gil Vicente FC</span><img
+                    src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Os Belenenses</span><img
+                    src="images/logo-1osbelenenses.png" alt="Os Belenenses"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Rio Ave FC</span><img
+                    src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
+                    src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
+                    src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_02">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">CD Nacional</span><img
+                    src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">GD Chaves</span><img
+                    src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">SC Covilhã</span><img
+                    src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
+                    src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li><a href="#">Termos e Compromissos</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+
+        <ul class="footerList footerList__center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li>
+            <span>Apoio ao cliente</span>
+            <a href="#">helpdesk@smartticketing.pt</a>
+          </li>
+        </ul>
+
+        <ul class="payList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li class="logo-meowallet"><img src="images/svg/meowallet-blue.svg" alt="MEO Wallet"></li>
+          <li class="logo-visa"><img src="images/payment-visa.png" alt="Visa"></li>
+          <li class="logo-mastercard"><img src="images/payment-mastercard.png" alt="Mastercard"></li>
+          <li class="logo-multibanco"><img src="images/svg/multibanco-white.svg" alt="Multibanco"></li>
+          <li class="logo-visa"><img src="images/svg/mbway.svg" alt="Multibanco"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <span>SmartFan.Tickets</span>
+              <a href="#">contato@contato.pt</a>
+            </li>
+          </ul>
+
+          <div class="logoSmartmove col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg"
+                alt="Smartmove"></a>
+          </div>
+
+          <ul class="socialmedia_list col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank"
+                class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery, Bootstrap JS -->
+  <script src="includes/jquery.min.js"></script>
+  <script src="includes/bootstrap.min.js"></script>
+</body>
+
+</html>

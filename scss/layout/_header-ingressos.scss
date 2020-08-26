@@ -1,0 +1,46 @@
+.header-ingresso{
+    width:100%;
+    position: relative;
+    padding-top:0.8rem;
+    border-bottom:none;
+    &-top{
+        position: relative;
+        &-nav{
+            width: 100%;
+            position: relative;
+            @include flex(row, space-between, center, center);
+        }
+        .nav-logo{
+            img{
+                height: 5rem;
+            }
+        }
+        .nav-title{
+            @include flex(row, flex-end, center, center);
+            h1{
+                border-bottom: none;
+                color:$secondary-01;
+            }
+        }
+    }
+    &-info{
+        padding:0.8rem 0;
+        background-color: $primary-01;
+        margin-top: .8rem;
+        .game-info{
+            @include flex(column, center, center, center);
+            color:$white-01;
+            @include font(1.6rem, 300, 1.4em);
+            &-item1{
+                font-size:1.6rem;
+                margin-bottom:.4rem;
+            }
+            &-item2{
+                font-weight: 900;
+                font-size:2.2rem;
+                text-transform: uppercase;
+                margin-bottom: .4rem;
+            }
+        }
+    }
+}
