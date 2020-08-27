@@ -6197,7 +6197,59 @@ header .socialMedias_header img {
   width: 100%;
   background-color: #F0F0F0;
   border-radius: 8px;
-  padding: 1.6rem;
+  margin-bottom: 1.6rem;
+  padding: 1.2rem 1.6rem;
+}
+
+.escolher-ingresso-box h3 {
+  font-size: 1.8rem;
+  color: #F34605;
+}
+
+.escolher-ingresso-box .voucher-desconto p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.escolher-ingresso-box .voucher-desconto form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.escolher-ingresso-box .voucher-desconto form .btn {
+  margin-left: .8rem;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade ul {
+  margin-top: 1.2rem;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade li b {
+  font-weight: 900;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade li select {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  padding: 3px;
+  border-radius: 4px;
 }
 
 .escolher-ingresso-box .ingressos-arquibancada {
@@ -6208,7 +6260,7 @@ header .socialMedias_header img {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.4em;
 }
@@ -6238,16 +6290,20 @@ header .socialMedias_header img {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-}
-
-.escolher-ingresso-box .ingressos-arquibancada-number-select {
-  background-color: #1A7DD7;
-  color: #F0F0F0;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.4em;
 }
 
 .escolher-ingresso-box .ingressos-arquibancada-number[aria-expanded="true"] {
+  background-color: #1A7DD7;
+  color: #F0F0F0;
   border: 2px solid #1A7DD7;
   border-radius: 4px;
+}
+
+.escolher-ingresso-box .ingressos-arquibancada-number:focus {
+  outline: 5px auto #03275A;
 }
 
 .escolher-ingresso-box .ingressos-arquibancada .ingresso-type {

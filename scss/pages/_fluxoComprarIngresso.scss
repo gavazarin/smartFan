@@ -83,12 +83,46 @@
         width:100%;
         background-color: $white-01;
         border-radius:8px;
-        padding:1.6rem;
+        margin-bottom: 1.6rem;
+        padding:1.2rem 1.6rem;
+        h3{
+            font-size: 1.8rem;
+            color:$secondary-01;
+        }
+        .voucher-desconto{
+            p{
+                @include font(1.6rem, 300, 1.4em);
+                text-align: center;
+            }
+            form{
+                @include flex(row, center, center, center);
+                .btn{
+                    margin-left: .8rem;
+                }
+            }
+        }
+        .escolher-ingresso-quantidade{
+            ul{
+                margin-top:1.2rem;
+            }
+            li{
+                @include flex(row, space-between, center, center);
+                @include font(1.8rem, 300, 1.4em);
+                b{
+                    font-weight: 900;
+                }
+                select{
+                    @include font(1.6rem, 300, 1.4em);
+                    padding:3px;
+                    border-radius:4px;
+                }
+            }
+        }
         .ingressos-arquibancada{
             width:100%;
             position: relative;
             @include flex(column, flex-start, center, center);
-            @include font(1.8rem, 300, 1.4em);
+            @include font(1.6rem, 300, 1.4em);
             li{
                 width:100%;
                 @include flex(column, flex-start, center, center);
@@ -106,13 +140,15 @@
                 width:100%;
                 padding:4px;
                 @include flex(row, space-between, center, center);
-                &-select{
+                @include font(1.8rem, 300, 1.4em);
+                &[aria-expanded="true"]{
                     background-color: $primary-02;
                     color:$white-01;
-                }
-                &[aria-expanded="true"]{
                     border:2px solid $primary-02;
                     border-radius: 4px;
+                }
+                &:focus{
+                    outline: 5px auto $primary-01;
                 }
             }
             .ingresso-type{
