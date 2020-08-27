@@ -168,3 +168,29 @@ table {
     }
   }
 }
+
+.table-detalhes-compra{
+  width:100%;
+  margin:3rem 0;
+  @include flex(row, center, flex-start, flex-start);
+  thead{
+    border-bottom:none;
+  }
+  tr{
+    @include flex(column, flex-start, flex-start, flex-start);
+  }
+  th, td{
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    &:nth-child(odd){
+      background-color:#f1f1f1;
+    }
+  }
+  th{
+    text-align: right;
+  }
+  td{
+    text-align: left;
+  }
+}

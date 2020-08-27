@@ -2211,6 +2211,46 @@ table .btn {
   }
 }
 
+.table-detalhes-compra {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.table-detalhes-compra thead {
+  border-bottom: none;
+}
+
+.table-detalhes-compra tr {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.table-detalhes-compra th, .table-detalhes-compra td {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.table-detalhes-compra th:nth-child(odd), .table-detalhes-compra td:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.table-detalhes-compra th {
+  text-align: right;
+}
+
+.table-detalhes-compra td {
+  text-align: left;
+}
+
 .bannerFullScreen {
   width: 100%;
   height: 17.5rem;
