@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBB.Tickets - Pagar Mensalidades</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+  <header class="header-ingresso">
+    <div class="header-ingresso-top">
+      <div class="container">
+        <div class="row">
+          <ul class="header-ingresso-top-nav">
+            <li class="nav-logo col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <a href="index.html">
+                <img src="images/svg/logo_smartFan.svg" alt="" class="">
+              </a>
+            </li>
+
+            <li class="nav-title col-lg-4 col-md-4 col-sm-4 col-xs-8">
+              <h1>Comprar Ingresso</h1>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-ingresso-info">
+      <div class="container">
+        <ul class="game-info">
+          <li class="game-info-item1">8ª Semana - 2º Turno</li>
+          <li class="game-info-item2">Gil Vicente - Boavista</li>
+          <li class="game-info-item3">Quinta-feira, 26 de agosto - 19h00</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="fluxoPagamentos">
+    <div class="container">
+      <div class="row">
+        <div class="success col-lg-7 col-md-10 col-sm-12">
+          <div>
+            <i><img src="images/svg/check-icon.svg" alt=""></i>
+            <h3>A Sua compra foi realizada com sucesso!</h3>
+            <h4>Seus ingressos serão enviados para o e-mail indicado</h4>
+
+            <div class="container-btn">
+              <a href="index.html" class="btn__verMais">voltar ao início</a>
+              <a class="btn btn__blue" data-toggle="collapse" href="#detalhes-compra" role="button"
+                aria-expanded="false" aria-controls="detalhes-compra"><span>Detalhes da compra</span></a>
+            </div>
+          </div>
+
+
+          <div class="container-detalhes collapse" id="detalhes-compra">
+            <div class="container-seu-carrinho">
+              <table class="table table-detalhes-compra">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Método de Pagamento</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>João Silva</td>
+                    <td>joaosilva@mail.com</td>
+                    <td>Cartão de Crédito</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-mensalidade">
+                <thead>
+                  <tr>
+                    <th scope="col">Partida</th>
+                    <th scope="col">Arquibancada</th>
+                    <th scope="col">Ingresso</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="item-experiencia"><span>São Paulo x Corinthians</span></td>
+                    <td><span>A13</span></td>
+                    <td>
+                      <p><span>Inteira</span></p>
+                    </td>
+                    <td>2</td>
+                    <td>R$10,00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="pagamento_sucesso">
+          <i><img src="images/svg/check-icon.svg" alt="Ícone de confirmação"></i>
+
+          <h1>Seu pagamento foi realizado com sucesso!</h1>
+
+          <div class="container-btn">
+            <a href="index.html" class="btn btn__orange">voltar</a>
+          </div>
+        </div> -->
+
+      <!-- <div class="payreturn__multibanco col-lg-5">
+          <img src="images/svg/multibanco.svg" alt="">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Entidade</strong>
+                </td>
+                <td>
+                  XXXXX
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Referencia</strong>
+                </td>
+                <td>
+                  XXXXXXXXX
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Valor</strong>
+                </td>
+                <td>
+                  XX,XX€
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Validade</strong>
+                </td>
+                <td>
+                  xx/xx
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+
+      <!-- <div>
+          <div class="accordion-detalhes">
+            <input type="radio" name="tabs-detalhes" id="ver-detalhes">
+            <label for="ver-detalhes">
+              <span>Ver detalhes</span>
+            </label>
+
+            <div class="tab">
+              <div class="clube-detalhes">
+                <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube" title="Gil Vicente Futebol Clube">
+                <p>Gil Vicente Futebol Clube</p>
+              </div>
+
+              <table class="col-lg-12 col-md-12 col-sm-12">
+                <tbody>
+                  <tr>
+                    <td><strong smv-langtext="payrettitlefee">Quotas</strong></td>
+                    <td>
+                      <div>
+                        <span smv-langtext="feedateMY" smv-langreplid-month="xmonth09" smv-langrepltext-y="2019">Setembro/2019</span>
+                        - <span>5,00</span> <span smv-langtext="currencysymbol">€</span>
+                      </div>
+                      <div>
+                        <span smv-langtext="feedateMY" smv-langreplid-month="xmonth10" smv-langrepltext-y="2019">Outubro/2019</span>
+                        - <span>5,00</span> <span smv-langtext="currencysymbol">€</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><strong smv-langtext="lblnumenc">Nº Encomenda</strong></td>
+                    <td>4UAGDNHXZQLQ</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong smv-langtext="lblnumsoc">Nº de Sócio</strong>
+                    </td>
+
+                    <td>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong smv-langtext="subttcheckbuyerdata">Dados de contacto</strong>
+                    </td>
+                    <td>
+                      Daniela Gomes Carvalho<br> t.a.hra.testing@gmail.com
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><strong smv-langtext="lblpaymethod">Método de Pagamento</strong></td>
+                    <td smv-langtext="xpaynameMULTIBANCO">Multibanco</td>
+                  </tr>
+
+                  <tr class="totalpayment">
+                    <td><strong smv-langtext="lbltotal">Total</strong>&nbsp;</td>
+                    <td><strong>10,00 <span smv-langtext="currencysymbol">€</span></strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div> -->
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <section class="fornecedores">
+      <div class="container">
+        <div class="row">
+          <ul class="fornecedores-list">
+            <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h4>Lei de Incentivo ao esporte</h4>
+              <a href="https://www.gov.br/cidadania/pt-br/noticias-e-conteudos/esporte" target="_blank">
+                <img src="images/fornecedores01.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <h4>Patrocinadora oficial</h4>
+              <a href="https://www.budweiser.com.br/" target="_blank">
+                <img src="images/fornecedores02.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <h4>Marca oficial</h4>
+              <a href="https://www.nike.com.br/basquete/nike-basketball" target="_blank">
+                <img src="images/fornecedores03.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <h4>Patrocinador oficial</h4>
+              <a href="index.html" target="_blank">
+                <img src="images/fornecedores04.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <h4>Bola oficial</h4>
+              <a href="https://www.penalty.com.br/bolas/basquetebol" target="_blank">
+                <img src="images/fornecedores05.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <h4>Patrocinador Oficial</h4>
+              <a href="http://www.unisal.br/vestibular" target="_blank">
+                <img src="images/fornecedores06.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <h4>Patrocinador oficial</h4>
+              <a href="http://plastubos.com.br/" target="_blank">
+                <img src="images/fornecedores07.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <h4>Parceiro</h4>
+              <ul class="icon-list">
+                <li class="icon-list-item">
+                  <a href="http://www.nba.com/" target="_blank">
+                    <img src="images/fornecedores08.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <h4>Emissoras oficiais</h4>
+              <ul class="icon-list">
+                <li class="icon-list-item">
+                  <a href="http://band.com.br/" target="_blank">
+                    <img src="images/fornecedores09.png" alt="">
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="https://prf.hn/click/camref:1011l8695/adref:nbbsite" target="_blank">
+                    <img src="images/fornecedores10.png" alt="">
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="https://www.foxsports.com.br/" target="_blank">
+                    <img src="images/fornecedores11.png" alt="">
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="http://www.espn.com.br/" target="_blank">
+                    <img src="images/fornecedores12.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <h4>Parceiros oficiais digitais</h4>
+              <ul class="icon-list">
+                <li class="icon-list-item">
+                  <a href="http://twitter.com.br/NBB" target="_blank">
+                    <img src="images/fornecedores13.png" alt="">
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="http://facebook.com.br/NBB" target="_blank">
+                    <img src="images/fornecedores14.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+              <h4>Apoio</h4>
+              <a href="http://twitter.com.br/NBB" target="_blank">
+                <img src="images/fornecedores15.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+              <h4>ABCD</h4>
+              <a href="http://twitter.com.br/NBB" target="_blank">
+                <img src="images/fornecedores16.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+              <h4>Chancela</h4>
+              <a href="http://twitter.com.br/NBB" target="_blank">
+                <img src="images/fornecedores17.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <h4>Apoiador oficial da LDB</h4>
+              <a href="http://twitter.com.br/NBB" target="_blank">
+                <img src="images/fornecedores18.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+              <h4>Realização</h4>
+              <a href="http://twitter.com.br/NBB" target="_blank">
+                <img src="images/fornecedores19.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-media">
+      <div class="container">
+        <div class="row">
+          <ul class="social-media-list col-lg-6">
+            <li class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+              <a href="https://www.facebook.com/NBB/">
+                <img src="images/icon-facebook-white.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+              <a href="https://twitter.com/nbb?lang=pt">
+                <img src="images/icon-twitter-white.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+              <a href="https://www.instagram.com/nbb/">
+                <img src="images/icon-instagram-white.png" alt="">
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+              <a href="https://www.youtube.com/user/NBBoficial">
+                <img src="images/icon-youtube-white.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="guia-footer">
+      <div class="container">
+        <div class="row">
+          <ul class="guia-footer-list">
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+              <h3>NBB</h3>
+              <ul>
+                <li>
+                  <a href="https://lnb.com.br/nbb/equipes/" target="_blank">Equipes</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/nbb/classificacao/" target="_blank">Classificação</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/nbb/tabela-de-jogos/" target="_blank">Tabela de Jogos</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/nbb/estatisticas/" target="_blank">Estatísticas</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/nbb/atletas/" target="_blank">Atletas</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/nbb/tecnicos/" target="_blank">Técnicos</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/nbb/equipes/vai-e-vem/" target="_blank">Vai-e-Vem</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+              <h3>LDB</h3>
+              <ul>
+                <li>
+                  <a href="https://lnb.com.br/ldb/equipes/" target="_blank">Equipes</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/ldb/classificacao/" target="_blank">Classificação</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/ldb/tabela-de-jogos/" target="_blank">Tabela de Jogos</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/ldb/estatisticas/" target="_blank">Estatísticas</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/ldb/atletas/" target="_blank">Atletas</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/ldb/tecnicos/" target="_blank">Técnicos</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+              <h3>Liga Ouro</h3>
+              <ul>
+                <li>
+                  <a href="https://lnb.com.br/liga-ouro/equipes/" target="_blank">Equipes</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/liga-ouro/classificacao/" target="_blank">Classificação</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/liga-ouro/tabela-de-jogos/" target="_blank">Tabela de Jogos</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/liga-ouro/estatisticas" target="_blank">Estatísticas</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/liga-ouro/atletas/" target="_blank">Atletas</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/liga-ouro/tecnicos" target="_blank">Técnicos</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+              <h3>LNB</h3>
+              <ul>
+                <li>
+                  <a href="https://lnb.com.br/institucional/sobre/" target="_blank">Sobre</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/institucional/presidente/" target="_blank">Presidente</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/institucional/estrutura-organizacional/" target="_blank">Estrutura
+                    Organizacional</a>
+                </li>
+                <li>
+                  <a href="https://lnb.com.br/institucional/documentos/ target=" _blank ">Documentos</a>
+                </li>
+                <li>
+                  <a href=" https://lnb.com.br/institucional/documentos-oficiais/categoria/estatuto-lnb/ " target="
+                    _blank ">Estatuto</a>
+                </li>
+                <li>
+                  <a href=" https://lnb.com.br/institucional/documentos-oficiais/categoria/stjd/ " target=" _blank ">Comissão Disciplinar</a>
+                </li>
+                <li>
+                  <a href=" https://lnb.com.br/nbb/arbitros/ " target=" _blank ">Árbitros</a>
+                </li>
+                <li>
+                  <a href=" https://lnb.com.br/institucional/linha-do-tempo/ " target=" _blank ">Linha do Tempo</a>
+                </li>
+                <li>
+                  <a href=" https://lnb.com.br/institucional/contato " target=" _blank ">Contato</a>
+                </li>
+                <li>
+                  <a href=" https://lnb.com.br/guias " target=" _blank ">Guias Oficiais</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class=" col-lg-2 col-md-2 col-sm-4 col-xs-4 ">
+              <h3>Notícias</h3>
+              <ul>
+                <li>
+                  <a href=" https://lnb.com.br/noticias/ " target=" _blank ">Notícias</a>
+                </li>
+                <li>
+                  <a href=" https://lnb.com.br/fotos/ " target=" _blank ">Fotos</a>
+                </li>
+                <li>
+                  <a href=" https://lnb.com.br/videos/ " target=" _blank ">Vídeos</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class=" rodape ">
+      <div class=" container ">
+        <div class=" row ">
+          <ul class=" footerList col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <li>
+              <span>SmartFan.Tickets</span>
+              <a href=" # ">contato@contato.pt</a>
+            </li>
+          </ul>
+
+          <div class=" logoSmartmove col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <a href=" http://www.smartmove.pt/pt/ " target=" _blank "><img src="
+                    images/svg/smartmove_rodape.svg " alt=" Smartmove "></a>
+          </div>
+
+          <ul class=" socialmedia_list col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <li>
+              <a href=" https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a. " target="
+                    _blank " class=" icon-socialmedia "><img src=" images/linkedin.png " alt=" Linkedin "></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery, Bootstrap JS -->
+  <script src=" includes/jquery.min.js"></script>
+                    <script src="includes/bootstrap.min.js"></script>
+
+
+                    <script src="js/menu.js"></script>
+</body>
+
+</html>

@@ -202,3 +202,88 @@
     @include font(1.2rem, 700, 1.2em);
   }
 }
+
+.success {
+  width: 100%;
+  position: relative;
+  @include flex(column, flex-start, center, center);
+  div {
+    width: 100%;
+    text-align: center;
+  }
+  i {
+    height: 10rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    img {
+      height: 100%;
+    }
+  }
+  h3 {
+    // width: 40%;
+    @include font(2.2rem, 900, 1.4em);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  h4 {
+    @include font(1.8rem, 300, 1.4em);
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+  .payreturn__table {
+    margin-top: 3rem;
+    @include flex(column, flex-start, center, center);
+    img {
+      height: 5rem;
+    }
+    table {
+      width: auto;
+      td {
+        margin: 0 1.6rem;
+        &:first-child {
+          text-align: left;
+        }
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+    @include xs {
+      margin-top: 1.5rem;
+      table {
+        tr {
+          @include flex(row, space-between, center, center);
+        }
+      }
+    }
+  }
+  .btn {
+    padding: 1.5rem .8rem;
+  }
+  .valor-compra {
+    li {
+      width: 100%;
+      @include flex(row, flex-end, center, center);
+      p {
+        width: auto;
+      }
+    }
+    &-total {
+      &:before {
+        width: 50%;
+      }
+    }
+  }
+  @include xs {
+    h3 {
+      width: 100%;
+    }
+  }
+}
+
+.success {
+  h3 {
+    color: $secondary-02;
+  }
+}

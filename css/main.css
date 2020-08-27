@@ -3868,7 +3868,7 @@ header .socialMedias_header img {
 
 .header-ingresso-top .nav-title h1 {
   border-bottom: none;
-  color: #F34605;
+  color: #F37402;
 }
 
 .header-ingresso-info {
@@ -5913,6 +5913,121 @@ header .socialMedias_header img {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.2em;
+}
+
+.success {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.success div {
+  width: 100%;
+  text-align: center;
+}
+
+.success i {
+  height: 10rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.success i img {
+  height: 100%;
+}
+
+.success h3 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.success h4 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.success .payreturn__table {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.success .payreturn__table img {
+  height: 5rem;
+}
+
+.success .payreturn__table table {
+  width: auto;
+}
+
+.success .payreturn__table table td {
+  margin: 0 1.6rem;
+}
+
+.success .payreturn__table table td:first-child {
+  text-align: left;
+}
+
+.success .payreturn__table table td:last-child {
+  text-align: right;
+}
+
+@media (max-width: 575px) {
+  .success .payreturn__table {
+    margin-top: 1.5rem;
+  }
+  .success .payreturn__table table tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.success .btn {
+  padding: 1.5rem .8rem;
+}
+
+.success .valor-compra li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.success .valor-compra li p {
+  width: auto;
+}
+
+.success .valor-compra-total:before {
+  width: 50%;
+}
+
+@media (max-width: 575px) {
+  .success h3 {
+    width: 100%;
+  }
+}
+
+.success h3 {
+  color: #F37402;
 }
 
 .bilhetes-content {
