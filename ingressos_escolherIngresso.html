@@ -30,7 +30,9 @@
         </div>
       </div>
     </div>
+  </header>
 
+  <div>
     <div class="header-ingresso-info">
       <div class="container">
         <ul class="game-info">
@@ -40,109 +42,109 @@
         </ul>
       </div>
     </div>
-  </header>
 
-  <section class="bilhetes-content">
-    <div class="container">
-      <div class="row">
-        <ul class="breadcrumb col-lg-12">
-          <li class="breadcrumb-item breadcrumb-item-active">
-            <a href="#"><span>Escolher Ingresso</span></a>
-            <i><img src="images/svg/chevron-right.svg" alt=""></i>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#"><span>Dados</span></a>
-            <i><img src="images/svg/chevron-right.svg" alt=""></i>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#"><span>Pagamento</span></a>
-            <i><img src="images/svg/chevron-right.svg" alt=""></i>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#"><span>Confirmação</span></a>
-          </li>
-        </ul>
-        <h2 class="title-breadcrumb">Escolher Ingresso</h2>
-      </div>
-    </div>
-
-    <section class="escolher-ingresso">
+    <section class="bilhetes-content">
       <div class="container">
         <div class="row">
-          <div class="escolher-ingresso-content col-lg-10">
-            <div class="escolher-ingresso-column1 col-lg-3">
-              <!-- Voucher de Desconto -->
-              <div class="escolher-ingresso-box">
-                <div class="voucher-desconto">
-                  <h3>voucher de desconto</h3>
-                  <p>Insira aqui e utilize seu desconto!</p>
+          <ul class="breadcrumb col-lg-12">
+            <li class="breadcrumb-item breadcrumb-item-active">
+              <a href="#"><span>Escolher Ingresso</span></a>
+              <i><img src="images/svg/chevron-right.svg" alt=""></i>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#"><span>Dados</span></a>
+              <i><img src="images/svg/chevron-right.svg" alt=""></i>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#"><span>Pagamento</span></a>
+              <i><img src="images/svg/chevron-right.svg" alt=""></i>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#"><span>Confirmação</span></a>
+            </li>
+          </ul>
+          <h2 class="title-breadcrumb">Escolher Ingresso</h2>
+        </div>
+      </div>
 
-                  <form>
-                    <input type="text" name="voucher-desconto" placeholder="Vocuher de Desconto">
-                    <button type="submit" class="btn btn__blue"><span>usar</span></button>
-                  </form>
-                  <p class="label-erro"><a href="#" class="close-label-erro"><i><img src="images/svg/close-red.svg"
-                          alt=""></i></a> Voucher utilizado não é válido!</p>
-                </div>
-              </div>
+      <section class="escolher-ingresso">
+        <div class="container">
+          <div class="row">
+            <div class="escolher-ingresso-content col-lg-10">
+              <div class="escolher-ingresso-column1 col-lg-3">
+                <!-- Voucher de Desconto -->
+                <div class="escolher-ingresso-box">
+                  <div class="voucher-desconto">
+                    <h3>voucher de desconto</h3>
+                    <p>Insira aqui e utilize seu desconto!</p>
 
-              <!-- Ingressos Sócio -->
-              <div class="escolher-ingresso-box">
-                <div class="escolher-ingresso-quantidade">
-                  <h3>Sócio Torcedor</h3>
-                  <div class="form-check socio-torcedor-item">
-                    <label class="form-check-label" for="socio01">
-                      <p>José Silva</p>
-                      <p>nº de sócio: <b><span>12500</span></b></p>
-                    </label>
-                    <input class="form-check-input" id="socio01" type="checkbox" />
+                    <form>
+                      <input type="text" name="voucher-desconto" placeholder="Vocuher de Desconto">
+                      <button type="submit" class="btn btn__blue"><span>usar</span></button>
+                    </form>
+                    <p class="label-erro"><a href="#" class="close-label-erro"><i><img src="images/svg/close-menu.svg"
+                            alt=""></i></a> Voucher utilizado não é válido!</p>
                   </div>
-                  <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
-                    Adicionar sócio
-                  </button>
                 </div>
+
+                <!-- Ingressos Sócio -->
+                <div class="escolher-ingresso-box">
+                  <div class="escolher-ingresso-quantidade">
+                    <h3>Sócio Torcedor</h3>
+                    <div class="form-check socio-torcedor-item">
+                      <label class="form-check-label" for="socio01">
+                        <p>José Silva</p>
+                        <p>nº de sócio: <b><span>12500</span></b></p>
+                      </label>
+                      <input class="form-check-input" id="socio01" type="checkbox" />
+                    </div>
+                    <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
+                      Adicionar sócio
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Ingressos Não-Sócios -->
+                <div class="escolher-ingresso-box">
+                  <div class="escolher-ingresso-quantidade">
+                    <h3>Não Sócio</h3>
+                    <ul>
+                      <li>
+                        <span>Ingresso <b>Público</b></span>
+                        <select value="0">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <button type="button" class="btn btn__blue">Verificar Disponibilidade</a>
               </div>
 
-              <!-- Ingressos Não-Sócios -->
-              <div class="escolher-ingresso-box">
-                <div class="escolher-ingresso-quantidade">
-                  <h3>Não Sócio</h3>
-                  <ul>
-                    <li>
-                      <span>Ingresso <b>Público</b></span>
-                      <select value="0">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                      </select>
-                    </li>
-                  </ul>
-                </div>
+              <div class="escolher-ingresso-ginasio col-lg-9">
+                <img src="images/01maracana_setores_disponiveis.jpg" alt="">
               </div>
 
-              <button type="button" class="btn btn__blue">Verificar Disponibilidade</a>
-            </div>
-
-            <div class="escolher-ingresso-ginasio col-lg-9">
-              <img src="images/01maracana_setores_disponiveis.jpg" alt="">
-            </div>
-
-            <div class="container-btn col-lg-12">
-              <a href="index.html" class="btn__verMais">
-                cancelar
-              </a>
-              <a href="ingressos_escolherBancada.html" class="btn btn__blue">
-                <span>Avançar</span>
-              </a>
+              <div class="container-btn col-lg-12">
+                <a href="index.html" class="btn__verMais">
+                  cancelar
+                </a>
+                <a href="ingressos_escolherBancada.html" class="btn btn__blue">
+                  <span>Avançar</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
-  </section>
+  </div>
 
   <footer>
     <section class="teamsBar">
