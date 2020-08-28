@@ -78,102 +78,136 @@
         position: relative;
         @include flex(row, center, flex-start, center);
         flex-wrap: wrap;
-    }
+		}
+		&-column1{
+			@include flex(column, flex-start, center, center);
+		}
     &-box{
-        width:100%;
-        background-color: $white-01;
-        border-radius:8px;
-        margin-bottom: 1.6rem;
-        padding:1.2rem 1.6rem;
-        h3{
-            font-size: 1.8rem;
-            color:$secondary-01;
-        }
-        .voucher-desconto{
-            p{
-                @include font(1.6rem, 300, 1.4em);
-                text-align: center;
-            }
-            form{
-                @include flex(row, center, center, center);
-                .btn{
-                    margin-left: .8rem;
-                }
-            }
-        }
-        .escolher-ingresso-quantidade{
-            ul{
-                margin-top:1.2rem;
-            }
-            li{
-                @include flex(row, space-between, center, center);
-                @include font(1.8rem, 300, 1.4em);
-                b{
-                    font-weight: 900;
-                }
-                select{
-                    @include font(1.6rem, 300, 1.4em);
-                    padding:3px;
-                    border-radius:4px;
-                }
-            }
-        }
-        .ingressos-arquibancada{
-            width:100%;
-            position: relative;
-            @include flex(column, flex-start, center, center);
-            @include font(1.6rem, 300, 1.4em);
-            li{
-                width:100%;
-                @include flex(column, flex-start, center, center);
-                margin-bottom: 1.6rem;
-                cursor: pointer;
-                span{
-                    &:first-child{
-                        font-weight: 900;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-            &-number{
-                border:none;
-                width:100%;
-                padding:4px;
-                @include flex(row, space-between, center, center);
-                @include font(1.8rem, 300, 1.4em);
-                &[aria-expanded="true"]{
-                    background-color: $primary-02;
-                    color:$white-01;
-                    border:2px solid $primary-02;
-                    border-radius: 4px;
-                }
-                &:focus{
-                    outline: 5px auto $primary-01;
-                }
-            }
-            .ingresso-type{
-                width:100%;
-                padding:8px;
-                padding-bottom: 0;
-                border-bottom:1px solid #adadad;
-            }
-            .ingresso-type-list{
-                width:100%;
-                li{
-                    @include flex(row, space-between, center, center);
-                    margin-bottom: 12px;
-                    span{
-                        &:first-child{
-                            width: 50%;
-                        }
-                        &:last-child{
-                            width: 20%;
-                            text-align: right;
-                        }
-                    }
-                }
-            }
-        }
+			width:100%;
+			background-color: $white-01;
+			border-radius:8px;
+			margin-bottom: 1.6rem;
+			padding:1.2rem 1.6rem;
+			h3{
+					font-size: 1.8rem;
+					color:$secondary-01;
+			}
+			.voucher-desconto{
+					p{
+							@include font(1.6rem, 300, 1.4em);
+							text-align: center;
+					}
+					form{
+							@include flex(row, center, center, center);
+							.btn{
+									margin-left: .8rem;
+							}
+					}
+			}
+			.escolher-ingresso-quantidade{
+				text-align: center;
+					ul{
+						width: 100%;
+							margin-top:1.2rem;
+					}
+					li{
+							@include flex(row, space-between, center, center);
+							@include font(1.8rem, 300, 1.4em);
+							b{
+									font-weight: 900;
+							}
+							select{
+									@include font(1.6rem, 300, 1.4em);
+									padding:3px;
+									border-radius:4px;
+							}
+					}
+			}
+			.ingressos-arquibancada{
+					width:100%;
+					position: relative;
+					@include flex(column, flex-start, center, center);
+					@include font(1.6rem, 300, 1.4em);
+					li{
+							width:100%;
+							@include flex(column, flex-start, center, center);
+							margin-bottom: 1.6rem;
+							cursor: pointer;
+							span{
+									&:first-child{
+											font-weight: 900;
+											text-transform: uppercase;
+									}
+							}
+					}
+					&-number{
+							border:none;
+							width:100%;
+							padding:4px;
+							@include flex(row, space-between, center, center);
+							@include font(1.8rem, 300, 1.4em);
+							&[aria-expanded="true"]{
+									background-color: $primary-02;
+									color:$white-01;
+									border:2px solid $primary-02;
+									border-radius: 4px;
+							}
+							&:focus{
+									outline: 5px auto $primary-01;
+							}
+					}
+					.ingresso-type{
+							width:100%;
+							padding:8px;
+							padding-bottom: 0;
+							border-bottom:1px solid #adadad;
+					}
+					.ingresso-type-list{
+							width:100%;
+							li{
+									@include flex(row, space-between, center, center);
+									margin-bottom: 12px;
+									span{
+											&:first-child{
+													width: 50%;
+											}
+											&:last-child{
+													width: 20%;
+													text-align: right;
+											}
+									}
+							}
+					}
+			}
+			.socio-torcedor-item{
+				width: 100%;
+				padding-bottom: 1.2rem;
+				margin-bottom: 1.2rem;
+				border-bottom:1px solid #d1d1d1;
+				label{
+					width: 100%;
+					padding:0;
+					text-align: left;
+					p{
+						@include font(1.6rem, 300, 1.4em);
+						margin-bottom: 0;
+						b{
+								font-weight: 900;
+						}
+					}
+				}
+				input{
+					width:1.6rem; height: 1.6rem;
+					right: 0;
+					top:20%;
+				}
+			}
+			.add-socio{
+				text-align: center;
+				p{
+					@include font(1.4rem, 300, 1.4em);
+				}
+			}
     }
     &-ginasio{
         width:100%;
@@ -195,4 +229,60 @@
 
 .tr-jogo{
     @include font(1.8rem, 900, 1.4em);
+}
+
+.modal{
+	h2{
+		font-size: 1.8rem;
+	}
+	.close{
+		width:15px;
+		height:15px;
+		display: inline-block;
+		cursor: pointer;
+		@include absolute(15px, 15px, auto, auto);
+		img{
+			height: 100%;
+		}
+	}
+	.modal-content{
+		width:auto;
+	}
+	.modal-body{
+		@include flex(column, flex-start, center, center);
+	}
+	.form-group{
+		margin-bottom:1.6rem;
+		position: relative;
+		.info-cartao {
+    @include absolute(0, .5rem, auto, auto);
+    display: inline-block;
+    cursor: pointer;
+    img {
+      width: 1.8rem;
+    }
+    .member-card {
+      width: 35rem;
+      height: auto;
+      z-index: 22;
+      @include absolute(0, 0, auto, auto);
+      transform: translate(100%, 0);
+      display: none;
+      transition: all .3s ease-in-out;
+      animation-name: animation-card;
+      animation-duration: .4s;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+      }
+    }
+    &:hover {
+      .member-card {
+        display: inline-block;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+	}
 }
