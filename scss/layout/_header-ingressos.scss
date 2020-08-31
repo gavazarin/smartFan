@@ -20,8 +20,12 @@
             h1{
                 border-bottom: none;
                 color:$secondary-02;
+                text-align: right;
             }
         }
+    }
+    @include md{
+        background-color: #FFF;
     }
 }
 

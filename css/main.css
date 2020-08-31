@@ -4343,6 +4343,13 @@ header .socialMedias_header img {
 .header-ingresso-top .nav-title h1 {
   border-bottom: none;
   color: #F37402;
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .header-ingresso {
+    background-color: #FFF;
+  }
 }
 
 .header-ingresso-info {
@@ -7293,6 +7300,12 @@ tbody > tr:last-child > td {
 
 .escolher-ingresso-ginasio img {
   max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .escolher-ingresso-ginasio {
+    margin-top: 3rem;
+  }
 }
 
 .escolher-ingresso .container-btn {
