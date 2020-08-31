@@ -7244,42 +7244,42 @@ tbody > tr:last-child > td {
   text-align: right;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item {
+.escolher-ingresso-box .socio-torcedor-item {
   width: 100%;
   padding-bottom: 1.2rem;
   margin-bottom: 1.2rem;
   border-bottom: 1px solid #d1d1d1;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item label {
+.escolher-ingresso-box .socio-torcedor-item label {
   width: 100%;
   padding: 0;
   text-align: left;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item label p {
+.escolher-ingresso-box .socio-torcedor-item label p {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.4em;
   margin-bottom: 0;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item label p b {
+.escolher-ingresso-box .socio-torcedor-item label p b {
   font-weight: 900;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item input {
+.escolher-ingresso-box .socio-torcedor-item input {
   width: 1.6rem;
   height: 1.6rem;
   right: 0;
   top: 20%;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada .add-socio {
+.escolher-ingresso-box .add-socio {
   text-align: center;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada .add-socio p {
+.escolher-ingresso-box .add-socio p {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.4em;

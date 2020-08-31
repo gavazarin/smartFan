@@ -202,35 +202,35 @@
           }
         }
       }
-			.socio-torcedor-item{
-				width: 100%;
-				padding-bottom: 1.2rem;
-				margin-bottom: 1.2rem;
-				border-bottom:1px solid #d1d1d1;
-				label{
-					width: 100%;
-					padding:0;
-					text-align: left;
-					p{
-						@include font(1.6rem, 300, 1.4em);
-						margin-bottom: 0;
-						b{
-								font-weight: 900;
-						}
-					}
-				}
-				input{
-					width:1.6rem; height: 1.6rem;
-					right: 0;
-					top:20%;
-				}
-			}
-			.add-socio{
-				text-align: center;
-				p{
-					@include font(1.4rem, 300, 1.4em);
-				}
-			}
+    }
+    .socio-torcedor-item{
+      width: 100%;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.2rem;
+      border-bottom:1px solid #d1d1d1;
+      label{
+        width: 100%;
+        padding:0;
+        text-align: left;
+        p{
+          @include font(1.6rem, 300, 1.4em);
+          margin-bottom: 0;
+          b{
+              font-weight: 900;
+          }
+        }
+      }
+      input{
+        width:1.6rem; height: 1.6rem;
+        right: 0;
+        top:20%;
+      }
+    }
+    .add-socio{
+      text-align: center;
+      p{
+        @include font(1.4rem, 300, 1.4em);
+      }
     }
   }
 
