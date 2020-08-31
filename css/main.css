@@ -7170,12 +7170,27 @@ tbody > tr:last-child > td {
   cursor: pointer;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada li span:first-child {
-  font-weight: 900;
-  text-transform: uppercase;
+.escolher-ingresso-box .ingressos-arquibancada li:last-child {
+  margin-bottom: 0;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada-number {
+.escolher-ingresso-box .ingressos-arquibancada-item input[type="radio"]:checked + label {
+  background-color: #1A7DD7;
+  color: #F0F0F0;
+  border: 2px solid #03275A;
+  border-radius: 4px;
+}
+
+.escolher-ingresso-box .ingressos-arquibancada-item input[type="radio"]:checked + label + .ingresso-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  animation: ingresso-type-animation .3s ease-out;
+}
+
+.escolher-ingresso-box .ingressos-arquibancada-label {
   border: none;
   width: 100%;
   padding: 4px;
@@ -7189,15 +7204,8 @@ tbody > tr:last-child > td {
   line-height: 1.4em;
 }
 
-.escolher-ingresso-box .ingressos-arquibancada-number[aria-expanded="true"] {
-  background-color: #1A7DD7;
-  color: #F0F0F0;
-  border: 2px solid #1A7DD7;
-  border-radius: 4px;
-}
-
-.escolher-ingresso-box .ingressos-arquibancada-number:focus {
-  outline: 5px auto #03275A;
+.escolher-ingresso-box .ingressos-arquibancada-label span:first-child {
+  font-weight: 900;
 }
 
 .escolher-ingresso-box .ingressos-arquibancada .ingresso-type {
@@ -7205,6 +7213,7 @@ tbody > tr:last-child > td {
   padding: 8px;
   padding-bottom: 0;
   border-bottom: 1px solid #adadad;
+  display: none;
 }
 
 .escolher-ingresso-box .ingressos-arquibancada .ingresso-type li {
@@ -7235,42 +7244,42 @@ tbody > tr:last-child > td {
   text-align: right;
 }
 
-.escolher-ingresso-box .socio-torcedor-item {
+.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item {
   width: 100%;
   padding-bottom: 1.2rem;
   margin-bottom: 1.2rem;
   border-bottom: 1px solid #d1d1d1;
 }
 
-.escolher-ingresso-box .socio-torcedor-item label {
+.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item label {
   width: 100%;
   padding: 0;
   text-align: left;
 }
 
-.escolher-ingresso-box .socio-torcedor-item label p {
+.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item label p {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.4em;
   margin-bottom: 0;
 }
 
-.escolher-ingresso-box .socio-torcedor-item label p b {
+.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item label p b {
   font-weight: 900;
 }
 
-.escolher-ingresso-box .socio-torcedor-item input {
+.escolher-ingresso-box .ingressos-arquibancada .socio-torcedor-item input {
   width: 1.6rem;
   height: 1.6rem;
   right: 0;
   top: 20%;
 }
 
-.escolher-ingresso-box .add-socio {
+.escolher-ingresso-box .ingressos-arquibancada .add-socio {
   text-align: center;
 }
 
-.escolher-ingresso-box .add-socio p {
+.escolher-ingresso-box .ingressos-arquibancada .add-socio p {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.4em;
@@ -7381,6 +7390,17 @@ tbody > tr:last-child > td {
 .modal .form-group .info-cartao:hover .member-card {
   display: inline-block;
   transition: all .3s ease-in-out;
+}
+
+@keyframes ingresso-type-animation {
+  0% {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .pagamento_sucesso {
