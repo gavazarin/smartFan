@@ -4,7 +4,24 @@
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
+    
+    @include md{
+        padding:.75rem 0;
+        .lugares{
+            margin:0 auto;
+            tr{
+                border-bottom:none;
+                margin-bottom:0;
+            }
+            td{
+                border-bottom:none;
+                display: table-cell;
+            }
+        }
+    }
 }
+
+
 
 .grama {
     width: 100%;
