@@ -4351,6 +4351,47 @@ header .socialMedias_header img {
   margin-top: .8rem;
 }
 
+.header-ingresso-info .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.header-ingresso-info .socio-info {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.header-ingresso-info .socio-info-avatar {
+  background-color: #F0F0F0;
+  padding: .8rem;
+  border-radius: 50%;
+  border: 2px solid #F34605;
+  margin-right: 1.5rem;
+}
+
+.header-ingresso-info .socio-info-avatar img {
+  height: 3.6rem;
+}
+
+.header-ingresso-info .socio-info-data {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #F0F0F0;
+}
+
+.header-ingresso-info .socio-info-data strong {
+  font-weight: 900;
+}
+
 .header-ingresso-info .game-info {
   display: flex;
   flex-direction: column;

@@ -23,24 +23,50 @@
             }
         }
     }
-    &-info{
-        padding:0.8rem 0;
-        background-color: $primary-01;
-        margin-top: .8rem;
-        .game-info{
-            @include flex(column, center, center, center);
-            color:$white-01;
+}
+
+.header-ingresso-info{
+    padding:0.8rem 0;
+    background-color: $primary-01;
+    margin-top: .8rem;
+    .row{
+        @include flex(row, center, center, center);
+    }
+    .socio-info{
+        width:100%;
+        position: relative;
+        @include flex(row, flex-start, center, center);
+        &-avatar{
+            background-color: $white-01;
+            padding:.8rem;
+            border-radius: 50%;
+            border:2px solid $secondary-01;
+            margin-right: 1.5rem;
+            img{
+                height: 3.6rem;
+            }
+        }
+        &-data{
             @include font(1.6rem, 300, 1.4em);
-            &-item1{
-                font-size:1.6rem;
-                margin-bottom:.4rem;
-            }
-            &-item2{
+            color:$white-01;
+            strong{
                 font-weight: 900;
-                font-size:2.2rem;
-                text-transform: uppercase;
-                margin-bottom: .4rem;
             }
+        }
+    }
+    .game-info{
+        @include flex(column, center, center, center);
+        color:$white-01;
+        @include font(1.6rem, 300, 1.4em);
+        &-item1{
+            font-size:1.6rem;
+            margin-bottom:.4rem;
+        }
+        &-item2{
+            font-weight: 900;
+            font-size:2.2rem;
+            text-transform: uppercase;
+            margin-bottom: .4rem;
         }
     }
 }
