@@ -7139,6 +7139,18 @@ tbody > tr:last-child > td {
   align-content: center;
 }
 
+.escolher-ingresso-column1 .bilhetes-types {
+  width: 100%;
+  max-height: 500px;
+  margin-bottom: 2.4rem;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.escolher-ingresso-column1 .bilhetes-types:last-child {
+  margin-bottom: 0;
+}
+
 .escolher-ingresso-box {
   width: 100%;
   background-color: #F0F0F0;
@@ -7147,9 +7159,14 @@ tbody > tr:last-child > td {
   padding: 1.2rem 1.6rem;
 }
 
+.escolher-ingresso-box:last-child {
+  margin-bottom: 0;
+}
+
 .escolher-ingresso-box h2 {
   font-size: 1.8rem;
   color: #F34605;
+  margin-bottom: 1.2rem;
 }
 
 .escolher-ingresso-box h3 {
@@ -7246,7 +7263,7 @@ tbody > tr:last-child > td {
   width: 1.6rem;
   height: 1.6rem;
   right: 0;
-  top: 20%;
+  top: 10%;
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-adicional {
@@ -7300,6 +7317,39 @@ tbody > tr:last-child > td {
 
 .escolher-ingresso-box .escolher-ingresso-quantidade-select i img {
   width: 100%;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .ingressos-escolhidos-list li {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #acacac;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .ingressos-escolhidos-list li p {
+  margin-bottom: 0;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .ingressos-escolhidos-list li p:first-child {
+  margin-right: 1.5rem;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .ingressos-escolhidos-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .ingressos-escolhidos-list .ingressos-escolhidos-list-socio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .escolher-ingresso-box .ingressos-arquibancada {
