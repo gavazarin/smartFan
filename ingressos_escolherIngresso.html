@@ -91,9 +91,9 @@
             <div class="escolher-ingresso-content col-lg-12">
               <div class="escolher-ingresso-column1 col-lg-3 col-md-4">
                 <!-- Voucher de Desconto -->
-                <div class="escolher-ingresso-box">
+                <!-- <div class="escolher-ingresso-box">
                   <div class="voucher-desconto">
-                    <h3>voucher de desconto</h3>
+                    <h2>voucher de desconto</h2>
                     <p>Insira aqui e utilize seu desconto!</p>
 
                     <form>
@@ -103,12 +103,23 @@
                     <p class="label-erro"><a href="#" class="close-label-erro"><i><img src="images/svg/close-menu.svg"
                             alt=""></i></a> Voucher utilizado não é válido!</p>
                   </div>
+                </div> -->
+
+                <!-- Voucher de Desconto NEW  -->
+                <div class="escolher-ingresso-box">
+                  <div class="voucher-desconto">
+                    <h2>voucher de desconto</h2>
+
+                    <button type="button" class="btn btn__blue" data-toggle="modal"
+                      data-target="#voucherDesconto"><span>aplicar voucher</span></button>
+                  </div>
                 </div>
 
                 <!-- Ingressos Sócio -->
                 <div class="escolher-ingresso-box">
                   <div class="escolher-ingresso-quantidade">
-                    <h3>Sócio</h3>
+                    <h2>Sócio</h2>
+
                     <div class="form-check socio-torcedor-item">
                       <label class="form-check-label" for="socio01">
                         <p>José Silva</p>
@@ -116,27 +127,72 @@
                       </label>
                       <input class="form-check-input" id="socio01" type="checkbox" />
                     </div>
-                    <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
-                      Adicionar sócio
-                    </button>
+
+                    <ul>
+                      <li>
+                        <span>Ingresso <b>Acompanhante</b></span>
+                        <div class="escolher-ingresso-quantidade-select">
+                          <i><img src="images/svg/menos-icon.svg" alt=""></i>
+                          <span>0</span>
+                          <i><img src="images/svg/mais-icon.svg" alt=""></i>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div class="socio-torcedor-adicional">
+                      <h3>Adicione mais sócios para te acompanhar!</h3>
+
+                      <div class="form-check socio-torcedor-item">
+                        <label class="form-check-label" for="socioAdicional01">
+                          <p>Joao Joao</p>
+                          <p>nº de sócio: <b><span>13250</span></b></p>
+                        </label>
+                        <input class="form-check-input" id="socioAdicional01" type="checkbox" />
+                      </div>
+
+                      <div class="form-check socio-torcedor-item">
+                        <label class="form-check-label" for="socioAdicional02">
+                          <p>Pedro Pedro</p>
+                          <p>nº de sócio: <b><span>15520</span></b></p>
+                        </label>
+                        <input class="form-check-input" id="socioAdicional02" type="checkbox" />
+                      </div>
+
+                      <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
+                        Adicionar sócio
+                      </button>
+                    </div>
                   </div>
                 </div>
 
                 <!-- Ingressos Não-Sócios -->
                 <div class="escolher-ingresso-box">
                   <div class="escolher-ingresso-quantidade">
-                    <h3>Não Sócio</h3>
+                    <h2>Não Sócio</h2>
                     <ul>
                       <li>
-                        <span>Ingresso <b>Público</b></span>
-                        <select value="0">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
+                        <span>Ingresso <b>Adulto</b></span>
+                        <div class="escolher-ingresso-quantidade-select">
+                          <i><img src="images/svg/menos-icon.svg" alt=""></i>
+                          <span>0</span>
+                          <i><img src="images/svg/mais-icon.svg" alt=""></i>
+                        </div>
+                      </li>
+                      <li>
+                        <span>Ingresso <b>Criança</b></span>
+                        <div class="escolher-ingresso-quantidade-select">
+                          <i><img src="images/svg/menos-icon.svg" alt=""></i>
+                          <span>0</span>
+                          <i><img src="images/svg/mais-icon.svg" alt=""></i>
+                        </div>
+                      </li>
+                      <li>
+                        <span>Ingresso <b>Idoso</b></span>
+                        <div class="escolher-ingresso-quantidade-select">
+                          <i><img src="images/svg/menos-icon.svg" alt=""></i>
+                          <span>0</span>
+                          <i><img src="images/svg/mais-icon.svg" alt=""></i>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -325,6 +381,34 @@
         <div class="modal-footer">
           <button type="button" class="btn btn__orange" data-dismiss="modal">Fechar</button>
           <button type="button" class="btn btn__blue">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Voucher Desconto -->
+  <div class="modal fade" id="voucherDesconto" tabindex="-1" aria-labelledby="voucherDesconto" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="voucherDesconto">Aplicar voucher de desconto</h2>
+          <i class="close" data-dismiss="modal" aria-label="Close">
+            <img src="images/svg/close-popUp.svg" alt="" aria-hidden="true">
+          </i>
+        </div>
+        <div class="modal-body">
+          <form class="form-voucher col-lg-8">
+            <input type="text" name="voucher-desconto" placeholder="Vocuher de Desconto">
+            <button type="submit" class="btn btn__blue"><span>usar</span></button>
+          </form>
+          <p class="label-erro">
+            <a href="#" class="close-label-erro"><i><img src="images/svg/close-menu.svg" alt=""></i></a>
+            Voucher utilizado não é válido!
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn__orange" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn__blue">Aplicar</button>
         </div>
       </div>
     </div>

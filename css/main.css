@@ -7147,9 +7147,18 @@ tbody > tr:last-child > td {
   padding: 1.2rem 1.6rem;
 }
 
-.escolher-ingresso-box h3 {
+.escolher-ingresso-box h2 {
   font-size: 1.8rem;
   color: #F34605;
+}
+
+.escolher-ingresso-box h3 {
+  font-size: 1.4rem;
+  color: #03275A;
+}
+
+.escolher-ingresso-box .voucher-desconto {
+  text-align: center;
 }
 
 .escolher-ingresso-box .voucher-desconto p {
@@ -7171,27 +7180,6 @@ tbody > tr:last-child > td {
   margin-left: .8rem;
 }
 
-.escolher-ingresso-box .voucher-desconto .label-erro {
-  font-size: 1.4rem;
-  padding: .8rem .4rem;
-  background-color: #ffa4a4;
-  color: #5c0000;
-  border-radius: 4px;
-  margin-top: 1.6rem;
-  position: relative;
-}
-
-.escolher-ingresso-box .voucher-desconto .label-erro .close-label-erro {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  position: absolute;
-  top: 0px;
-  right: 5px;
-  bottom: auto;
-  left: auto;
-}
-
 .escolher-ingresso-box .escolher-ingresso-quantidade {
   text-align: center;
 }
@@ -7207,9 +7195,11 @@ tbody > tr:last-child > td {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.4em;
+  margin-bottom: 1.6rem;
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade li b {
@@ -7222,6 +7212,94 @@ tbody > tr:last-child > td {
   line-height: 1.4em;
   padding: 3px;
   border-radius: 4px;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade li:last-child {
+  margin-bottom: 0;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item {
+  width: 100%;
+  padding-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item label {
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item label p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin-bottom: 0;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item label p b {
+  font-weight: 900;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item input {
+  width: 1.6rem;
+  height: 1.6rem;
+  right: 0;
+  top: 20%;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-adicional {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding-top: 1.6rem;
+  margin-top: 1.6rem;
+  border-top: 1px solid #d1d1d1;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-adicional .add-socio {
+  text-align: center;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-adicional .add-socio p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade-select span {
+  margin: 0 1rem;
+  font-weight: 700;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade-select i {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  border: 2px solid #212121;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade-select i img {
+  width: 100%;
 }
 
 .escolher-ingresso-box .ingressos-arquibancada {
@@ -7320,47 +7398,6 @@ tbody > tr:last-child > td {
 
 .escolher-ingresso-box .ingressos-arquibancada .ingresso-type-list li span:last-child {
   text-align: right;
-}
-
-.escolher-ingresso-box .socio-torcedor-item {
-  width: 100%;
-  padding-bottom: 1.2rem;
-  margin-bottom: 1.2rem;
-  border-bottom: 1px solid #d1d1d1;
-}
-
-.escolher-ingresso-box .socio-torcedor-item label {
-  width: 100%;
-  padding: 0;
-  text-align: left;
-}
-
-.escolher-ingresso-box .socio-torcedor-item label p {
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 1.4em;
-  margin-bottom: 0;
-}
-
-.escolher-ingresso-box .socio-torcedor-item label p b {
-  font-weight: 900;
-}
-
-.escolher-ingresso-box .socio-torcedor-item input {
-  width: 1.6rem;
-  height: 1.6rem;
-  right: 0;
-  top: 20%;
-}
-
-.escolher-ingresso-box .add-socio {
-  text-align: center;
-}
-
-.escolher-ingresso-box .add-socio p {
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 1.4em;
 }
 
 .escolher-ingresso-ginasio {
@@ -7474,6 +7511,47 @@ tbody > tr:last-child > td {
 .modal .form-group .info-cartao:hover .member-card {
   display: inline-block;
   transition: all .3s ease-in-out;
+}
+
+.modal .form-voucher {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.modal .form-voucher input {
+  margin-right: .4rem;
+}
+
+.modal .label-erro {
+  font-size: 1.4rem;
+  padding: .8rem 4rem;
+  background-color: #ffa4a4;
+  color: #5c0000;
+  border-radius: 4px;
+  margin-top: 1.6rem;
+  position: relative;
+}
+
+.modal .label-erro .close-label-erro {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  bottom: auto;
+  left: auto;
+}
+
+.modal .label-erro .close-label-erro i {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+}
+
+.modal .label-erro .close-label-erro i img {
+  width: 100%;
 }
 
 @keyframes ingresso-type-animation {
