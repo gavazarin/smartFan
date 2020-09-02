@@ -26,6 +26,10 @@
             <li class="nav-title col-lg-4 col-md-4 col-sm-4 col-xs-6">
               <h1>Comprar Bilhetes</h1>
             </li>
+
+            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+
+            </li>
           </ul>
         </div>
       </div>
@@ -55,7 +59,7 @@
           </ul>
 
           <div class="column-03 col-lg-4 col-md-6 col-sm-6 col-xs-5">
-            <p><strong>Sócio Torcedor</strong></p>
+            <p><strong>Sócio</strong></p>
           </div>
         </div>
       </div>
@@ -89,23 +93,9 @@
         <div class="container">
           <div class="row">
             <div class="escolher-ingresso-content col-lg-12">
-              <div class="escolher-ingresso-column1 col-lg-3 col-md-4">
+              <div class="escolher-ingresso-column1 col-lg-3 col-md-5">
+                <!-- Selecionar ingresso -->
                 <div class="bilhetes-types">
-                  <!-- Voucher de Desconto -->
-                  <!-- <div class="escolher-ingresso-box">
-                  <div class="voucher-desconto">
-                    <h2>voucher de desconto</h2>
-                    <p>Insira aqui e utilize seu desconto!</p>
-
-                    <form>
-                      <input type="text" name="voucher-desconto" placeholder="Vocuher de Desconto">
-                      <button type="submit" class="btn btn__blue"><span>usar</span></button>
-                    </form>
-                    <p class="label-erro"><a href="#" class="close-label-erro"><i><img src="images/svg/close-menu.svg"
-                            alt=""></i></a> Voucher utilizado não é válido!</p>
-                  </div>
-                </div> -->
-
                   <!-- Voucher de Desconto NEW  -->
                   <div class="escolher-ingresso-box" style="display: none;">
                     <div class="voucher-desconto">
@@ -151,11 +141,11 @@
                         </div>
 
                         <div class="form-check socio-torcedor-item">
-                          <label class="form-check-label" for="socioAdicional02">
-                            <p>Pedro Pedro</p>
-                            <p>Bilhete sócio nº: <b><span>15520</span></b></p>
+                          <label class="form-check-label" for="socioAdicional01">
+                            <p>Joao Joao</p>
+                            <p>Bilhete sócio nº: <b><span>13250</span></b></p>
                           </label>
-                          <input class="form-check-input" id="socioAdicional02" type="checkbox" />
+                          <input class="form-check-input" id="socioAdicional01" type="checkbox" />
                         </div>
 
                         <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
@@ -224,8 +214,8 @@
                   </div>
                 </div>
 
+                <!-- Selecionar setor -->
                 <div class="bilhetes-types">
-                  <!-- Selecionar bancada -->
                   <div class="escolher-ingresso-box">
                     <ul class="ingressos-arquibancada">
                       <li class="ingressos-arquibancada-item">
@@ -377,16 +367,72 @@
                           </li>
                         </ul>
                       </li>
+
+                      <li class="ingressos-arquibancada-item">
+                        <input id="c7" type="radio" name="sectorItem" style="display: none;">
+                        <label for="c7" class="ingressos-arquibancada-label">
+                          <span>C7</span>
+                          <span>R$180,00</span>
+                        </label>
+
+                        <ul class="ingresso-type">
+                          <li>
+                            <ul class="ingresso-type-list">
+                              <li>
+                                <span>3x</span>
+                                <span>Sócios</span>
+                                <span>R$60,00</span>
+                              </li>
+                              <li>
+                                <span>2x</span>
+                                <span>Acompanhante</span>
+                                <span>R$80,00</span>
+                              </li>
+                              <li>
+                                <span>2x</span>
+                                <span>Criança</span>
+                                <span>R$40,00</span>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="ingressos-arquibancada-item">
+                        <input id="c9" type="radio" name="sectorItem" style="display: none;">
+                        <label for="c9" class="ingressos-arquibancada-label">
+                          <span>C9</span>
+                          <span>R$180,00</span>
+                        </label>
+
+                        <ul class="ingresso-type">
+                          <li>
+                            <ul class="ingresso-type-list">
+                              <li>
+                                <span>3x</span>
+                                <span>Sócios</span>
+                                <span>R$60,00</span>
+                              </li>
+                              <li>
+                                <span>2x</span>
+                                <span>Acompanhante</span>
+                                <span>R$80,00</span>
+                              </li>
+                              <li>
+                                <span>2x</span>
+                                <span>Criança</span>
+                                <span>R$40,00</span>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
                     </ul>
                   </div>
                 </div>
-
-
               </div>
 
-
-
-              <div class="escolher-ingresso-ginasio col-lg-9 col-md-8">
+              <div class="escolher-ingresso-ginasio col-lg-9 col-md-7">
                 <img src="images/01maracana_setores_disponiveis.jpg" alt="">
               </div>
 
@@ -394,7 +440,7 @@
                 <a href="index.html" class="btn__verMais">
                   cancelar
                 </a>
-                <a href="ingressos_escolherBancada.html" class="btn btn__blue">
+                <a href="ingressos_escolherCadeira.html" class="btn btn__blue">
                   <span>Avançar</span>
                 </a>
               </div>

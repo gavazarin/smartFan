@@ -26,12 +26,13 @@
         }
 
         .nav-title {
-            @include flex(row, flex-end, center, center);
+            @include flex(row, center, center, center);
 
             h1 {
+                font-size: 2.2rem;
                 border-bottom: none;
                 color: $secondary-02;
-                text-align: right;
+                text-align: center;
             }
         }
     }

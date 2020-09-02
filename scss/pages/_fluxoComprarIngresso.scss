@@ -103,11 +103,32 @@
       width: 100%;
       max-height: 500px;
       margin-bottom: 2.4rem;
+      padding-right: 5px;
       overflow-y: scroll;
       position: relative;
 
       &:last-child {
         margin-bottom: 0;
+      }
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #dfdfdf;
+        border-radius: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $primary-01;
+        border-radius: 4px;
+        transition: all .3s ease-in;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: $primary-dark;
+        transition: all .3s ease-in;
       }
     }
   }
@@ -186,6 +207,7 @@
         padding-bottom: 1.6rem;
         margin-bottom: 1.6rem;
         border-bottom: 1px solid #d1d1d1;
+        @include flex(row, space-between, center, center);
 
         label {
           width: 100%;
@@ -205,8 +227,7 @@
         input {
           width: 1.6rem;
           height: 1.6rem;
-          right: 0;
-          top: 10%;
+          position: relative;
         }
       }
 

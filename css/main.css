@@ -2667,13 +2667,15 @@ table .btn {
   align-content: flex-start;
 }
 
-.table-detalhes-compra th, .table-detalhes-compra td {
+.table-detalhes-compra th,
+.table-detalhes-compra td {
   width: 100%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.table-detalhes-compra th:nth-child(odd), .table-detalhes-compra td:nth-child(odd) {
+.table-detalhes-compra th:nth-child(odd),
+.table-detalhes-compra td:nth-child(odd) {
   background-color: #f1f1f1;
 }
 
@@ -2683,6 +2685,61 @@ table .btn {
 
 .table-detalhes-compra td {
   text-align: left;
+}
+
+.table-escolher-cadeira .item-active {
+  border: 1px solid #F34605;
+}
+
+.table-escolher-cadeira .item-inactive {
+  opacity: .7;
+}
+
+.table-escolher-cadeira .item-total {
+  border-top: 1px solid #F34605;
+}
+
+.table-escolher-cadeira .item-total td {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.4em;
+}
+
+.table-escolher-cadeira tr {
+  background-color: transparent;
+}
+
+.table-escolher-cadeira th,
+.table-escolher-cadeira td {
+  width: auto;
+}
+
+.table-escolher-cadeira th:first-child,
+.table-escolher-cadeira td:first-child {
+  text-align: left;
+}
+
+.table-escolher-cadeira td p {
+  margin-bottom: 0;
+}
+
+.table-escolher-cadeira td i {
+  cursor: pointer;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: inline-block;
+}
+
+.table-escolher-cadeira td i img {
+  height: 100%;
+}
+
+.table-escolher-cadeira td:nth-child(2) {
+  font-weight: 900;
+}
+
+.table-escolher-cadeira td .txt-escolher-cadeira {
+  font-size: 1.2rem;
 }
 
 .bannerFullScreen {
@@ -4341,15 +4398,16 @@ header .socialMedias_header img {
 .header-ingresso-top .nav-title {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
 
 .header-ingresso-top .nav-title h1 {
+  font-size: 2.2rem;
   border-bottom: none;
   color: #F37402;
-  text-align: right;
+  text-align: center;
 }
 
 @media (max-width: 992px) {
@@ -5960,10 +6018,9 @@ header .socialMedias_header img {
 }
 
 .table-escolha-lugares {
-  /*background: #fff;*/
-  padding: .75rem 3rem;
+  padding: 0rem 3rem;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
 }
 
@@ -5994,7 +6051,6 @@ header .socialMedias_header img {
   color: #090;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 10px;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.4em;
@@ -6003,10 +6059,12 @@ header .socialMedias_header img {
 
 .left {
   float: left;
+  text-align: right;
 }
 
 .right {
   float: right;
+  text-align: left;
 }
 
 .clearfix:after {
@@ -6023,7 +6081,7 @@ header .socialMedias_header img {
 .contain,
 .wrap {
   position: relative;
-  max-width: 800px;
+  max-width: 920px;
   margin: 0 auto;
   padding-bottom: 15px;
 }
@@ -6052,10 +6110,31 @@ header .socialMedias_header img {
 
 .fluid {
   padding: 0 30px;
+  margin-bottom: 15px;
 }
 
 .cadeiras {
   overflow-x: scroll;
+}
+
+.cadeiras::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cadeiras::-webkit-scrollbar-track {
+  background: #dfdfdf;
+  border-radius: 4px;
+}
+
+.cadeiras::-webkit-scrollbar-thumb {
+  background: #03275A;
+  border-radius: 4px;
+  transition: all .3s ease-in;
+}
+
+.cadeiras::-webkit-scrollbar-thumb:hover {
+  background: #021C40;
+  transition: all .3s ease-in;
 }
 
 .inner {
@@ -6065,30 +6144,14 @@ header .socialMedias_header img {
 
 #faded-Left {
   left: 30px;
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  /* FF3.6+ */
-  /* Chrome,Safari4+ */
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  /* W3C */
-  /* IE6-8 */
 }
 
 #faded-Right {
   right: 30px;
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  /* FF3.6+ */
-  /* Chrome,Safari4+ */
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
   background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
-  /* W3C */
-  /* IE6-8 */
 }
 
 .filas {
@@ -6098,15 +6161,17 @@ header .socialMedias_header img {
 
 .filas ul {
   margin: 0;
-  padding: 10px;
+  padding: 8px 0;
   list-style: none;
-  font-size: 12.5px;
+  font-size: 17px;
   height: auto;
 }
 
 .filas ul li {
-  height: 20.2px;
-  font-weight: bold;
+  height: 20px;
+  padding: 2px;
+  font-weight: 900;
+  margin-bottom: .4rem;
   list-style: none;
 }
 
@@ -6115,15 +6180,15 @@ header .socialMedias_header img {
 .seat-badvis div,
 .seat-empty div,
 .seat-not-applicable div {
-  height: 16px !important;
-  width: 16px !important;
+  height: 20px !important;
+  width: 20px !important;
   border-radius: 2px;
   cursor: pointer;
 }
 
 .seat-cursel div {
-  height: 16px !important;
-  width: 16px !important;
+  height: 20px !important;
+  width: 20px !important;
   border-radius: 50%;
   cursor: pointer;
   background: #03275A;
@@ -6158,13 +6223,17 @@ header .socialMedias_header img {
   cursor: not-allowed !important;
 }
 
+.lugares {
+  margin: 0;
+}
+
 .lugares td {
   padding: 2px !important;
 }
 
 .seat-selected div {
-  height: 16px !important;
-  width: 16px !important;
+  height: 20px !important;
+  width: 20px !important;
   border-radius: 50%;
   cursor: pointer;
   background: #1A7DD7;
@@ -6172,8 +6241,8 @@ header .socialMedias_header img {
 }
 
 .seat-selother div {
-  height: 16px !important;
-  width: 16px !important;
+  height: 20px !important;
+  width: 20px !important;
   border-radius: 50%;
   cursor: pointer;
   background: #F44336;
@@ -6184,22 +6253,24 @@ tbody > tr:last-child > td {
   border: none !important;
 }
 
-.bilheteira-legenda.bilheteira-legenda__bancadas .legendas li {
-  margin-right: 1.25rem;
-  float: left;
-  margin-bottom: 5px;
-  white-space: normal;
+.legendas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .legendas li {
   line-height: 1;
   font-size: 0.62rem;
-  display: block;
+  display: inline-block;
   position: relative;
   white-space: nowrap;
-  margin: 0;
-  margin-bottom: 0.45rem;
+  margin-right: 1.25rem;
+  margin-bottom: 5px;
   font-size: 12px;
+  white-space: normal;
 }
 
 .legendas li:before {
@@ -7143,12 +7214,33 @@ tbody > tr:last-child > td {
   width: 100%;
   max-height: 500px;
   margin-bottom: 2.4rem;
+  padding-right: 5px;
   overflow-y: scroll;
   position: relative;
 }
 
 .escolher-ingresso-column1 .bilhetes-types:last-child {
   margin-bottom: 0;
+}
+
+.escolher-ingresso-column1 .bilhetes-types::-webkit-scrollbar {
+  width: 8px;
+}
+
+.escolher-ingresso-column1 .bilhetes-types::-webkit-scrollbar-track {
+  background: #dfdfdf;
+  border-radius: 4px;
+}
+
+.escolher-ingresso-column1 .bilhetes-types::-webkit-scrollbar-thumb {
+  background: #03275A;
+  border-radius: 4px;
+  transition: all .3s ease-in;
+}
+
+.escolher-ingresso-column1 .bilhetes-types::-webkit-scrollbar-thumb:hover {
+  background: #021C40;
+  transition: all .3s ease-in;
 }
 
 .escolher-ingresso-box {
@@ -7240,6 +7332,11 @@ tbody > tr:last-child > td {
   padding-bottom: 1.6rem;
   margin-bottom: 1.6rem;
   border-bottom: 1px solid #d1d1d1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item label {
@@ -7262,8 +7359,7 @@ tbody > tr:last-child > td {
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item input {
   width: 1.6rem;
   height: 1.6rem;
-  right: 0;
-  top: 10%;
+  position: relative;
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-adicional {
