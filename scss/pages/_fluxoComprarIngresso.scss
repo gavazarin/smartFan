@@ -191,14 +191,20 @@
           font-weight: 900;
         }
 
-        select {
-          @include font(1.6rem, 300, 1.4em);
-          padding: 3px;
-          border-radius: 4px;
-        }
-
         &:last-child {
           margin-bottom: 0;
+        }
+
+        @include md {
+          @include flex(column, flex-start, center, center);
+        }
+
+        @include sm {
+          @include flex(row, space-between, center, center);
+        }
+
+        @include xs {
+          @include flex(column, flex-start, center, center);
         }
       }
 
@@ -248,6 +254,7 @@
       }
 
       &-select {
+        // width: 38%;
         @include flex(row, space-between, center, center);
 
         span {
@@ -268,6 +275,10 @@
           img {
             width: 100%;
           }
+        }
+
+        @include md {
+          margin-top: .8rem;
         }
       }
 

@@ -2539,7 +2539,7 @@ table .btn {
   table td {
     border-bottom: 1px solid #ddd;
     display: block;
-    text-align: right;
+    text-align: center;
   }
   table td:before {
     content: attr(data-label);
@@ -2717,6 +2717,13 @@ table .btn {
 .table-escolher-cadeira th:first-child,
 .table-escolher-cadeira td:first-child {
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .table-escolher-cadeira th,
+  .table-escolher-cadeira td {
+    text-align: left;
+  }
 }
 
 .table-escolher-cadeira td p {
@@ -4383,6 +4390,7 @@ header .socialMedias_header img {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .header-ingresso-top .nav-logo a {
@@ -6259,6 +6267,7 @@ tbody > tr:last-child > td {
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .legendas li {
@@ -6295,6 +6304,12 @@ tbody > tr:last-child > td {
   left: 6px;
   top: 2px;
   margin-bottom: 5px;
+}
+
+@media (max-width: 575px) {
+  .legendas li {
+    margin-bottom: .8rem;
+  }
 }
 
 .legendas .not-available:before {
@@ -6881,7 +6896,7 @@ tbody > tr:last-child > td {
 }
 
 .fluxoPagamentos .container-btn .btn__verMais {
-  margin-right: 6rem;
+  margin-right: 3rem;
 }
 
 .formas-pagamento {
@@ -6934,6 +6949,12 @@ tbody > tr:last-child > td {
 .aviso-multibanco img {
   width: 3rem;
   margin-right: 1.5rem;
+}
+
+@media (max-width: 575px) {
+  .aviso-multibanco {
+    max-width: 100%;
+  }
 }
 
 .terms {
@@ -7315,16 +7336,38 @@ tbody > tr:last-child > td {
   font-weight: 900;
 }
 
-.escolher-ingresso-box .escolher-ingresso-quantidade li select {
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 1.4em;
-  padding: 3px;
-  border-radius: 4px;
-}
-
 .escolher-ingresso-box .escolher-ingresso-quantidade li:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .escolher-ingresso-box .escolher-ingresso-quantidade li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .escolher-ingresso-box .escolher-ingresso-quantidade li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .escolher-ingresso-box .escolher-ingresso-quantidade li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item {
@@ -7413,6 +7456,12 @@ tbody > tr:last-child > td {
 
 .escolher-ingresso-box .escolher-ingresso-quantidade-select i img {
   width: 100%;
+}
+
+@media (max-width: 992px) {
+  .escolher-ingresso-box .escolher-ingresso-quantidade-select {
+    margin-top: .8rem;
+  }
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .ingressos-escolhidos-list li {

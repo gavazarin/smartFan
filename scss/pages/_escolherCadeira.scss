@@ -239,6 +239,7 @@ tbody>tr:last-child>td {
 
 .legendas {
     @include flex(row, center, center, center);
+    flex-wrap: wrap;
 
     li {
         line-height: 1;
@@ -273,6 +274,10 @@ tbody>tr:last-child>td {
             left: 6px;
             top: 2px;
             margin-bottom: 5px;
+        }
+
+        @include xs {
+            margin-bottom: .8rem;
         }
     }
 

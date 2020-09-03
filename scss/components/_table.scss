@@ -83,7 +83,7 @@ table {
     td {
       border-bottom: 1px solid #ddd;
       display: block;
-      text-align: right;
+      text-align: center;
 
       &:before {
         content: attr(data-label);
@@ -262,6 +262,10 @@ table {
     width: auto;
 
     &:first-child {
+      text-align: left;
+    }
+
+    @include sm {
       text-align: left;
     }
   }
