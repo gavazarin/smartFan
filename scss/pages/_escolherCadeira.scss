@@ -42,11 +42,19 @@
 .left {
     float: left;
     text-align: right;
+
+    @include md {
+        text-align: left;
+    }
 }
 
 .right {
     float: right;
     text-align: left;
+
+    @include md {
+        text-align: right;
+    }
 }
 
 .clearfix {

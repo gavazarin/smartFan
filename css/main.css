@@ -6070,9 +6070,21 @@ header .socialMedias_header img {
   text-align: right;
 }
 
+@media (max-width: 992px) {
+  .left {
+    text-align: left;
+  }
+}
+
 .right {
   float: right;
   text-align: left;
+}
+
+@media (max-width: 992px) {
+  .right {
+    text-align: right;
+  }
 }
 
 .clearfix:after {
