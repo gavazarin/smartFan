@@ -6701,6 +6701,14 @@ tbody > tr:last-child > td {
   background-color: #FFFFFF;
 }
 
+.fluxoPagamentos-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
 .fluxoPagamentos .row {
   display: flex;
   flex-direction: column;
@@ -7005,6 +7013,7 @@ tbody > tr:last-child > td {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  margin-top: 3rem;
 }
 
 .success div {
@@ -7026,6 +7035,7 @@ tbody > tr:last-child > td {
   font-size: 2.2rem;
   font-weight: 900;
   line-height: 1.4em;
+  color: #F37402;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -7106,10 +7116,6 @@ tbody > tr:last-child > td {
   .success h3 {
     width: 100%;
   }
-}
-
-.success h3 {
-  color: #F37402;
 }
 
 .bilhetes-content {

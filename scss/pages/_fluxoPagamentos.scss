@@ -5,6 +5,10 @@
   @include flex(column, space-between, center, center);
   background-color: #FFFFFF;
 
+  &-success {
+    @include flex(column, flex-start, center, center);
+  }
+
   .row {
     @include flex(column, center, center, center);
   }
@@ -249,6 +253,7 @@
   width: 100%;
   position: relative;
   @include flex(column, flex-start, center, center);
+  margin-top: 3rem;
 
   div {
     width: 100%;
@@ -268,6 +273,7 @@
   h3 {
     // width: 40%;
     @include font(2.2rem, 900, 1.4em);
+    color: $secondary-02;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -339,11 +345,5 @@
     h3 {
       width: 100%;
     }
-  }
-}
-
-.success {
-  h3 {
-    color: $secondary-02;
   }
 }
