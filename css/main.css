@@ -7388,6 +7388,27 @@ tbody > tr:last-child > td {
   }
 }
 
+.escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor img {
+  width: 100%;
+}
+
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item {
   width: 100%;
   padding-bottom: 1.6rem;

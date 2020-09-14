@@ -208,6 +208,19 @@
         }
       }
 
+      .resumo-setor {
+        @include flex(row, space-between, center, center);
+        border-bottom: 2px solid rgba(0, 0, 0, .1);
+
+        li {
+          @include flex(row, center, center, center);
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
       .socio-torcedor-item {
         width: 100%;
         padding-bottom: 1.6rem;
