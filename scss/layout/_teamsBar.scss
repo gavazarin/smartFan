@@ -1,24 +1,30 @@
 .teamsBar {
   padding: 0px 0 3rem 0;
+
   .row {
     @include flex(row, center, center, center);
     flex-wrap: wrap;
   }
+
   ul {
     @include flex(row, center, center, center);
     flex-wrap: wrap;
+
     li {
       margin: 0 .2rem;
       padding: 3px;
     }
+
     a {
       display: inline-block;
     }
   }
+
   .list_ligas {
     padding-right: 1.5rem;
     // border-right: 1px solid #44536f;
     position: relative;
+
     &:before {
       content: '';
       height: 4rem;
@@ -26,10 +32,12 @@
       background-color: #44536f;
       @include absolute(50%, 0, auto, auto);
       transform: translateY(-50%);
+
       @include md {
         display: none;
       }
     }
+
     a {
       &:hover {
         img {
@@ -38,41 +46,52 @@
         }
       }
     }
+
     img {
       height: 4rem;
       transform: scale(.9);
     }
+
     @include md {
       width: 100%;
       margin-bottom: 1rem;
       border-right: none;
     }
   }
+
   .list_clubs {
     @include flex(row, center, center, center);
     flex-wrap: wrap;
+
     @include sm {
       @include flex(column, center, center, center);
     }
+
     ul {
       padding: 0 1.5rem;
+
       img {
         opacity: 1;
       }
+
       .club__select {
         background-color: $white-01;
         border: 1px solid $secondary-01;
         border-radius: 50%;
+
         img {
           transform: scale(1);
         }
       }
+
       @include sm {
         padding: 0;
       }
     }
+
     .list_clubs_01 {
       position: relative;
+
       &:before {
         content: '';
         height: 4rem;
@@ -81,24 +100,47 @@
         @include absolute(50%, 0, auto, auto);
         transform: translateY(-50%);
       }
+
       @include sm {
         margin-bottom: 1.5rem;
+
         &::before {
           display: none;
         }
       }
     }
+
     .list_clubs_02 {
-      padding-right: 0;
+      position: relative;
+
+      &:before {
+        content: '';
+        height: 4rem;
+        width: 1px;
+        background-color: #44536f;
+        @include absolute(50%, 0, auto, auto);
+        transform: translateY(-50%);
+      }
+
       li {
         &:last-child {
           margin-right: 0;
         }
       }
+
+      @include sm {
+        margin-bottom: 1.5rem;
+
+        &::before {
+          display: none;
+        }
+      }
     }
+
     .tooltip {
       position: relative;
       display: inline-block;
+
       .tooltiptext {
         visibility: hidden;
         width: 120px;
@@ -115,6 +157,7 @@
         margin-left: -60px;
         opacity: 0;
         transition: opacity 0.3s;
+
         &::after {
           content: "";
           position: absolute;
@@ -126,11 +169,13 @@
           border-color: $secondary-01 transparent transparent transparent;
         }
       }
+
       &:hover {
         .tooltiptext {
           visibility: visible;
           opacity: 1;
         }
+
         img {
           opacity: 1;
           transform: scale(1);
@@ -138,15 +183,18 @@
         }
       }
     }
+
     img {
       height: 3rem;
       transform: scale(.9);
       transition: all .3s ease-in-out;
     }
+
     @include md {
       width: 100%;
     }
   }
+
   &__header {
     display: none;
   }

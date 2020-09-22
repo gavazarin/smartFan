@@ -5413,11 +5413,33 @@ header .socialMedias_header img {
 }
 
 .teamsBar .list_clubs .list_clubs_02 {
-  padding-right: 0;
+  position: relative;
+}
+
+.teamsBar .list_clubs .list_clubs_02:before {
+  content: '';
+  height: 4rem;
+  width: 1px;
+  background-color: #44536f;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  transform: translateY(-50%);
 }
 
 .teamsBar .list_clubs .list_clubs_02 li:last-child {
   margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  .teamsBar .list_clubs .list_clubs_02 {
+    margin-bottom: 1.5rem;
+  }
+  .teamsBar .list_clubs .list_clubs_02::before {
+    display: none;
+  }
 }
 
 .teamsBar .list_clubs .tooltip {
