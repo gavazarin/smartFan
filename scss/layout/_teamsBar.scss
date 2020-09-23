@@ -1,10 +1,5 @@
 .teamsBar {
-  padding: 0px 0 3rem 0;
-
-  .row {
-    @include flex(row, center, center, center);
-    flex-wrap: wrap;
-  }
+  @include flex(row, flex-end, center, center);
 
   ul {
     @include flex(row, center, center, center);
@@ -29,7 +24,7 @@
       content: '';
       height: 4rem;
       width: 1px;
-      background-color: #44536f;
+      background-color: $gray-01;
       @include absolute(50%, 0, auto, auto);
       transform: translateY(-50%);
 
@@ -96,7 +91,7 @@
         content: '';
         height: 4rem;
         width: 1px;
-        background-color: #44536f;
+        background-color: $gray-01;
         @include absolute(50%, 0, auto, auto);
         transform: translateY(-50%);
       }
@@ -117,7 +112,7 @@
         content: '';
         height: 4rem;
         width: 1px;
-        background-color: #44536f;
+        background-color: $gray-01;
         @include absolute(50%, 0, auto, auto);
         transform: translateY(-50%);
       }
@@ -195,7 +190,7 @@
     }
   }
 
-  &__header {
-    display: none;
-  }
+  // &__header {
+  //   display: none;
+  // }
 }
