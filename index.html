@@ -107,10 +107,9 @@
                 <li class="menu__item">
                   <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
                 </li>
-                <li class="menu__item menu__btn" style="display:none;"><a href="#"
-                    class="btn-login btn btn__blue">login</a></li>
+                <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
 
-                <li class="menu__item menu__logado">
+                <li class="menu__item menu__logado" style="display:none;">
                   <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
                   <input id="user-dropdown" type="checkbox">
                   <label for="user-dropdown">
@@ -327,7 +326,7 @@
         <ul class="breadcrumb-modalidades-list col-lg-4">
           <li class="breadcrumb-modalidades-item">
             <i class="icon-modalidade"><img src="images/svg/icon-futebol.svg" alt=""></i>
-            <a href="futebol-home.html"><span>Futebol</span></a>
+            <a href="index.html"><span>Futebol</span></a>
           </li>
         </ul>
 
@@ -402,7 +401,6 @@
             </ul>
           </div>
         </section>
-
       </div>
     </div>
   </section>
@@ -1067,13 +1065,13 @@
             <div class="tab-content ">
               <h2>Insere o teu e-mail e password e faz login!</h2>
               <form>
-                <div class="container-input ">
+                <div class="container-input col-lg-8 col-md-10">
                   <label for="email " class="form-label ">E-mail</label>
                   <input type="email " name="email " class="input-validate ">
                   <span class="input-validate ">Obrigatório!</span>
                 </div>
 
-                <div class="container-input ">
+                <div class="container-input col-lg-8 col-md-10">
                   <label for="password " class="form-label ">Password</label>
                   <input type="password " name="password ">
                   <!-- <span class="input-validate ">Obrigatório!</span> -->
@@ -1099,70 +1097,91 @@
               <div class="userfrommember">
                 <h2>Escolhe o teu clube, insere os teus dados de sócio e regista-te!</h2>
                 <form>
-                  <ul class="listTeams_popUp">
-                    <li>
-                      <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"
-                          title="Boavista Futebol Clube"></a>
-                    </li>
+                  <div class="container-input col-lg-8">
+                    <input type="checkbox" id="select-club" style="display: none;">
+                    <label for="select-club" class="select-club">
+                      <img src="images/logo-default.png" alt="">
+                      <p>Escolhe o teu clube</p>
+                      <i><img src="images/svg/icon-down.svg" alt=""></i>
+                    </label>
 
-                    <li>
-                      <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"
-                          title="Gil Vicente Futebol Clube"></a>
-                    </li>
+                    <ul class="listTeams_popUp">
+                      <li>
+                        <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"
+                          title="Boavista Futebol Clube">
+                        <p>Boavista FC</p>
+                      </li>
 
-                    <li class="team-select">
-                      <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"
-                          title="Vitória Futebol Clube"></a>
-                    </li>
+                      <li>
+                        <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"
+                            title="Gil Vicente Futebol Clube"></a>
+                        <p>Gil Vicente FC</p>
+                      </li>
 
-                    <li>
-                      <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional da Madeira"
-                          title="Clube Desportivo Nacional da Madeira"></a>
-                    </li>
+                      <li class="team-select">
+                        <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"
+                            title="Vitória Futebol Clube"></a>
+                        <p>Vitória FC</p>
+                      </li>
 
-                    <li>
-                      <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"
-                          title="Grupo Desportivo de Chaves"></a>
-                    </li>
+                      <li>
+                        <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional da Madeira"
+                            title="Clube Desportivo Nacional da Madeira"></a>
+                        <p>CD Nacional</p>
+                      </li>
 
-                    <li>
-                      <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"
-                          title="Sporting Clube da Covilhã"></a>
-                    </li>
+                      <li>
+                        <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"
+                            title="Grupo Desportivo de Chaves"></a>
+                        <p>GD Chaves</p>
+                      </li>
 
-                    <li>
-                      <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"
-                          title="Varzim Sport Club"></a>
-                    </li>
-                  </ul>
+                      <li>
+                        <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"
+                            title="Sporting Clube da Covilhã"></a>
+                        <p>SC Covilhã</p>
+                      </li>
 
-                  <p class="team-select-name" id="smv_ufm_selTeamName"></p>
+                      <li>
+                        <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"
+                            title="Varzim Sport Club"></a>
+                        <p>Varzim SC</p>
+                      </li>
+                    </ul>
+                  </div>
 
                   <input type="hidden" name="smv_ufm_selTeamREF" id="smv_ufm_selTeamREF" value="">
 
-                  <div class="container-input">
+                  <div class="container-input col-lg-8 col-md-12">
                     <label for="smv_ufm_SocNum" class="form-label" smv-langtext="lblsocnum">Número de sócio</label>
                     <input type="text" name="smv_ufm_SocNum" id="smv_ufm_SocNum" maxlength="10">
                   </div>
 
-                  <div class="container-input">
+                  <div class="container-input col-lg-8 col-md-12">
                     <label for="smv_ufm_CardDigits" class="form-label" smv-langtext="lbladdsoccodbarras">Últimos 5
                       dígitos do código de barras</label>
-                    <input type="text" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits" maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
 
                     <i class="info-cartao ">
                       <img
                         src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/information.svg "
                         alt="Informação sobre o cartão de sócio ">
                       <div class="member-card">
-                        <img
-                          src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/memberCard.png"
-                          alt="">
+                        <img src="images/memberCard.png" alt="">
                       </div>
                     </i>
                   </div>
 
-                  <div class="registo_captcha">
+                  <div class="registo_captcha" style="display: none;">
                     <div align="center" class="g-recaptcha" id="smv_ufm_gre">
                       <div style="width: 304px; height: 78px;">
                         <div><iframe
