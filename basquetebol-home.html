@@ -55,10 +55,10 @@
           <ul class="menu col-lg-10">
             <li class="menu__list">
               <ul class="menu__list--ul">
-                <li class="menu__item menu__item-dropdown menu__item-desportos">
-                  <label for="menu-desporto">
-                    <p>futebol <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
-                  </label>
+                <li class="menu__item">
+                  <a href="index.html">
+                    futebol
+                  </a>
                 </li>
 
                 <li class="menu__item menu__item-dropdown  menu__item-modalidades">
@@ -107,9 +107,7 @@
                 <li class="menu__item">
                   <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
                 </li>
-                <li class="menu__item menu__btn">
-                  <a href="#" class="btn-login btn btn__blue">login</a>
-                </li>
+                <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
 
                 <li class="menu__item menu__logado" style="display:none;">
                   <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
@@ -135,7 +133,7 @@
       </div>
     </nav>
 
-    <section class="teamsBar teamsBar__header">
+    <section class="teamsBar teamsBar__header" style="display: none;">
       <div class="container">
         <div class="row">
           <ul class="list_ligas">
@@ -176,10 +174,6 @@
                     src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
               </li>
               <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
-                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
-              </li>
-              <li>
                 <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
                     src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
               </li>
@@ -201,6 +195,13 @@
               <li>
                 <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
                     src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_03">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
               </li>
             </ul>
           </div>
@@ -254,9 +255,6 @@
                 <a href="#"><img src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
-              </li>
-              <li>
                 <a href="#"><img src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
               </li>
             </ul>
@@ -275,16 +273,33 @@
                 <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
               </li>
             </ul>
+
+            <ul class="list_clubs_03">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+              </li>
+            </ul>
           </div>
         </section>
 
         <ul class="menuMobile__list">
           <li class="menuMobile__list__item"><a href="pagar-quotas.html">pagar quotas</a></li>
           <li class="menuMobile__list__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+          <li class="menuMobile__list__item menu__item-dropdown  menu__item-modalidades">
+            <input id="menu-modalidades-mobile" type="checkbox">
+            <label for="menu-modalidades-mobile">
+              <p>modalidades <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
+            </label>
+            <ul class="modalidades-list">
+              <li class="modalidades-list-item"><a href="andebol-home.html">andebol</a></li>
+              <li class="modalidades-list-item"><a href="basquetebol-home.html">basquetebol</a></li>
+              <li class="modalidades-list-item"><a href="futsal-home.html">futsal</a></li>
+              <li class="modalidades-list-item"><a href="hoquei-home.html">hoquei</a></li>
+              <li class="modalidades-list-item"><a href="voleibol-home.html">voleibol</a></li>
+            </ul>
+          </li>
           <li class="menuMobile__list__item"><a href="userdata.html">perfil</a></li>
-          <!-- <li class="menuMobile__list__item">
-            <a href="#"><img src="images/svg/search.svg" alt="" class="icon-search"></a>
-          </li> -->
           <li class="menu__item menu__btn" style="display:none;"><a href="#" class="btn-login btn btn__blue">login</a>
           </li>
 
@@ -308,16 +323,86 @@
   <section class="breadcrumb-modalidades">
     <div class="container">
       <div class="row">
-        <ul class="breadcrumb col-lg-12">
-          <li class="breadcrumb-item">
-            <a href="index.html"><span>Home</span></a>
-            <i><img src="images/svg/chevron-right.svg" alt=""></i>
-          </li>
-          <li class="breadcrumb-item breadcrumb-item-active">
+        <ul class="breadcrumb-modalidades-list col-lg-4">
+          <li class="breadcrumb-modalidades-item">
             <i class="icon-modalidade"><img src="images/svg/icon-basquetebol.svg" alt=""></i>
-            <a href="andebol-home.html"><span>Basquetebol</span></a>
+            <a href="basquetebol-home.html"><span>Basquetebol</span></a>
           </li>
         </ul>
+
+        <section class="teamsBar teamsBar__header col-lg-8">
+          <ul class="list_ligas">
+            <li>
+              <a href="https://www.fpb.pt/" target="_blank"><img src="images/logo-fpb.png"
+                  alt="Federação Portuguesa de Basquetebol"></a>
+            </li>
+            <li>
+              <a href="https://www.fpb.pt/competicao/8194/" target="_blank"><img
+                  src="images/basquetebol-liga-placard.png" alt="Liga Placard"></a>
+            </li>
+          </ul>
+
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">CAB Madeira</span><img
+                    src="images/basquetebol-cabmadeira.png" alt="CAB Madeira"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">CP Esgueira</span><img
+                    src="images/basquetebol-cpesgueira.png" alt="CP Esgueira"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">FC Barreirense</span><img
+                    src="images/basquetebol-fcbarreirense.png" alt="FC Barreirense"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
+                    alt="FC Porto"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Galitos Barreiro</span><img
+                    src="images/basquetebol-galitos.png" alt="Galitos Barreiro"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Illiabum Clube</span><img
+                    src="images/basquetebol-illiabum.png" alt="Illiabum Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Maia BC</span><img
+                    src="images/basquetebol-maiabc.png" alt="Maia BC"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Ovarense</span><img
+                    src="images/basquetebol-ovarense.png" alt="Ovarense"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">SC Lusitânia</span><img
+                    src="images/basquetebol-sclusitania.png" alt="SC Lusitânia"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Terceira BC</span><img
+                    src="images/basquetebol-terceirabc.png" alt="Terceira BC"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">UD Oliveirense</span><img
+                    src="images/basquetebol-udoliveirense.png" alt="UD Oliveirense"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">SL Benfica</span><img
+                    src="images/logo-1slbenfica.png" alt="SL Benfica"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
+                    src="images/logo-1sporting.png" alt="Sporting CP"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
+                    src="images/logo-1vitoriasc.png" alt="Vitória SC"></a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
   </section>

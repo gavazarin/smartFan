@@ -5545,33 +5545,10 @@ header .socialMedias_header img {
   position: relative;
 }
 
-.teamsBar .list_ligas:before {
-  content: '';
-  height: 4rem;
-  width: 1px;
-  background-color: #AFAFAF;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  transform: translateY(-50%);
-}
-
-@media (max-width: 992px) {
-  .teamsBar .list_ligas:before {
-    display: none;
-  }
-}
-
-.teamsBar .list_ligas a:hover img {
-  transform: scale(1);
-  transition: all .3s ease-in-out;
-}
-
 .teamsBar .list_ligas img {
-  height: 4rem;
-  transform: scale(0.9);
+  max-height: 4rem;
+  max-width: 10rem;
+  object-fit: contain;
 }
 
 @media (max-width: 992px) {
@@ -5602,7 +5579,7 @@ header .socialMedias_header img {
 }
 
 .teamsBar .list_clubs ul {
-  padding: 0 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .teamsBar .list_clubs ul img {
@@ -5629,19 +5606,6 @@ header .socialMedias_header img {
   position: relative;
 }
 
-.teamsBar .list_clubs .list_clubs_01:before {
-  content: '';
-  height: 4rem;
-  width: 1px;
-  background-color: #AFAFAF;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  transform: translateY(-50%);
-}
-
 @media (max-width: 767px) {
   .teamsBar .list_clubs .list_clubs_01 {
     margin-bottom: 1.5rem;
@@ -5655,19 +5619,6 @@ header .socialMedias_header img {
   position: relative;
 }
 
-.teamsBar .list_clubs .list_clubs_02:before {
-  content: '';
-  height: 4rem;
-  width: 1px;
-  background-color: #AFAFAF;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  transform: translateY(-50%);
-}
-
 .teamsBar .list_clubs .list_clubs_02 li:last-child {
   margin-right: 0;
 }
@@ -5679,6 +5630,28 @@ header .socialMedias_header img {
   .teamsBar .list_clubs .list_clubs_02::before {
     display: none;
   }
+}
+
+.teamsBar .list_clubs .list_clubs_01,
+.teamsBar .list_clubs .list_clubs_02,
+.teamsBar .list_clubs .list_clubs_03 {
+  margin-left: 1.5rem;
+  position: relative;
+}
+
+.teamsBar .list_clubs .list_clubs_01:before,
+.teamsBar .list_clubs .list_clubs_02:before,
+.teamsBar .list_clubs .list_clubs_03:before {
+  content: '';
+  height: 4rem;
+  width: 1px;
+  background-color: #AFAFAF;
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .teamsBar .list_clubs .tooltip {

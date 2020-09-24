@@ -17,34 +17,12 @@
 
   .list_ligas {
     padding-right: 1.5rem;
-    // border-right: 1px solid #44536f;
     position: relative;
 
-    &:before {
-      content: '';
-      height: 4rem;
-      width: 1px;
-      background-color: $gray-01;
-      @include absolute(50%, 0, auto, auto);
-      transform: translateY(-50%);
-
-      @include md {
-        display: none;
-      }
-    }
-
-    a {
-      &:hover {
-        img {
-          transform: scale(1);
-          transition: all .3s ease-in-out;
-        }
-      }
-    }
-
     img {
-      height: 4rem;
-      transform: scale(.9);
+      max-height: 4rem;
+      max-width: 10rem;
+      object-fit: contain;
     }
 
     @include md {
@@ -63,7 +41,7 @@
     }
 
     ul {
-      padding: 0 1.5rem;
+      padding-left: 1.5rem;
 
       img {
         opacity: 1;
@@ -87,15 +65,6 @@
     .list_clubs_01 {
       position: relative;
 
-      &:before {
-        content: '';
-        height: 4rem;
-        width: 1px;
-        background-color: $gray-01;
-        @include absolute(50%, 0, auto, auto);
-        transform: translateY(-50%);
-      }
-
       @include sm {
         margin-bottom: 1.5rem;
 
@@ -107,15 +76,6 @@
 
     .list_clubs_02 {
       position: relative;
-
-      &:before {
-        content: '';
-        height: 4rem;
-        width: 1px;
-        background-color: $gray-01;
-        @include absolute(50%, 0, auto, auto);
-        transform: translateY(-50%);
-      }
 
       li {
         &:last-child {
@@ -129,6 +89,22 @@
         &::before {
           display: none;
         }
+      }
+    }
+
+    .list_clubs_01,
+    .list_clubs_02,
+    .list_clubs_03 {
+      margin-left: 1.5rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        height: 4rem;
+        width: 1px;
+        background-color: $gray-01;
+        @include absolute(50%, auto, auto, 0);
+        transform: translateY(-50%);
       }
     }
 
