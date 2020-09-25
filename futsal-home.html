@@ -55,10 +55,10 @@
           <ul class="menu col-lg-10">
             <li class="menu__list">
               <ul class="menu__list--ul">
-                <li class="menu__item menu__item-dropdown menu__item-desportos">
-                  <label for="menu-desporto">
-                    <p>futebol <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
-                  </label>
+                <li class="menu__item">
+                  <a href="index.html">
+                    futebol
+                  </a>
                 </li>
 
                 <li class="menu__item menu__item-dropdown  menu__item-modalidades">
@@ -107,10 +107,9 @@
                 <li class="menu__item">
                   <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
                 </li>
-                <li class="menu__item menu__btn" style="display:none;"><a href="#"
-                    class="btn-login btn btn__blue">login</a></li>
+                <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
 
-                <li class="menu__item menu__logado">
+                <li class="menu__item menu__logado" style="display:none;">
                   <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
                   <input id="user-dropdown" type="checkbox">
                   <label for="user-dropdown">
@@ -134,7 +133,7 @@
       </div>
     </nav>
 
-    <section class="teamsBar teamsBar__header">
+    <section class="teamsBar teamsBar__header" style="display: none;">
       <div class="container">
         <div class="row">
           <ul class="list_ligas">
@@ -175,10 +174,6 @@
                     src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
               </li>
               <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
-                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
-              </li>
-              <li>
                 <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
                     src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
               </li>
@@ -200,6 +195,13 @@
               <li>
                 <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
                     src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_03">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
               </li>
             </ul>
           </div>
@@ -253,9 +255,6 @@
                 <a href="#"><img src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
               </li>
               <li>
-                <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
-              </li>
-              <li>
                 <a href="#"><img src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
               </li>
             </ul>
@@ -274,16 +273,33 @@
                 <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
               </li>
             </ul>
+
+            <ul class="list_clubs_03">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+              </li>
+            </ul>
           </div>
         </section>
 
         <ul class="menuMobile__list">
           <li class="menuMobile__list__item"><a href="pagar-quotas.html">pagar quotas</a></li>
           <li class="menuMobile__list__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+          <li class="menuMobile__list__item menu__item-dropdown  menu__item-modalidades">
+            <input id="menu-modalidades-mobile" type="checkbox">
+            <label for="menu-modalidades-mobile">
+              <p>modalidades <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
+            </label>
+            <ul class="modalidades-list">
+              <li class="modalidades-list-item"><a href="andebol-home.html">andebol</a></li>
+              <li class="modalidades-list-item"><a href="basquetebol-home.html">basquetebol</a></li>
+              <li class="modalidades-list-item"><a href="futsal-home.html">futsal</a></li>
+              <li class="modalidades-list-item"><a href="hoquei-home.html">hoquei</a></li>
+              <li class="modalidades-list-item"><a href="voleibol-home.html">voleibol</a></li>
+            </ul>
+          </li>
           <li class="menuMobile__list__item"><a href="userdata.html">perfil</a></li>
-          <!-- <li class="menuMobile__list__item">
-            <a href="#"><img src="images/svg/search.svg" alt="" class="icon-search"></a>
-          </li> -->
           <li class="menu__item menu__btn" style="display:none;"><a href="#" class="btn-login btn btn__blue">login</a>
           </li>
 
@@ -307,16 +323,94 @@
   <section class="breadcrumb-modalidades">
     <div class="container">
       <div class="row">
-        <ul class="breadcrumb col-lg-12">
-          <li class="breadcrumb-item">
-            <a href="index.html"><span>Home</span></a>
-            <i><img src="images/svg/chevron-right.svg" alt=""></i>
-          </li>
-          <li class="breadcrumb-item breadcrumb-item-active">
+        <ul class="breadcrumb-modalidades-list col-lg-4">
+          <li class="breadcrumb-modalidades-item">
             <i class="icon-modalidade"><img src="images/svg/icon-futsal.svg" alt=""></i>
             <a href="futsal-home.html"><span>Futsal</span></a>
           </li>
         </ul>
+
+        <section class="teamsBar teamsBar__header col-lg-8">
+          <ul class="list_ligas">
+            <li>
+              <a href="https://www.fpf.pt/" target="_blank"><img src="images/liga_federacao_portuguesa-black.png"
+                  alt="Federação Portuguesa de Futebol"></a>
+            </li>
+            <li>
+              <a href="https://www.fpf.pt/competicoes/futsal/masculino/liga-sportzone" target="_blank"><img
+                  src="images/futsal-liga-placard.png" alt="Ligar Placard de Futsal"></a>
+            </li>
+          </ul>
+
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">AD Fundão</span><img
+                    src="images/futsal-adfundao.png" alt="AD Fundão"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">ADCR Caxinas</span><img
+                    src="images/futsal-adcrcaxinas.png" alt="ADCR Caxinas"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Belenenses</span><img
+                    src="images/futsal-belenenses.png" alt="Belenenses"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Burinhosa</span><img
+                    src="images/futsal-burinhosa.png" alt="Burinhosa"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">CR Candoso</span><img
+                    src="images/futsal-crcandoso.png" alt="CR Candoso"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Dinamo Sanjoanense</span><img
+                    src="images/futsal-dinamosanjoanense.png" alt="Dinamo Sanjoanense"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Eléctrico FC</span><img
+                    src="images/futsal-electricofc.png" alt="Eléctrico FC"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Futsal Azeméis</span><img
+                    src="images/futsal-fcazemeis.png" alt="Futsal Azeméis"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Leões Porto Salvo</span><img
+                    src="images/futsal-leoesportosalvo.png" alt="Leões Porto Salvo"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Modicus</span><img src="images/futsal-modicus.png"
+                    alt="Modicus"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Portimonense</span><img
+                    src="images/logo-1portimonense.png" alt="Portimonense"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Quinta dos Lombos</span><img
+                    src="images/futsal-quintadoslombos.png" alt="Quinta dos Lombos"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">SC Braga</span><img src="images/logo-1scbraga.png"
+                    alt="SC Braga"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">SL Benfica</span><img
+                    src="images/logo-1slbenfica.png" alt="SL Benfica"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
+                    src="images/logo-1sporting.png" alt="Sporting CP"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Viseu 2001</span><img
+                    src="images/futsal-viseu.png" alt="Viseu 2001"></a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
   </section>
@@ -830,79 +924,6 @@
   </section>
 
   <footer>
-    <section class="teamsBar">
-      <div class="container">
-        <div class="row">
-          <ul class="list_ligas">
-            <li>
-              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png"
-                  alt="Federação Portuguesa de Futebol"></a>
-            </li>
-            <li>
-              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png"
-                  alt="Liga Portugal"></a>
-            </li>
-          </ul>
-
-          <div class="list_clubs">
-            <ul class="list_clubs_01">
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Boavista FC</span><img
-                    src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
-                    alt="Futebol Clube do Porto"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Gil Vicente FC</span><img
-                    src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Os Belenenses</span><img
-                    src="images/logo-1osbelenenses.png" alt="Os Belenenses"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Rio Ave FC</span><img
-                    src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
-                    src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
-                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
-                    src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
-              </li>
-            </ul>
-
-            <ul class="list_clubs_02">
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">CD Nacional</span><img
-                    src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">GD Chaves</span><img
-                    src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">SC Covilhã</span><img
-                    src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
-                    src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <div class="container">
       <div class="row">
         <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -978,13 +999,13 @@
             <div class="tab-content ">
               <h2>Insere o teu e-mail e password e faz login!</h2>
               <form>
-                <div class="container-input ">
+                <div class="container-input col-lg-8 col-md-10">
                   <label for="email " class="form-label ">E-mail</label>
                   <input type="email " name="email " class="input-validate ">
                   <span class="input-validate ">Obrigatório!</span>
                 </div>
 
-                <div class="container-input ">
+                <div class="container-input col-lg-8 col-md-10">
                   <label for="password " class="form-label ">Password</label>
                   <input type="password " name="password ">
                   <!-- <span class="input-validate ">Obrigatório!</span> -->
@@ -1010,70 +1031,91 @@
               <div class="userfrommember">
                 <h2>Escolhe o teu clube, insere os teus dados de sócio e regista-te!</h2>
                 <form>
-                  <ul class="listTeams_popUp">
-                    <li>
-                      <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"
-                          title="Boavista Futebol Clube"></a>
-                    </li>
+                  <div class="container-input col-lg-8">
+                    <input type="checkbox" id="select-club" style="display: none;">
+                    <label for="select-club" class="select-club">
+                      <img src="images/logo-default.png" alt="">
+                      <p>Escolhe o teu clube</p>
+                      <i><img src="images/svg/icon-down.svg" alt=""></i>
+                    </label>
 
-                    <li>
-                      <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"
-                          title="Gil Vicente Futebol Clube"></a>
-                    </li>
+                    <ul class="listTeams_popUp">
+                      <li>
+                        <img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"
+                          title="Boavista Futebol Clube">
+                        <p>Boavista FC</p>
+                      </li>
 
-                    <li class="team-select">
-                      <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"
-                          title="Vitória Futebol Clube"></a>
-                    </li>
+                      <li>
+                        <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"
+                            title="Gil Vicente Futebol Clube"></a>
+                        <p>Gil Vicente FC</p>
+                      </li>
 
-                    <li>
-                      <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional da Madeira"
-                          title="Clube Desportivo Nacional da Madeira"></a>
-                    </li>
+                      <li class="team-select">
+                        <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"
+                            title="Vitória Futebol Clube"></a>
+                        <p>Vitória FC</p>
+                      </li>
 
-                    <li>
-                      <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"
-                          title="Grupo Desportivo de Chaves"></a>
-                    </li>
+                      <li>
+                        <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional da Madeira"
+                            title="Clube Desportivo Nacional da Madeira"></a>
+                        <p>CD Nacional</p>
+                      </li>
 
-                    <li>
-                      <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"
-                          title="Sporting Clube da Covilhã"></a>
-                    </li>
+                      <li>
+                        <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"
+                            title="Grupo Desportivo de Chaves"></a>
+                        <p>GD Chaves</p>
+                      </li>
 
-                    <li>
-                      <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"
-                          title="Varzim Sport Club"></a>
-                    </li>
-                  </ul>
+                      <li>
+                        <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"
+                            title="Sporting Clube da Covilhã"></a>
+                        <p>SC Covilhã</p>
+                      </li>
 
-                  <p class="team-select-name" id="smv_ufm_selTeamName"></p>
+                      <li>
+                        <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"
+                            title="Varzim Sport Club"></a>
+                        <p>Varzim SC</p>
+                      </li>
+                    </ul>
+                  </div>
 
                   <input type="hidden" name="smv_ufm_selTeamREF" id="smv_ufm_selTeamREF" value="">
 
-                  <div class="container-input">
+                  <div class="container-input col-lg-8 col-md-12">
                     <label for="smv_ufm_SocNum" class="form-label" smv-langtext="lblsocnum">Número de sócio</label>
                     <input type="text" name="smv_ufm_SocNum" id="smv_ufm_SocNum" maxlength="10">
                   </div>
 
-                  <div class="container-input">
+                  <div class="container-input col-lg-8 col-md-12">
                     <label for="smv_ufm_CardDigits" class="form-label" smv-langtext="lbladdsoccodbarras">Últimos 5
                       dígitos do código de barras</label>
-                    <input type="text" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits" maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
+                    <input type="text" class="input-single" name="smv_ufm_CardDigits" id="smv_ufm_CardDigits"
+                      maxlength="5">
 
                     <i class="info-cartao ">
                       <img
                         src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/information.svg "
                         alt="Informação sobre o cartão de sócio ">
                       <div class="member-card">
-                        <img
-                          src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/memberCard.png"
-                          alt="">
+                        <img src="images/memberCard.png" alt="">
                       </div>
                     </i>
                   </div>
 
-                  <div class="registo_captcha">
+                  <div class="registo_captcha" style="display: none;">
                     <div align="center" class="g-recaptcha" id="smv_ufm_gre">
                       <div style="width: 304px; height: 78px;">
                         <div><iframe
