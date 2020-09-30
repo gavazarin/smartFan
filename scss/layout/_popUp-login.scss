@@ -197,7 +197,7 @@
 
     li {
       width: auto;
-      @include flex(row, center, center, center);
+      @include flex(row, flex-end, center, center);
       padding: 1.6rem .8rem;
       cursor: pointer;
 
@@ -207,6 +207,7 @@
       }
 
       p {
+        width: 70%;
         @include font(1.6rem, 700, 1.2em);
         margin: 0 .5rem;
       }

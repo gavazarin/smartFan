@@ -5270,7 +5270,7 @@ header .socialMedias_header img {
   width: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   align-content: center;
   padding: 1.6rem .8rem;
@@ -5283,6 +5283,7 @@ header .socialMedias_header img {
 }
 
 .nav_tabs .listTeams_popUp li p {
+  width: 70%;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.2em;
@@ -5522,9 +5523,14 @@ header .socialMedias_header img {
 }
 
 .teamsBar {
+  display: none;
+  padding: 1rem 0;
+}
+
+.teamsBar .row {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }

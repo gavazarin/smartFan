@@ -1,5 +1,11 @@
 .teamsBar {
-  @include flex(row, flex-end, center, center);
+  // @include flex(row, flex-end, center, center);
+  display: none;
+  padding: 1rem 0;
+
+  .row {
+    @include flex(row, center, center, center);
+  }
 
   ul {
     @include flex(row, center, center, center);
