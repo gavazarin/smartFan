@@ -4000,6 +4000,12 @@ header .socialMedias_header input:checked ~ .language-dropdown-list {
 
 header .socialMedias_header .language-dropdown {
   position: relative;
+  margin-bottom: 0;
+  cursor: default;
+}
+
+header .socialMedias_header .language-dropdown img {
+  opacity: 1;
 }
 
 header .socialMedias_header .language-dropdown-list {
@@ -4275,12 +4281,12 @@ header .socialMedias_header img {
   animation: open-modalidades-dropdown .3s ease-out;
 }
 
-#menu-desporto:checked ~ nav .menu__item-desportos:before,
+#menu-desporto:checked ~ nav .menu__item--desportos:before,
 #menu-modalidades:checked ~ nav .menu__item-modalidades:before {
   transform: scale(1, 1);
 }
 
-#menu-desporto:checked ~ nav .menu__item-desportos .icon-down,
+#menu-desporto:checked ~ nav .menu__item--desportos .icon-down,
 #menu-modalidades:checked ~ nav .menu__item-modalidades .icon-down {
   transform: rotate(-180deg);
 }
@@ -5636,15 +5642,6 @@ header .socialMedias_header img {
   margin-right: 0;
 }
 
-@media (max-width: 767px) {
-  .teamsBar .list_clubs .list_clubs_02 {
-    margin-bottom: 1.5rem;
-  }
-  .teamsBar .list_clubs .list_clubs_02::before {
-    display: none;
-  }
-}
-
 .teamsBar .list_clubs .list_clubs_01,
 .teamsBar .list_clubs .list_clubs_02,
 .teamsBar .list_clubs .list_clubs_03 {
@@ -5665,6 +5662,19 @@ header .socialMedias_header img {
   bottom: auto;
   left: 0;
   transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .teamsBar .list_clubs .list_clubs_01,
+  .teamsBar .list_clubs .list_clubs_02,
+  .teamsBar .list_clubs .list_clubs_03 {
+    margin-bottom: 1.5rem;
+  }
+  .teamsBar .list_clubs .list_clubs_01::before,
+  .teamsBar .list_clubs .list_clubs_02::before,
+  .teamsBar .list_clubs .list_clubs_03::before {
+    display: none;
+  }
 }
 
 .teamsBar .list_clubs .tooltip {

@@ -71,6 +71,12 @@ header {
 
     .language-dropdown {
       position: relative;
+      margin-bottom: 0;
+      cursor: default;
+
+      img {
+        opacity: 1;
+      }
     }
 
     .language-dropdown-list {
@@ -321,7 +327,7 @@ header {
   animation: open-modalidades-dropdown .3s ease-out;
 }
 
-#menu-desporto:checked~nav .menu__item-desportos,
+#menu-desporto:checked~nav .menu__item--desportos,
 #menu-modalidades:checked~nav .menu__item-modalidades {
   &:before {
     transform: scale(1, 1);

@@ -88,14 +88,6 @@
           margin-right: 0;
         }
       }
-
-      @include sm {
-        margin-bottom: 1.5rem;
-
-        &::before {
-          display: none;
-        }
-      }
     }
 
     .list_clubs_01,
@@ -111,6 +103,14 @@
         background-color: $gray-01;
         @include absolute(50%, auto, auto, 0);
         transform: translateY(-50%);
+      }
+
+      @include sm {
+        margin-bottom: 1.5rem;
+
+        &::before {
+          display: none;
+        }
       }
     }
 
