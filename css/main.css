@@ -2289,6 +2289,11 @@ form .input-single {
   text-align: center;
 }
 
+form .input-digit-control {
+  width: 75%;
+  padding: .5rem;
+}
+
 form label {
   width: 100%;
   text-align: left;
@@ -5128,6 +5133,8 @@ header .socialMedias_header img {
   display: block;
   cursor: pointer;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
   background-color: #dfdfdf;
   color: #F34605;
   margin: 0;
