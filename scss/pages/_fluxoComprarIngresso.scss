@@ -113,6 +113,11 @@
         @include font(1.8rem, 300, 1.4em);
         margin-bottom: 1.6rem;
 
+        span {
+          max-width: 60%;
+          text-align: left;
+        }
+
         b {
           font-weight: 900;
         }
@@ -131,6 +136,10 @@
 
         @include xs {
           @include flex(column, flex-start, center, center);
+
+          span {
+            text-align: center;
+          }
         }
       }
 

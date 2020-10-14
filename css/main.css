@@ -4726,6 +4726,30 @@ header .socialMedias_header img {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .header-ingresso-top .nav-title {
+    order: 3;
+    margin-top: .8rem;
+  }
+}
+
+.header-ingresso-top .menu__logado {
+  justify-content: flex-end;
+}
+
+@media (max-width: 992px) {
+  .header-ingresso-top .menu__logado .icon-user {
+    height: 3rem;
+    border: 1px solid #F34605;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-ingresso-top .menu__logado .user-dropdown {
+    font-size: 1.2rem;
+  }
+}
+
 @media (max-width: 992px) {
   .header-ingresso {
     background-color: #FFF;
@@ -4774,6 +4798,12 @@ header .socialMedias_header img {
   height: 3.6rem;
 }
 
+@media (max-width: 992px) {
+  .header-ingresso-info .socio-info-avatar img {
+    height: 3rem;
+  }
+}
+
 .header-ingresso-info .socio-info-data {
   font-size: 1.6rem;
   font-weight: 300;
@@ -4783,6 +4813,12 @@ header .socialMedias_header img {
 
 .header-ingresso-info .socio-info-data strong {
   font-weight: 900;
+}
+
+@media (max-width: 575px) {
+  .header-ingresso-info .socio-info-data {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -4833,21 +4869,50 @@ header .socialMedias_header img {
 }
 
 .header-ingresso-info .column-03 {
-  text-align: right;
+  color: #F0F0F0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.header-ingresso-info .column-03 li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin: 0 .3rem;
 }
 
 .header-ingresso-info .column-03 p {
-  font-size: 1.8rem;
+  width: 70%;
+  font-size: 1.4rem;
   font-weight: 900;
   line-height: 1.4em;
+  text-align: right;
   text-transform: uppercase;
   color: #F0F0F0;
   margin-bottom: 0;
 }
 
+.header-ingresso-info .column-03 img {
+  height: 6rem;
+}
+
 @media (max-width: 992px) {
   .header-ingresso-info .column-03 {
     order: 2;
+  }
+  .header-ingresso-info .column-03 p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-ingresso-info .column-03 p {
+    display: none;
   }
 }
 
@@ -7469,6 +7534,9 @@ tbody > tr:last-child > td {
   .success h3 {
     width: 100%;
   }
+  .success .container-btn {
+    margin-bottom: 1.6rem;
+  }
 }
 
 .bilhetes-content {
@@ -7615,6 +7683,11 @@ tbody > tr:last-child > td {
   margin-bottom: 1.6rem;
 }
 
+.escolher-ingresso-box .escolher-ingresso-quantidade li span {
+  max-width: 60%;
+  text-align: left;
+}
+
 .escolher-ingresso-box .escolher-ingresso-quantidade li b {
   font-weight: 900;
 }
@@ -7650,6 +7723,9 @@ tbody > tr:last-child > td {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+  }
+  .escolher-ingresso-box .escolher-ingresso-quantidade li span {
+    text-align: center;
   }
 }
 

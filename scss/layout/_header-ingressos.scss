@@ -35,6 +35,28 @@
                 color: $secondary-02;
                 text-align: center;
             }
+
+            @include sm {
+                order: 3;
+                margin-top: .8rem;
+            }
+        }
+
+        .menu__logado {
+            justify-content: flex-end;
+
+            @include md {
+                .icon-user {
+                    height: 3rem;
+                    border: 1px solid #F34605
+                }
+            }
+
+            @include xs {
+                .user-dropdown {
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 
@@ -71,6 +93,12 @@
             img {
                 height: 3.6rem;
             }
+
+            @include md {
+                img {
+                    height: 3rem;
+                }
+            }
         }
 
         &-data {
@@ -79,6 +107,10 @@
 
             strong {
                 font-weight: 900;
+            }
+
+            @include xs {
+                font-size: 1.2rem;
             }
         }
 
@@ -119,17 +151,41 @@
     }
 
     .column-03 {
-        text-align: right;
+        color: $white-01;
+        @include flex(row, flex-end, center, center);
+
+        li {
+            @include flex(row, flex-end, center, center);
+            margin: 0 .3rem;
+        }
 
         p {
-            @include font(1.8rem, 900, 1.4em);
+            width: 70%;
+            @include font(1.4rem, 900, 1.4em);
+            text-align: right;
             text-transform: uppercase;
             color: $white-01;
             margin-bottom: 0;
+
+
+        }
+
+        img {
+            height: 6rem;
         }
 
         @include md {
             order: 2;
+
+            p {
+                width: 100%;
+            }
+        }
+
+        @include xs {
+            p {
+                display: none;
+            }
         }
     }
 }
