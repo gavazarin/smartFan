@@ -113,7 +113,7 @@
         <div class="container">
           <div class="row">
             <div class="escolher-ingresso-content col-lg-12">
-              <div class="escolher-ingresso-column1 col-lg-3 col-md-5">
+              <div class="escolher-ingresso-column1 col-lg-4">
                 <!-- Selecionar ingresso -->
                 <div class="bilhetes-types">
                   <!-- Voucher de Desconto NEW  -->
@@ -131,14 +131,14 @@
                     <div class="escolher-ingresso-quantidade">
                       <h2>Sócio</h2>
 
-                      <div class="form-check socio-torcedor-item">
+                      <div class="form-check socio-torcedor-item" style="display: none;">
                         <label class="form-check-label" for="socio01">
                           <p>Bilhete sócio nº: <b><span>12500</span></b></p>
                         </label>
                         <input class="form-check-input" id="socio01" type="checkbox" />
                       </div>
 
-                      <ul>
+                      <ul style="display: none;">
                         <li>
                           <span>Bilhete <b>Acompanhante</b></span>
                           <div class="escolher-ingresso-quantidade-select">
@@ -150,7 +150,7 @@
                       </ul>
 
                       <div class="socio-torcedor-adicional">
-                        <h3>Adicione mais sócios para o acompanhar!</h3>
+                        <!-- <h3>Adicione mais sócios para o acompanhar!</h3>
 
                         <div class="form-check socio-torcedor-item">
                           <label class="form-check-label" for="socioAdicional01">
@@ -166,7 +166,7 @@
                             <p>Bilhete sócio nº: <b><span>13250</span></b></p>
                           </label>
                           <input class="form-check-input" id="socioAdicional01" type="checkbox" />
-                        </div>
+                        </div> -->
 
                         <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
                           Adicionar sócio
@@ -181,28 +181,52 @@
                       <h2>Não Sócio</h2>
                       <ul>
                         <li>
-                          <span>Bilhete <b>Adulto</b></span>
-                          <div class="escolher-ingresso-quantidade-select">
-                            <i><img src="images/svg/menos-icon.svg" alt=""></i>
-                            <span>0</span>
-                            <i><img src="images/svg/mais-icon.svg" alt=""></i>
-                          </div>
+                          <span>Bilhete <b>Público</b></span>
+                          <select class="form-control">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
                         </li>
                         <li>
                           <span>Bilhete <b>Criança</b></span>
-                          <div class="escolher-ingresso-quantidade-select">
-                            <i><img src="images/svg/menos-icon.svg" alt=""></i>
-                            <span>0</span>
-                            <i><img src="images/svg/mais-icon.svg" alt=""></i>
-                          </div>
+                          <select class="form-control">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
                         </li>
                         <li>
                           <span>Bilhete <b>Idoso</b></span>
-                          <div class="escolher-ingresso-quantidade-select">
-                            <i><img src="images/svg/menos-icon.svg" alt=""></i>
-                            <span>0</span>
-                            <i><img src="images/svg/mais-icon.svg" alt=""></i>
-                          </div>
+                          <select class="form-control">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
                         </li>
                       </ul>
                     </div>
@@ -452,8 +476,33 @@
                 </div>
               </div>
 
-              <div class="escolher-ingresso-ginasio col-lg-9 col-md-7">
-                <img src="images/01maracana_setores_disponiveis.jpg" alt="">
+              <div class="escolher-ingresso-ginasio col-lg-8">
+                <div class="estadio" id="smv_svg_estadio" smv-loaded="OK">
+                  <img src="images/01maracana_setores_disponiveis.jpg" alt="">
+                  <div id="controls">
+                    <svg version="1.1" width="45px" height="150px" x="0" y="0">
+                        <g transform="translate(10,10)">
+                            <g transform="translate(0,47)">
+                                <g cursor="pointer" id="zoomin" fill="#000000">
+                                    <circle r="15.5" cx="0" cy="0" fill="#FFFFFF" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="0.2" transform="translate(16,16)"></circle>
+                                    <g transform="translate(16,16)" opacity="1" style="pointer-events: none;">
+                                        <path cs="100,100" d="M-6.5,0.5 L7.5,0.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#910028"></path>
+                                        <path cs="100,100" d="M0.5,-6.5 L0.5,7.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#910028"></path>
+                                    </g>
+                                </g>
+                                <g cursor="pointer" id="zoomout" transform="translate(0,36)" fill="#000000">
+                                    <circle r="15.5" cx="0" cy="0" fill="#FFFFFF" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="0.2" transform="translate(16,16)"></circle>
+                                    <path cs="100,100" d="M-6.5,0.5 L7.5,0.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#910028" transform="translate(16,16)" opacity="1" style="pointer-events: none;"></path>
+                                </g>
+                            </g>
+                                <g cursor="pointer" id="resetSVG">
+                                    <circle r="15.5" cx="0" cy="0" fill="#FFFFFF" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="0.2" transform="translate(16,16)"></circle>
+                                    <path cs="100,100" d="M-6.5,0.5 L0.5,-6.5 L7.5,0.5 L6.5,0.5 L6.5,6.5 L2.5,6.5 L2.5,2.5 L-1.5,2.5 L-1.5,6.5 L-5.5,6.5 L-5.5,0.5 Z" fill="#910028" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="1" transform="translate(16,16)" opacity="1" style="pointer-events: none;"></path>
+                                </g>
+                        </g>
+                    </svg>
+                  </div>
+                </div>
               </div>
 
               <div class="container-btn col-lg-12">

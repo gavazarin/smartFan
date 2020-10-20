@@ -122,24 +122,14 @@
           font-weight: 900;
         }
 
+        .form-control {
+          width: 25%;
+          height: auto;
+          font-size: 1.4rem;
+        }
+
         &:last-child {
           margin-bottom: 0;
-        }
-
-        @include md {
-          @include flex(column, flex-start, center, center);
-        }
-
-        @include sm {
-          @include flex(row, space-between, center, center);
-        }
-
-        @include xs {
-          @include flex(column, flex-start, center, center);
-
-          span {
-            text-align: center;
-          }
         }
       }
 
@@ -342,6 +332,16 @@
     width: 100%;
     position: relative;
     text-align: center;
+
+    .estadio {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    #controls {
+      position: absolute;
+      top: 0;
+    }
 
     img {
       max-width: 100%;
