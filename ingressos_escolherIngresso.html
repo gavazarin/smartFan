@@ -50,475 +50,477 @@
     </div>
   </header>
 
-  <div>
-    <div class="header-ingresso-info">
-      <div class="container">
-        <div class="row">
-          <ul class="socio-info col-lg-4 col-md-6 col-sm-6 col-xs-6">
-            <li class="socio-info-avatar">
-              <img src="images/svg/user-avatar.svg" alt="">
-            </li>
-
-            <li class="socio-info-data">
-              <ul>
-                <li><strong>José Silva</strong></li>
-                <li>sócio nº: <strong>12500</strong></li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="game-info col-lg-4 col-md-12">
-            <li class="game-info-item1">Liga NOS</li>
-            <li class="game-info-item2">Gil Vicente - Boavista</li>
-            <li class="game-info-item3">Quinta-feira, 26 de agosto - 19h00 - Estádio Cidade de Barcelos</li>
-          </ul>
-
-          <ul class="column-03 col-lg-4 col-md-6 col-sm-6 col-xs-6">
-            <li>
-              <p>Gil Vicente Futebol Clube</p>
-            </li>
-            <li>
-              <img src="images/logo-1gilvicentefc.png" alt="">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <section class="bilhetes-content">
-      <div class="container">
-        <div class="row">
-          <ul class="breadcrumb col-lg-12">
-            <li class="breadcrumb-item breadcrumb-item-active">
-              <a href="#"><span>Escolher Ingresso</span></a>
-              <i><img src="images/svg/chevron-right.svg" alt=""></i>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="#"><span>Dados</span></a>
-              <i><img src="images/svg/chevron-right.svg" alt=""></i>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="#"><span>Pagamento</span></a>
-              <i><img src="images/svg/chevron-right.svg" alt=""></i>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="#"><span>Confirmação</span></a>
-            </li>
-          </ul>
-          <h2 class="title-breadcrumb">Escolher Ingresso</h2>
-        </div>
-      </div>
-
-      <section class="escolher-ingresso">
+  <section class="fluxoPagamentos">
+    <div class="container-bilhetes">
+      <div class="header-ingresso-info">
         <div class="container">
           <div class="row">
-            <div class="escolher-ingresso-content col-lg-12">
-              <div class="escolher-ingresso-column1 col-lg-4">
-                <!-- Selecionar ingresso -->
-                <div class="bilhetes-types">
-                  <!-- Voucher de Desconto NEW  -->
-                  <div class="escolher-ingresso-box" style="display: none;">
-                    <div class="voucher-desconto">
-                      <h2>voucher de desconto</h2>
+            <ul class="socio-info col-lg-4 col-md-6 col-sm-6 col-xs-6">
+              <li class="socio-info-avatar">
+                <img src="images/svg/user-avatar.svg" alt="">
+              </li>
 
-                      <button type="button" class="btn btn__blue" data-toggle="modal"
-                        data-target="#voucherDesconto"><span>aplicar voucher</span></button>
-                    </div>
-                  </div>
+              <li class="socio-info-data">
+                <ul>
+                  <li><strong>José Silva</strong></li>
+                  <li>sócio nº: <strong>12500</strong></li>
+                </ul>
+              </li>
+            </ul>
 
-                  <!-- Ingressos Sócio -->
-                  <div class="escolher-ingresso-box">
-                    <div class="escolher-ingresso-quantidade">
-                      <h2>Sócio</h2>
+            <ul class="game-info col-lg-4 col-md-12">
+              <li class="game-info-item1">Liga NOS</li>
+              <li class="game-info-item2">Gil Vicente - Boavista</li>
+              <li class="game-info-item3">Quinta-feira, 26 de agosto - 19h00 - Estádio Cidade de Barcelos</li>
+            </ul>
 
-                      <div class="form-check socio-torcedor-item" style="display: none;">
-                        <label class="form-check-label" for="socio01">
-                          <p>Bilhete sócio nº: <b><span>12500</span></b></p>
-                        </label>
-                        <input class="form-check-input" id="socio01" type="checkbox" />
-                      </div>
-
-                      <ul style="display: none;">
-                        <li>
-                          <span>Bilhete <b>Acompanhante</b></span>
-                          <div class="escolher-ingresso-quantidade-select">
-                            <i><img src="images/svg/menos-icon.svg" alt=""></i>
-                            <span>0</span>
-                            <i><img src="images/svg/mais-icon.svg" alt=""></i>
-                          </div>
-                        </li>
-                      </ul>
-
-                      <div class="socio-torcedor-adicional">
-                        <!-- <h3>Adicione mais sócios para o acompanhar!</h3>
-
-                        <div class="form-check socio-torcedor-item">
-                          <label class="form-check-label" for="socioAdicional01">
-                            <p>Joao Joao</p>
-                            <p>Bilhete sócio nº: <b><span>13250</span></b></p>
-                          </label>
-                          <input class="form-check-input" id="socioAdicional01" type="checkbox" />
-                        </div>
-
-                        <div class="form-check socio-torcedor-item">
-                          <label class="form-check-label" for="socioAdicional01">
-                            <p>Joao Joao</p>
-                            <p>Bilhete sócio nº: <b><span>13250</span></b></p>
-                          </label>
-                          <input class="form-check-input" id="socioAdicional01" type="checkbox" />
-                        </div> -->
-
-                        <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
-                          Adicionar sócio
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Ingressos Não-Sócios -->
-                  <div class="escolher-ingresso-box">
-                    <div class="escolher-ingresso-quantidade">
-                      <h2>Não Sócio</h2>
-                      <ul>
-                        <li>
-                          <span>Bilhete <b>Público</b></span>
-                          <select class="form-control">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                          </select>
-                        </li>
-                        <li>
-                          <span>Bilhete <b>Criança</b></span>
-                          <select class="form-control">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                          </select>
-                        </li>
-                        <li>
-                          <span>Bilhete <b>Idoso</b></span>
-                          <select class="form-control">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                          </select>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <!-- Pack de jogos -->
-                  <div class="escolher-ingresso-box" style="display: none;">
-                    <div class="escolher-ingresso-quantidade">
-                      <h2>Pack de Jogos</h2>
-                      <ul>
-                        <li>
-                          <span>Pack <b>Sócio</b></span>
-                          <div class="escolher-ingresso-quantidade-select">
-                            <i><img src="images/svg/menos-icon.svg" alt=""></i>
-                            <span>0</span>
-                            <i><img src="images/svg/mais-icon.svg" alt=""></i>
-                          </div>
-                        </li>
-                        <li>
-                          <span>Pack <b>Não-Sócio</b></span>
-                          <div class="escolher-ingresso-quantidade-select">
-                            <i><img src="images/svg/menos-icon.svg" alt=""></i>
-                            <span>0</span>
-                            <i><img src="images/svg/mais-icon.svg" alt=""></i>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Selecionar setor -->
-                <div class="bilhetes-types">
-                  <div class="escolher-ingresso-box">
-                    <ul class="ingressos-arquibancada">
-                      <li class="ingressos-arquibancada-item">
-                        <input id="a13" type="radio" name="sectorItem" style="display: none;">
-                        <label for="a13" class="ingressos-arquibancada-label">
-                          <span>A13</span>
-                          <span>R$90,00</span>
-                        </label>
-
-                        <ul class="ingresso-type">
-                          <li>
-                            <ul class="ingresso-type-list">
-                              <li>
-                                <span>3x</span>
-                                <span>Sócios</span>
-                                <span>R$30,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Acompanhante</span>
-                                <span>R$30,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Criança</span>
-                                <span>R$30,00</span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li class="ingressos-arquibancada-item">
-                        <input id="a11" type="radio" name="sectorItem" style="display: none;">
-                        <label for="a11" class="ingressos-arquibancada-label">
-                          <span>A11</span>
-                          <span>R$90,00</span>
-                        </label>
-
-                        <ul class="ingresso-type">
-                          <li>
-                            <ul class="ingresso-type-list">
-                              <li>
-                                <span>3x</span>
-                                <span>Sócios</span>
-                                <span>R$30,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Acompanhante</span>
-                                <span>R$30,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Criança</span>
-                                <span>R$30,00</span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li class="ingressos-arquibancada-item">
-                        <input id="a9" type="radio" name="sectorItem" style="display: none;">
-                        <label for="a9" class="ingressos-arquibancada-label">
-                          <span>A9</span>
-                          <span>R$120,00</span>
-                        </label>
-
-                        <ul class="ingresso-type">
-                          <li>
-                            <ul class="ingresso-type-list">
-                              <li>
-                                <span>3x</span>
-                                <span>Sócios</span>
-                                <span>R$30,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Acompanhante</span>
-                                <span>R$60,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Criança</span>
-                                <span>R$30,00</span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li class="ingressos-arquibancada-item">
-                        <input id="a7" type="radio" name="sectorItem" style="display: none;">
-                        <label for="a7" class="ingressos-arquibancada-label">
-                          <span>A7</span>
-                          <span>R$130,00</span>
-                        </label>
-
-                        <ul class="ingresso-type">
-                          <li>
-                            <ul class="ingresso-type-list">
-                              <li>
-                                <span>3x</span>
-                                <span>Sócios</span>
-                                <span>R$30,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Acompanhante</span>
-                                <span>R$60,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Criança</span>
-                                <span>R$40,00</span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li class="ingressos-arquibancada-item">
-                        <input id="b15" type="radio" name="sectorItem" style="display: none;">
-                        <label for="b15" class="ingressos-arquibancada-label">
-                          <span>B15</span>
-                          <span>R$145,00</span>
-                        </label>
-
-                        <ul class="ingresso-type">
-                          <li>
-                            <ul class="ingresso-type-list">
-                              <li>
-                                <span>3x</span>
-                                <span>Sócios</span>
-                                <span>R$45,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Acompanhante</span>
-                                <span>R$60,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Criança</span>
-                                <span>R$40,00</span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li class="ingressos-arquibancada-item">
-                        <input id="c7" type="radio" name="sectorItem" style="display: none;">
-                        <label for="c7" class="ingressos-arquibancada-label">
-                          <span>C7</span>
-                          <span>R$180,00</span>
-                        </label>
-
-                        <ul class="ingresso-type">
-                          <li>
-                            <ul class="ingresso-type-list">
-                              <li>
-                                <span>3x</span>
-                                <span>Sócios</span>
-                                <span>R$60,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Acompanhante</span>
-                                <span>R$80,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Criança</span>
-                                <span>R$40,00</span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li class="ingressos-arquibancada-item">
-                        <input id="c9" type="radio" name="sectorItem" style="display: none;">
-                        <label for="c9" class="ingressos-arquibancada-label">
-                          <span>C9</span>
-                          <span>R$180,00</span>
-                        </label>
-
-                        <ul class="ingresso-type">
-                          <li>
-                            <ul class="ingresso-type-list">
-                              <li>
-                                <span>3x</span>
-                                <span>Sócios</span>
-                                <span>R$60,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Acompanhante</span>
-                                <span>R$80,00</span>
-                              </li>
-                              <li>
-                                <span>2x</span>
-                                <span>Criança</span>
-                                <span>R$40,00</span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="escolher-ingresso-ginasio col-lg-8">
-                <div class="estadio" id="smv_svg_estadio" smv-loaded="OK">
-                  <img src="images/01maracana_setores_disponiveis.jpg" alt="">
-                  <div id="controls">
-                    <svg version="1.1" width="45px" height="150px" x="0" y="0">
-                        <g transform="translate(10,10)">
-                            <g transform="translate(0,47)">
-                                <g cursor="pointer" id="zoomin" fill="#000000">
-                                    <circle r="15.5" cx="0" cy="0" fill="#FFFFFF" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="0.2" transform="translate(16,16)"></circle>
-                                    <g transform="translate(16,16)" opacity="1" style="pointer-events: none;">
-                                        <path cs="100,100" d="M-6.5,0.5 L7.5,0.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#910028"></path>
-                                        <path cs="100,100" d="M0.5,-6.5 L0.5,7.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#910028"></path>
-                                    </g>
-                                </g>
-                                <g cursor="pointer" id="zoomout" transform="translate(0,36)" fill="#000000">
-                                    <circle r="15.5" cx="0" cy="0" fill="#FFFFFF" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="0.2" transform="translate(16,16)"></circle>
-                                    <path cs="100,100" d="M-6.5,0.5 L7.5,0.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#910028" transform="translate(16,16)" opacity="1" style="pointer-events: none;"></path>
-                                </g>
-                            </g>
-                                <g cursor="pointer" id="resetSVG">
-                                    <circle r="15.5" cx="0" cy="0" fill="#FFFFFF" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="0.2" transform="translate(16,16)"></circle>
-                                    <path cs="100,100" d="M-6.5,0.5 L0.5,-6.5 L7.5,0.5 L6.5,0.5 L6.5,6.5 L2.5,6.5 L2.5,2.5 L-1.5,2.5 L-1.5,6.5 L-5.5,6.5 L-5.5,0.5 Z" fill="#910028" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="1" transform="translate(16,16)" opacity="1" style="pointer-events: none;"></path>
-                                </g>
-                        </g>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              <div class="container-btn col-lg-12">
-                <a href="index.html" class="btn__verMais">
-                  cancelar
-                </a>
-                <a href="ingressos_escolherCadeira.html" class="btn btn__blue">
-                  <span>Avançar</span>
-                </a>
-              </div>
-            </div>
+            <ul class="column-03 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+              <li>
+                <p>Gil Vicente Futebol Clube</p>
+              </li>
+              <li>
+                <img src="images/logo-1gilvicentefc.png" alt="">
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-    </section>
-  </div>
+      </div>
+      
+        <section class="bilhetes-content">
+          <div class="container">
+            <div class="row">
+              <ul class="breadcrumb col-lg-12">
+                <li class="breadcrumb-item breadcrumb-item-active">
+                  <a href="#"><span>Escolher Ingresso</span></a>
+                  <i><img src="images/svg/chevron-right.svg" alt=""></i>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#"><span>Dados</span></a>
+                  <i><img src="images/svg/chevron-right.svg" alt=""></i>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#"><span>Pagamento</span></a>
+                  <i><img src="images/svg/chevron-right.svg" alt=""></i>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#"><span>Confirmação</span></a>
+                </li>
+              </ul>
+              <h2 class="title-breadcrumb">Escolher Ingresso</h2>
+            </div>
+          </div>
+
+          <section class="escolher-ingresso">
+            <div class="container">
+              <div class="row">
+                <div class="escolher-ingresso-content col-lg-12">
+                  <div class="escolher-ingresso-column1 col-lg-4">
+                    <!-- Selecionar ingresso -->
+                    <div class="bilhetes-types">
+                      <!-- Voucher de Desconto NEW  -->
+                      <div class="escolher-ingresso-box" style="display: none;">
+                        <div class="voucher-desconto">
+                          <h2>voucher de desconto</h2>
+
+                          <button type="button" class="btn btn__blue" data-toggle="modal"
+                            data-target="#voucherDesconto"><span>aplicar voucher</span></button>
+                        </div>
+                      </div>
+
+                      <!-- Ingressos Sócio -->
+                      <div class="escolher-ingresso-box">
+                        <div class="escolher-ingresso-quantidade">
+                          <h2>Sócio</h2>
+
+                          <div class="form-check socio-torcedor-item">
+                            <label class="form-check-label" for="socio01">
+                              <p>Bilhete sócio nº: <b><span>12500</span></b></p>
+                            </label>
+                            <input class="form-check-input" id="socio01" type="checkbox" />
+                          </div>
+
+                          <ul style="display: none;">
+                            <li>
+                              <span>Bilhete <b>Acompanhante</b></span>
+                              <div class="escolher-ingresso-quantidade-select">
+                                <i><img src="images/svg/menos-icon.svg" alt=""></i>
+                                <span>0</span>
+                                <i><img src="images/svg/mais-icon.svg" alt=""></i>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <div class="socio-torcedor-adicional">
+                            <!-- <h3>Adicione mais sócios para o acompanhar!</h3>
+
+                            <div class="form-check socio-torcedor-item">
+                              <label class="form-check-label" for="socioAdicional01">
+                                <p>Joao Joao</p>
+                                <p>Bilhete sócio nº: <b><span>13250</span></b></p>
+                              </label>
+                              <input class="form-check-input" id="socioAdicional01" type="checkbox" />
+                            </div>
+
+                            <div class="form-check socio-torcedor-item">
+                              <label class="form-check-label" for="socioAdicional01">
+                                <p>Joao Joao</p>
+                                <p>Bilhete sócio nº: <b><span>13250</span></b></p>
+                              </label>
+                              <input class="form-check-input" id="socioAdicional01" type="checkbox" />
+                            </div> -->
+
+                            <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
+                              Adicionar sócio
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Ingressos Não-Sócios -->
+                      <div class="escolher-ingresso-box">
+                        <div class="escolher-ingresso-quantidade">
+                          <h2>Não Sócio</h2>
+                          <ul>
+                            <li>
+                              <span>Bilhete <b>Público</b></span>
+                              <select class="form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </li>
+                            <li>
+                              <span>Bilhete <b>Criança</b></span>
+                              <select class="form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </li>
+                            <li>
+                              <span>Bilhete <b>Idoso</b></span>
+                              <select class="form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- Pack de jogos -->
+                      <div class="escolher-ingresso-box" style="display: none;">
+                        <div class="escolher-ingresso-quantidade">
+                          <h2>Pack de Jogos</h2>
+                          <ul>
+                            <li>
+                              <span>Pack <b>Sócio</b></span>
+                              <div class="escolher-ingresso-quantidade-select">
+                                <i><img src="images/svg/menos-icon.svg" alt=""></i>
+                                <span>0</span>
+                                <i><img src="images/svg/mais-icon.svg" alt=""></i>
+                              </div>
+                            </li>
+                            <li>
+                              <span>Pack <b>Não-Sócio</b></span>
+                              <div class="escolher-ingresso-quantidade-select">
+                                <i><img src="images/svg/menos-icon.svg" alt=""></i>
+                                <span>0</span>
+                                <i><img src="images/svg/mais-icon.svg" alt=""></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Selecionar setor -->
+                    <div class="bilhetes-types">
+                      <div class="escolher-ingresso-box">
+                        <ul class="ingressos-arquibancada">
+                          <li class="ingressos-arquibancada-item">
+                            <input id="a13" type="radio" name="sectorItem" style="display: none;">
+                            <label for="a13" class="ingressos-arquibancada-label">
+                              <span>A13</span>
+                              <span>R$90,00</span>
+                            </label>
+
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="ingressos-arquibancada-item">
+                            <input id="a11" type="radio" name="sectorItem" style="display: none;">
+                            <label for="a11" class="ingressos-arquibancada-label">
+                              <span>A11</span>
+                              <span>R$90,00</span>
+                            </label>
+
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="ingressos-arquibancada-item">
+                            <input id="a9" type="radio" name="sectorItem" style="display: none;">
+                            <label for="a9" class="ingressos-arquibancada-label">
+                              <span>A9</span>
+                              <span>R$120,00</span>
+                            </label>
+
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="ingressos-arquibancada-item">
+                            <input id="a7" type="radio" name="sectorItem" style="display: none;">
+                            <label for="a7" class="ingressos-arquibancada-label">
+                              <span>A7</span>
+                              <span>R$130,00</span>
+                            </label>
+
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$40,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="ingressos-arquibancada-item">
+                            <input id="b15" type="radio" name="sectorItem" style="display: none;">
+                            <label for="b15" class="ingressos-arquibancada-label">
+                              <span>B15</span>
+                              <span>R$145,00</span>
+                            </label>
+
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$45,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$40,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="ingressos-arquibancada-item">
+                            <input id="c7" type="radio" name="sectorItem" style="display: none;">
+                            <label for="c7" class="ingressos-arquibancada-label">
+                              <span>C7</span>
+                              <span>R$180,00</span>
+                            </label>
+
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$80,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$40,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="ingressos-arquibancada-item">
+                            <input id="c9" type="radio" name="sectorItem" style="display: none;">
+                            <label for="c9" class="ingressos-arquibancada-label">
+                              <span>C9</span>
+                              <span>R$180,00</span>
+                            </label>
+
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$80,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$40,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="escolher-ingresso-ginasio col-lg-8">
+                    <div class="estadio" id="smv_svg_estadio" smv-loaded="OK">
+                      <img src="images/01maracana_setores_disponiveis.jpg" alt="">
+                      <div id="controls">
+                        <svg version="1.1" width="45px" height="150px" x="0" y="0">
+                            <g transform="translate(10,10)">
+                                <g transform="translate(0,47)">
+                                    <g cursor="pointer" id="zoomin" fill="#000000">
+                                        <circle r="15.5" cx="0" cy="0" fill="#FFFFFF" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="0.2" transform="translate(16,16)"></circle>
+                                        <g transform="translate(16,16)" opacity="1" style="pointer-events: none;">
+                                            <path cs="100,100" d="M-6.5,0.5 L7.5,0.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#910028"></path>
+                                            <path cs="100,100" d="M0.5,-6.5 L0.5,7.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#910028"></path>
+                                        </g>
+                                    </g>
+                                    <g cursor="pointer" id="zoomout" transform="translate(0,36)" fill="#000000">
+                                        <circle r="15.5" cx="0" cy="0" fill="#FFFFFF" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="0.2" transform="translate(16,16)"></circle>
+                                        <path cs="100,100" d="M-6.5,0.5 L7.5,0.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#910028" transform="translate(16,16)" opacity="1" style="pointer-events: none;"></path>
+                                    </g>
+                                </g>
+                                    <g cursor="pointer" id="resetSVG">
+                                        <circle r="15.5" cx="0" cy="0" fill="#FFFFFF" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="0.2" transform="translate(16,16)"></circle>
+                                        <path cs="100,100" d="M-6.5,0.5 L0.5,-6.5 L7.5,0.5 L6.5,0.5 L6.5,6.5 L2.5,6.5 L2.5,2.5 L-1.5,2.5 L-1.5,6.5 L-5.5,6.5 L-5.5,0.5 Z" fill="#910028" stroke="#910028" fill-opacity="1" stroke-width="1" stroke-opacity="1" transform="translate(16,16)" opacity="1" style="pointer-events: none;"></path>
+                                    </g>
+                            </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container-btn col-lg-12">
+                    <a href="index.html" class="btn__verMais">
+                      cancelar
+                    </a>
+                    <a href="ingressos_escolherCadeira.html" class="btn btn__blue">
+                      <span>Avançar</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </div>
+  </section>
 
   <footer>
     <section class="teamsBar">

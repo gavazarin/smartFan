@@ -1,3 +1,15 @@
+.container-bilhetes {
+  width: 100%;
+}
+
+.fluxoPagamentos {
+  .header-ingresso-info {
+    .row {
+      @include flex(row, center, center, center);
+    }
+  }
+}
+
 .bilhetes-content {
   width: 100%;
   position: relative;
@@ -110,7 +122,7 @@
       li {
         @include flex(row, space-between, center, center);
         flex-wrap: wrap;
-        @include font(1.8rem, 300, 1.4em);
+        @include font(1.6rem, 300, 1.4em);
         margin-bottom: 1.6rem;
 
         span {
@@ -119,13 +131,14 @@
         }
 
         b {
-          font-weight: 900;
+          font-weight: 700;
         }
 
         .form-control {
           width: 25%;
           height: auto;
-          font-size: 1.4rem;
+          font-size: 1.5rem;
+          padding: .75rem;
         }
 
         &:last-child {
@@ -163,14 +176,14 @@
             margin-bottom: 0;
 
             b {
-              font-weight: 900;
+              font-weight: 700;
             }
           }
         }
 
         input {
-          width: 1.6rem;
-          height: 1.6rem;
+          width: 2rem;
+          height: 2rem;
           position: relative;
         }
       }
@@ -284,11 +297,11 @@
         width: 100%;
         padding: 4px;
         @include flex(row, space-between, center, center);
-        @include font(1.8rem, 300, 1.4em);
+        @include font(1.6rem, 300, 1.4em);
 
         span {
           &:first-child {
-            font-weight: 900;
+            font-weight: 700;
           }
         }
       }

@@ -4768,14 +4768,6 @@ header .socialMedias_header img {
   }
 }
 
-.header-ingresso-info .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
 .header-ingresso-info .socio-info {
   width: 100%;
   position: relative;
@@ -7539,6 +7531,18 @@ tbody > tr:last-child > td {
   }
 }
 
+.container-bilhetes {
+  width: 100%;
+}
+
+.fluxoPagamentos .header-ingresso-info .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .bilhetes-content {
   width: 100%;
   position: relative;
@@ -7677,7 +7681,7 @@ tbody > tr:last-child > td {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.4em;
   margin-bottom: 1.6rem;
@@ -7689,13 +7693,14 @@ tbody > tr:last-child > td {
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade li b {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade li .form-control {
   width: 25%;
   height: auto;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  padding: .75rem;
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade li:last-child {
@@ -7749,12 +7754,12 @@ tbody > tr:last-child > td {
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item label p b {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item input {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
   position: relative;
 }
 
@@ -7903,13 +7908,13 @@ tbody > tr:last-child > td {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.4em;
 }
 
 .escolher-ingresso-box .ingressos-arquibancada-label span:first-child {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .escolher-ingresso-box .ingressos-arquibancada .ingresso-type {
