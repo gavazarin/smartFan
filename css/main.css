@@ -4841,6 +4841,7 @@ header .socialMedias_header img {
   font-size: 2.2rem;
   text-transform: uppercase;
   margin-bottom: .4rem;
+  text-align: center;
 }
 
 .header-ingresso-info .game-info-item3 {
@@ -6442,6 +6443,10 @@ header .socialMedias_header img {
   width: 100%;
 }
 
+.table-escolha-lugares .lugares tbody tr:nth-child(even) {
+  background: #FFF;
+}
+
 @media (max-width: 992px) {
   .table-escolha-lugares {
     padding: .75rem 0;
@@ -6750,7 +6755,6 @@ tbody > tr:last-child > td {
   border-radius: 50%;
   background: #1A7DD7;
   border: #1A7DD7 solid 1px;
-  border-radius: 2px;
 }
 
 .legendas .available-poor-visibility:before {

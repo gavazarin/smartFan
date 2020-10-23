@@ -4,6 +4,16 @@
     max-width: 1000px;
     width: 100%;
 
+    .lugares {
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background: #FFF;
+                }
+            }
+        }
+    }
+
     @include md {
         padding: .75rem 0;
 
@@ -310,7 +320,6 @@ tbody>tr:last-child>td {
             border-radius: 50%;
             background: $primary-02;
             border: $primary-02 solid 1px;
-            border-radius: 2px;
         }
     }
 
