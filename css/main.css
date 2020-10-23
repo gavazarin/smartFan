@@ -7996,6 +7996,97 @@ tbody > tr:last-child > td {
   margin-left: 1.6rem;
 }
 
+.bilhetes-dados form {
+  margin: 2.4rem auto 1.6rem;
+}
+
+.bilhetes-dados .category-description {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  color: #03275A;
+}
+
+.bilhetes-dados .form-group {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.bilhetes-dados h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4em;
+  color: #03275A;
+  margin-top: 1.2rem;
+}
+
+.bilhetes-dados .cp-wrapper .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.bilhetes-dados .cp-wrapper input,
+.bilhetes-dados .cp-wrapper select {
+  width: 48%;
+}
+
+.bilhetes-dados .cp-wrapper p {
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.bilhetes-dados .dataallow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.bilhetes-dados .dataallow input {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: .8rem;
+}
+
+.bilhetes-dados .dataallow label {
+  width: calc(100% - 2.5rem);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.bilhetes-dados .dataallow h5 {
+  width: 100%;
+}
+
+.bilhetes-dados .dataallow h5 a {
+  color: #03275A;
+}
+
+.bilhetes-dados .container-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.bilhetes-dados .container-btn a {
+  margin: 0 .8rem;
+}
+
 .tr-jogo {
   font-size: 1.8rem;
   font-weight: 900;
