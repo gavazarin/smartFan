@@ -2177,7 +2177,7 @@ h3 {
 
 .breadcrumb-modalidades {
   padding: 1.6rem 0;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
 }
 
 .breadcrumb-modalidades .row {
@@ -2380,7 +2380,7 @@ form span.input-validate {
   border-radius: .7rem;
   border: none;
   background: #212121;
-  color: #F0F0F0;
+  color: #F9F9F9;
   font-size: 1.2rem;
   font-weight: 900;
   line-height: 1.3em;
@@ -2425,7 +2425,7 @@ form span.input-validate {
 }
 
 .btn:hover, .btn:focus {
-  color: #F0F0F0;
+  color: #F9F9F9;
   text-decoration: none;
   transition: all .3s ease-in-out;
 }
@@ -2669,7 +2669,7 @@ table tbody tr.totalpayment {
 }
 
 table tbody tr.totalpayment td {
-  color: #F0F0F0;
+  color: #F9F9F9;
 }
 
 table .status__atrasado {
@@ -2747,7 +2747,7 @@ table .btn {
 }
 
 .tab table tr.totalpayment td {
-  color: #F0F0F0;
+  color: #F9F9F9;
 }
 
 .classificacao th,
@@ -2961,7 +2961,7 @@ table .btn {
   justify-content: flex-end;
   align-items: center;
   align-content: center;
-  color: #F0F0F0;
+  color: #F9F9F9;
 }
 
 .bannerFullScreen .infos-banner ul li {
@@ -3028,7 +3028,7 @@ table .btn {
 }
 
 .banner-hero h1 {
-  color: #F0F0F0;
+  color: #F9F9F9;
   font-size: 3.6rem;
   padding-bottom: .5rem;
   position: relative;
@@ -3156,7 +3156,7 @@ table .btn {
 
 .cards-virarSocio-pagarQuota p {
   width: 90%;
-  color: #F0F0F0;
+  color: #F9F9F9;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.3em;
@@ -3331,7 +3331,7 @@ label:hover img {
   padding: 1.5rem 0;
   margin-bottom: 1.5rem;
   border-radius: 1rem;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3568,7 +3568,7 @@ label:hover img {
 
 .estruturaPadrao .sidebar {
   width: 100%;
-  border-left: 2px solid #F0F0F0;
+  border-left: 2px solid #F9F9F9;
 }
 
 @media (max-width: 992px) {
@@ -3621,7 +3621,7 @@ label:hover img {
 .estruturaPadrao .sidebar__noticias ul::-webkit-scrollbar-thumb {
   -webkit-border-radius: 1rem;
   border-radius: 1rem;
-  background: #F0F0F0;
+  background: #F9F9F9;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -3708,7 +3708,7 @@ footer .footerList {
 
 footer .footerList li {
   margin-bottom: 1rem;
-  color: #F0F0F0;
+  color: #F9F9F9;
 }
 
 footer .footerList li a {
@@ -3723,7 +3723,7 @@ footer .footerList li:last-child {
 footer .footerList li:hover a {
   border-bottom: 1px solid #f0f0f0;
   transition: all .3s ease-in;
-  color: #F0F0F0;
+  color: #F9F9F9;
   text-decoration: none;
 }
 
@@ -3907,13 +3907,14 @@ footer .rodape .logoSmartmove:before {
 header {
   width: 100%;
   position: relative;
+  background-color: #f9f9f9;
   padding-top: .5rem;
-  border-bottom: 3px solid #F37402;
+  border-bottom: 2px solid #F37402;
 }
 
 @media (max-width: 767px) {
   header {
-    background-color: #03275A;
+    background-color: #F9F9F9;
     overflow: hidden;
   }
 }
@@ -3975,7 +3976,7 @@ header .socialMedias_header {
 
 @media (max-width: 767px) {
   header .socialMedias_header {
-    color: #F0F0F0;
+    color: #03275A;
     margin: .5rem 0;
     padding: 0 1.5rem;
   }
@@ -4019,7 +4020,7 @@ header .socialMedias_header .language-dropdown-list {
 
 header .socialMedias_header .language-dropdown-list li {
   text-align: right;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2em;
@@ -4045,7 +4046,7 @@ header .socialMedias_header .language-dropdown-list li:hover {
 }
 
 header .socialMedias_header .language-dropdown-list li:hover a {
-  color: #F0F0F0;
+  color: #F9F9F9;
   text-decoration: none;
 }
 
@@ -4072,7 +4073,7 @@ header .socialMedias_header img {
 
 .navMenu {
   width: 100%;
-  background-color: #03275A;
+  background-color: #FFFFFF;
   padding: 1.5rem 0;
 }
 
@@ -4114,7 +4115,7 @@ header .socialMedias_header img {
 .navMenu .menu__item {
   margin-left: 3rem;
   position: relative;
-  color: #F0F0F0;
+  color: #03275A;
   cursor: pointer;
 }
 
@@ -4123,14 +4124,14 @@ header .socialMedias_header img {
 }
 
 .navMenu .menu__item a {
-  color: #F0F0F0;
+  color: #03275A;
 }
 
 .navMenu .menu__item:before {
   content: '';
   width: 100%;
   height: .2rem;
-  background: #F0F0F0;
+  background: #03275A;
   position: absolute;
   top: auto;
   right: auto;
@@ -4193,8 +4194,8 @@ header .socialMedias_header img {
   padding: .4rem;
   border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
-  border-top: 4px solid #1A7DD7;
-  background-color: #F0F0F0;
+  border-top: 2px solid #03275A;
+  background-color: #f9f9f9;
   display: none;
 }
 
@@ -4243,7 +4244,7 @@ header .socialMedias_header img {
 }
 
 .navMenu .menu .menu__item-dropdown .modalidades-list-item:hover a {
-  color: #F0F0F0;
+  color: #F9F9F9;
   transition: all .3s ease-out;
 }
 
@@ -4258,7 +4259,7 @@ header .socialMedias_header img {
 }
 
 .navMenu .menu__btn .btn {
-  color: #F0F0F0;
+  color: #F9F9F9;
 }
 
 .navMenu .menu__btn:before {
@@ -4316,7 +4317,7 @@ header .socialMedias_header img {
   display: inline-block;
   height: 3rem;
   padding: 5px;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   border: 1px solid #F34605;
   border-radius: 50%;
   margin-right: 1rem;
@@ -4376,7 +4377,7 @@ header .socialMedias_header img {
 
 .menu__logado .user-dropdown__list {
   animation: open-user-dropdown .3s ease-out;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
   box-shadow: 2px 10px 23px 5px rgba(0, 0, 0, 0.3);
@@ -4457,8 +4458,8 @@ header .socialMedias_header img {
   width: 100%;
   min-height: 100%;
   height: 100%;
-  background-color: #021C40;
-  color: #F0F0F0;
+  background-color: #F9F9F9;
+  color: #03275A;
   position: fixed;
   top: 0;
   left: 0;
@@ -4484,13 +4485,17 @@ header .socialMedias_header img {
   margin: 3rem 0;
 }
 
+.navMenu-mobile .menuMobile ul li:first-child {
+  margin-top: 0;
+}
+
 .navMenu-mobile .menuMobile ul li a {
   transition: all .3s ease-out;
-  color: #F0F0F0;
+  color: #03275A;
 }
 
 .navMenu-mobile .menuMobile ul li a:hover {
-  color: #AFAFAF;
+  color: #021C40;
   text-decoration: none;
   transition: all .3s ease-out;
 }
@@ -4602,6 +4607,12 @@ header .socialMedias_header img {
   .navMenu-mobile .teamsBar__mobile .list_ligas {
     position: relative;
   }
+  .navMenu-mobile .teamsBar__mobile .list_ligas li {
+    margin: .5rem 0;
+  }
+  .navMenu-mobile .teamsBar__mobile .list_ligas li:first-child {
+    margin: .5rem 0;
+  }
   .navMenu-mobile .teamsBar__mobile .list_ligas img {
     height: 4rem;
   }
@@ -4612,7 +4623,7 @@ header .socialMedias_header img {
     content: '';
     height: 1px;
     width: 50%;
-    background-color: #F0F0F0;
+    background-color: #F9F9F9;
     position: absolute;
     top: 0;
     right: 25%;
@@ -4634,7 +4645,7 @@ header .socialMedias_header img {
     border-right: none;
   }
   .navMenu-mobile .teamsBar__mobile .list_clubs ul li {
-    margin: 1.5rem .5rem;
+    margin: 1rem .5rem;
   }
   .navMenu-mobile .teamsBar__mobile .list_clubs img {
     height: 4rem;
@@ -4779,7 +4790,7 @@ header .socialMedias_header img {
 }
 
 .header-ingresso-info .socio-info-avatar {
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   padding: .8rem;
   border-radius: 50%;
   border: 2px solid #F34605;
@@ -4800,7 +4811,7 @@ header .socialMedias_header img {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.4em;
-  color: #F0F0F0;
+  color: #F9F9F9;
 }
 
 .header-ingresso-info .socio-info-data strong {
@@ -4825,7 +4836,7 @@ header .socialMedias_header img {
   justify-content: center;
   align-items: center;
   align-content: center;
-  color: #F0F0F0;
+  color: #F9F9F9;
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.4em;
@@ -4862,7 +4873,7 @@ header .socialMedias_header img {
 }
 
 .header-ingresso-info .column-03 {
-  color: #F0F0F0;
+  color: #F9F9F9;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -4886,7 +4897,7 @@ header .socialMedias_header img {
   line-height: 1.4em;
   text-align: right;
   text-transform: uppercase;
-  color: #F0F0F0;
+  color: #F9F9F9;
   margin-bottom: 0;
 }
 
@@ -5008,7 +5019,7 @@ header .socialMedias_header img {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.6em;
-  color: #F0F0F0;
+  color: #F9F9F9;
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -5166,7 +5177,7 @@ header .socialMedias_header img {
 .nav_tabs {
   width: 100%;
   height: auto;
-  background: #F0F0F0;
+  background: #F9F9F9;
   position: relative;
 }
 
@@ -5326,7 +5337,7 @@ header .socialMedias_header img {
 .nav_tabs .listTeams_popUp::-webkit-scrollbar-thumb {
   -webkit-border-radius: 1rem;
   border-radius: 1rem;
-  background: #F0F0F0;
+  background: #F9F9F9;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -5355,7 +5366,7 @@ header .socialMedias_header img {
 }
 
 .nav_tabs .listTeams_popUp li:hover {
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   transition: all .3s ease-out;
 }
 
@@ -5664,7 +5675,7 @@ header .socialMedias_header img {
 }
 
 .teamsBar .list_clubs ul .club__select {
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   border: 1px solid #F34605;
   border-radius: 50%;
 }
@@ -5732,6 +5743,12 @@ header .socialMedias_header img {
   .teamsBar .list_clubs .list_clubs_02::before,
   .teamsBar .list_clubs .list_clubs_03::before {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .teamsBar .list_clubs .list_clubs_03 {
+    margin-bottom: 0;
   }
 }
 
@@ -5858,7 +5875,7 @@ header .socialMedias_header img {
   justify-content: center;
   align-items: center;
   align-content: center;
-  color: #F0F0F0;
+  color: #F9F9F9;
 }
 
 .homeBanner .swiper-slide .slide-content li {
@@ -5911,19 +5928,19 @@ header .socialMedias_header img {
 }
 
 .homeBanner .swiper-pagination-bullet {
-  background: #F0F0F0;
+  background: #F9F9F9;
   opacity: .5;
 }
 
 .homeBanner .swiper-pagination-bullet-active {
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   opacity: 1;
 }
 
 .homeBanner .swiper-button-prev:after,
 .homeBanner .swiper-button-next:after {
   font-size: 3rem;
-  color: #F0F0F0;
+  color: #F9F9F9;
 }
 
 .proximos-jogos {
@@ -5978,7 +5995,7 @@ header .socialMedias_header img {
 
 .vantagens-socio-container .sou-socio h1,
 .vantagens-socio-container .sou-socio p {
-  color: #F0F0F0;
+  color: #F9F9F9;
   border: none;
 }
 
@@ -6147,7 +6164,7 @@ header .socialMedias_header img {
 
 .redes-sociais__container {
   width: 100%;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   display: flex;
@@ -7081,7 +7098,7 @@ tbody > tr:last-child > td {
   min-height: 20rem;
   border-radius: 1rem;
   padding: 1.5rem;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -7143,7 +7160,7 @@ tbody > tr:last-child > td {
 .fluxoPagamentos__footer {
   width: 100%;
   position: relative;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   padding: 1.5rem 0;
   margin-top: 4.5rem;
 }
@@ -7233,7 +7250,7 @@ tbody > tr:last-child > td {
 .fluxoPagamentos .payList ul li {
   height: 17rem;
   margin: 0 1.5rem;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   border: 2px solid #03275A;
   border-radius: 1rem;
   padding: 1rem 1.5rem 1.5rem;
@@ -7302,7 +7319,7 @@ tbody > tr:last-child > td {
 }
 
 .fluxoPagamentos .payList ul .select {
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   border: 2px solid #F34605;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   transform: scale(1);
@@ -7547,6 +7564,14 @@ tbody > tr:last-child > td {
   align-content: center;
 }
 
+.fluxoPagamentos .bilhetes-dados .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
 .bilhetes-content {
   width: 100%;
   position: relative;
@@ -7625,7 +7650,7 @@ tbody > tr:last-child > td {
 
 .escolher-ingresso-box {
   width: 100%;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   border-radius: 8px;
   margin-bottom: 1.6rem;
   padding: 1.2rem 1.6rem;
@@ -7889,7 +7914,7 @@ tbody > tr:last-child > td {
 
 .escolher-ingresso-box .ingressos-arquibancada-item input[type="radio"]:checked + label {
   background-color: #1A7DD7;
-  color: #F0F0F0;
+  color: #F9F9F9;
   border: 2px solid #03275A;
   border-radius: 4px;
 }
@@ -7994,6 +8019,10 @@ tbody > tr:last-child > td {
 
 .escolher-ingresso .container-btn .btn {
   margin-left: 1.6rem;
+}
+
+.bilhetes-dados {
+  margin-bottom: 2.4rem;
 }
 
 .bilhetes-dados form {
@@ -8337,7 +8366,7 @@ tbody > tr:last-child > td {
 }
 
 .accordion-detalhes label:hover span {
-  color: #F0F0F0;
+  color: #F9F9F9;
   transition: all .3s ease-in;
 }
 
@@ -8358,7 +8387,7 @@ tbody > tr:last-child > td {
 
 .accordion-detalhes input[type="radio"]:checked + label {
   background: #03275A;
-  color: #F0F0F0;
+  color: #F9F9F9;
 }
 
 .accordion-detalhes input[type="radio"]:checked + label + .tab {
@@ -8461,7 +8490,7 @@ tbody > tr:last-child > td {
 .bannerUserData .profile-picture a {
   width: 10rem;
   height: 10rem;
-  background-color: #F0F0F0;
+  background-color: #F9F9F9;
   padding: 1.5rem;
   border: 3px solid #03275A;
   border-radius: 50%;
@@ -8476,7 +8505,7 @@ tbody > tr:last-child > td {
 .bannerUserData .profile-picture h1 {
   margin-top: 2rem;
   margin-left: 1.5rem;
-  color: #F0F0F0;
+  color: #F9F9F9;
   border: none;
 }
 
@@ -8920,7 +8949,7 @@ tbody > tr:last-child > td {
 }
 
 .clube-fan-content .clubes-fan__list .clube-fan__select {
-  background: #F0F0F0;
+  background: #F9F9F9;
   border: 2px solid #F34605;
   border-radius: 50%;
 }

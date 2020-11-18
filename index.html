@@ -16,7 +16,7 @@
   <div class="load-screen" id="smv_loading" style="display:none;"></div>
 
   <header>
-    <img src="images/svg/pattern_smartFan.svg" alt="Pattern SmartFan" class="pattern__smartFan">
+    <!-- <img src="images/svg/pattern_smartFan.svg" alt="Pattern SmartFan" class="pattern__smartFan"> -->
 
     <div class="container">
       <div class="row">
@@ -46,11 +46,10 @@
     <input id="menu-desporto" type="checkbox">
     <input id="menu-modalidades" type="checkbox">
     <nav class="navMenu col-lg-12">
-      <img src="images/svg/pattern_smartFan-white.svg" alt="Pattern SmartFan" class="pattern__smartFan">
+      <!-- <img src="images/svg/pattern_smartFan-white.svg" alt="Pattern SmartFan" class="pattern__smartFan"> -->
       <div class="container">
         <div class="row">
-          <a href="index.html" class="marca col-lg-2"><img src="images/svg/logo_smartFan-white.svg"
-              alt="Logo do SmartFan"></a>
+          <a href="index.html" class="marca col-lg-2"><img src="images/svg/logo_smartFan.svg" alt="Logo do SmartFan"></a>
 
           <ul class="menu col-lg-10">
             <li class="menu__list">
@@ -63,13 +62,13 @@
 
                 <li class="menu__item menu__item-dropdown menu__item--desportos">
                   <label for="menu-desporto">
-                    <p>futebol <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
+                    <p>futebol <i class="icon-down"><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
                   </label>
                 </li>
 
-                <li class="menu__item menu__item-dropdown menu__item-modalidades" style="display: none;">
+                <li class="menu__item menu__item-dropdown menu__item-modalidades" style="display: block;">
                   <label for="menu-modalidades">
-                    <p>modalidades <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
+                    <p>modalidades <i class="icon-down"><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
                   </label>
                   <ul class="modalidades-list">
                     <li class="modalidades-list-item">
@@ -110,7 +109,7 @@
               <ul class="menu__list--ul">
                 <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
                 <li class="menu__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
-                <li class="menu__item">
+                <li class="menu__item" style="display: none;">
                   <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
                 </li>
                 <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
@@ -217,25 +216,25 @@
 
     <!-- ==== MENU MOBILE ==== -->
     <nav class="navMenu-mobile col-md-12">
-      <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt="SmartFan"></a>
+      <a href="index.html" class="marca"><img src="images/svg/logo_smartFan.svg" alt="SmartFan"></a>
 
-      <a href="#" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu-white.svg" alt="Abrir Menu"></a>
+      <a href="#" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu.svg" alt="Abrir Menu"></a>
 
       <div id="#menuMobile" class="menuMobile">
         <!-- <div class="container-btn">
         </div> -->
         <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
 
-        <a href="index.html" class="marca"><img src="images/svg/logo_smartFan-white.svg" alt="Logo do SmartFan"></a>
+        <a href="index.html" class="marca"><img src="images/svg/logo_smartFan.svg" alt="Logo do SmartFan"></a>
 
         <section class="teamsBar teamsBar__mobile">
           <ul class="list_ligas">
             <li>
-              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png"
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa-black.png"
                   alt="Federação Portuguesa de Futebol"></a>
             </li>
             <li>
-              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png"
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal-black.png"
                   alt="Liga Portugal"></a>
             </li>
           </ul>
@@ -295,7 +294,7 @@
           <li class="menuMobile__list__item menu__item-dropdown  menu__item-modalidades">
             <input id="menu-modalidades-mobile" type="checkbox">
             <label for="menu-modalidades-mobile">
-              <p>modalidades <i class="icon-down"><img src="images/svg/icon-down.svg" alt=""></i></p>
+              <p>modalidades <i class="icon-down"><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
             </label>
             <ul class="modalidades-list">
               <li class="modalidades-list-item"><a href="andebol-home.html">andebol</a></li>
@@ -1087,7 +1086,6 @@
                   <div class="container-input col-lg-8 col-md-12">
                     <label for="smv_ufm_SocNum" class="form-label" smv-langtext="lblsocnum">Número de sócio</label>
                     <input type="text" class="input-digit-control">
-                    <span for="smv_ufm_SocNum" generated="true" class="input-validate">Obrigatório</span>
                     <input type="text" class="input-single">
                     <span for="smv_ufm_SocNum" generated="true" class="input-validate">Obrigatório</span>
                   </div>

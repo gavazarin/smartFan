@@ -8,6 +8,12 @@
       @include flex(row, center, center, center);
     }
   }
+
+  .bilhetes-dados {
+    .row {
+      @include flex(row, flex-start, center, center);
+    }
+  }
 }
 
 .bilhetes-content {
@@ -376,6 +382,8 @@
 }
 
 .bilhetes-dados {
+  margin-bottom: 2.4rem;
+
   form {
     margin: 2.4rem auto 1.6rem;
   }

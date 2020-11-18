@@ -3,7 +3,7 @@ $font-01: 'Nunito Sans',
 sans-serif;
 ;
 // _____color
-$white-01: #F0F0F0;
+$white-01: #F9F9F9;
 $gray-01: #AFAFAF;
 $gray-02: #707070;
 $black-01: #212121;
@@ -18,4 +18,4 @@ $max-width: 1840px !default;
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: ( 'small': 320px, 'medium': 768px, 'large': 1024px, ) !default;
+$breakpoints: ('small': 320px, 'medium': 768px, 'large': 1024px, ) !default;

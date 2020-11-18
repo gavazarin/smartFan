@@ -114,6 +114,12 @@
       }
     }
 
+    .list_clubs_03 {
+      @include sm {
+        margin-bottom: 0;
+      }
+    }
+
     .tooltip {
       position: relative;
       display: inline-block;

@@ -2,11 +2,12 @@ header {
   width: 100%;
   position: relative;
   // overflow: hidden;
+  background-color: #f9f9f9;
   padding-top: .5rem;
-  border-bottom: 3px solid $secondary-02;
+  border-bottom: 2px solid $secondary-02;
 
   @include sm {
-    background-color: $primary-01;
+    background-color: $white-01;
     overflow: hidden;
   }
 
@@ -47,7 +48,7 @@ header {
     @include font(1.2rem, 300, 1em);
 
     @include sm {
-      color: $white-01;
+      color: $primary-01;
       margin: .5rem 0;
       padding: 0 1.5rem;
     }
@@ -138,7 +139,7 @@ header {
 
 .navMenu {
   width: 100%;
-  background-color: $primary-01;
+  background-color: #FFFFFF;
   padding: 1.5rem 0;
 
   // overflow: hidden;
@@ -165,7 +166,7 @@ header {
     &__item {
       margin-left: 3rem;
       position: relative;
-      color: $white-01;
+      color: $primary-01;
       cursor: pointer;
 
       &:first-child {
@@ -173,14 +174,14 @@ header {
       }
 
       a {
-        color: $white-01;
+        color: $primary-01;
       }
 
       &:before {
         content: '';
         width: 100%;
         height: .2rem;
-        background: $white-01;
+        background: $primary-01;
         @include absolute(auto, auto, -.5rem, 0);
         transform: scale(0, 1);
         transform-origin: 0 0;
@@ -241,8 +242,8 @@ header {
         padding: .4rem;
         border-bottom-left-radius: .5rem;
         border-bottom-right-radius: .5rem;
-        border-top: 4px solid $primary-02;
-        background-color: $white-01;
+        border-top: 2px solid $primary-01;
+        background-color: #f9f9f9;
         display: none;
 
         &-item {
@@ -477,8 +478,8 @@ header {
     width: 100%;
     min-height: 100%;
     height: 100%;
-    background-color: $primary-dark;
-    color: $white-01;
+    background-color: $white-01;
+    color: $primary-01;
     position: fixed;
     // @include flex(column, flex-start, center, center);
     top: 0;
@@ -500,12 +501,16 @@ header {
       li {
         margin: 3rem 0;
 
+        &:first-child {
+          margin-top: 0;
+        }
+
         a {
           transition: all .3s ease-out;
-          color: $white-01;
+          color: $primary-01;
 
           &:hover {
-            color: $gray-01;
+            color: $primary-dark;
             text-decoration: none;
             transition: all .3s ease-out;
           }
@@ -619,6 +624,14 @@ header {
       .list_ligas {
         position: relative;
 
+        li {
+          margin: .5rem 0;
+
+          &:first-child {
+            margin: .5rem 0;
+          }
+        }
+
         img {
           height: 4rem;
         }
@@ -648,7 +661,7 @@ header {
           }
 
           li {
-            margin: 1.5rem .5rem;
+            margin: 1rem .5rem;
           }
         }
 
