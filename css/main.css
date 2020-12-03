@@ -5827,65 +5827,65 @@ header .socialMedias_header img {
   transition: all .3s ease-in-out;
 }
 
-.vsc-page h1 {
+.VITORIASC-page h1 {
   color: #212121;
   border-bottom: 2px solid #ffd201;
 }
 
-.vsc-page h2 {
+.VITORIASC-page h2 {
   color: #212121;
 }
 
-.vsc-page h3 {
+.VITORIASC-page h3 {
   color: #707070;
 }
 
-.vsc-page .btn__verMais {
+.VITORIASC-page .btn__verMais {
   color: #ffd201;
 }
 
-.vsc-page .btn__verMais:before {
+.VITORIASC-page .btn__verMais:before {
   background-color: #ffd201;
 }
 
-.vsc-page .btn__verMais:hover {
+.VITORIASC-page .btn__verMais:hover {
   color: #ffd201;
 }
 
-.vsc-page .btn__verMais:focus {
+.VITORIASC-page .btn__verMais:focus {
   color: #ffd201;
 }
 
-.vsc-page form input,
-.vsc-page form select {
+.VITORIASC-page form input,
+.VITORIASC-page form select {
   border: 2px solid #AFAFAF;
   color: #212121;
 }
 
-.vsc-page form input:focus,
-.vsc-page form select:focus {
+.VITORIASC-page form input:focus,
+.VITORIASC-page form select:focus {
   border: 2px solid #212121;
 }
 
-.vsc-page form input:disabled,
-.vsc-page form select:disabled {
+.VITORIASC-page form input:disabled,
+.VITORIASC-page form select:disabled {
   background-color: #AFAFAF;
 }
 
-.vsc-page form label {
+.VITORIASC-page form label {
   color: #212121;
 }
 
-.vsc-page form label:disabled {
+.VITORIASC-page form label:disabled {
   color: #AFAFAF;
 }
 
-.vsc-page form .input-validate {
+.VITORIASC-page form .input-validate {
   border: 2px solid #f1c500;
   color: #f1c500;
 }
 
-.vsc-page .check-new-number {
+.VITORIASC-page .check-new-number {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -5894,12 +5894,12 @@ header .socialMedias_header img {
   margin-bottom: 4.5rem;
 }
 
-.vsc-page .check-new-number h1 {
+.VITORIASC-page .check-new-number h1 {
   width: 100%;
   margin-top: 0;
 }
 
-.vsc-page .check-new-number-content {
+.VITORIASC-page .check-new-number-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -5910,48 +5910,48 @@ header .socialMedias_header img {
   padding-top: 1.5rem;
 }
 
-.vsc-page .check-new-number-content i {
+.VITORIASC-page .check-new-number-content i {
   display: inline-block;
   width: auto;
   height: 20rem;
   margin: 0 auto;
 }
 
-.vsc-page .check-new-number-content i img {
+.VITORIASC-page .check-new-number-content i img {
   height: 100%;
 }
 
-.vsc-page .check-new-number-content-text {
+.VITORIASC-page .check-new-number-content-text {
   padding-top: 2rem;
   text-align: left;
 }
 
-.vsc-page .check-new-number-content-text h2 {
+.VITORIASC-page .check-new-number-content-text h2 {
   width: 65%;
   font-size: 1.8rem;
   text-align: left;
 }
 
 @media (max-width: 767px) {
-  .vsc-page .check-new-number-content {
+  .VITORIASC-page .check-new-number-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
   }
-  .vsc-page .check-new-number-content .check-new-number-content-icon {
+  .VITORIASC-page .check-new-number-content .check-new-number-content-icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
-  .vsc-page .check-new-number-content .check-new-number-content-text {
+  .VITORIASC-page .check-new-number-content .check-new-number-content-text {
     padding-top: 1rem;
     text-align: center;
   }
-  .vsc-page .check-new-number-content .check-new-number-content-text h2 {
+  .VITORIASC-page .check-new-number-content .check-new-number-content-text h2 {
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -5960,12 +5960,12 @@ header .socialMedias_header img {
 }
 
 @media (max-width: 575px) {
-  .vsc-page .check-new-number-content .check-new-number-content-text h2 {
+  .VITORIASC-page .check-new-number-content .check-new-number-content-text h2 {
     width: 100%;
   }
 }
 
-.vsc-page .check-new-number form {
+.VITORIASC-page .check-new-number form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -5974,20 +5974,20 @@ header .socialMedias_header img {
   margin-bottom: 3rem;
 }
 
-.vsc-page .check-new-number form .container-input {
+.VITORIASC-page .check-new-number form .container-input {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.vsc-page .check-new-number form .btn {
+.VITORIASC-page .check-new-number form .btn {
   margin-left: 1.2rem;
 }
 
-.vsc-page .check-new-number .btn__verMais {
+.VITORIASC-page .check-new-number .btn__verMais {
   margin-left: .8rem;
 }
 
-.vsc-page .check-new-number p {
+.VITORIASC-page .check-new-number p {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.4em;
@@ -5995,32 +5995,32 @@ header .socialMedias_header img {
   color: #000000;
 }
 
-.vsc-page .check-new-number p .span-number {
+.VITORIASC-page .check-new-number p .span-number {
   font-weight: 900;
   color: #212121;
 }
 
-.vsc-page .check-new-number p strong {
+.VITORIASC-page .check-new-number p strong {
   font-weight: 900;
 }
 
-.vsc-page .check-new-number .p-erro {
+.VITORIASC-page .check-new-number .p-erro {
   color: #ffd201;
 }
 
-.vsc-page .proximos-jogos label:before {
+.VITORIASC-page .proximos-jogos label:before {
   background-color: #ffd201;
 }
 
-.vsc-page .proximos-jogos .jornada {
+.VITORIASC-page .proximos-jogos .jornada {
   color: #ffd201;
 }
 
-.vsc-page .proximos-jogos .no-games h1 {
+.VITORIASC-page .proximos-jogos .no-games h1 {
   border: none;
 }
 
-.vsc-page .vantagens-socio-container-vsc {
+.VITORIASC-page .vantagens-socio-container-vsc {
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -6032,7 +6032,7 @@ header .socialMedias_header img {
   flex-wrap: wrap;
 }
 
-.vsc-page .vantagens-socio-container-vsc .sou-socio-vsc {
+.VITORIASC-page .vantagens-socio-container-vsc .sou-socio-vsc {
   height: 35rem;
   display: flex;
   flex-direction: column;
@@ -6045,7 +6045,7 @@ header .socialMedias_header img {
   overflow: hidden;
 }
 
-.vsc-page .vantagens-socio-container-vsc .sou-socio-vsc .background-vantagens {
+.VITORIASC-page .vantagens-socio-container-vsc .sou-socio-vsc .background-vantagens {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -6057,19 +6057,19 @@ header .socialMedias_header img {
   z-index: 0;
 }
 
-.vsc-page .vantagens-socio-container-vsc .sou-socio-vsc h1,
-.vsc-page .vantagens-socio-container-vsc .sou-socio-vsc p {
+.VITORIASC-page .vantagens-socio-container-vsc .sou-socio-vsc h1,
+.VITORIASC-page .vantagens-socio-container-vsc .sou-socio-vsc p {
   color: #212121;
   z-index: 3;
 }
 
-.vsc-page .vantagens-socio-container-vsc .sou-socio-vsc h1 {
+.VITORIASC-page .vantagens-socio-container-vsc .sou-socio-vsc h1 {
   border-bottom: none;
   position: absolute;
   top: 3rem;
 }
 
-.vsc-page .vantagens-socio-container-vsc .sou-socio-vsc p {
+.VITORIASC-page .vantagens-socio-container-vsc .sou-socio-vsc p {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.2em;
@@ -6077,26 +6077,26 @@ header .socialMedias_header img {
   margin-bottom: 3rem;
 }
 
-.vsc-page .vantagens-socio-container-vsc .sou-socio-vsc .btn-primary {
+.VITORIASC-page .vantagens-socio-container-vsc .sou-socio-vsc .btn-primary {
   z-index: 3;
 }
 
-.vsc-page .vantagens-socio-container-vsc .vantagens-vsc {
+.VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc {
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc {
     margin-top: 3rem;
   }
 }
 
-.vsc-page .vantagens-socio-container-vsc .vantagens-vsc h1 {
+.VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc h1 {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.vsc-page .vantagens-socio-container-vsc .vantagens-vsc .vantagens-vsc-list {
+.VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc .vantagens-vsc-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6105,7 +6105,7 @@ header .socialMedias_header img {
 }
 
 @media (max-width: 575px) {
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc .vantagens-vsc-list {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc .vantagens-vsc-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6115,7 +6115,7 @@ header .socialMedias_header img {
   }
 }
 
-.vsc-page .vantagens-socio-container-vsc .vantagens-vsc li {
+.VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li {
   width: 32%;
   height: 22rem;
   position: relative;
@@ -6131,7 +6131,7 @@ header .socialMedias_header img {
   overflow: hidden;
 }
 
-.vsc-page .vantagens-socio-container-vsc .vantagens-vsc li .background-vantagens {
+.VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li .background-vantagens {
   width: 100%;
   position: absolute;
   top: 0;
@@ -6140,7 +6140,7 @@ header .socialMedias_header img {
   left: 0;
 }
 
-.vsc-page .vantagens-socio-container-vsc .vantagens-vsc li h2 {
+.VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li h2 {
   font-size: 1.6rem;
   font-weight: 900;
   line-height: 1.4em;
@@ -6151,15 +6151,15 @@ header .socialMedias_header img {
   z-index: 2;
 }
 
-.vsc-page .vantagens-socio-container-vsc .vantagens-vsc li .only-mobile {
+.VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li .only-mobile {
   display: none;
 }
 
 @media (max-width: 992px) {
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc li {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li {
     height: auto;
   }
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc li:before {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li:before {
     content: '';
     height: 100%;
     width: 100%;
@@ -6171,41 +6171,41 @@ header .socialMedias_header img {
     left: 0;
     z-index: 1;
   }
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc li h2 {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li h2 {
     height: 10rem;
     padding: 0;
   }
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc li .only-mobile {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li .only-mobile {
     display: inline-block;
     z-index: 5;
   }
 }
 
 @media (max-width: 575px) {
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc li {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li {
     width: 100%;
     margin-bottom: 1.5rem;
     padding: 3.2rem 0;
   }
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc li i {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li i {
     width: 40%;
   }
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc li h2 {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li h2 {
     height: auto;
     margin: 1.5rem;
     font-size: 2rem;
   }
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc li .only-mobile {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li .only-mobile {
     display: block;
   }
 }
 
-.vsc-page .vantagens-socio-container-vsc .vantagens-vsc li:hover .vantagens-vsc-hover {
+.VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc li:hover .vantagens-vsc-hover {
   transform: translateY(0);
   transition: all .3s ease-in-out;
 }
 
-.vsc-page .vantagens-socio-container-vsc .vantagens-vsc .vantagens-vsc-hover {
+.VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc .vantagens-vsc-hover {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -6226,20 +6226,20 @@ header .socialMedias_header img {
 }
 
 @media (max-width: 992px) {
-  .vsc-page .vantagens-socio-container-vsc .vantagens-vsc .vantagens-vsc-hover {
+  .VITORIASC-page .vantagens-socio-container-vsc .vantagens-vsc .vantagens-vsc-hover {
     display: none;
   }
 }
 
-.vsc-page .vantagens-socio-container-vsc .btn-vsc {
+.VITORIASC-page .vantagens-socio-container-vsc .btn-vsc {
   z-index: 5;
 }
 
-.vsc-page .classificacao table thead {
+.VITORIASC-page .classificacao table thead {
   border-bottom: 2px solid #ffd201;
 }
 
-.vsc-page .classificacao .time-destaque {
+.VITORIASC-page .classificacao .time-destaque {
   background-color: #ffd201;
 }
 
