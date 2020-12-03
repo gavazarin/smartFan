@@ -1,0 +1,446 @@
+// variables vitoria sc
+$gray-vsc-01: #AFAFAF;
+$gray-vsc-02: #707070;
+$black-vsc-01: #000000;
+$primary-vsc-01: #212121;
+$primary-vsc-02: #0f0e0e;
+$primary-vsc-dark:#0a0a0a;
+$secondary-vsc-01: #ffd201;
+$secondary-vsc-02:#f1c500;
+
+.btn-vsc {
+    background-color: $secondary-vsc-02;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: $primary-vsc-02;
+        color: $gray-vsc-01;
+        transition: all .3s ease-in-out;
+
+        span {
+            color: $gray-vsc-01;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.vsc-page {
+    h1 {
+        color: $primary-vsc-01;
+        border-bottom: 2px solid $secondary-vsc-01;
+    }
+
+    h2 {
+        color: $primary-vsc-01;
+    }
+
+    h3 {
+        color: $gray-vsc-02;
+    }
+
+    .btn__verMais {
+        color: $secondary-vsc-01;
+
+        &:before {
+            background-color: $secondary-vsc-01;
+        }
+
+        &:hover {
+            color: $secondary-vsc-01;
+        }
+
+        &:focus {
+            color: $secondary-vsc-01;
+        }
+    }
+
+    form {
+
+        input,
+        select {
+            border: 2px solid $gray-vsc-01;
+            color: $primary-vsc-01;
+
+            &:focus {
+                border: 2px solid $primary-vsc-01;
+            }
+
+            &:disabled {
+                background-color: $gray-vsc-01;
+            }
+        }
+
+        label {
+            color: $primary-vsc-01;
+
+            &:disabled {
+                color: $gray-vsc-01;
+            }
+        }
+
+        .input-validate {
+            border: 2px solid $secondary-vsc-02;
+            color: $secondary-vsc-02;
+        }
+    }
+
+    .check-new-number {
+        @include flex(column, flex-start, center, center);
+        margin-bottom: 4.5rem;
+
+        h1 {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        &-content {
+            @include flex(row, center, flex-start, flex-start);
+            flex-wrap: wrap;
+            text-align: right;
+            padding-top: 1.5rem;
+
+            i {
+                display: inline-block;
+                width: auto;
+                height: 20rem;
+                margin: 0 auto;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            &-text {
+                padding-top: 2rem;
+                text-align: left;
+
+                h2 {
+                    width: 65%;
+                    font-size: 1.8rem;
+                    text-align: left;
+                }
+            }
+
+            @include sm {
+                @include flex(column, flex-start, center, center);
+
+                .check-new-number-content-icon {
+                    @include flex(row, center, center, center);
+                }
+
+                .check-new-number-content-text {
+                    padding-top: 1rem;
+                    text-align: center;
+
+                    h2 {
+                        width: 50%;
+                        margin: 0 auto;
+                        text-align: center;
+                        margin-bottom: .8rem;
+                    }
+                }
+            }
+
+            @include xs {
+                .check-new-number-content-text {
+
+                    h2 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        form {
+            @include flex(row, center, flex-end, flex-end);
+            margin-bottom: 3rem;
+
+            .container-input {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            .btn {
+                margin-left: 1.2rem;
+            }
+        }
+
+        .btn__verMais {
+            margin-left: .8rem;
+        }
+
+        p {
+            @include font(1.8rem, 300, 1.4em);
+            text-transform: uppercase;
+            color: $black-vsc-01;
+
+            .span-number {
+                font-weight: 900;
+                color: $primary-vsc-01;
+            }
+
+            strong {
+                font-weight: 900;
+            }
+        }
+
+        .p-erro {
+            color: $secondary-vsc-01;
+        }
+    }
+
+    .proximos-jogos {
+        label {
+            &:before {
+                background-color: $secondary-vsc-01;
+            }
+        }
+
+        .jornada {
+            color: $secondary-vsc-01;
+        }
+
+        .no-games {
+            h1 {
+                border: none;
+            }
+        }
+    }
+
+    .vantagens-socio-container-vsc {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        @include flex(row, center, center, center);
+        flex-wrap: wrap;
+
+        .sou-socio-vsc {
+            height: 35rem;
+            @include flex(column, flex-end, center, center);
+            position: relative;
+            padding: 3rem 1.5rem;
+            border-radius: 1.5rem;
+            overflow: hidden;
+
+            .background-vantagens {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include absolute(0, auto, auto, 0);
+                z-index: 0;
+            }
+
+            h1,
+            p {
+                color: $primary-vsc-01;
+                z-index: 3;
+            }
+
+            h1 {
+                border-bottom: none;
+                position: absolute;
+                top: 3rem;
+            }
+
+            p {
+                @include font(1.6rem, 300, 1.2em);
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+
+            .btn-primary {
+                z-index: 3;
+            }
+        }
+
+        .vantagens-vsc {
+            width: 100%;
+
+            @include sm {
+                margin-top: 3rem;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .vantagens-vsc-list {
+                @include flex(row, space-between, center, center);
+
+                @include xs {
+                    @include flex(row, center, center, center);
+                    flex-wrap: wrap;
+                }
+            }
+
+            li {
+                width: 32%;
+                height: 22rem;
+                position: relative;
+                background-color: #000;
+                border-radius: 1rem;
+                padding: 3rem 1rem;
+                text-align: center;
+                @include flex(column, flex-end, center, center);
+                overflow: hidden;
+
+                .background-vantagens {
+                    width: 100%;
+                    @include absolute(0, auto, auto, 0);
+                }
+
+                h2 {
+                    @include font(1.6rem, 900, 1.4em);
+                    color: $secondary-vsc-01;
+                    text-align: center;
+                    text-transform: initial;
+                    padding: 0 .8rem;
+                    z-index: 2;
+                }
+
+                .only-mobile {
+                    display: none;
+                }
+
+                @include md {
+                    height: auto;
+
+                    &:before {
+                        content: '';
+                        height: 100%;
+                        width: 100%;
+                        background-color: rgba(0, 0, 0, .5);
+                        @include absolute(0, auto, auto, 0);
+                        z-index: 1;
+                    }
+
+                    h2 {
+                        height: 10rem;
+                        padding: 0;
+                    }
+
+                    .only-mobile {
+                        display: inline-block;
+                        z-index: 5;
+                    }
+                }
+
+                @include xs {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                    padding: 3.2rem 0;
+
+                    i {
+                        width: 40%;
+                    }
+
+                    h2 {
+                        height: auto;
+                        margin: 1.5rem;
+                        font-size: 2rem;
+                    }
+
+                    .only-mobile {
+                        display: block;
+                    }
+                }
+
+                &:hover {
+                    .vantagens-vsc-hover {
+                        transform: translateY(0);
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+
+            .vantagens-vsc-hover {
+                width: 100%;
+                height: 100%;
+                @include absolute(auto, 0, 0, auto);
+                background-color: rgba(20, 20, 20, 0.8);
+                padding: 1.5rem;
+                @include flex(column, flex-end, center, flex-end);
+                transform: translateY(100%);
+                transition: all .3s ease-in-out;
+                z-index: 10;
+
+                @include md {
+                    display: none;
+                }
+            }
+        }
+
+        .btn-vsc {
+            z-index: 5;
+        }
+    }
+
+    .classificacao {
+        table {
+            thead {
+                border-bottom: 2px solid $secondary-vsc-01;
+            }
+        }
+
+        .time-destaque {
+            background-color: $secondary-vsc-01;
+        }
+    }
+}
+
+.fluxoPagamentos__footer-vsc {
+    width: 100%;
+    position: relative;
+    background-color: $white-01;
+    padding: 1.5rem 0;
+    margin-top: 4.5rem;
+
+    .row {
+        @include flex(column, center, center, center);
+    }
+
+    ul {
+        @include flex(column, center, center, center);
+        color: $primary-vsc-01;
+        @include font(1.2rem, 300, 1.2em);
+        text-align: center;
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include sm {
+            font-size: 1.4rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+
+            p {
+                margin-bottom: 0;
+
+                b {
+                    font-weight: 700;
+                }
+            }
+
+            a {
+                color: $primary-vsc-01;
+                border-bottom: 1px solid rgba(243, 69, 5, 0);
+                transition: all .3s ease-out;
+
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 1px solid $secondary-vsc-01;
+                    transition: all .3s ease-out;
+                }
+            }
+
+            @include xs {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

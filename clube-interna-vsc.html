@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitória SC - SmartFan</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+  <header>
+    <!-- <img src="images/svg/pattern_smartFan.svg" alt="Pattern SmartFan" class="pattern__smartFan"> -->
+
+    <div class="container">
+      <div class="row">
+        <ul class="socialMedias_header">
+          <li>
+            SmartFAN<b>.Tickets</b>
+          </li>
+
+          <li>
+            <input id="language-dropdown" type="checkbox">
+            <label for="language-dropdown" class="language-dropdown">
+              <img src="images/svg/flag-portugal.svg" alt="Idioma português">
+            </label>
+            <ul class="language-dropdown-list">
+              <li>
+                <a onclick="setLanguage('pt');"><img src="images/svg/flag-portugal.svg" alt=""></a>
+              </li>
+              <li>
+                <a onclick="setLanguage('en');"><img src="images/svg/flag-uk.svg" alt=""></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <input id="menu-desporto" type="checkbox">
+    <input id="menu-modalidades" type="checkbox">
+    <nav class="navMenu col-lg-12">
+      <!-- <img src="images/svg/pattern_smartFan-white.svg" alt="Pattern SmartFan" class="pattern__smartFan"> -->
+      <div class="container">
+        <div class="row">
+          <a href="index.html" class="marca col-lg-2"><img src="images/svg/logo_smartFan.svg" alt="Logo do SmartFan"></a>
+
+          <ul class="menu col-lg-10">
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <!-- <li class="menu__item menu__item-dropdown">
+                  <a href="index.html">
+                    futebol
+                  </a>
+                </li> -->
+
+                <li class="menu__item menu__item-dropdown menu__item--desportos">
+                  <label for="menu-desporto">
+                    <p>futebol <i class="icon-down"><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
+                  </label>
+                </li>
+
+                <li class="menu__item menu__item-dropdown menu__item-modalidades" style="display: block;">
+                  <label for="menu-modalidades">
+                    <p>modalidades <i class="icon-down"><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
+                  </label>
+                  <ul class="modalidades-list">
+                    <li class="modalidades-list-item">
+                      <a href="andebol-home.html">
+                        <i><img src="images/svg/icon-andebol.svg" alt=""></i> andebol
+                      </a>
+                    </li>
+
+                    <li class="modalidades-list-item">
+                      <a href="basquetebol-home.html">
+                        <i><img src="images/svg/icon-basquetebol.svg" alt=""></i> basquetebol
+                      </a>
+                    </li>
+
+                    <li class="modalidades-list-item">
+                      <a href="futsal-home.html">
+                        <i><img src="images/svg/icon-futsal.svg" alt=""></i> futsal
+                      </a>
+                    </li>
+
+                    <li class="modalidades-list-item">
+                      <a href="hoquei-home.html">
+                        <i><img src="images/svg/icon-hoquei.svg" alt=""></i> hoquei
+                      </a>
+                    </li>
+
+                    <li class="modalidades-list-item">
+                      <a href="voleibol-home.html">
+                        <i><img src="images/svg/icon-voleibol.svg" alt=""></i> voleibol
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
+                <li class="menu__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+                <li class="menu__item" style="display: none;">
+                  <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
+                </li>
+                <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn__blue">login</a></li>
+
+                <li class="menu__item menu__logado" style="display:none;">
+                  <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+                  <input id="user-dropdown" type="checkbox">
+                  <label for="user-dropdown">
+                    <p class="user-dropdown">
+                      Olá, <span><b>Usuário</b></span>! <i><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
+                  </label>
+
+                  <ul class="user-dropdown__list">
+                    <li>
+                      <a href="userdata.html">Perfil</a>
+                    </li>
+                    <li>
+                      <a href="#">Sair</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="teamsBar teamsBar__header">
+      <div class="container">
+        <div class="row">
+          <ul class="list_ligas">
+            <li>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa-black.png"
+                  alt="Federação Portuguesa de Futebol"></a>
+            </li>
+            <li>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal-black.png"
+                  alt="Liga Portugal"></a>
+            </li>
+          </ul>
+
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Boavista FC</span><img
+                    src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
+                    alt="Futebol Clube do Porto"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Gil Vicente FC</span><img
+                    src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Os Belenenses</span><img
+                    src="images/logo-1osbelenenses.png" alt="Os Belenenses"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Rio Ave FC</span><img
+                    src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
+                    src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
+                    src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_02">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">CD Nacional</span><img
+                    src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">GD Chaves</span><img
+                    src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">SC Covilhã</span><img
+                    src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
+                    src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_03">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== MENU MOBILE ==== -->
+    <nav class="navMenu-mobile col-md-12">
+      <a href="index.html" class="marca"><img src="images/svg/logo_smartFan.svg" alt="SmartFan"></a>
+
+      <a href="#" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu.svg" alt="Abrir Menu"></a>
+
+      <div id="#menuMobile" class="menuMobile">
+        <!-- <div class="container-btn">
+        </div> -->
+        <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
+
+        <a href="index.html" class="marca"><img src="images/svg/logo_smartFan.svg" alt="Logo do SmartFan"></a>
+
+        <section class="teamsBar teamsBar__mobile">
+          <ul class="list_ligas">
+            <li>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa-black.png"
+                  alt="Federação Portuguesa de Futebol"></a>
+            </li>
+            <li>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal-black.png"
+                  alt="Liga Portugal"></a>
+            </li>
+          </ul>
+
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li>
+                <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1fcporto.png" alt="Futebol Clube do Porto"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1osbelenenses.png" alt="Clube de Futebol Os Belenenses"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_02">
+              <li>
+                <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_03">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <ul class="menuMobile__list">
+          <li class="menuMobile__list__item"><a href="pagar-quotas.html">pagar quotas</a></li>
+          <li class="menuMobile__list__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+          <li class="menuMobile__list__item menu__item-dropdown  menu__item-modalidades">
+            <input id="menu-modalidades-mobile" type="checkbox">
+            <label for="menu-modalidades-mobile">
+              <p>modalidades <i class="icon-down"><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
+            </label>
+            <ul class="modalidades-list">
+              <li class="modalidades-list-item"><a href="andebol-home.html">andebol</a></li>
+              <li class="modalidades-list-item"><a href="basquetebol-home.html">basquetebol</a></li>
+              <li class="modalidades-list-item"><a href="futsal-home.html">futsal</a></li>
+              <li class="modalidades-list-item"><a href="hoquei-home.html">hoquei</a></li>
+              <li class="modalidades-list-item"><a href="voleibol-home.html">voleibol</a></li>
+            </ul>
+          </li>
+          <li class="menuMobile__list__item"><a href="userdata.html">perfil</a></li>
+          <li class="menu__item menu__btn" style="display:none;"><a href="#" class="btn-login btn btn__blue">login</a>
+          </li>
+
+          <li class="menu__item menu__logado">
+            <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+            <p class="user-dropdown">
+              Olá, <span><b>Usuário</b></span>!
+            </p>
+
+            <!-- <a href="#" class="btn__verMais">sair</a> -->
+          </li>
+
+          <li class="menu__item menu__item__sair">
+            <a href="#">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="bannerFullScreen">
+    <img src="images/banner_VitoriaSC.png" alt="Banner do Vitória Sport Clube" class="background">
+    <div class="container infos-banner" style="display: block;">
+      <div class="row">
+        <ul>
+          <li class="infos-banner__name">Vitória Sport Clube</li>
+          <li class="infos-banner__logo"><img src="images/logo-1vitoriasc.png" alt="Logo Vitória Sport Clube"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="estruturaPadrao vsc-page">
+    <div class="container">
+      <div class="row">
+        <div class="mainContent col-lg-9 col-md-12">
+          <section class="check-new-number">
+            <h1>Consulte seu novo número de sócio</h1>
+            <div class="check-new-number-content col-lg-12">
+              <div class="check-new-number-content-icon col-lg-6 col-md-6">
+                <i>
+                  <img src="images/vitoria-card-number.png" alt="">
+                </i>
+              </div>
+
+              <div class="check-new-number-content-text col-lg-6 col-md-6">
+                <h2>Consulte já o teu novo número de sócio!</h2>
+                <a href="#" class="btn btn-vsc">Novo número de sócio</a>
+              </div>
+            </div>
+
+            <!-- INSERIR NÚMERO ANTIGO -->
+            <!-- <form class="col-lg-4 col-md-6 col-sm-12">
+              <div class="container-input">
+                <label for="old-number">número de sócio:</label>
+                <input type="text" id="old-number">
+              </div>
+              <a href="#" class="btn btn-vsc">Validar</a>
+              <a href="#" class="btn__verMais">voltar</a>
+            </form>
+
+            <p>O teu novo número de sócio é: <span class="span-number">13258</span></p>
+            <p class="p-erro" style="display: none;">O teu número de sócio está <strong>inválido</strong></p> -->
+          </section>
+
+          <div smv-type="widgetcontainer" smv-widget="games" smv-param="">
+            <div smv-type="widgetpage" id="smv_wp_games">
+              <div class="load-screen" smv-type="loader" smv-widget="games" style="display:none"></div>
+
+              <section class="proximos-jogos">
+                <h1 smv-langtext="headgamesteam">Próximos Jogos</h1>
+
+                <div class="pc-tab">
+                  <input checked="checked" type="radio" name="pct" id="tab1">
+                  <input type="radio" name="pct" id="tab2">
+                  <input type="radio" name="pct" id="tab3">
+                  <input type="radio" name="pct" id="tab4">
+                  <nav>
+                    <ul class="nav__ligas">
+                      <li class="tab1">
+                        <label for="tab1"><img
+                            src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/liga_nos.png"
+                            alt="Liga NOS"></label>
+                      </li>
+                      <li class="tab2">
+                        <label for="tab2"><img
+                            src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/liga_ledman.png"
+                            alt="Liga Ledman"></label>
+                      </li>
+                      <li class="tab3">
+                        <label for="tab3"><img
+                            src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/liga_taca_de_portugal.png"
+                            alt="Taça de Portugal"></label>
+                      </li>
+                      <li class="tab4">
+                        <label for="tab4"><img
+                            src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/liga_allianz_cup.png"
+                            alt="Allianz Cup"></label>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  <section>
+                    <div class="tab1">
+                      <div id="smv_games_listcontainer">
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 25</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/logo-1vitoriasc.png" alt="Vitória SC">
+                                <span>Vitória SC</span>
+                              </li>
+
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">A Definir</li>
+                                  <li class="infos__list--local">Estádio D. Afonso Henriques</li>
+                                </ul>
+                              </li>
+
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/logo-1sporting.png" alt="Sporting CP">
+                                <span>Sporting CP</span>
+                              </li>
+
+                              <div class="div-hover">
+                                <a href="#" class="btn btn-vsc">jogo à porta fechada</a>
+                              </div>
+
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn-vsc btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
+
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 26</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/logo-1osbelenenses.png" alt="Belenenses">
+                                <span>Belenenses</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">A Definir</li>
+                                  <li class="infos__list--local">Estádio Nacional do Jamor</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/logo-1vitoriasc.png" alt="Vitória SC">
+                                <span>Vitória SC</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn-vsc" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn-vsc btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
+
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 27</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/logo-1vitoriasc.png" alt="Vitória SC">
+                                <span>Vitória SC</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">A Definir</li>
+                                  <li class="infos__list--local">Estádio D. Afonso Henriques</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/logo-1moreirense.png" alt="Moreirense FC">
+                                <span>Moreirense FC</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn-vsc" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn-vsc btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
+
+                        <ul class="jogos">
+                          <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                            <p class="jornada">Jornada 28</p>
+                            <ul class="jogos__item--infos">
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/logo-1vitoriasc.png" alt="Vitória SC">
+                                <span>Vitória SC</span>
+                              </li>
+                              <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="infos__list">
+                                  <li class="infos__list--liga">Liga NOS</li>
+                                  <li class="infos__list--data">A Definir</li>
+                                  <li class="infos__list--local">Estádio D. Afonso Henriques</li>
+                                </ul>
+                              </li>
+                              <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube">
+                                <span>Vitória FC</span>
+                              </li>
+                              <div class="div-hover">
+                                <a href="#" class="btn btn-vsc" disabled="disabled">jogo à porta fechada</a>
+                              </div>
+                              <div class="div-btnMobile col-md-12">
+                                <a href="#" class="btn btn-vsc btn__fullContainer">jogo à porta fechada</a>
+                              </div>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="tab2">
+                      <div class="no-games col-lg-12">
+                        <img
+                          src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/no-game.svg"
+                          alt="">
+                        <h1> Não há jogos disponíveis!</h1>
+                      </div>
+                    </div>
+
+                    <div class="tab3">
+                      <div class="no-games col-lg-12">
+                        <img
+                          src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/no-game.svg"
+                          alt="">
+                        <h1> Não há jogos disponíveis!</h1>
+                      </div>
+                    </div>
+
+                    <div class="tab4">
+                      <div class="no-games col-lg-12">
+                        <img
+                          src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/svg/no-game.svg"
+                          alt="">
+                        <h1> Não há jogos disponíveis!</h1>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </section>
+            </div>
+
+            <section class="vantagens-socio-container-vsc col-lg-10 col-md-12 col-sm-12">
+              <div class="sou-socio-vsc col-lg-4 col-md-4 col-sm-6">
+                <img src="images/estadio-socio.png" class="background-vantagens"/>
+
+                <h1>Já és sócio?</h1>
+                <p>Paga já as tuas quotas!</p>
+
+                <a href="#" class="btn btn-vsc">Pagar quotas</a>
+              </div>
+
+              <div class="vantagens-vsc col-lg-8 col-md-8 col-sm-12">
+                <h1>Vantagens em ser sócio!</h1>
+                <ul class="vantagens-vsc-list">
+                  <li>
+                    <img src="images/vantagem1.png" class="background-vantagens"/>
+                    <h2>Vantagens no acesso aos jogos</h2>
+
+                    <a href="#" class="btn btn-vsc only-mobile">faz-te sócio!</a>
+                    <div class="vantagens-vsc-hover">
+                      <a href="#" class="btn btn-vsc">faz-te sócio!</a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <img src="images/vantagem2.png" class="background-vantagens"/>
+                    <h2>Promoções exclusivas</h2>
+
+                    <a href="#" class="btn btn-vsc only-mobile">faz-te sócio!</a>
+                    <div class="vantagens-vsc-hover">
+                      <a href="#" class="btn btn-vsc">faz-te sócio!</a>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <img src="images/vantagem3.png" class="background-vantagens"/>
+                    <h2>Apoia a formação do teu clube</h2>
+
+                    <a href="#" class="btn btn-vsc only-mobile">faz-te sócio!</a>
+                    <div class="vantagens-vsc-hover">
+                      <a href="#" class="btn btn-vsc">faz-te sócio!</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Twitter + Youtube -->
+            <section class="redes-sociais col-lg-12 col-md-12 col-sm-12">
+              <h1>Acompanha o Vitória SC onde estiveres!</h1>
+              <h2 class="hashtags_clubes">#Conquistadores #SomosAAlmaDoRei</h2>
+              <div class="redes-sociais__container col-lg-12 col-md-12 col-sm-12">
+                <div class="twitter-clube">
+                  <a class="twitter-timeline" data-dnt="true" data-theme="dark" href="https://twitter.com/VitoriaSC1922?ref_src=twsrc%5Etfw">Tweets by VitóriaSC</a>
+                </div>
+
+                <div class="youtube-clube embed-responsive embed-responsive-21by9">
+                  <iframe src="https://www.youtube.com/embed/77cJjlVmZbw" class="embed-responsive-item" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="sidebar col-lg-3 col-md-10">
+          <div class="classificacao">
+            <h1>
+              Liga NOS
+            </h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>Pos.</th>
+                  <th></th>
+                  <th>J</th>
+                  <th>Pt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>FC Porto</td>
+                  <td>24</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>SL Benfica</td>
+                  <td>24</td>
+                  <td>59</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>SC Braga</td>
+                  <td>24</td>
+                  <td>46</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Sporting CP</td>
+                  <td>24</td>
+                  <td>42</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Rio Ave FC</td>
+                  <td>24</td>
+                  <td>38</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Vitória SC</td>
+                  <td>24</td>
+                  <td>37</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>FC Famalicão</td>
+                  <td>24</td>
+                  <td>37</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Moreirense FC</td>
+                  <td>24</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Gil Vicente FC</td>
+                  <td>24</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Santa Clara</td>
+                  <td>24</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Boavista FC</td>
+                  <td>24</td>
+                  <td>29</td>
+                </tr>
+                <tr class="time-destaque">
+                  <td>12</td>
+                  <td>Vitória FC</td>
+                  <td>24</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Belenenses</td>
+                  <td>24</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>CD Tondela</td>
+                  <td>24</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Marítimo M.</td>
+                  <td>24</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>FC P.Ferreira</td>
+                  <td>24</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Portimonense</td>
+                  <td>24</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>CD Aves</td>
+                  <td>24</td>
+                  <td>13</td>
+                </tr>
+              </tbody>
+              </tr>
+            </table>
+          </div>
+
+          <div class="last-game">
+            <h1>último jogo</h1>
+            <div smv-type="widgetcontainer" smv-widget="gamedisplay" smv-param="last">
+              <div smv-type="widgetpage" id="smv_wp_gamedisplay_last">
+                <!--<div class="load-screen" smv-type="loader" smv-widget="games" style="display:none"></div>-->
+                <ul class="jogos">
+                  <li class="jogos__item col-lg-12 col-md-12 col-sm-12">
+                    <ul class="jogos__item--infos">
+                      <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <img
+                          src="images/logo-1vitoriasc.png"
+                          alt="Vitória SC">
+                        <span>Vitória SC</span>
+                      </li>
+                      <li class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <ul class="infos__list">
+                          <li class="infos__list--liga">Liga NOS</li>
+                          <li class="infos__list--data">
+                            4 - 4
+                          </li>
+                          <li class="infos__list--local">
+                            Jornada 25
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="infos__team col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <img
+                          src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1gilvicentefc.png?ts=2163555479"
+                          alt="Gil Vicente FC">
+                        <span>Gil Vicente FC</span>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar__social-media col-lg-12 col-md-12">
+            <ul class="clube-social-media">
+              <li><img src="images/logo-1vitoriasc.png" alt="Logo Vitória Sport Clube"></li>
+              <li>Segue o <strong>Vitória SC</strong> nas Redes</li>
+            </ul>
+            <ul class="links-social-media">
+              <li>
+                <a href="https://www.instagram.com/vitoriasc_oficial/" target="_blank" class="icon-social-media"><img
+                    src="images/svg/instagram.svg" alt="ícone instagram"></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/vitoriasportclube" target="_blank" class="icon-social-media"><img
+                    src="images/svg/facebook.svg" alt="ícone facebook"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="fluxoPagamentos__footer-vsc">
+    <div class="container">
+      <div class="row">
+        <ul>
+          <li style="display: none;">
+            <p><a href="#">Política de Privacidade</a> / <a href="#">Termos e Condições</a></p>
+          </li>
+          <li>
+            <p><b>Vitória Sport Club</b></p>
+          </li>
+          <li>
+            <p>Praça 26 de Maio, 4810-914 Guimarães</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <section class="teamsBar">
+      <div class="container">
+        <div class="row">
+          <ul class="list_ligas">
+            <li>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png"
+                  alt="Federação Portuguesa de Futebol"></a>
+            </li>
+            <li>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png"
+                  alt="Liga Portugal"></a>
+            </li>
+          </ul>
+
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li class="club__select">
+                <a href="#" class="tooltip"><span class="tooltiptext">Boavista FC</span><img
+                    src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
+                    alt="Futebol Clube do Porto"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Gil Vicente FC</span><img
+                    src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Os Belenenses</span><img
+                    src="images/logo-1osbelenenses.png" alt="Os Belenenses"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Rio Ave FC</span><img
+                    src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
+                    src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
+                    src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_02">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">CD Nacional</span><img
+                    src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">GD Chaves</span><img
+                    src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">SC Covilhã</span><img
+                    src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
+                    src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li><a href="#">Termos e Compromissos</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+
+        <ul class="footerList footerList__center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li>
+            <span>Apoio ao cliente</span>
+            <a href="#">helpdesk@smartticketing.pt</a>
+          </li>
+        </ul>
+
+        <ul class="payList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li class="logo-meowallet"><img src="images/svg/meowallet-blue.svg" alt="MEO Wallet"></li>
+          <li class="logo-visa"><img src="images/payment-visa.png" alt="Visa"></li>
+          <li class="logo-mastercard"><img src="images/payment-mastercard.png" alt="Mastercard"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <span>SmartFan.Tickets</span>
+              <a href="#">contato@contato.pt</a>
+            </li>
+          </ul>
+
+          <div class="logoSmartmove col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg"
+                alt="Smartmove"></a>
+          </div>
+
+          <ul class="socialmedia_list col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank"
+                class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL LOGIN ================= -->
+  <div id="modalLogin" class="modal-login-container ">
+    <div class="modal-content ">
+      <nav class="nav_tabs ">
+        <a href="# " class="closeModal "><img src="images/svg/close-popUp.svg " alt=" "></a>
+        <ul>
+          <!-------- ENTRAR ------->
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="entrar" checked>
+            <label for="entrar" class="tab_label " checked>login</label>
+
+            <div class="tab-content ">
+              <h2>Insere o teu e-mail e password e faz login!</h2>
+              <form>
+                <div class="container-input ">
+                  <label for="email " class="form-label ">E-mail</label>
+                  <input type="email " name="email " class="input-validate ">
+                  <span class="input-validate ">Obrigatório!</span>
+                </div>
+
+                <div class="container-input ">
+                  <label for="password " class="form-label ">Password</label>
+                  <input type="password " name="password ">
+                  <!-- <span class="input-validate ">Obrigatório!</span> -->
+                </div>
+
+                <a href="# " class="esqueci-senha ">esqueci a password</a>
+
+                <a href="# " class="btn btn-vsc ">
+                  <span>entrar</span>
+                </a>
+              </form>
+            </div>
+          </li>
+
+          <!------- REGISTAR ------->
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="registrar">
+            <label for="registrar" class="tab_label">registo</label>
+
+            <div class="tab-content ">
+              <h2>Escolhe o teu clube, insere os teus dados de sócio e regista-te!</h2>
+
+              <form>
+                <ul class="listTeams_popUp ">
+                  <li>
+                    <a href="# "><img src="images/logo-1boavistafc.png " alt="Boavista Futebol Clube "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-1fcporto.png " alt="Futebol Clube do Porto "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-1gilvicentefc.png " alt="Gil Vicente Futebol Clube "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-1osbelenenses.png " alt="Clube de Futebol Os Belenenses "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-1rioavefc.png " alt="Rio Ave Futebol Clube "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-1sporting.png " alt="Sporting Clube de Portugal "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-1vitoriafc.png " alt="Vitória Futebol Clube "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-1vitoriasc.png " alt="Vitória Sport Clube "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-2cdnmadeira.png " alt="Clube Desportivo Nacional Madeira "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-2gdchaves.png " alt="Grupo Desportivo de Chaves "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-2sccovilha.png " alt="Sporting Clube da Covilhã "></a>
+                  </li>
+                  <li>
+                    <a href="# "><img src="images/logo-2varzimsc.png " alt="Varzim Sport Club "></a>
+                  </li>
+                </ul>
+
+                <div class="container-input ">
+                  <label for="numero-socio " class="form-label ">Número de Sócio</label>
+                  <input type="text " name="numero-socio " id="numero-socio ">
+                  <!-- <span class="input-validate ">Obrigatório!</span> -->
+                </div>
+
+                <div class="container-input ">
+                  <label for="ultimos-digitos " class="form-label ">Últimos 5 dígitos do código de barras</label>
+                  <input type="number " name="ultimos-digitos " id="ultimos-digitos ">
+                  <!-- <span class="input-validate ">Obrigatório!</span> -->
+                  <i class="info-cartao "><img src="images/svg/information.svg "
+                      alt="Informação sobre o cartão de sócio "></i>
+                </div>
+
+                <a href="# " class="btn btn__orange ">
+                  <span>validar</span>
+                </a>
+              </form>
+            </div>
+
+            <!-------- CONFIRMAR SENHA/EMAIL -------->
+            <!-- <div class="tab-content ">
+              <h2>Insere o teu e-mail e password</h2>
+
+              <ul class="infos-socio ">
+                <li><img src="images/logo-1gilvicentefc.png " alt=" "></li>
+                <li>
+                  <span>Gabriel Vazarin Perez</span>
+                  <span>33325-9</span>
+                </li>
+              </ul>
+
+              <form>
+                <div class="container-input ">
+                  <label for="email-socio ">E-mail</label>
+                  <input type="email " name="email-socio " id="email-socio ">
+                  <span class="input-validate ">Obrigatório!</span>
+                </div>
+
+                <div class="container-input ">
+                  <label for="password-socio ">Password</label>
+                  <input type="number " name="password-socio " id="password-socio ">
+                  <span class="input-validate ">Obrigatório!</span>
+                </div>
+
+                <div class="container-input ">
+                  <label for="confirmar-password ">Confirme a password</label>
+                  <input type="number " name="confirmar-password " id="confirmar-password " class="input-validate ">
+                  <span class="input-validate ">Obrigatório!</span>
+                </div>
+
+                <a href="# " class="btn btn__orange ">
+                  <span>registar</span>
+                </a>
+              </form>
+            </div> -->
+          </li>
+        </ul>
+
+        <!-- CONCLUÍDO -->
+        <div class="registo-finalizado " style="display: none; ">
+          <i><img src="images/svg/check-icon.svg " alt="Ícone de confirmação "></i>
+
+          <h2>Login efetuado com sucesso!</h2>
+
+          <button class="btn btn__blue ">
+            <span>continuar</span>
+          </button>
+        </div>
+
+        <!-- ERRO -->
+        <div class="registo-finalizado " style="display:none ">
+          <i><img src="images/svg/error-icon.svg " alt="Ícone de erro "></i>
+
+          <h2>Os dados de login estão inválidos. Por favor, verifique os dados</h2>
+
+          <button class="btn btn__orange ">
+            <span>voltar</span>
+          </button>
+        </div>
+
+        <!-- WAIT -->
+        <div class="registo-finalizado " style="display:none ">
+          <i class="icon-animate "><img src="images/svg/wait-icon.svg " alt=" "></i>
+          <h2>Aguarde por favor...</h2>
+        </div>
+
+        <!-- CÓDIGO E-MAIL -->
+        <div class="registo-finalizado " style="display:none; ">
+          <h2 smv-langtext="codefromemailtext ">Coloque o código que recebeu por email</h2>
+
+          <form>
+            <div class="container-input ">
+              <label for="smv_uacc_ConfirmCod ">Código</label>
+              <input id="smv_uacc_ConfirmCod " type="text " maxlength="10 ">
+            </div>
+
+            <a href="# " class="btn btn__blue ">Avançar</a>
+          </form>
+        </div>
+
+        <!-- PWD REQUEST -->
+        <section class="recuperar-senha " style="display:none; ">
+          <form>
+            <h2 smv-langtext="userpwdreqfrase ">Digite seu e-mail para recuperar a senha</h2>
+
+            <div class="container-input ">
+              <label for="smv_upwdreq_Email " class="form-label " smv-langtext="lblemail ">E-mail</label>
+              <input name="smv_upwdreq_Email " id="smv_upwdreq_Email "
+                onblur="javascript:smv_fieldTrim( 'smv_upwdreq_Email') " type="email "
+                smv-langplaceholder="plholderuseremail " autocapitalize="none " autocorrect="off ">
+            </div>
+
+            <button type="button " class="btn btn__blue ">
+              <span>Recuperar password</span>
+            </button>
+          </form>
+        </section>
+      </nav>
+    </div>
+  </div>
+
+
+  <script src="js/menu.js"></script>
+  <script src="js/popUpLogin.js"></script>
+  <!--Timeline Twitter -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>
