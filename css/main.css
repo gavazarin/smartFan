@@ -6243,6 +6243,10 @@ header .socialMedias_header img {
   background-color: #ffd201;
 }
 
+.vsc-page .sidebar__social-media {
+  color: #212121;
+}
+
 .fluxoPagamentos__footer-vsc {
   width: 100%;
   position: relative;
