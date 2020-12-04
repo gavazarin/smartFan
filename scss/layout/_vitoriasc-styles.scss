@@ -84,6 +84,7 @@ $secondary-vsc-02:#f1c500;
         }
     }
 
+    // Home
     .check-new-number {
         @include flex(column, flex-start, center, center);
         margin-bottom: 4.5rem;
@@ -391,9 +392,152 @@ $secondary-vsc-02:#f1c500;
     .sidebar__social-media {
         color: $primary-vsc-01;
     }
+
+    // Pagar Quotas
+    .quotasTotal {
+        color: $black-vsc-01;
+        border: 2px solid $secondary-vsc-01;
+    }
+
+    table {
+
+        thead {
+            border-bottom: 2px solid $secondary-vsc-01;
+        }
+
+        th,
+        td {
+            color: $black-vsc-01;
+        }
+
+        tbody {
+            tr.totalpayment {
+                background: $black-vsc-01;
+            }
+        }
+
+        .status__atrasado {
+            border: 2px solid $secondary-vsc-01;
+            color: $secondary-vsc-01;
+        }
+    }
+
+    .table__border {
+        border-bottom: 2px solid $black-vsc-01;
+    }
+
+    // Formas de pagamento
+    .payList {
+        ul {
+
+            li {
+                border: 2px solid $primary-vsc-01;
+
+                a {
+                    color: $secondary-vsc-01;
+
+                    &:hover {
+                        border-bottom: 1px solid $secondary-vsc-02;
+                    }
+                }
+            }
+
+            .select {
+                border: 2px solid $secondary-vsc-01;
+            }
+        }
+
+        .input-validate {
+            color: $secondary-vsc-01;
+        }
+    }
+
+    .aviso-multibanco {
+        border: 2px solid $secondary-vsc-01;
+    }
+
+    // Checkbox
+    .cbx,
+    .cbx-adesao {
+
+        span {
+
+            &:first-child {
+                border: 1px solid $primary-vsc-01;
+
+                &:before {
+                    background: $primary-vsc-02;
+                }
+            }
+        }
+    }
+
+    .inp-cbx:checked+.cbx span:first-child {
+        background: $primary-vsc-02;
+        border-color: $primary-vsc-02;
+    }
+
+    .termos-condicoes {
+        .checkbox-periodo {
+            p {
+                a {
+                    color: $secondary-vsc-01;
+
+                    &:hover,
+                    &:focus {
+                        color: $secondary-vsc-01;
+                    }
+                }
+            }
+        }
+    }
+
+    .terms {
+        .form-error {
+            color: $secondary-vsc-02;
+        }
+    }
+
+    .payreturn__multibanco {
+        border: 2px solid $secondary-vsc-02;
+    }
+
+    .payreturn__mbway {
+        border: 2px solid $secondary-vsc-02;
+    }
+
+    .accordion-detalhes {
+        label {
+            border: 2px solid $primary-vsc-01;
+            color: $primary-vsc-01;
+
+            &:hover {
+                background-color: $primary-vsc-01;
+            }
+        }
+
+        .tab {
+            color: $gray-vsc-01;
+        }
+
+        input[type="radio"]:checked+label {
+            background: $primary-vsc-01;
+        }
+
+        input[type="radio"]:checked+label+.tab {
+            border-top: 2px solid $primary-vsc-01;
+        }
+    }
+
+    .clube-detalhes {
+
+        p {
+            color: $black-vsc-01;
+        }
+    }
 }
 
-.fluxoPagamentos__footer-vsc {
+.fluxoPagamentos__footer-VITORIASC {
     width: 100%;
     position: relative;
     background-color: $white-01;

@@ -6247,7 +6247,118 @@ header .socialMedias_header img {
   color: #212121;
 }
 
-.fluxoPagamentos__footer-vsc {
+.VITORIASC-page .quotasTotal {
+  color: #000000;
+  border: 2px solid #ffd201;
+}
+
+.VITORIASC-page table thead {
+  border-bottom: 2px solid #ffd201;
+}
+
+.VITORIASC-page table th,
+.VITORIASC-page table td {
+  color: #000000;
+}
+
+.VITORIASC-page table tbody tr.totalpayment {
+  background: #000000;
+}
+
+.VITORIASC-page table .status__atrasado {
+  border: 2px solid #ffd201;
+  color: #ffd201;
+}
+
+.VITORIASC-page .table__border {
+  border-bottom: 2px solid #000000;
+}
+
+.VITORIASC-page .payList ul li {
+  border: 2px solid #212121;
+}
+
+.VITORIASC-page .payList ul li a {
+  color: #ffd201;
+}
+
+.VITORIASC-page .payList ul li a:hover {
+  border-bottom: 1px solid #f1c500;
+}
+
+.VITORIASC-page .payList ul .select {
+  border: 2px solid #ffd201;
+}
+
+.VITORIASC-page .payList .input-validate {
+  color: #ffd201;
+}
+
+.VITORIASC-page .aviso-multibanco {
+  border: 2px solid #ffd201;
+}
+
+.VITORIASC-page .cbx span:first-child,
+.VITORIASC-page .cbx-adesao span:first-child {
+  border: 1px solid #212121;
+}
+
+.VITORIASC-page .cbx span:first-child:before,
+.VITORIASC-page .cbx-adesao span:first-child:before {
+  background: #0f0e0e;
+}
+
+.VITORIASC-page .inp-cbx:checked + .cbx span:first-child {
+  background: #0f0e0e;
+  border-color: #0f0e0e;
+}
+
+.VITORIASC-page .termos-condicoes .checkbox-periodo p a {
+  color: #ffd201;
+}
+
+.VITORIASC-page .termos-condicoes .checkbox-periodo p a:hover, .VITORIASC-page .termos-condicoes .checkbox-periodo p a:focus {
+  color: #ffd201;
+}
+
+.VITORIASC-page .terms .form-error {
+  color: #f1c500;
+}
+
+.VITORIASC-page .payreturn__multibanco {
+  border: 2px solid #f1c500;
+}
+
+.VITORIASC-page .payreturn__mbway {
+  border: 2px solid #f1c500;
+}
+
+.VITORIASC-page .accordion-detalhes label {
+  border: 2px solid #212121;
+  color: #212121;
+}
+
+.VITORIASC-page .accordion-detalhes label:hover {
+  background-color: #212121;
+}
+
+.VITORIASC-page .accordion-detalhes .tab {
+  color: #AFAFAF;
+}
+
+.VITORIASC-page .accordion-detalhes input[type="radio"]:checked + label {
+  background: #212121;
+}
+
+.VITORIASC-page .accordion-detalhes input[type="radio"]:checked + label + .tab {
+  border-top: 2px solid #212121;
+}
+
+.VITORIASC-page .clube-detalhes p {
+  color: #000000;
+}
+
+.fluxoPagamentos__footer-VITORIASC {
   width: 100%;
   position: relative;
   background-color: #F9F9F9;
@@ -6255,7 +6366,7 @@ header .socialMedias_header img {
   margin-top: 4.5rem;
 }
 
-.fluxoPagamentos__footer-vsc .row {
+.fluxoPagamentos__footer-VITORIASC .row {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6263,7 +6374,7 @@ header .socialMedias_header img {
   align-content: center;
 }
 
-.fluxoPagamentos__footer-vsc ul {
+.fluxoPagamentos__footer-VITORIASC ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6277,42 +6388,42 @@ header .socialMedias_header img {
   margin-bottom: 3rem;
 }
 
-.fluxoPagamentos__footer-vsc ul:last-child {
+.fluxoPagamentos__footer-VITORIASC ul:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
-  .fluxoPagamentos__footer-vsc ul {
+  .fluxoPagamentos__footer-VITORIASC ul {
     font-size: 1.4rem;
   }
 }
 
-.fluxoPagamentos__footer-vsc ul li {
+.fluxoPagamentos__footer-VITORIASC ul li {
   margin-bottom: 0.5rem;
 }
 
-.fluxoPagamentos__footer-vsc ul li p {
+.fluxoPagamentos__footer-VITORIASC ul li p {
   margin-bottom: 0;
 }
 
-.fluxoPagamentos__footer-vsc ul li p b {
+.fluxoPagamentos__footer-VITORIASC ul li p b {
   font-weight: 700;
 }
 
-.fluxoPagamentos__footer-vsc ul li a {
+.fluxoPagamentos__footer-VITORIASC ul li a {
   color: #212121;
   border-bottom: 1px solid rgba(243, 69, 5, 0);
   transition: all .3s ease-out;
 }
 
-.fluxoPagamentos__footer-vsc ul li a:hover {
+.fluxoPagamentos__footer-VITORIASC ul li a:hover {
   text-decoration: none;
   border-bottom: 1px solid #ffd201;
   transition: all .3s ease-out;
 }
 
 @media (max-width: 575px) {
-  .fluxoPagamentos__footer-vsc ul li {
+  .fluxoPagamentos__footer-VITORIASC ul li {
     margin-bottom: 1rem;
   }
 }
@@ -7645,7 +7756,24 @@ tbody > tr:last-child > td {
   }
 }
 
-.fluxoPagamentos .payList {
+.fluxoPagamentos .container-btn {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.fluxoPagamentos .container-btn a {
+  margin: 0 .5rem;
+}
+
+.fluxoPagamentos .container-btn .btn__verMais {
+  margin-right: 3rem;
+}
+
+.payList {
   width: 100%;
   position: relative;
   display: flex;
@@ -7655,7 +7783,7 @@ tbody > tr:last-child > td {
   align-content: center;
 }
 
-.fluxoPagamentos .payList ul {
+.payList ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7665,7 +7793,7 @@ tbody > tr:last-child > td {
   margin-bottom: 1.5rem;
 }
 
-.fluxoPagamentos .payList ul li {
+.payList ul li {
   height: 17rem;
   margin: 0 1.5rem;
   background-color: #F9F9F9;
@@ -7685,35 +7813,35 @@ tbody > tr:last-child > td {
 }
 
 @media (max-width: 992px) {
-  .fluxoPagamentos .payList ul li {
+  .payList ul li {
     height: auto;
   }
 }
 
-.fluxoPagamentos .payList ul li .meowallet__logo {
+.payList ul li .meowallet__logo {
   width: 100%;
   display: block;
   text-align: right;
 }
 
-.fluxoPagamentos .payList ul li .meowallet__logo img {
+.payList ul li .meowallet__logo img {
   height: 1.5rem;
   width: auto;
   margin: 0;
 }
 
-.fluxoPagamentos .payList ul li img {
+.payList ul li img {
   width: 15rem;
   margin: .5rem;
 }
 
-.fluxoPagamentos .payList ul li p {
+.payList ul li p {
   width: 100%;
   text-align: center;
   margin-bottom: 0;
 }
 
-.fluxoPagamentos .payList ul li a {
+.payList ul li a {
   color: #F34605;
   font-size: 1.2rem;
   font-weight: 700;
@@ -7722,13 +7850,13 @@ tbody > tr:last-child > td {
   transition: all .3s ease-in;
 }
 
-.fluxoPagamentos .payList ul li a:hover {
+.payList ul li a:hover {
   text-decoration: none;
   border-bottom: 1px solid #F34605;
   transition: all .3s ease-in;
 }
 
-.fluxoPagamentos .payList ul li:hover {
+.payList ul li:hover {
   transform: scale(1);
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -7736,36 +7864,19 @@ tbody > tr:last-child > td {
   transition: all .3s ease-in-out;
 }
 
-.fluxoPagamentos .payList ul .select {
+.payList ul .select {
   background-color: #F9F9F9;
   border: 2px solid #F34605;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   transform: scale(1);
 }
 
-.fluxoPagamentos .payList .input-validate {
+.payList .input-validate {
   color: #F34605;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.2em;
   padding: 1rem 1.5rem;
-}
-
-.fluxoPagamentos .container-btn {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: flex-end;
-}
-
-.fluxoPagamentos .container-btn a {
-  margin: 0 .5rem;
-}
-
-.fluxoPagamentos .container-btn .btn__verMais {
-  margin-right: 3rem;
 }
 
 .formas-pagamento {

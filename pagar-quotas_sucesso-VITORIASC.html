@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartFan - Pagar Quotas</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <!-- <img src="images/svg/pattern_smartFan.svg" alt="Pattern SmartFan" class="pattern__smartFan"> -->
+
+    <div class="container">
+      <div class="row">
+        <ul class="socialMedias_header">
+          <li>
+            SmartFAN<b>.Tickets</b>
+          </li>
+
+          <li>
+            <input id="language-dropdown" type="checkbox">
+            <label for="language-dropdown" class="language-dropdown">
+              <img src="images/svg/flag-portugal.svg" alt="Idioma português">
+            </label>
+            <ul class="language-dropdown-list">
+              <li>
+                <a onclick="setLanguage('pt');"><img src="images/svg/flag-portugal.svg" alt=""></a>
+              </li>
+              <li>
+                <a onclick="setLanguage('en');"><img src="images/svg/flag-uk.svg" alt=""></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <input id="menu-desporto" type="checkbox">
+    <input id="menu-modalidades" type="checkbox">
+    <nav class="navMenu col-lg-12">
+      <!-- <img src="images/svg/pattern_smartFan-white.svg" alt="Pattern SmartFan" class="pattern__smartFan"> -->
+      <div class="container">
+        <div class="row">
+          <a href="index.html" class="marca col-lg-2"><img src="images/svg/logo_smartFan.svg" alt="Logo do SmartFan"></a>
+
+          <ul class="menu col-lg-10">
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <!-- <li class="menu__item menu__item-dropdown">
+                  <a href="index.html">
+                    futebol
+                  </a>
+                </li> -->
+
+                <li class="menu__item menu__item-dropdown menu__item--desportos">
+                  <label for="menu-desporto">
+                    <p>futebol <i class="icon-down"><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
+                  </label>
+                </li>
+
+                <li class="menu__item menu__item-dropdown menu__item-modalidades" style="display: block;">
+                  <label for="menu-modalidades">
+                    <p>modalidades <i class="icon-down"><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
+                  </label>
+                  <ul class="modalidades-list">
+                    <li class="modalidades-list-item">
+                      <a href="andebol-home.html">
+                        <i><img src="images/svg/icon-andebol.svg" alt=""></i> andebol
+                      </a>
+                    </li>
+
+                    <li class="modalidades-list-item">
+                      <a href="basquetebol-home.html">
+                        <i><img src="images/svg/icon-basquetebol.svg" alt=""></i> basquetebol
+                      </a>
+                    </li>
+
+                    <li class="modalidades-list-item">
+                      <a href="futsal-home.html">
+                        <i><img src="images/svg/icon-futsal.svg" alt=""></i> futsal
+                      </a>
+                    </li>
+
+                    <li class="modalidades-list-item">
+                      <a href="hoquei-home.html">
+                        <i><img src="images/svg/icon-hoquei.svg" alt=""></i> hoquei
+                      </a>
+                    </li>
+
+                    <li class="modalidades-list-item">
+                      <a href="voleibol-home.html">
+                        <i><img src="images/svg/icon-voleibol.svg" alt=""></i> voleibol
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu__list">
+              <ul class="menu__list--ul">
+                <li class="menu__item"><a href="pagar-quotas.html">pagar quotas</a></li>
+                <li class="menu__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+                <li class="menu__item" style="display: none;">
+                  <a href="#"><img src="images/svg/search_white.svg" alt="Ícone de pesquisa" class="icon-search"></a>
+                </li>
+                <li class="menu__item menu__btn"><a href="#" class="btn-login btn btn-vsc">login</a></li>
+
+                <li class="menu__item menu__logado" style="display:none;">
+                  <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+                  <input id="user-dropdown" type="checkbox">
+                  <label for="user-dropdown">
+                    <p class="user-dropdown">
+                      Olá, <span><b>Usuário</b></span>! <i><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
+                  </label>
+
+                  <ul class="user-dropdown__list">
+                    <li>
+                      <a href="userdata.html">Perfil</a>
+                    </li>
+                    <li>
+                      <a href="#">Sair</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="teamsBar teamsBar__header">
+      <div class="container">
+        <div class="row">
+          <ul class="list_ligas">
+            <li>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa-black.png"
+                  alt="Federação Portuguesa de Futebol"></a>
+            </li>
+            <li>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal-black.png"
+                  alt="Liga Portugal"></a>
+            </li>
+          </ul>
+
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Boavista FC</span><img
+                    src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
+                    alt="Futebol Clube do Porto"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Gil Vicente FC</span><img
+                    src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Os Belenenses</span><img
+                    src="images/logo-1osbelenenses.png" alt="Os Belenenses"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Rio Ave FC</span><img
+                    src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
+                    src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
+                    src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_02">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">CD Nacional</span><img
+                    src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">GD Chaves</span><img
+                    src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">SC Covilhã</span><img
+                    src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
+              </li>
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
+                    src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_03">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== MENU MOBILE ==== -->
+    <nav class="navMenu-mobile col-md-12">
+      <a href="index.html" class="marca"><img src="images/svg/logo_smartFan.svg" alt="SmartFan"></a>
+
+      <a href="#" class="btnMenu btnMenu__open"><img src="images/svg/icon-menu.svg" alt="Abrir Menu"></a>
+
+      <div id="#menuMobile" class="menuMobile">
+        <!-- <div class="container-btn">
+        </div> -->
+        <a href="#menuMobile" class="btnMenu btnMenu__close"><img src="images/svg/close-menu.svg" alt="Fechar Menu"></a>
+
+        <a href="index.html" class="marca"><img src="images/svg/logo_smartFan.svg" alt="Logo do SmartFan"></a>
+
+        <section class="teamsBar teamsBar__mobile">
+          <ul class="list_ligas">
+            <li>
+              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa-black.png"
+                  alt="Federação Portuguesa de Futebol"></a>
+            </li>
+            <li>
+              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal-black.png"
+                  alt="Liga Portugal"></a>
+            </li>
+          </ul>
+
+          <div class="list_clubs">
+            <ul class="list_clubs_01">
+              <li>
+                <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1fcporto.png" alt="Futebol Clube do Porto"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1osbelenenses.png" alt="Clube de Futebol Os Belenenses"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_02">
+              <li>
+                <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+              </li>
+            </ul>
+
+            <ul class="list_clubs_03">
+              <li>
+                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
+                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <ul class="menuMobile__list">
+          <li class="menuMobile__list__item"><a href="pagar-quotas.html">pagar quotas</a></li>
+          <li class="menuMobile__list__item"><a href="comprar-bilhetes.html">comprar bilhetes</a></li>
+          <li class="menuMobile__list__item menu__item-dropdown  menu__item-modalidades">
+            <input id="menu-modalidades-mobile" type="checkbox">
+            <label for="menu-modalidades-mobile">
+              <p>modalidades <i class="icon-down"><img src="images/svg/icon-down_mobile.svg" alt=""></i></p>
+            </label>
+            <ul class="modalidades-list">
+              <li class="modalidades-list-item"><a href="andebol-home.html">andebol</a></li>
+              <li class="modalidades-list-item"><a href="basquetebol-home.html">basquetebol</a></li>
+              <li class="modalidades-list-item"><a href="futsal-home.html">futsal</a></li>
+              <li class="modalidades-list-item"><a href="hoquei-home.html">hoquei</a></li>
+              <li class="modalidades-list-item"><a href="voleibol-home.html">voleibol</a></li>
+            </ul>
+          </li>
+          <li class="menuMobile__list__item"><a href="userdata.html">perfil</a></li>
+          <li class="menu__item menu__btn" style="display:none;"><a href="#" class="btn-login btn btn-vsc">login</a>
+          </li>
+
+          <li class="menu__item menu__logado">
+            <i class="icon-user"><img src="images/svg/user-avatar.svg" alt=""></i>
+            <p class="user-dropdown">
+              Olá, <span><b>Usuário</b></span>!
+            </p>
+
+            <!-- <a href="#" class="btn__verMais">sair</a> -->
+          </li>
+
+          <li class="menu__item menu__item__sair">
+            <a href="#">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <section class="bannerFullScreen">
+    <img src="images/banner_VitoriaFC.jpg" alt="Banner do Vitória Futebol Clube" class="background">
+    <div class="container infos-banner">
+      <div class="row">
+        <ul>
+          <li class="infos-banner__name">Vitória Futebol Clube</li>
+          <li class="infos-banner__logo"><img src="images/logo-1vitoriafc.png" alt="Logo Gil Vicente Futebol Clube"></li>
+        </ul>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="fluxoPagamentos VITORIASC-page">
+    <div class="container">
+      <div class="row">
+        <div class="pagamento_sucesso">
+          <i><img src="images/svg/check-icon.svg" alt="Ícone de confirmação"></i>
+
+          <h1>Seu pagamento foi realizado com sucesso!</h1>
+
+          <div class="container-btn">
+            <a href="index.html" class="btn btn__orange">voltar</a>
+          </div>
+        </div>
+
+        <div class="payreturn__multibanco col-lg-5">
+          <img src="images/svg/multibanco.svg" alt="">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Entidade</strong>
+                </td>
+                <td>
+                  XXXXX
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Referencia</strong>
+                </td>
+                <td>
+                  XXXXXXXXX
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Valor</strong>
+                </td>
+                <td>
+                  XX,XX€
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Validade</strong>
+                </td>
+                <td>
+                  xx/xx
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- <div class="payreturn__mbway col-lg-5">
+          <img src="images/mbway.png" alt="">
+          <div smv-langtext="payretfrasembway" smv-langrepltext-mobile="967610852">Foi enviada notificação de pagamento para aplicação MBWay em equipamento com o nº de telemóvel +351 967610852</div>
+        </div> -->
+
+        <div>
+          <div class="accordion-detalhes">
+            <input type="radio" name="tabs-detalhes" id="ver-detalhes">
+            <label for="ver-detalhes">
+              <span>Ver detalhes</span>
+            </label>
+
+            <div class="tab">
+              <div class="clube-detalhes">
+                <img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"
+                  title="Gil Vicente Futebol Clube">
+                <p>Gil Vicente Futebol Clube</p>
+              </div>
+
+              <table class="col-lg-12 col-md-12 col-sm-12">
+                <tbody>
+                  <tr>
+                    <td><strong smv-langtext="payrettitlefee">Quotas</strong></td>
+                    <td>
+                      <div>
+                        <!--<span>1x <span smv-langtext="xorderitem_QUOTA">Quotas</span>--><span
+                          smv-langtext="feedateMY" smv-langreplid-month="xmonth09"
+                          smv-langrepltext-y="2019">Setembro/2019</span>
+                        <!--</span>-->
+                        - <span>5,00</span> <span smv-langtext="currencysymbol">€</span>
+                      </div>
+                      <div>
+                        <!--<span>1x <span smv-langtext="xorderitem_QUOTA">Quotas</span>--><span
+                          smv-langtext="feedateMY" smv-langreplid-month="xmonth10"
+                          smv-langrepltext-y="2019">Outubro/2019</span>
+                        <!--</span>-->
+                        - <span>5,00</span> <span smv-langtext="currencysymbol">€</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><strong smv-langtext="lblnumenc">Nº Encomenda</strong></td>
+                    <td>4UAGDNHXZQLQ</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong smv-langtext="lblnumsoc">Nº de Sócio</strong>
+                    </td>
+
+                    <td>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong smv-langtext="subttcheckbuyerdata">Dados de contacto</strong>
+                    </td>
+                    <td>
+                      Daniela Gomes Carvalho<br> t.a.hra.testing@gmail.com
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><strong smv-langtext="lblpaymethod">Método de Pagamento</strong></td>
+                    <td smv-langtext="xpaynameMULTIBANCO">Multibanco</td>
+                  </tr>
+
+                  <tr class="totalpayment">
+                    <td><strong smv-langtext="lbltotal">Total</strong>&nbsp;</td>
+                    <td><strong>10,00 <span smv-langtext="currencysymbol">€</span></strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="fluxoPagamentos__footer">
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li>
+              <p><a href="#">Política de Privacidade</a> / <a href="#">Termos e Condições</a></p>
+            </li>
+            <li>
+              <p><b>Gil Vicente FC</b></p>
+            </li>
+            <li>
+              <p>Rua do Clube, 8525-124 Porto</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li><a href="#">Termos e Compromissos</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+
+        <ul class="footerList footerList__center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li>
+            <span>Apoio ao cliente</span>
+            <a href="#">helpdesk@smartticketing.pt</a>
+          </li>
+        </ul>
+
+        <ul class="payList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li class="logo-meowallet"><img src="images/svg/meowallet-blue.svg" alt="MEO Wallet"></li>
+          <li class="logo-visa"><img src="images/payment-visa.png" alt="Visa"></li>
+          <li class="logo-mastercard"><img src="images/payment-mastercard.png" alt="Mastercard"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <span>SmartFan.Tickets</span>
+              <a href="#">contato@contato.pt</a>
+            </li>
+          </ul>
+
+          <div class="logoSmartmove col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg"
+                alt="Smartmove"></a>
+          </div>
+
+          <ul class="socialmedia_list col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank"
+                class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL LOGIN ================= -->
+  <div id="modalLogin" class="modal-login-container">
+    <div class="modal-content">
+      <nav class="nav_tabs">
+        <a href="#" class="closeModal"><img src="images/svg/close-popUp.svg" alt=""></a>
+        <ul>
+          <!-------- ENTRAR ------->
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="entrar" checked>
+            <label for="entrar" class="tab_label" checked>login</label>
+
+            <div class="tab-content">
+              <h2>Insere o teu e-mail e password e faz login!</h2>
+              <form>
+                <div class="container-input">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" name="email" class="input-validate">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <div class="container-input">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" name="password">
+                  <!-- <span class="input-validate">Obrigatório!</span> -->
+                </div>
+
+                <a href="#" class="esqueci-senha">esqueci a password</a>
+
+                <a href="#" class="btn btn__orange">
+                  <span>entrar</span>
+                </a>
+              </form>
+            </div>
+          </li>
+
+          <!------- REGISTAR ------->
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="registrar">
+            <label for="registrar" class="tab_label">registo</label>
+
+            <div class="tab-content">
+              <h2>Escolhe o teu clube, insere os teus dados de sócio e regista-te!</h2>
+
+              <ul class="listTeams_popUp">
+                <li>
+                  <a href="#"><img src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1fcporto.png" alt="Futebol Clube do Porto"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1osbelenenses.png" alt="Clube de Futebol Os Belenenses"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
+                </li>
+              </ul>
+
+              <form>
+                <div class="container-input">
+                  <label for="numero-socio" class="form-label">Número de Sócio</label>
+                  <input type="text" name="numero-socio" id="numero-socio">
+                  <!-- <span class="input-validate">Obrigatório!</span> -->
+                </div>
+
+                <div class="container-input">
+                  <label for="ultimos-digitos" class="form-label">Últimos 5 dígitos do código de barras</label>
+                  <input type="number" name="ultimos-digitos" id="ultimos-digitos">
+                  <!-- <span class="input-validate">Obrigatório!</span> -->
+                  <i class="info-cartao"><img src="images/svg/information.svg"
+                      alt="Informação sobre o cartão de sócio"></i>
+                </div>
+
+                <a href="#" class="btn btn__orange">
+                  <span>validar</span>
+                </a>
+              </form>
+            </div>
+
+            <!-------- CONFIRMAR SENHA/EMAIL -------->
+            <!-- <div class="tab-content">
+              <h2>Insere o teu e-mail e password</h2>
+
+              <ul class="infos-socio">
+                <li><img src="images/logo-1gilvicentefc.png" alt=""></li>
+                <li>
+                  <span>Gabriel Vazarin Perez</span>
+                  <span>33325-9</span>
+                </li>
+              </ul>
+
+              <form>
+                <div class="container-input">
+                  <label for="email-socio">E-mail</label>
+                  <input type="email" name="email-socio" id="email-socio">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <div class="container-input">
+                  <label for="password-socio">Password</label>
+                  <input type="number" name="password-socio" id="password-socio">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <div class="container-input">
+                  <label for="confirmar-password">Confirme a password</label>
+                  <input type="number" name="confirmar-password" id="confirmar-password" class="input-validate">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <a href="#" class="btn btn__orange">
+                  <span>registar</span>
+                </a>
+              </form>
+            </div> -->
+          </li>
+        </ul>
+
+        <!-- CONCLUÍDO -->
+        <div class="cadastro-finalizado alert-link" style="display:none;">
+          <i><img src="images/svg/check-icon.svg" alt="Ícone de confirmação"></i>
+
+          <h2>Login efetuado com sucesso!</h2>
+
+          <button class="btn btn__blue">
+            <span>continuar</span>
+          </button>
+        </div>
+
+        <!-- ERRO -->
+        <div class="cadastro-finalizado alert-link" style="display: none;">
+          <i><img src="images/svg/error-icon.svg" alt="Ícone de erro"></i>
+
+          <h2>Os dados de login estão inválidos. Por favor, verifique os dados</h2>
+
+          <button class="btn btn__orange">
+            <span>voltar</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <script src="js/menu.js"></script>
+  <script src="js/popUpLogin.js"></script>
+</body>
+
+</html>
