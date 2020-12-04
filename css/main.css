@@ -5840,20 +5840,36 @@ header .socialMedias_header img {
   color: #707070;
 }
 
+.VITORIASC-page .btn__orange {
+  background-color: #f1c500;
+}
+
+.VITORIASC-page .btn__orange:hover {
+  background-color: #212121;
+}
+
+.VITORIASC-page .btn__blue {
+  background-color: #212121;
+}
+
+.VITORIASC-page .btn__blue:hover {
+  background-color: #0f0e0e;
+}
+
 .VITORIASC-page .btn__verMais {
-  color: #ffd201;
+  color: #212121;
 }
 
 .VITORIASC-page .btn__verMais:before {
-  background-color: #ffd201;
+  background-color: #212121;
 }
 
 .VITORIASC-page .btn__verMais:hover {
-  color: #ffd201;
+  color: #212121;
 }
 
 .VITORIASC-page .btn__verMais:focus {
-  color: #ffd201;
+  color: #212121;
 }
 
 .VITORIASC-page form input,
@@ -6358,74 +6374,16 @@ header .socialMedias_header img {
   color: #000000;
 }
 
-.fluxoPagamentos__footer-VITORIASC {
-  width: 100%;
-  position: relative;
-  background-color: #F9F9F9;
-  padding: 1.5rem 0;
-  margin-top: 4.5rem;
-}
-
-.fluxoPagamentos__footer-VITORIASC .row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.fluxoPagamentos__footer-VITORIASC ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.VITORIASC-page .fluxoPagamentos__footer ul {
   color: #212121;
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.2em;
-  text-align: center;
-  margin-bottom: 3rem;
 }
 
-.fluxoPagamentos__footer-VITORIASC ul:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 767px) {
-  .fluxoPagamentos__footer-VITORIASC ul {
-    font-size: 1.4rem;
-  }
-}
-
-.fluxoPagamentos__footer-VITORIASC ul li {
-  margin-bottom: 0.5rem;
-}
-
-.fluxoPagamentos__footer-VITORIASC ul li p {
-  margin-bottom: 0;
-}
-
-.fluxoPagamentos__footer-VITORIASC ul li p b {
-  font-weight: 700;
-}
-
-.fluxoPagamentos__footer-VITORIASC ul li a {
+.VITORIASC-page .fluxoPagamentos__footer ul li a {
   color: #212121;
-  border-bottom: 1px solid rgba(243, 69, 5, 0);
-  transition: all .3s ease-out;
 }
 
-.fluxoPagamentos__footer-VITORIASC ul li a:hover {
-  text-decoration: none;
+.VITORIASC-page .fluxoPagamentos__footer ul li a:hover {
   border-bottom: 1px solid #ffd201;
-  transition: all .3s ease-out;
-}
-
-@media (max-width: 575px) {
-  .fluxoPagamentos__footer-VITORIASC ul li {
-    margin-bottom: 1rem;
-  }
 }
 
 .load-screen {

@@ -38,19 +38,35 @@ $secondary-vsc-02:#f1c500;
         color: $gray-vsc-02;
     }
 
+    .btn__orange {
+        background-color: $secondary-vsc-02;
+
+        &:hover {
+            background-color: $primary-vsc-01;
+        }
+    }
+
+    .btn__blue {
+        background-color: $primary-vsc-01;
+
+        &:hover {
+            background-color: $primary-vsc-02;
+        }
+    }
+
     .btn__verMais {
-        color: $secondary-vsc-01;
+        color: $primary-vsc-01;
 
         &:before {
-            background-color: $secondary-vsc-01;
+            background-color: $primary-vsc-01;
         }
 
         &:hover {
-            color: $secondary-vsc-01;
+            color: $primary-vsc-01;
         }
 
         &:focus {
-            color: $secondary-vsc-01;
+            color: $primary-vsc-01;
         }
     }
 
@@ -535,59 +551,20 @@ $secondary-vsc-02:#f1c500;
             color: $black-vsc-01;
         }
     }
-}
 
-.fluxoPagamentos__footer-VITORIASC {
-    width: 100%;
-    position: relative;
-    background-color: $white-01;
-    padding: 1.5rem 0;
-    margin-top: 4.5rem;
+    .fluxoPagamentos__footer {
+        ul {
+            color: $primary-vsc-01;
 
-    .row {
-        @include flex(column, center, center, center);
-    }
+            li {
 
-    ul {
-        @include flex(column, center, center, center);
-        color: $primary-vsc-01;
-        @include font(1.2rem, 300, 1.2em);
-        text-align: center;
-        margin-bottom: 3rem;
+                a {
+                    color: $primary-vsc-01;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        @include sm {
-            font-size: 1.4rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-
-            p {
-                margin-bottom: 0;
-
-                b {
-                    font-weight: 700;
+                    &:hover {
+                        border-bottom: 1px solid $secondary-vsc-01;
+                    }
                 }
-            }
-
-            a {
-                color: $primary-vsc-01;
-                border-bottom: 1px solid rgba(243, 69, 5, 0);
-                transition: all .3s ease-out;
-
-                &:hover {
-                    text-decoration: none;
-                    border-bottom: 1px solid $secondary-vsc-01;
-                    transition: all .3s ease-out;
-                }
-            }
-
-            @include xs {
-                margin-bottom: 1rem;
             }
         }
     }
