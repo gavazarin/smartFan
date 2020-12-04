@@ -5897,8 +5897,12 @@ header .socialMedias_header img {
 }
 
 .VITORIASC-page form .input-validate {
-  border: 2px solid #f1c500;
-  color: #f1c500;
+  border: 2px solid #e42626;
+  color: #e42626;
+}
+
+.VITORIASC-page form span.input-validate {
+  border: none;
 }
 
 .VITORIASC-page .check-new-number {

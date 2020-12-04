@@ -95,8 +95,12 @@ $secondary-vsc-02:#f1c500;
         }
 
         .input-validate {
-            border: 2px solid $secondary-vsc-02;
-            color: $secondary-vsc-02;
+            border: 2px solid #e42626;
+            color: #e42626;
+        }
+
+        span.input-validate {
+            border: none;
         }
     }
 
