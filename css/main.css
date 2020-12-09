@@ -2399,12 +2399,32 @@ form span.input-validate {
   transition: all .3s ease-in-out;
 }
 
+.btn-primary {
+  background-color: #F37402;
+  transition: all .3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #F34605;
+  transition: all .3s ease-in-out;
+}
+
 .btn__blue {
   background-color: #1A7DD7;
   transition: all .3s ease-in;
 }
 
 .btn__blue:hover {
+  background-color: #005bb1;
+  transition: all .3s ease-in;
+}
+
+.btn-secondary {
+  background-color: #1A7DD7;
+  transition: all .3s ease-in;
+}
+
+.btn-secondary:hover {
   background-color: #005bb1;
   transition: all .3s ease-in;
 }
@@ -2471,6 +2491,51 @@ form span.input-validate {
 }
 
 .btn__verMais:focus {
+  color: #F34605;
+  text-decoration: none;
+}
+
+.btn-link {
+  color: #F34605;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+@media (max-width: 575px) {
+  .btn-link {
+    font-size: 1.6rem;
+  }
+}
+
+.btn-link:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #F34605;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  transform: scale(0, 1);
+  transform-origin: 0 0;
+  transition: all .3s ease-in;
+}
+
+.btn-link:hover {
+  color: #F34605;
+  text-decoration: none;
+}
+
+.btn-link:hover:before {
+  transform: scale(1, 1);
+  transition: all .3s ease-in;
+}
+
+.btn-link:focus {
   color: #F34605;
   text-decoration: none;
 }
@@ -9009,16 +9074,10 @@ tbody > tr:last-child > td {
 .userdata {
   margin-bottom: 3rem;
   position: relative;
-  height: 65vh;
+  height: 120vh;
 }
 
 @media (max-width: 992px) {
-  .userdata {
-    height: 75vh;
-  }
-}
-
-@media (max-width: 575px) {
   .userdata {
     height: auto;
   }
@@ -9103,7 +9162,7 @@ tbody > tr:last-child > td {
   align-content: flex-start;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 992px) {
   .tabs_userdata .li-tabs {
     display: flex;
     flex-direction: column;
@@ -9111,6 +9170,11 @@ tbody > tr:last-child > td {
     align-items: flex-start;
     align-content: flex-start;
   }
+}
+
+.tabs_userdata .li-tabs .container-btn {
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 .tabs_userdata .tab-content {
@@ -9127,8 +9191,8 @@ tbody > tr:last-child > td {
   margin-top: 0;
   margin-bottom: 1.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: flex-end;
   align-content: flex-end;
 }
@@ -9166,11 +9230,44 @@ tbody > tr:last-child > td {
 
 .tabs_userdata .tab-content .clube__socio {
   width: 100%;
+  position: relative;
+  margin-bottom: 3rem;
+  padding: 2rem 3rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
+  background-color: #ececec;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+@media (max-width: 575px) {
+  .tabs_userdata .tab-content .clube__socio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 1.5rem;
+  }
+}
+
+.tabs_userdata .tab-content .clube__socio-background {
+  height: 220%;
+  position: absolute;
+  top: 70%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  opacity: .1;
+}
+
+.tabs_userdata .tab-content .clube__socio-background img {
+  height: 100%;
 }
 
 .tabs_userdata .tab-content .clube__socio--infos {
@@ -9183,7 +9280,6 @@ tbody > tr:last-child > td {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.2em;
-  margin-bottom: 2.4rem;
 }
 
 .tabs_userdata .tab-content .clube__socio--infos strong {
@@ -9193,6 +9289,12 @@ tbody > tr:last-child > td {
 .tabs_userdata .tab-content .clube__socio--infos img {
   width: 6rem;
   margin: 0 .8rem;
+}
+
+@media (max-width: 767px) {
+  .tabs_userdata .tab-content .clube__socio--infos img {
+    margin-left: 0;
+  }
 }
 
 .tabs_userdata .tab-content .clube__socio--infos ul {
@@ -9222,9 +9324,89 @@ tbody > tr:last-child > td {
 }
 
 @media (max-width: 767px) {
+  .tabs_userdata .tab-content .clube__socio--infos ul {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .tabs_userdata .tab-content .clube__socio--infos ul li {
+    text-align: center;
+  }
+}
+
+.tabs_userdata .tab-content .clube__socio .btn-wrapper {
+  text-align: center;
+}
+
+.tabs_userdata .tab-content .clube__socio .btn-wrapper p {
+  font-size: 1.4rem;
+  margin: 1.2rem 0 0;
+  color: #212121;
+}
+
+.tabs_userdata .tab-content .clube__socio .btn-wrapper p strong {
+  font-weight: 900;
+}
+
+@media (max-width: 767px) {
   .tabs_userdata .tab-content .clube__socio {
     margin: 1.5rem 0;
   }
+}
+
+.tabs_userdata .tab-content .dados-socio-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.tabs_userdata .tab-content .dados-socio-list li {
+  text-align: left;
+  font-size: 1.6rem;
+  padding-bottom: .4rem;
+  margin-bottom: 1.2rem;
+}
+
+.tabs_userdata .tab-content .dados-socio-list li h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1em;
+  color: #212121;
+  text-transform: lowercase;
+  padding-left: .5rem;
+}
+
+.tabs_userdata .tab-content .dados-socio-list li span {
+  padding: .75rem;
+}
+
+.tabs_userdata .tab-content .dados-socio-list li:last-child {
+  border-right: none;
+}
+
+.tabs_userdata .tab-content .last-update,
+.tabs_userdata .tab-content .no-edit-msg {
+  width: 100%;
+  padding: 0 1.5rem;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin: .8rem 0;
+}
+
+.tabs_userdata .tab-content .no-edit-msg {
+  font-weight: 900;
+  padding: .8rem 1.5rem;
+  border: 2px solid #F34605;
+  border-radius: .5rem;
+  text-align: center;
 }
 
 .tabs_userdata .tab-content .clube__fan {
@@ -9288,10 +9470,11 @@ tbody > tr:last-child > td {
 
 .tabs_userdata .tab-content__conta {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
-  align-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
 
@@ -9325,7 +9508,7 @@ tbody > tr:last-child > td {
   font-weight: 900;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 992px) {
   .tabs_userdata .tab-content {
     position: relative;
   }

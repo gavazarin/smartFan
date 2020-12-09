@@ -10,48 +10,79 @@
   text-align: center;
   text-transform: uppercase;
   transition: all .3s ease-in-out;
+
   &__orange {
     background-color: $secondary-02;
     transition: all .3s ease-in-out;
+
     &:hover {
       background-color: $secondary-01;
       transition: all .3s ease-in-out;
     }
   }
+
+  &-primary {
+    background-color: $secondary-02;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: $secondary-01;
+      transition: all .3s ease-in-out;
+    }
+  }
+
   &__blue {
     background-color: $primary-02;
     transition: all .3s ease-in;
+
     &:hover {
       background-color: rgb(0, 91, 177);
       transition: all .3s ease-in;
     }
   }
+
+  &-secondary {
+    background-color: $primary-02;
+    transition: all .3s ease-in;
+
+    &:hover {
+      background-color: rgb(0, 91, 177);
+      transition: all .3s ease-in;
+    }
+  }
+
   &__fullContainer {
     width: 100%;
   }
+
   &-login {
     @include sm {
       font-size: 1.8rem;
       padding: 1.5rem 3rem;
     }
   }
+
   &__marginTop {
     margin-top: 3rem;
   }
+
   &:hover,
   &:focus {
     color: $white-01;
     text-decoration: none;
     transition: all .3s ease-in-out;
   }
+
   &__verMais {
     color: $secondary-01;
     @include font(1.4rem, 700, 1.2em);
     position: relative;
     padding-bottom: 2px;
+
     @include xs {
       font-size: 1.6rem;
     }
+
     &:before {
       content: '';
       width: 100%;
@@ -62,22 +93,64 @@
       transform-origin: 0 0;
       transition: all .3s ease-in;
     }
+
     &:hover {
       color: $secondary-01;
       text-decoration: none;
+
       &:before {
         transform: scale(1, 1);
         transition: all .3s ease-in;
       }
     }
+
     &:focus {
       color: $secondary-01;
       text-decoration: none;
     }
   }
+
+  &-link {
+    color: $secondary-01;
+    @include font(1.4rem, 700, 1.2em);
+    position: relative;
+    padding-bottom: 2px;
+
+    @include xs {
+      font-size: 1.6rem;
+    }
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: $secondary-01;
+      @include absolute(auto, auto, 0, 0);
+      transform: scale(0, 1);
+      transform-origin: 0 0;
+      transition: all .3s ease-in;
+    }
+
+    &:hover {
+      color: $secondary-01;
+      text-decoration: none;
+
+      &:before {
+        transform: scale(1, 1);
+        transition: all .3s ease-in;
+      }
+    }
+
+    &:focus {
+      color: $secondary-01;
+      text-decoration: none;
+    }
+  }
+
   &[disabled] {
     background: $gray-01;
     pointer-events: none;
+
     &:hover {
       background: $gray-01;
     }
