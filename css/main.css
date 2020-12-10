@@ -6322,11 +6322,11 @@ header .socialMedias_header img {
 }
 
 .VITORIASC-page .classificacao table thead {
-  border-bottom: 2px solid #ffd201;
+  border-bottom: 2px solid #f1c500;
 }
 
 .VITORIASC-page .classificacao .time-destaque {
-  background-color: #ffd201;
+  background-color: #f1c500;
 }
 
 .VITORIASC-page .sidebar__social-media {
@@ -9528,6 +9528,7 @@ tbody > tr:last-child > td {
   color: #03275a;
   text-align: right;
   margin-top: 0;
+  text-transform: inherit;
 }
 
 .clube-fan-container {
