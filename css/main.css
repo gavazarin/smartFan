@@ -2280,7 +2280,8 @@ form select:focus {
 
 form input:disabled,
 form select:disabled {
-  background-color: #AFAFAF;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
 }
 
 form .input-single {
