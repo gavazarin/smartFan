@@ -16,6 +16,8 @@ body {
   height: auto;
   position: relative;
   font-family: $font-01;
+  display: flex;
+  flex-direction: column;
 }
 
 section {

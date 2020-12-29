@@ -1971,6 +1971,8 @@ body {
   height: auto;
   position: relative;
   font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -3740,6 +3742,7 @@ footer {
   background: #021C40;
   padding-top: 3rem;
   border-top: 0.5rem solid #F34605;
+  margin-top: auto;
 }
 
 footer .row {
