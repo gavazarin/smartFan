@@ -98,11 +98,14 @@
                 <div class="escolher-ingresso-box">
                   <div class="escolher-ingresso-quantidade">
                     <ul class="resumo-setor">
-                      <li class="col-lg-6">
+                      <li class="col-lg-6 col-6">
                         <img src="images/01maracana_setores_disponiveis.jpg" alt="">
                       </li>
-                      <li class="col-lg-6">
+                      <li class="col-lg-12 col-6">
                         <h2>Setor - A9</h2>
+                        <a href="#setor" class="btn-view" data-toggle="modal">
+                          <img src="images/svg/view.svg" alt="">
+                        </a>
                       </li>
                     </ul>
 
@@ -207,6 +210,31 @@
               <div class="table-escolha-lugares">
                 <div class="wrap">
                   <div class="grama">Relvado</div>
+
+                  <div class="setor">
+                    <h2>Setor A9</h2>
+                    <a href="#setor" class="btn-view" data-toggle="modal">
+                      <img src="images/svg/view.svg" alt="">
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="setor" tabindex="-1" aria-labelledby="setorLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h2 class="modal-title" id="setorLabel">Setor - A9</h2>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <img src="images/svg/close-popUp.svg" alt="">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <img src="images/01maracana_setores_disponiveis.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
                   <div class="contain clearfix">
                     <div id="fixed-Left" class="numbers left">

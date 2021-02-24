@@ -49,6 +49,74 @@
     background: #FFF;
 }
 
+.setor {
+    padding: 1.6rem 0;
+    @include flex(row, center, center, center);
+
+    h2 {
+        font-size: 1.8rem;
+        color: $secondary-01;
+        margin: 0 .8rem;
+    }
+
+    .btn-view {
+        margin: 0 .8rem;
+    }
+
+    .modal {
+        padding-right: 0;
+
+        .modal-dialog {
+            max-width: 50%;
+        }
+
+        .modal-header {
+            position: relative;
+            border: none;
+            background: $white-01;
+
+            .close {
+                width: auto;
+                height: auto;
+                background: none;
+                border: none;
+                padding: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .modal-body {
+            img {
+                max-height: 700px;
+                max-width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        @include md {
+            .modal-dialog {
+                max-width: 80%;
+            }
+        }
+
+        @include sm {
+            .modal-dialog {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
 .left {
     float: left;
     text-align: right;

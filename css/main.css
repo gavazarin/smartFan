@@ -7058,6 +7058,76 @@ header .socialMedias_header img {
   background: #FFF;
 }
 
+.setor {
+  padding: 1.6rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.setor h2 {
+  font-size: 1.8rem;
+  color: #F34605;
+  margin: 0 .8rem;
+}
+
+.setor .btn-view {
+  margin: 0 .8rem;
+}
+
+.setor .modal {
+  padding-right: 0;
+}
+
+.setor .modal .modal-dialog {
+  max-width: 50%;
+}
+
+.setor .modal .modal-header {
+  position: relative;
+  border: none;
+  background: #F9F9F9;
+}
+
+.setor .modal .modal-header .close {
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.setor .modal .modal-header .close img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.setor .modal .modal-header .close:focus {
+  outline: none;
+}
+
+.setor .modal .modal-body img {
+  max-height: 700px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .setor .modal .modal-dialog {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .setor .modal .modal-dialog {
+    max-width: 100%;
+  }
+}
+
 .left {
   float: left;
   text-align: right;
@@ -8299,8 +8369,8 @@ tbody > tr:last-child > td {
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -8312,10 +8382,26 @@ tbody > tr:last-child > td {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-bottom: 1.6rem;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor li h2 {
+  margin-bottom: 0;
+  margin-right: 1.2rem;
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor img {
   width: 100%;
+}
+
+@media (max-width: 992px) {
+  .escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-item {
@@ -8360,9 +8446,7 @@ tbody > tr:last-child > td {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  padding-top: 1.6rem;
   margin-top: 1.6rem;
-  border-top: 1px solid #d1d1d1;
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .socio-torcedor-adicional .add-socio {
