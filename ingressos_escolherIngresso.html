@@ -130,28 +130,34 @@
                     <!-- Ingressos Sócio -->
                     <div class="escolher-ingresso-box">
                       <div class="escolher-ingresso-quantidade">
-                        <h2>Sócio</h2>
+                        <h2>
+                          <a class="" data-toggle="collapse" href="#socio" aria-expanded="false" aria-controls="socio">
+                            Sócio <i><img src="images/svg/arrow-collapse.svg" alt=""></i>
+                          </a>
+                        </h2>
 
-                        <div class="form-check socio-torcedor-item">
-                          <label class="form-check-label" for="socio01">
-                            <p>Bilhete sócio nº: <b><span>12500</span></b></p>
-                          </label>
-                          <input class="form-check-input" id="socio01" type="checkbox" />
-                        </div>
+                        <div class="collapse" id="socio">
+                          <div class="form-check socio-torcedor-item">
+                            <label class="form-check-label" for="socio01">
+                              <p>Bilhete sócio nº: <b><span>12500</span></b></p>
+                            </label>
+                            <input class="form-check-input" id="socio01" type="checkbox" />
+                          </div>
 
-                        <ul style="display: none;">
-                          <li>
-                            <span>Bilhete <b>Acompanhante</b></span>
-                            <div class="escolher-ingresso-quantidade-select">
-                              <i><img src="images/svg/menos-icon.svg" alt=""></i>
-                              <span>0</span>
-                              <i><img src="images/svg/mais-icon.svg" alt=""></i>
-                            </div>
-                          </li>
-                        </ul>
 
-                        <div class="socio-torcedor-adicional">
-                          <!-- <h3>Adicione mais sócios para o acompanhar!</h3>
+                          <ul style="display: none;">
+                            <li>
+                              <span>Bilhete <b>Acompanhante</b></span>
+                              <div class="escolher-ingresso-quantidade-select">
+                                <i><img src="images/svg/menos-icon.svg" alt=""></i>
+                                <span>0</span>
+                                <i><img src="images/svg/mais-icon.svg" alt=""></i>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <div class="socio-torcedor-adicional">
+                            <!-- <h3>Adicione mais sócios para o acompanhar!</h3>
 
                             <div class="form-check socio-torcedor-item">
                               <label class="form-check-label" for="socioAdicional01">
@@ -169,9 +175,10 @@
                               <input class="form-check-input" id="socioAdicional01" type="checkbox" />
                             </div> -->
 
-                          <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
-                            Adicionar sócio
-                          </button>
+                            <button type="button" class="btn btn__blue" data-toggle="modal" data-target="#addSocio">
+                              Adicionar sócio
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -179,82 +186,66 @@
                     <!-- Ingressos Não-Sócios -->
                     <div class="escolher-ingresso-box">
                       <div class="escolher-ingresso-quantidade">
-                        <h2>Não Sócio</h2>
-                        <ul>
-                          <li>
-                            <span>Bilhete <b>Público</b></span>
-                            <select class="form-control">
-                              <option value="0">0</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                            </select>
-                          </li>
-                          <li>
-                            <span>Bilhete <b>Criança</b></span>
-                            <select class="form-control">
-                              <option value="0">0</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                            </select>
-                          </li>
-                          <li>
-                            <span>Bilhete <b>Idoso</b></span>
-                            <select class="form-control">
-                              <option value="0">0</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                            </select>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                        <h2>
+                          <a class="" data-toggle="collapse" href="#nao-socio" aria-expanded="false"
+                            aria-controls="nao-socio">
+                            Não Sócio <i><img src="images/svg/arrow-collapse.svg" alt=""></i>
+                          </a>
+                        </h2>
+                        <div class="collapse" id="nao-socio">
+                          <ul>
+                            <li>
+                              <span>Bilhete <b>Público</b></span>
+                              <select class="form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </li>
 
-                    <!-- Pack de jogos -->
-                    <div class="escolher-ingresso-box" style="display: none;">
-                      <div class="escolher-ingresso-quantidade">
-                        <h2>Pack de Jogos</h2>
-                        <ul>
-                          <li>
-                            <span>Pack <b>Sócio</b></span>
-                            <div class="escolher-ingresso-quantidade-select">
-                              <i><img src="images/svg/menos-icon.svg" alt=""></i>
-                              <span>0</span>
-                              <i><img src="images/svg/mais-icon.svg" alt=""></i>
-                            </div>
-                          </li>
-                          <li>
-                            <span>Pack <b>Não-Sócio</b></span>
-                            <div class="escolher-ingresso-quantidade-select">
-                              <i><img src="images/svg/menos-icon.svg" alt=""></i>
-                              <span>0</span>
-                              <i><img src="images/svg/mais-icon.svg" alt=""></i>
-                            </div>
-                          </li>
-                        </ul>
+                            <li>
+                              <span>Bilhete <b>Criança</b></span>
+                              <select class="form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </li>
+
+                            <li>
+                              <span>Bilhete <b>Idoso</b></span>
+                              <select class="form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -262,219 +253,226 @@
                   <!-- Selecionar setor -->
                   <div class="bilhetes-types">
                     <div class="escolher-ingresso-box">
-                      <h2>Setores disponíveis</h2>
+                      <h2>
+                        <a class="" data-toggle="collapse" href="#setores-disponiveis" aria-expanded="false"
+                          aria-controls="setores-disponiveis">
+                          Setores disponíveis <i><img src="images/svg/arrow-collapse.svg" alt=""></i>
+                        </a>
+                      </h2>
+                      <!-- <h2>Setores disponíveis</h2> -->
+                      <div class="collapse" id="setores-disponiveis">
+                        <ul class="ingressos-arquibancada">
+                          <li class="ingressos-arquibancada-item">
+                            <input id="a13" type="radio" name="sectorItem" style="display: none;">
+                            <label for="a13" class="ingressos-arquibancada-label">
+                              <span>A13</span>
+                              <span>R$90,00</span>
+                            </label>
 
-                      <ul class="ingressos-arquibancada">
-                        <li class="ingressos-arquibancada-item">
-                          <input id="a13" type="radio" name="sectorItem" style="display: none;">
-                          <label for="a13" class="ingressos-arquibancada-label">
-                            <span>A13</span>
-                            <span>R$90,00</span>
-                          </label>
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
 
-                          <ul class="ingresso-type">
-                            <li>
-                              <ul class="ingresso-type-list">
-                                <li>
-                                  <span>3x</span>
-                                  <span>Sócios</span>
-                                  <span>R$30,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Acompanhante</span>
-                                  <span>R$30,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Criança</span>
-                                  <span>R$30,00</span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
+                          <li class="ingressos-arquibancada-item">
+                            <input id="a11" type="radio" name="sectorItem" style="display: none;">
+                            <label for="a11" class="ingressos-arquibancada-label">
+                              <span>A11</span>
+                              <span>R$90,00</span>
+                            </label>
 
-                        <li class="ingressos-arquibancada-item">
-                          <input id="a11" type="radio" name="sectorItem" style="display: none;">
-                          <label for="a11" class="ingressos-arquibancada-label">
-                            <span>A11</span>
-                            <span>R$90,00</span>
-                          </label>
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
 
-                          <ul class="ingresso-type">
-                            <li>
-                              <ul class="ingresso-type-list">
-                                <li>
-                                  <span>3x</span>
-                                  <span>Sócios</span>
-                                  <span>R$30,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Acompanhante</span>
-                                  <span>R$30,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Criança</span>
-                                  <span>R$30,00</span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
+                          <li class="ingressos-arquibancada-item">
+                            <input id="a9" type="radio" name="sectorItem" style="display: none;">
+                            <label for="a9" class="ingressos-arquibancada-label">
+                              <span>A9</span>
+                              <span>R$120,00</span>
+                            </label>
 
-                        <li class="ingressos-arquibancada-item">
-                          <input id="a9" type="radio" name="sectorItem" style="display: none;">
-                          <label for="a9" class="ingressos-arquibancada-label">
-                            <span>A9</span>
-                            <span>R$120,00</span>
-                          </label>
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
 
-                          <ul class="ingresso-type">
-                            <li>
-                              <ul class="ingresso-type-list">
-                                <li>
-                                  <span>3x</span>
-                                  <span>Sócios</span>
-                                  <span>R$30,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Acompanhante</span>
-                                  <span>R$60,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Criança</span>
-                                  <span>R$30,00</span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
+                          <li class="ingressos-arquibancada-item">
+                            <input id="a7" type="radio" name="sectorItem" style="display: none;">
+                            <label for="a7" class="ingressos-arquibancada-label">
+                              <span>A7</span>
+                              <span>R$130,00</span>
+                            </label>
 
-                        <li class="ingressos-arquibancada-item">
-                          <input id="a7" type="radio" name="sectorItem" style="display: none;">
-                          <label for="a7" class="ingressos-arquibancada-label">
-                            <span>A7</span>
-                            <span>R$130,00</span>
-                          </label>
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$30,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$40,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
 
-                          <ul class="ingresso-type">
-                            <li>
-                              <ul class="ingresso-type-list">
-                                <li>
-                                  <span>3x</span>
-                                  <span>Sócios</span>
-                                  <span>R$30,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Acompanhante</span>
-                                  <span>R$60,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Criança</span>
-                                  <span>R$40,00</span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
+                          <li class="ingressos-arquibancada-item">
+                            <input id="b15" type="radio" name="sectorItem" style="display: none;">
+                            <label for="b15" class="ingressos-arquibancada-label">
+                              <span>B15</span>
+                              <span>R$145,00</span>
+                            </label>
 
-                        <li class="ingressos-arquibancada-item">
-                          <input id="b15" type="radio" name="sectorItem" style="display: none;">
-                          <label for="b15" class="ingressos-arquibancada-label">
-                            <span>B15</span>
-                            <span>R$145,00</span>
-                          </label>
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$45,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$40,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
 
-                          <ul class="ingresso-type">
-                            <li>
-                              <ul class="ingresso-type-list">
-                                <li>
-                                  <span>3x</span>
-                                  <span>Sócios</span>
-                                  <span>R$45,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Acompanhante</span>
-                                  <span>R$60,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Criança</span>
-                                  <span>R$40,00</span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
+                          <li class="ingressos-arquibancada-item">
+                            <input id="c7" type="radio" name="sectorItem" style="display: none;">
+                            <label for="c7" class="ingressos-arquibancada-label">
+                              <span>C7</span>
+                              <span>R$180,00</span>
+                            </label>
 
-                        <li class="ingressos-arquibancada-item">
-                          <input id="c7" type="radio" name="sectorItem" style="display: none;">
-                          <label for="c7" class="ingressos-arquibancada-label">
-                            <span>C7</span>
-                            <span>R$180,00</span>
-                          </label>
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$80,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$40,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
 
-                          <ul class="ingresso-type">
-                            <li>
-                              <ul class="ingresso-type-list">
-                                <li>
-                                  <span>3x</span>
-                                  <span>Sócios</span>
-                                  <span>R$60,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Acompanhante</span>
-                                  <span>R$80,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Criança</span>
-                                  <span>R$40,00</span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
+                          <li class="ingressos-arquibancada-item">
+                            <input id="c9" type="radio" name="sectorItem" style="display: none;">
+                            <label for="c9" class="ingressos-arquibancada-label">
+                              <span>C9</span>
+                              <span>R$180,00</span>
+                            </label>
 
-                        <li class="ingressos-arquibancada-item">
-                          <input id="c9" type="radio" name="sectorItem" style="display: none;">
-                          <label for="c9" class="ingressos-arquibancada-label">
-                            <span>C9</span>
-                            <span>R$180,00</span>
-                          </label>
-
-                          <ul class="ingresso-type">
-                            <li>
-                              <ul class="ingresso-type-list">
-                                <li>
-                                  <span>3x</span>
-                                  <span>Sócios</span>
-                                  <span>R$60,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Acompanhante</span>
-                                  <span>R$80,00</span>
-                                </li>
-                                <li>
-                                  <span>2x</span>
-                                  <span>Criança</span>
-                                  <span>R$40,00</span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+                            <ul class="ingresso-type">
+                              <li>
+                                <ul class="ingresso-type-list">
+                                  <li>
+                                    <span>3x</span>
+                                    <span>Sócios</span>
+                                    <span>R$60,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Acompanhante</span>
+                                    <span>R$80,00</span>
+                                  </li>
+                                  <li>
+                                    <span>2x</span>
+                                    <span>Criança</span>
+                                    <span>R$40,00</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>

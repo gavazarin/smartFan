@@ -37,7 +37,8 @@
 
 .grama {
     width: 100%;
-    height: 33px;
+    height: auto;
+    padding: .8rem 0;
     line-height: 40px;
     border-top: 2px solid #04b46b;
     border-left: 2px solid #04b46b;
@@ -45,13 +46,15 @@
     color: #090;
     text-align: center;
     text-transform: uppercase;
-    @include font(1.8rem, 700, 1.4em);
+    @include font(1.8rem, 800, 1.4em);
     background: #FFF;
 }
 
 .setor {
-    padding: 1.6rem 0;
+    padding: .8rem 0;
     @include flex(row, center, center, center);
+    background: $white-01;
+    border: 2px solid $gray-01;
 
     h2 {
         font-size: 1.8rem;
