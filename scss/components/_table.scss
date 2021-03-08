@@ -239,6 +239,11 @@ table {
 .table-escolher-cadeira {
   .item-active {
     border: 1px solid $secondary-01;
+    background: #FFFFFF;
+
+    td {
+      font-weight: 800;
+    }
   }
 
   .item-inactive {

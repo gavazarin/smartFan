@@ -2313,12 +2313,14 @@ form label:disabled {
   color: #AFAFAF;
 }
 
-form .input-validate {
+form .input-validate,
+form .form-error {
   border: 2px solid #F37402;
   color: #F37402;
 }
 
-form span.input-validate {
+form span.input-validate,
+form span.form-error {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1em;
@@ -2927,6 +2929,11 @@ table .btn {
 
 .table-escolher-cadeira .item-active {
   border: 1px solid #F34605;
+  background: #FFFFFF;
+}
+
+.table-escolher-cadeira .item-active td {
+  font-weight: 800;
 }
 
 .table-escolher-cadeira .item-inactive {
@@ -3829,6 +3836,7 @@ footer .footerList__center span {
 }
 
 footer .payList {
+  min-height: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -4763,7 +4771,7 @@ header .socialMedias_header img {
 .header-ingresso {
   width: 100%;
   position: relative;
-  padding-top: 0.8rem;
+  padding: 0.8rem 0;
   border-bottom: none;
 }
 
@@ -4840,7 +4848,6 @@ header .socialMedias_header img {
 .header-ingresso-info {
   padding: 0.8rem 0;
   background-color: #03275A;
-  margin-top: .8rem;
 }
 
 @media (max-width: 992px) {
@@ -7760,7 +7767,7 @@ tbody > tr:last-child > td {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   background-color: #FFFFFF;
@@ -7860,29 +7867,17 @@ tbody > tr:last-child > td {
   }
 }
 
-.fluxoPagamentos .container-btn {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: flex-end;
-}
-
-.fluxoPagamentos .container-btn a {
-  margin: 0 .5rem;
-}
-
-.fluxoPagamentos .container-btn .btn__verMais {
-  margin-right: 3rem;
+[smv-type="wticketsarea"] {
+  width: 100%;
 }
 
 .payList {
   width: 100%;
+  min-height: 72vh;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
 }
@@ -7891,15 +7886,14 @@ tbody > tr:last-child > td {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
 
 .payList ul li {
   height: 17rem;
-  margin: 0 1.5rem;
   background-color: #F9F9F9;
   border: 2px solid #03275A;
   border-radius: 1rem;
@@ -7983,6 +7977,26 @@ tbody > tr:last-child > td {
   padding: 1rem 1.5rem;
 }
 
+ul.resumo-setor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+ul.resumo-setor li {
+  border: none;
+  background: none;
+  transform: scale(1);
+  cursor: default;
+}
+
+ul.resumo-setor li:hover {
+  box-shadow: none;
+}
+
 .formas-pagamento {
   display: flex;
   flex-direction: column;
@@ -8043,6 +8057,7 @@ tbody > tr:last-child > td {
 
 .terms {
   width: 100%;
+  margin-bottom: 2.4rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -8211,7 +8226,11 @@ tbody > tr:last-child > td {
   padding: 1.6rem 0 0;
 }
 
-.bilhetes-content .container-btn {
+.bilhetes-content .form-control {
+  font-size: 1.6rem;
+}
+
+.container-btn {
   width: 100%;
   position: sticky;
   bottom: 0;
@@ -8224,7 +8243,7 @@ tbody > tr:last-child > td {
   align-content: center;
 }
 
-.bilhetes-content .container-btn:before {
+.container-btn:before {
   content: '';
   width: 100%;
   height: 2px;
@@ -8237,7 +8256,7 @@ tbody > tr:last-child > td {
   opacity: .2;
 }
 
-.bilhetes-content .container-btn .btn {
+.container-btn .btn {
   margin-left: 1.6rem;
 }
 
@@ -8730,7 +8749,7 @@ tbody > tr:last-child > td {
 }
 
 .bilhetes-dados form {
-  margin: 2.4rem auto 1.6rem;
+  margin: 0 auto 1.6rem;
 }
 
 .bilhetes-dados .category-description {

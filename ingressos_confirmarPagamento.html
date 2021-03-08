@@ -87,130 +87,131 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <h1>Verifique os dados e confirme o pagamento</h1>
 
-          <div class="payList">
-            <table class="col-lg-8">
-              <tbody>
-                <tr>
-                  <td><strong>Partida</strong></td>
-                  <td>
-                    Gil Vicente x Boavista
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <strong>Bancada</strong>
-                  </td>
-                  <td>
-                    A-7
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <strong>Cadeira</strong>
-                  </td>
-                  <td>
-                    48
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <strong>Dados de Contacto</strong>
-                  </td>
-                  <td>
-                    JOAO MANEL SILVA<br> joaosilva@mail.com
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <strong>Método de Pagamento</strong>
-                  </td>
-                  <td>
-                    Cartão de Crédito
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <strong>Envio</strong>
-                  </td>
-                  <td>
-                    <span>Sem envio</span>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <strong>Dados de Facturação</strong>
-                  </td>
-                  <td>
-                    Dados fiscais registados
-                  </td>
-                </tr>
-
-                <tr class="totalpayment">
-                  <td><strong>Total</strong>&nbsp;</td>
-                  <td><strong>46<span>€</span></strong></td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p class="aviso-multibanco">
-              <img src="images/svg/multibanco.svg" alt="Multibanco"> Voce irá receber no email os dados para pagamento.
-            </p>
-
-            <div class="terms col-lg-8">
-              <div>
-                <form>
-                  <a href="#" class="btn__verMais">Termos e Condições</a>
-
-                  <input class="inp-cbx" id="cbx" type="checkbox" style="display: none;" />
-                  <label class="cbx" for="cbx">
-                    <span>
-                      <svg width="12px" height="10px" viewbox="0 0 12 10">
-                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                      </svg>
-                    </span>
-                    <span>Li e <b>aceito</b>.</span>
-                  </label>
-                  <span class="form-error">Tem de aceitar os termos e condições.</span>
-                </form>
-              </div>
-            </div>
-
-            <div class="container-btn ">
-              <a href="index.html" class="btn__verMais ">cancelar</a>
-              <a href="ingressos_escolherPagamento.html" class="btn btn__orange ">voltar</a>
-              <a href="ingressos_sucesso.html" class="btn btn__blue ">pagar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="fluxoPagamentos__footer">
+      <div id="smv_area_paycheck" smv-type="wticketsarea">
         <div class="container">
           <div class="row">
-            <ul>
-              <li>
-                <p><a href="#">Política de Privacidade</a> / <a href="#">Termos e Condições</a></p>
-              </li>
-              <li>
-                <p><b>Gil Vicente FC</b></p>
-              </li>
-              <li>
-                <p>Rua do Clube, 8525-124 Porto</p>
-              </li>
-            </ul>
+            <h1>Verifique os dados e confirme o pagamento</h1>
+
+            <div class="payList">
+              <ul class="resumo-setor">
+                <li class="col-lg-6">
+
+                  <div id="smv_svg_paycheckestadiothumb" class="img-estadio" smv-loaded="OK"><img
+                      src="images/01maracana_setores_disponiveis.jpg" alt=""></div>
+
+                </li>
+                <li class="col-lg-6">
+                  <h2> TOPO SUL NIVEL 2 <br>
+                    <span smv-langtext="lblsector">Setor</span> 4
+                  </h2>
+                </li>
+              </ul>
+
+              <table class="col-lg-8">
+                <tbody>
+                  <tr>
+                    <td><strong>Partida</strong></td>
+                    <td>
+                      Gil Vicente x Boavista
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Bancada</strong>
+                    </td>
+                    <td>
+                      A-7
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Cadeira</strong>
+                    </td>
+                    <td>
+                      48
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Dados de Contacto</strong>
+                    </td>
+                    <td>
+                      JOAO MANEL SILVA<br> joaosilva@mail.com
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Método de Pagamento</strong>
+                    </td>
+                    <td>
+                      Cartão de Crédito
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Envio</strong>
+                    </td>
+                    <td>
+                      <span>Sem envio</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Dados de Facturação</strong>
+                    </td>
+                    <td>
+                      Dados fiscais registados
+                    </td>
+                  </tr>
+
+                  <tr class="totalpayment">
+                    <td><strong>Total</strong>&nbsp;</td>
+                    <td><strong>46<span>€</span></strong></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="aviso-multibanco">
+                <img src="images/svg/multibanco.svg" alt="Multibanco"> Voce irá receber no email os dados para
+                pagamento.
+              </p>
+
+              <div class="terms col-lg-8">
+                <div>
+                  <form>
+                    <a href="#" class="btn__verMais">Termos e Condições</a>
+
+                    <input class="inp-cbx" id="cbx" type="checkbox" style="display: none;" />
+                    <label class="cbx" for="cbx">
+                      <span>
+                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg>
+                      </span>
+                      <span>Li e <b>aceito</b>.</span>
+                    </label>
+                    <span class="form-error">Tem de aceitar os termos e condições.</span>
+                  </form>
+                </div>
+              </div>
+
+              <div class="container-btn ">
+                <a href="index.html" class="btn__verMais ">cancelar</a>
+                <a href="ingressos_escolherPagamento.html" class="btn btn__orange ">voltar</a>
+                <a href="ingressos_sucesso.html" class="btn btn__blue ">pagar</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </section>
   </div>
 

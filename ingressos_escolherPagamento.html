@@ -87,93 +87,77 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <h1>Escolha o modo de pagamento</h1>
-
-          <div class="payList">
-            <ul class="col-lg-10">
-              <li class="col-lg-3">
-                <img src="images/payment_multibanco.png" alt="Pagamento por Multibanco">
-                <p>
-                  <a href="#" target="_blank">saiba mais</a>
-                </p>
-              </li>
-
-              <li class="col-lg-3">
-                <img src="images/mbway.png" alt="Pagamento por MBway">
-                <p>
-                  <a href="#" target="_blank">saiba mais</a>
-                </p>
-              </li>
-
-              <li class="col-lg-3">
-                <img src="images/payment_credit.png" alt="Pagamento por cartão de crédito">
-                <p>
-                  <a href="#" target="_blank">saiba mais</a>
-                </p>
-              </li>
-            </ul>
-
-            <span class="input-validate">Obrigatório selecionar o meio de pagamento.</span>
-
-            <div class="container-btn">
-              <a href="index.html" class="btn__verMais">cancelar</a>
-              <a href="ingressos_escolherCadeira.html" class="btn btn__orange">voltar</a>
-              <a href="ingressos_confirmarPagamento.html" class="btn btn__blue">avançar</a>
-            </div>
-          </div>
-        </div>
-
-        <div id="smv_area_paymetdetails" smv-type="wmemberfeesarea" style="display: none;">
-          <div class="row">
-            <div class="formas-pagamento col-lg-5">
-              <h1 class="title-pag" smv-langtext="headpaydatapaymet">Escolhe o modo de pagamento</h1>
-              <img smv-langsrc="xpaymethodimgsrc_MBWAY" smv-langtitle="xpayname" alt="MBWay"
-                src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/mbway.png">
-              <form name="smv_fPayDetail_MBWay" id="smv_fPayDetail_MBWay" smv-paymethod="MBWAY"
-                smv-type="fpaymethoddetails" novalidate="novalidate">
-                <div class="container-input">
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <label for="smv_PMDMBW_MobileCountry" smv-langtext="lblmobilecountry">pais</label>
-                    <select id="smv_PMDMBW_MobileCountry" name="smv_PMDMBW_MobileCountry"
-                      onchange="smv_uData_ChangeCountry('smv_udata_', true,true)" smv-inival="" disabled="disabled">
-                      <option value="182" smv-isdefaultcountry="true" smv-countrycode="PT" smv-langtext="xcountry182"
-                        smv-langtext-default="Portugal" selected="selected">Portugal</option>
-                    </select>
-                  </div>
-
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <label for="smv_PMDMBW_Mobile" class="form-label" smv-langtext="lblmobile">Telemóvel</label>
-                    <!-- PMDCC = PAY METHOD DETAILS CREDIT CARD -->
-                    <input type="tel" name="smv_PMDMBW_Mobile" id="smv_PMDMBW_Mobile" maxlength="25">
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div class="container-btn">
-            <a href="javascript:smv_backToPayData()" class="btn btn__orange" smv-langtext="btback">Voltar</a>
-            <a href="javascript:smv_setPayMethodDetails()" class="btn btn__blue" smv-langtext="btnext">Avançar</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="fluxoPagamentos__footer">
+      <div id="smv_area_paydata" smv-type="wticketsarea">
         <div class="container">
           <div class="row">
-            <ul>
-              <li>
-                <p><a href="#">Política de Privacidade</a> / <a href="#">Termos e Condições</a></p>
-              </li>
-              <li>
-                <p><b>Gil Vicente FC</b></p>
-              </li>
-              <li>
-                <p>Rua do Clube, 8525-124 Porto</p>
-              </li>
-            </ul>
+            <h1>Escolha o modo de pagamento</h1>
+
+            <div class="payList">
+              <ul class="col-lg-6">
+                <li class="col-lg-4">
+                  <img src="images/payment_multibanco.png" alt="Pagamento por Multibanco">
+                  <p>
+                    <a href="#" target="_blank">saiba mais</a>
+                  </p>
+                </li>
+
+                <li class="col-lg-4">
+                  <img src="images/mbway.png" alt="Pagamento por MBway">
+                  <p>
+                    <a href="#" target="_blank">saiba mais</a>
+                  </p>
+                </li>
+
+                <li class="col-lg-4">
+                  <img src="images/payment_credit.png" alt="Pagamento por cartão de crédito">
+                  <p>
+                    <a href="#" target="_blank">saiba mais</a>
+                  </p>
+                </li>
+              </ul>
+
+              <!-- <span class="input-validate">Obrigatório selecionar o meio de pagamento.</span> -->
+
+              <div class="container-btn">
+                <a href="index.html" class="btn__verMais">Cancelar</a>
+                <a href="ingressos_dados.html" class="btn btn__orange">voltar</a>
+                <a href="ingressos_confirmarPagamento.html" class="btn btn__blue">avançar</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="smv_area_paymetdetails" smv-type="wmemberfeesarea" style="display: none;">
+            <div class="row">
+              <div class="formas-pagamento col-lg-5">
+                <h1 class="title-pag" smv-langtext="headpaydatapaymet">Escolhe o modo de pagamento</h1>
+                <img smv-langsrc="xpaymethodimgsrc_MBWAY" smv-langtitle="xpayname" alt="MBWay"
+                  src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/mbway.png">
+                <form name="smv_fPayDetail_MBWay" id="smv_fPayDetail_MBWay" smv-paymethod="MBWAY"
+                  smv-type="fpaymethoddetails" novalidate="novalidate">
+                  <div class="container-input">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <label for="smv_PMDMBW_MobileCountry" smv-langtext="lblmobilecountry">pais</label>
+                      <select id="smv_PMDMBW_MobileCountry" name="smv_PMDMBW_MobileCountry"
+                        onchange="smv_uData_ChangeCountry('smv_udata_', true,true)" smv-inival="" disabled="disabled">
+                        <option value="182" smv-isdefaultcountry="true" smv-countrycode="PT" smv-langtext="xcountry182"
+                          smv-langtext-default="Portugal" selected="selected">Portugal</option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <label for="smv_PMDMBW_Mobile" class="form-label" smv-langtext="lblmobile">Telemóvel</label>
+                      <!-- PMDCC = PAY METHOD DETAILS CREDIT CARD -->
+                      <input type="tel" name="smv_PMDMBW_Mobile" id="smv_PMDMBW_Mobile" maxlength="25">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="container-btn">
+              <a href="ingressos_dados.html" class="btn btn__orange" smv-langtext="btback">Voltar</a>
+              <a href="ingressos_confirmarPagamento.html" class="btn btn__blue" smv-langtext="btnext">Avançar</a>
+            </div>
           </div>
         </div>
       </div>
@@ -181,79 +165,6 @@
   </div>
 
   <footer>
-    <section class="teamsBar">
-      <div class="container">
-        <div class="row">
-          <ul class="list_ligas">
-            <li>
-              <a href="https://www.fpf.pt/"><img src="images/liga_federacao_portuguesa.png"
-                  alt="Federação Portuguesa de Futebol"></a>
-            </li>
-            <li>
-              <a href="https://www.ligaportugal.pt/pt/homepage/"><img src="images/liga_portugal.png"
-                  alt="Liga Portugal"></a>
-            </li>
-          </ul>
-
-          <div class="list_clubs">
-            <ul class="list_clubs_01">
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Boavista FC</span><img
-                    src="images/logo-1boavistafc.png" alt="Boavista Futebol Clube"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">FC Porto</span><img src="images/logo-1fcporto.png"
-                    alt="Futebol Clube do Porto"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Gil Vicente FC</span><img
-                    src="images/logo-1gilvicentefc.png" alt="Gil Vicente Futebol Clube"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Os Belenenses</span><img
-                    src="images/logo-1osbelenenses.png" alt="Os Belenenses"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Rio Ave FC</span><img
-                    src="images/logo-1rioavefc.png" alt="Rio Ave Futebol Clube"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Sporting CP</span><img
-                    src="images/logo-1sporting.png" alt="Sporting Clube de Portugal"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Vitória FC</span><img
-                    src="images/logo-1vitoriafc.png" alt="Vitória Futebol Clube"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Vitória SC</span><img
-                    src="images/logo-1vitoriasc.png" alt="Vitória Sport Clube"></a>
-              </li>
-            </ul>
-
-            <ul class="list_clubs_02">
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">CD Nacional</span><img
-                    src="images/logo-2cdnmadeira.png" alt="Clube Desportivo Nacional Madeira"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">GD Chaves</span><img
-                    src="images/logo-2gdchaves.png" alt="Grupo Desportivo de Chaves"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">SC Covilhã</span><img
-                    src="images/logo-2sccovilha.png" alt="Sporting Clube da Covilhã"></a>
-              </li>
-              <li>
-                <a href="#" class="tooltip"><span class="tooltiptext">Varzim SC</span><img
-                    src="images/logo-2varzimsc.png" alt="Varzim Sport Club"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <div class="container">
       <div class="row">
         <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">

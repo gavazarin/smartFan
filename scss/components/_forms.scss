@@ -63,12 +63,14 @@ form {
     }
   }
 
-  .input-validate {
+  .input-validate,
+  .form-error {
     border: 2px solid $secondary-02;
     color: $secondary-02;
   }
 
-  span.input-validate {
+  span.input-validate,
+  span.form-error {
     @include font(1.2rem, 700, 1em);
     border: none;
   }

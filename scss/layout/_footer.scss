@@ -67,6 +67,7 @@ footer {
   }
 
   .payList {
+    min-height: auto;
     @include flex(row, flex-end, center, center);
     flex-wrap: wrap;
 
