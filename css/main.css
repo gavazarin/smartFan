@@ -2950,6 +2950,12 @@ table .btn {
   line-height: 1.4em;
 }
 
+@media (max-width: 767px) {
+  .table-escolher-cadeira .item-total td {
+    text-align: right;
+  }
+}
+
 .table-escolher-cadeira tr {
   background-color: transparent;
 }
@@ -4800,6 +4806,12 @@ header .socialMedias_header img {
   height: 5rem;
 }
 
+@media (max-width: 992px) {
+  .header-ingresso-top .nav-logo a img {
+    height: 3.2rem;
+  }
+}
+
 .header-ingresso-top .nav-title {
   display: flex;
   flex-direction: row;
@@ -4815,10 +4827,20 @@ header .socialMedias_header img {
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  .header-ingresso-top .nav-title h1 {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 767px) {
   .header-ingresso-top .nav-title {
     order: 3;
-    margin-top: .8rem;
+    margin-top: 2rem;
+  }
+  .header-ingresso-top .nav-title h1 {
+    font-size: 1.6rem;
+    margin: 0;
   }
 }
 
@@ -4880,7 +4902,7 @@ header .socialMedias_header img {
 
 @media (max-width: 992px) {
   .header-ingresso-info .socio-info-avatar img {
-    height: 3rem;
+    height: 2.4rem;
   }
 }
 
@@ -4903,6 +4925,7 @@ header .socialMedias_header img {
 
 @media (max-width: 992px) {
   .header-ingresso-info .socio-info {
+    display: none;
     order: 1;
   }
 }
@@ -4939,13 +4962,22 @@ header .socialMedias_header img {
 @media (max-width: 992px) {
   .header-ingresso-info .game-info {
     order: 3;
-    margin-top: .8rem;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .header-ingresso-info .game-info {
-    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.4em;
+  }
+  .header-ingresso-info .game-info-item1 {
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+  }
+  .header-ingresso-info .game-info-item2 {
+    font-size: 1.8rem;
+    margin-bottom: .8rem;
   }
 }
 
@@ -4984,10 +5016,14 @@ header .socialMedias_header img {
 
 @media (max-width: 992px) {
   .header-ingresso-info .column-03 {
+    display: none;
     order: 2;
   }
   .header-ingresso-info .column-03 p {
     width: 100%;
+  }
+  .header-ingresso-info .column-03 img {
+    height: 4rem;
   }
 }
 
@@ -7763,7 +7799,6 @@ tbody > tr:last-child > td {
 
 .fluxoPagamentos {
   width: 100%;
-  padding-top: 1.5rem;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -7882,6 +7917,10 @@ tbody > tr:last-child > td {
   align-content: center;
 }
 
+.payList h2 {
+  margin-bottom: 0;
+}
+
 .payList ul {
   display: flex;
   flex-direction: row;
@@ -7910,7 +7949,7 @@ tbody > tr:last-child > td {
   transition: all .3s ease-in-out;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .payList ul li {
     height: auto;
   }
@@ -7987,6 +8026,7 @@ ul.resumo-setor {
 }
 
 ul.resumo-setor li {
+  height: auto;
   border: none;
   background: none;
   transform: scale(1);
@@ -8485,7 +8525,11 @@ ul.resumo-setor li:hover {
   margin-right: 1.2rem;
 }
 
-.escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor img {
+.escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor .img-estadio {
+  width: 100%;
+}
+
+.escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor .img-estadio img {
   width: 100%;
 }
 
@@ -8749,7 +8793,7 @@ ul.resumo-setor li:hover {
 }
 
 .bilhetes-dados form {
-  margin: 0 auto 1.6rem;
+  margin: 1.6rem auto;
 }
 
 .bilhetes-dados .category-description {

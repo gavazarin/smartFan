@@ -23,12 +23,26 @@
               </a>
             </li>
 
-            <li class="nav-title col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <li class="nav-title col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <h1>Comprar Bilhetes</h1>
             </li>
 
-            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <li class="menu__logado col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <i class="icon-user"><img
+                  src="https://dev.smartfan.tickets/wp-content/themes/smv-smartfan/images/svg/user-avatar.svg"
+                  alt=""></i>
+              <input id="user-dropdown" type="checkbox">
+              <label for="user-dropdown">
+                <p class="user-dropdown">
+                  Olá, <span><b>Teste</b></span>! <i><img
+                      src="https://dev.smartfan.tickets/wp-content/themes/smv-smartfan/images/svg/icon-down_mobile.svg"
+                      alt=""></i></p>
+              </label>
 
+              <ul class="user-dropdown__list">
+                <li><a href="https://dev.smartfan.tickets/perfil/">Perfil</a></li>
+                <li><a href="https://dev.smartfan.tickets?logout=true">Sair</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -58,9 +72,15 @@
             <li class="game-info-item3">Quinta-feira, 26 de agosto - 19h00 - Estádio Cidade de Barcelos</li>
           </ul>
 
-          <div class="column-03 col-lg-4 col-md-6 col-sm-6 col-xs-5">
-            <p><strong>Sócio</strong></p>
-          </div>
+          <ul class="column-03 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <li>
+              <p>Boavista Futebol Clube</p>
+            </li>
+            <li>
+              <img src="https://lisboa.smartmove.pt:8083/SmartFan.Tickets/Portal/Resources/images/logo-1boavistafc.png"
+                alt="Boavista Futebol Clube">
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -99,7 +119,9 @@
                   <div class="escolher-ingresso-quantidade">
                     <ul class="resumo-setor">
                       <li class="col-lg-6 col-6">
-                        <img src="images/01maracana_setores_disponiveis.jpg" alt="">
+                        <div class="img-estadio">
+                          <img src="images/01maracana_setores_disponiveis.jpg" alt="">
+                        </div>
                       </li>
                       <li class="col-lg-12 col-6">
                         <h2>Setor - A9</h2>

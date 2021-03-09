@@ -255,6 +255,10 @@ table {
 
     td {
       @include font(1.6rem, 900, 1.4em);
+
+      @include sm {
+        text-align: right;
+      }
     }
   }
 

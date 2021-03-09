@@ -231,12 +231,14 @@
             margin-bottom: 0;
             margin-right: 1.2rem;
           }
-
-          ;
         }
 
-        img {
+        .img-estadio {
           width: 100%;
+
+          img {
+            width: 100%;
+          }
         }
 
         @include md {
@@ -475,7 +477,7 @@
   // margin-bottom: 2.4rem;
 
   form {
-    margin: 0 auto 1.6rem;
+    margin: 1.6rem auto;
   }
 
   .category-description {

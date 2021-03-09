@@ -23,6 +23,12 @@
                     max-width: 100%;
                     height: 5rem;
                 }
+
+                @include md {
+                    img {
+                        height: 3.2rem;
+                    }
+                }
             }
         }
 
@@ -36,9 +42,20 @@
                 text-align: center;
             }
 
+            @include md {
+                h1 {
+                    font-size: 1.8rem;
+                }
+            }
+
             @include sm {
                 order: 3;
-                margin-top: .8rem;
+                margin-top: 2rem;
+
+                h1 {
+                    font-size: 1.6rem;
+                    margin: 0;
+                }
             }
         }
 
@@ -92,7 +109,7 @@
 
             @include md {
                 img {
-                    height: 3rem;
+                    height: 2.4rem;
                 }
             }
         }
@@ -111,6 +128,7 @@
         }
 
         @include md {
+            display: none;
             order: 1;
         }
     }
@@ -139,11 +157,21 @@
 
         @include md {
             order: 3;
-            margin-top: .8rem;
+            // margin-top: .8rem;
         }
 
-        @include xs {
-            margin-top: 2.4rem;
+        @include sm {
+            @include font(1.4rem, 300, 1.4em);
+
+            &-item1 {
+                font-size: 1.4rem;
+                margin-bottom: .8rem;
+            }
+
+            &-item2 {
+                font-size: 1.8rem;
+                margin-bottom: .8rem;
+            }
         }
     }
 
@@ -172,10 +200,15 @@
         }
 
         @include md {
+            display: none;
             order: 2;
 
             p {
                 width: 100%;
+            }
+
+            img {
+                height: 4rem;
             }
         }
 
