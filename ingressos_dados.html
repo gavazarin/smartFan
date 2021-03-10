@@ -91,156 +91,160 @@
       <div id="smv_area_clientdata" smv-type="wticketsarea" class="bilhetes-dados col-lg-12">
         <div class="container">
           <div class="row">
-            <form name="smv_fClientData" id="smv_fClientData" novalidate="novalidate" class="col-lg-6 col-md-12">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div>
-                  <div class="category-description" smv-langtext="titlecliedata">Dados de contacto</div>
+            <div>
+              <form name="smv_fClientData" id="smv_fClientData" novalidate="novalidate" class="col-lg-6 col-md-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div>
+                    <div class="category-description" smv-langtext="titlecliedata">Dados de contacto</div>
 
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <label smv-langtext="lblemail">E-mail</label>
-                        <div>tahra.t.e.sting@gmail.com</div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                          <label smv-langtext="lblemail">E-mail</label>
+                          <div>tahra.t.e.sting@gmail.com</div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                          <label smv-langtext="lblname">Nome</label>
+                          <div>Belmiro Fernando Costa Marques</div>
+                        </div>
                       </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <label smv-langtext="lblname">Nome</label>
-                        <div>Belmiro Fernando Costa Marques</div>
+                    <!-- /if not promo voucher -->
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                          <label smv-langtext="lblmobile">Telemóvel</label>
+                          <input type="tel" id="smv_ClieDataPhone" name="smv_ClieDataPhone" value=""
+                            onblur="javascript:smv_checkFormClientData()" class="form-control form-error" maxlength="9">
+                          <span for="smv_ClieDataPhone" generated="true" class="form-error">Obrigatório</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <!-- /if not promo voucher -->
+                    <div class="row">
+                      <div class="cp-wrapper col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group">
+                          <label for="smv_ClieDataCP" smv-langtext="lblpostalcode">Código Postal</label>
+                          <input name="smv_ClieDataCP" id="smv_ClieDataCP" value=""
+                            onblur="javascript:smv_CountryValidateCP('smv_ClieData'); smv_checkFormClientData()"
+                            onkeyup="javascript:smv_changeCP('smv_ClieData')" type="text" autocomplete="off"
+                            autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="8"
+                            class="form-control">
+                          <input name="smv_ClieDataCPValid" id="smv_ClieDataCPValid" type="hidden" value="0">
+                          <select id="smv_ClieDataCountry" name="smv_ClieDataCountry" style="display:none">
+                            <option value="pt" smv-countrycode="PT" selected="selected">pt</option>
+                          </select>
 
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <label smv-langtext="lblmobile">Telemóvel</label>
-                        <input type="tel" id="smv_ClieDataPhone" name="smv_ClieDataPhone" value=""
-                          onblur="javascript:smv_checkFormClientData()" class="form-control form-error" maxlength="9">
-                        <span for="smv_ClieDataPhone" generated="true" class="form-error">Obrigatório</span>
+                          <p id="smv_ClieDataCPLocDisplay">Castanheira do Ribatejo</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="row">
-                    <div class="cp-wrapper col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <div class="form-group">
-                        <label for="smv_ClieDataCP" smv-langtext="lblpostalcode">Código Postal</label>
-                        <input name="smv_ClieDataCP" id="smv_ClieDataCP" value=""
-                          onblur="javascript:smv_CountryValidateCP('smv_ClieData'); smv_checkFormClientData()"
-                          onkeyup="javascript:smv_changeCP('smv_ClieData')" type="text" autocomplete="off"
-                          autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="8" class="form-control">
-                        <input name="smv_ClieDataCPValid" id="smv_ClieDataCPValid" type="hidden" value="0">
-                        <select id="smv_ClieDataCountry" name="smv_ClieDataCountry" style="display:none">
-                          <option value="pt" smv-countrycode="PT" selected="selected">pt</option>
-                        </select>
-
-                        <p id="smv_ClieDataCPLocDisplay">Castanheira do Ribatejo</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <h5>
-                        Ao comprar este bilhete, reconheço, por este meio que:
-                      </h5>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <div class="form-group dataallow">
-                        <input type="checkbox" id="smv_ClientDataCovid1" name="smv_ClientDataCovid1" value="1"
-                          smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
-                        <label for="smv_ClientDataCovid1" class="gray-25 size-small" smv-langtext="piscocovid1">Estou
-                          consciente e informado/a sobre os riscos inerentes à situação da COVID-19 em Portugal</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <h5>
-                        Reconheço, por este meio, que só irei deslocar-me ao estádio para assistir ao Jogo se:
-                      </h5>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <div class="form-group dataallow">
-                        <input type="checkbox" id="smv_ClientDataCovid2" name="smv_ClientDataCovid2" value="1"
-                          smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
-                        <label for="smv_ClientDataCovid2" class="gray-25 size-small" smv-langtext="piscocovid2">até ao
-                          dia
-                          do Jogo não apresentar qualquer sintoma normalmente associado à infeção por SARS-CoV-2 (vírus
-                          da
-                          COVID-19) como tosse, febre, falta de ar, dor de cabeça, dor de garganta, diarreia, dores
-                          musculares, perda do olfato ou do paladar;</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <div class="form-group dataallow">
-                        <input type="checkbox" id="smv_ClientDataCovid3" name="smv_ClientDataCovid3" value="1"
-                          smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
-                        <label for="smv_ClientDataCovid3" class="gray-25 size-small" smv-langtext="piscocovid3">até ao
-                          dia
-                          do Jogo não tiver conhecimento que estou infetado com o SARS-CoV-2 (vírus da
-                          COVID-19);</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <div class="form-group dataallow">
-                        <input type="checkbox" id="smv_ClientDataCovid4" name="smv_ClientDataCovid4" value="1"
-                          smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
-                        <label for="smv_ClientDataCovid4" class="gray-25 size-small" smv-langtext="piscocovid4">não
-                          tiver
-                          conhecimento que nos 14 dias anteriores ao Jogo tive contacto com pessoas infetadas com o
-                          SARS-CoV-2 (vírus da COVID-19) ou sob suspeita de estarem infetadas;</label>
-                        <p id="smv_cdatacovidpiscoerr"></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <div class="form-group dataallow">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <h5>
-                          <a href="javascript:smv_EXIT_RGPD()" smv-langtext="rgpdclientdatatitle"
-                            class="btn__verMais">Política de Proteção de Dados</a>
+                          Ao comprar este bilhete, reconheço, por este meio que:
                         </h5>
+                      </div>
+                    </div>
 
-                        <input type="checkbox" id="smv_ClientDataIsRGPD" name="smv_ClientDataIsRGPD" value="1"
-                          onclick="javascript:smv_checkFormClientData()">
-                        <label for="smv_ClientDataIsRGPD" class="gray-25 size-small" smv-langtext="rgpdagreetext">Li e
-                          aceito</label>
-                        <p id="smv_userdatargbderr"></p>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group dataallow">
+                          <input type="checkbox" id="smv_ClientDataCovid1" name="smv_ClientDataCovid1" value="1"
+                            smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
+                          <label for="smv_ClientDataCovid1" class="gray-25 size-small" smv-langtext="piscocovid1">Estou
+                            consciente e informado/a sobre os riscos inerentes à situação da COVID-19 em
+                            Portugal</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5>
+                          Reconheço, por este meio, que só irei deslocar-me ao estádio para assistir ao Jogo se:
+                        </h5>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group dataallow">
+                          <input type="checkbox" id="smv_ClientDataCovid2" name="smv_ClientDataCovid2" value="1"
+                            smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
+                          <label for="smv_ClientDataCovid2" class="gray-25 size-small" smv-langtext="piscocovid2">até ao
+                            dia
+                            do Jogo não apresentar qualquer sintoma normalmente associado à infeção por SARS-CoV-2
+                            (vírus
+                            da
+                            COVID-19) como tosse, febre, falta de ar, dor de cabeça, dor de garganta, diarreia, dores
+                            musculares, perda do olfato ou do paladar;</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group dataallow">
+                          <input type="checkbox" id="smv_ClientDataCovid3" name="smv_ClientDataCovid3" value="1"
+                            smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
+                          <label for="smv_ClientDataCovid3" class="gray-25 size-small" smv-langtext="piscocovid3">até ao
+                            dia
+                            do Jogo não tiver conhecimento que estou infetado com o SARS-CoV-2 (vírus da
+                            COVID-19);</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group dataallow">
+                          <input type="checkbox" id="smv_ClientDataCovid4" name="smv_ClientDataCovid4" value="1"
+                            smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
+                          <label for="smv_ClientDataCovid4" class="gray-25 size-small" smv-langtext="piscocovid4">não
+                            tiver
+                            conhecimento que nos 14 dias anteriores ao Jogo tive contacto com pessoas infetadas com o
+                            SARS-CoV-2 (vírus da COVID-19) ou sob suspeita de estarem infetadas;</label>
+                          <p id="smv_cdatacovidpiscoerr"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group dataallow">
+                          <h5>
+                            <a href="javascript:smv_EXIT_RGPD()" smv-langtext="rgpdclientdatatitle"
+                              class="btn__verMais">Política de Proteção de Dados</a>
+                          </h5>
+
+                          <input type="checkbox" id="smv_ClientDataIsRGPD" name="smv_ClientDataIsRGPD" value="1"
+                            onclick="javascript:smv_checkFormClientData()">
+                          <label for="smv_ClientDataIsRGPD" class="gray-25 size-small" smv-langtext="rgpdagreetext">Li e
+                            aceito</label>
+                          <p id="smv_userdatargbderr"></p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+              </form>
+              <div class="clearfix"></div>
+
+              <div class="container-btn">
+                <a href="javascript:smv_cancelOrder()" class="btn__verMais" smv-langtext="btcancel">Cancelar</a>
+                <a href="ingressos_escolherCadeira.html" class="btn btn__orange" smv-langtext="btback">Voltar</a>
+                <a href="ingressos_escolherPagamento.html" class="btn btn__blue" smv-langtext="btnext">Avançar</a>
               </div>
 
-            </form>
-
-            <div class="clearfix"></div>
-
-            <div class="container-btn">
-              <a href="javascript:smv_cancelOrder()" class="btn__verMais" smv-langtext="btcancel">Cancelar</a>
-              <a href="ingressos_escolherCadeira.html" class="btn btn__orange" smv-langtext="btback">Voltar</a>
-              <a href="ingressos_escolherPagamento.html" class="btn btn__blue" smv-langtext="btnext">Avançar</a>
             </div>
-
           </div>
         </div>
       </div>

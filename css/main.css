@@ -1973,6 +1973,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 section {
@@ -2895,6 +2896,12 @@ table .btn {
   align-content: flex-start;
 }
 
+@media (max-width: 767px) {
+  .table-detalhes-compra {
+    margin-top: 0;
+  }
+}
+
 .table-detalhes-compra thead {
   border-bottom: none;
 }
@@ -2925,6 +2932,12 @@ table .btn {
 
 .table-detalhes-compra td {
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .table-detalhes-compra td {
+    text-align: center;
+  }
 }
 
 .table-escolher-cadeira .item-active {
@@ -8023,6 +8036,7 @@ ul.resumo-setor {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  margin: 0;
 }
 
 ul.resumo-setor li {
@@ -8141,7 +8155,7 @@ ul.resumo-setor li:hover {
 }
 
 .success i {
-  height: 10rem;
+  height: 6rem;
   margin-bottom: 1.5rem;
   display: inline-block;
 }
@@ -8264,6 +8278,10 @@ ul.resumo-setor li:hover {
   width: 100%;
   position: relative;
   padding: 1.6rem 0 0;
+}
+
+.bilhetes-content .row > div {
+  width: 100%;
 }
 
 .bilhetes-content .form-control {

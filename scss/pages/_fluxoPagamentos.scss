@@ -181,6 +181,7 @@
 ul.resumo-setor {
   width: 100%;
   @include flex(column, flex-start, center, center);
+  margin: 0;
 
   li {
     height: auto;
@@ -276,7 +277,7 @@ ul.resumo-setor {
   }
 
   i {
-    height: 10rem;
+    height: 6rem;
     margin-bottom: 1.5rem;
     display: inline-block;
 

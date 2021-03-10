@@ -208,6 +208,10 @@ table {
   margin: 3rem 0;
   @include flex(row, center, flex-start, flex-start);
 
+  @include sm {
+    margin-top: 0;
+  }
+
   thead {
     border-bottom: none;
   }
@@ -233,6 +237,10 @@ table {
 
   td {
     text-align: left;
+
+    @include sm {
+      text-align: center;
+    }
   }
 }
 
