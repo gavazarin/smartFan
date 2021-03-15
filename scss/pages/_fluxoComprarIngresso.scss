@@ -124,6 +124,10 @@
       margin-bottom: 0;
     }
 
+    .collapse {
+      padding: .8rem 0;
+    }
+
     h2 {
       margin-bottom: 0;
       padding: .8rem 0rem;
@@ -131,8 +135,12 @@
       a {
         font-size: 1.8rem;
         color: $secondary-01;
-        @include flex(row, center, center, center);
+        @include flex(row, space-between, center, center);
         transition: all .3s ease-out;
+
+        .logo-cartao-adepto {
+          max-height: 2.5rem;
+        }
 
         i {
           width: 2rem;
@@ -155,7 +163,6 @@
 
         &:hover {
           text-decoration: none;
-          transform: scale(.95);
           transition: all .3s ease-out;
 
           i {
@@ -188,6 +195,77 @@
         }
       }
 
+    }
+
+    .cartao-adepto {
+      .input-cartao-adepto {
+        input {
+          width: 70%;
+          padding: .75rem;
+        }
+
+        button {
+          width: 28%;
+        }
+
+        span.input-validate {
+          margin-top: .8rem;
+          padding-left: .75rem;
+        }
+
+        @include xs {
+          input {
+            width: 54%;
+          }
+
+          button {
+            width: 45%;
+          }
+        }
+      }
+
+      .validar-adepto {
+        width: 100%;
+        @include flex(row, flex-start, center, center);
+        padding: 1.6rem .8rem;
+        padding-right: 3.2rem;
+        border: 2px solid $gray-01;
+        border-radius: 4px;
+        position: relative;
+
+        i {
+          width: 2rem;
+          height: 2rem;
+          display: inline-block;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        p {
+          @include font(1.6rem, 400, 1.4em);
+          font-style: italic;
+          margin-bottom: 0;
+          margin-left: .8rem;
+        }
+
+        .limpar-dados {
+          @include absolute(auto, 1.6rem, auto, auto);
+
+          i {
+            width: 1.6rem;
+            height: 1.6rem;
+          }
+        }
+
+        @include md {
+          i {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+      }
     }
 
     .escolher-ingresso-quantidade {
