@@ -173,7 +173,7 @@
 
       &:before {
         background-color: $white-01;
-        border: 1px solid $primary-02;
+        border: 1px solid $primary-01;
         @include absolute(0, -5px, auto, auto);
       }
     }

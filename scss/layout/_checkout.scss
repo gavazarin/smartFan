@@ -3,10 +3,6 @@
     padding: 1.6rem 0;
     background-color: $white-01;
 
-    .row {
-        @include flex(row, center, center, center);
-    }
-
     .logos-list {
         @include flex(row, flex-start, center, center);
 
@@ -18,16 +14,7 @@
             }
 
             img {
-                height: 3.2rem;
-            }
-
-            &:first-child {
-                border-right: 2px solid $gray-01;
-                padding-left: 0;
-
-                img {
-                    height: 4rem
-                }
+                height: 4rem;
             }
         }
 
@@ -45,14 +32,15 @@
 
         &-item {
             padding-right: 10rem;
-            opacity: .5;
+            margin: 0;
+            opacity: .7;
             position: relative;
 
             &:before {
                 content: '';
                 width: 6rem;
                 height: 3px;
-                background-color: $black-01;
+                background-color: $gray-01;
                 @include absolute(50%, 2rem, auto, auto);
             }
 
@@ -75,8 +63,8 @@
             i {
                 width: 2rem;
                 height: 2rem;
-                background-color: $black-01;
-                border: 2px solid $black-01;
+                background-color: $gray-01;
+                border: 2px solid $gray-01;
                 border-radius: 50%;
                 font-style: normal;
                 @include flex(row, center, center, center);
@@ -103,8 +91,10 @@
             opacity: 1;
 
             i {
-                border-color: $primary-01;
-                background-color: $primary-01;
+                width: 3rem;
+                height: 3rem;
+                border-color: transparent;
+                background-color: transparent;
                 color: $white-01;
             }
         }
@@ -216,6 +206,12 @@
 
 .checkout-content {
     background-color: $white-01;
+
+    .header-checkout {
+        .row {
+            @include flex(row, center, center, center);
+        }
+    }
 
     .row {
         @include flex(row, center, flex-start, flex-start);
@@ -522,6 +518,56 @@
             width: 100%;
         }
     }
+
+
+    .container-btn-mobile {
+        display: none;
+
+        @include xs {
+            @include flex(row, space-between, center, center);
+            position: sticky;
+            bottom: 0;
+            margin: 0;
+        }
+
+        .btn {
+            @include flex(row, center, center, center);
+            min-width: 48%;
+            height: 8rem;
+            margin: 0 1%;
+            padding: 4px;
+        }
+
+        i {
+            width: 3rem;
+            height: auto;
+            margin-right: .8rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .container-btn {
+        background-color: $white-01;
+
+        .btn {
+            padding: 1.6rem 3.2rem;
+        }
+
+        @include xs {
+            display: none;
+            position: sticky;
+            bottom: 0;
+            margin: 0;
+
+            .btn {
+                width: 80%;
+                margin: 8px 0;
+            }
+        }
+    }
 }
 
 .checkout-carrinho {
@@ -799,58 +845,6 @@
     span.input-validate {
         right: 0;
         left: auto;
-    }
-}
-
-.container-btn {
-    background-color: #eeeeee;
-    padding: 1.5rem;
-    margin-bottom: 3rem;
-    @include flex(row, space-between, center, center);
-
-    .btn {
-        padding: 1.6rem 3.2rem;
-    }
-
-    @include xs {
-        display: none;
-        position: sticky;
-        bottom: 0;
-        margin: 0;
-
-        .btn {
-            width: 80%;
-            margin: 8px 0;
-        }
-    }
-}
-
-.container-btn-mobile {
-    display: none;
-
-    @include xs {
-        @include flex(row, space-between, center, center);
-        position: sticky;
-        bottom: 0;
-        margin: 0;
-    }
-
-    .btn {
-        @include flex(row, center, center, center);
-        min-width: 48%;
-        height: 8rem;
-        margin: 0 1%;
-        padding: 4px;
-    }
-
-    i {
-        width: 3rem;
-        height: auto;
-        margin-right: .8rem;
-
-        img {
-            width: 100%;
-        }
     }
 }
 
