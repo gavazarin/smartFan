@@ -20,6 +20,12 @@
   left: $left;
 }
 
+@mixin xxs {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
 @mixin xs {
   @media (max-width: 575px) {
     @content;

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartFan - Pagar Quotas</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="page-container checkout-content">
+    <header class="header-checkout">
+      <div class="container">
+        <div class="row">
+          <ul class="logos-list col-lg-3 col-md-5 col-sm-12 col-xs-12">
+            <li>
+              <a href="index.html"><img src="images/logo-liga.png" alt=""></a>
+            </li>
+            <li>
+              <a href="index.html"><img src="images/cartao-adepto.png" alt=""></a>
+            </li>
+          </ul>
+
+
+          <nav class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item active">
+                <i><img src="images/svg/check-icon.svg" alt=""></i>
+                <span class="breadcrumb-item-text">Dados para pagamento</span>
+              </li>
+              <li class="breadcrumb-item">
+                <i><span>2</span></i>
+                <span class="breadcrumb-item-text">Confirmação</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+      <div class="container">
+        <div class="row">
+
+          <div class="dados-pagamento col-lg-7">
+
+            <div class="dados-pagamento-box dados-pagamento-metodo">
+              <div class="dados-pagamento-title">
+                <h2>Método de Pagamento</h2>
+                <i><img src="images/svg/locked.svg" alt=""></i>
+              </div>
+
+              <form id="smv_frmPayDataPayMet" name="smv_frmPayDataPayMet" novalidate="novalidate">
+                <div class="form-check">
+                  <input class="inp-cbx" name="smv_PayMethodREF" id="smv_paymethodMULTIBANCO" value="MULTIBANCO"
+                    type="radio" style="display: none;">
+                  <label class="cbx" for="smv_paymethodMULTIBANCO">
+                    <span class="icone-check">
+                      <svg width="12px" height="10px" viewBox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                      </svg>
+                    </span>
+
+                    <div class="forma-pagamento">
+                      <ul class="forma-pagamento-text">
+                        <li smv-langtext="xpayname_MULTIBANCO">Multibanco</li>
+                        <li class="descricao">
+                          <span>
+                            <span smv-langtext="xpaydesc_MULTIBANCO">After making an order you will be presented with
+                              the data to proceed with payment.</span>
+                            <a href="#" class="btn-link">saber mais</a>
+                          </span>
+                        </li>
+                      </ul>
+
+                      <ul class="logos-pagamento">
+                        <li>
+                          <img smv-langsrc="xpaymethodimgsrc_MULTIBANCO" smv-langtitle="xpayname_MULTIBANCO"
+                            alt="Multibanco" title="Multibanco" src="images/svg/multibanco.svg">
+                        </li>
+                      </ul>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="inp-cbx" name="smv_PayMethodREF" id="smv_paymethodMBWAY" value="MBWAY" type="radio"
+                    style="display: none;">
+
+                  <label class="cbx" for="smv_paymethodMBWAY">
+
+                    <span class="icone-check">
+                      <svg width="12px" height="10px" viewBox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                      </svg>
+                    </span>
+
+                    <div class="forma-pagamento">
+                      <ul class="forma-pagamento-text">
+                        <li smv-langtext="xpayname_MBWAY">MBWay</li>
+                        <li class="descricao">
+                          <span>
+                            <span smv-langtext="xpaydesc_MBWAY">After making the order, please check your MBWay
+                              app.</span>
+                            <a href="#" class="btn-link">saber mais</a>
+                          </span>
+                        </li>
+                        <li>
+                          <div class="container-input col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label for="smv_PMDMBW_Mobile" class="form-label"
+                              smv-langtext="lblmobile">telemovel</label>+351
+                            <input type="tel" name="smv_PMDMBW_Mobile" id="smv_PMDMBW_Mobile" maxlength="9">
+                            <!-- <span for="smv_PMDMBW_Mobile" generated="true" class="input-validate">Invalid</span> -->
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="logos-pagamento">
+                        <li>
+                          <img smv-langsrc="xpaymethodimgsrc_MBWAY" smv-langtitle="xpayname_MBWAY" alt="MBWay"
+                            title="MBWay" src="images/svg/mbway.svg">
+                        </li>
+                      </ul>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="inp-cbx" name="smv_PayMethodREF" id="smv_paymethodCREDIT_CARD" value="CREDIT_CARD"
+                    type="radio" style="display: none;">
+
+                  <label class="cbx" for="smv_paymethodCREDIT_CARD">
+                    <span class="icone-check">
+                      <svg width="12px" height="10px" viewBox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                      </svg>
+                    </span>
+
+                    <div class="forma-pagamento">
+                      <ul class="forma-pagamento-text">
+                        <li smv-langtext="xpayname_CREDIT_CARD">Credit Card</li>
+                        <li class="descricao">
+                          <span>
+                            <span smv-langtext="xpaydesc_CREDIT_CARD">After making an order you will be redirected to
+                              proceed with payment.</span>
+                            <a href="#" class="btn-link">saber mais</a>
+                          </span>
+                        </li>
+                      </ul>
+
+                      <ul class="logos-pagamento">
+                        <li>
+                          <img smv-langsrc="xpaymethodimgsrc_CREDIT_CARD" smv-langtitle="xpayname_CREDIT_CARD"
+                            alt="Credit Card" title="Credit Card" src="images/svg/credit.svg">
+                        </li>
+                      </ul>
+                    </div>
+                  </label>
+                </div>
+
+                <span class="input-validate" style="display: none;">Obrigatório!</span>
+              </form>
+            </div>
+
+            <div class="dados-pagamento-box">
+              <div class="dados-pagamento-title">
+                <h2>Dados de Contacto</h2>
+              </div>
+
+              <form id="smv_frmPayDataBuyer">
+                <div class="container-input col-lg-6 col-md-6 col-12">
+                  <label for="inputName">Nome</label>
+                  <input type="text" class="input-validate" id="inputName">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <div class="container-input col-lg-6 col-md-6 col-12">
+                  <label for="cartaoAdepto">N° do Cartão de Adepto</label>
+                  <input type="text" class="input-validate" id="cartaoAdepto">
+                  <span class="input-validate">Obrigatório!</span>
+                </div>
+
+                <div class="container-input col-lg-12 col-md-12 col-12">
+                  <label for="selectEmail">E-mail</label>
+                  <input type="email" id="selectEmail">
+                </div>
+              </form>
+
+              <p class="dados-aviso">*Os bilhetes das suas experiências serão enviados para o e-mail indicado</p>
+            </div>
+
+            <div class="dados-pagamento-box dados-faturacao">
+              <div class="dados-pagamento-title">
+                <h2>Dados de Faturação</h2>
+                <a class="btn-dados-faturacao" data-toggle="collapse" href="#dadosFaturacao" aria-expanded="false"
+                  aria-controls="dadosFaturacao"></a>
+              </div>
+
+              <div class="collapse" id="dadosFaturacao">
+                <form>
+                  <div class="container-input col-md-3">
+                    <label for="inputContribuinte">Nº de Contribuinte</label>
+                    <input type="text" id="inputContribuinte">
+                  </div>
+                  <div class="container-input col-md-9">
+                    <label for="inputNomeEmpresa">Nome/Empresa</label>
+                    <input type="text" id="inputNomeEmpresa">
+                  </div>
+                  <div class="container-input col-md-6">
+                    <label for="inputMorada">Morada de faturação</label>
+                    <input type="text" id="inputMorada">
+                  </div>
+                  <div class="container-input col-md-3">
+                    <label for="inputCodigoPostal">Código Postal</label>
+                    <input type="text" id="inputCodigoPostal" disabled>
+                  </div>
+                  <div class="container-input col-md-3">
+                    <label for="inputLocalidade">Localidade</label>
+                    <input type="text" id="inputLocalidade" disabled>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <form class="bilhetes-dados">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <h5>
+                    Ao comprar este bilhete, reconheço, por este meio que:
+                  </h5>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="form-group dataallow">
+                    <input type="checkbox" id="smv_ClientDataCovid1" name="smv_ClientDataCovid1" value="1"
+                      smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
+                    <label for="smv_ClientDataCovid1" class="gray-25 size-small" smv-langtext="piscocovid1">Estou
+                      consciente e informado/a sobre os riscos inerentes à situação da COVID-19 em
+                      Portugal</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <h5>
+                    Reconheço, por este meio, que só irei deslocar-me ao estádio para assistir ao Jogo se:
+                  </h5>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="form-group dataallow">
+                    <input type="checkbox" id="smv_ClientDataCovid2" name="smv_ClientDataCovid2" value="1"
+                      smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
+                    <label for="smv_ClientDataCovid2" class="gray-25 size-small" smv-langtext="piscocovid2">até ao
+                      dia
+                      do Jogo não apresentar qualquer sintoma normalmente associado à infeção por SARS-CoV-2
+                      (vírus
+                      da
+                      COVID-19) como tosse, febre, falta de ar, dor de cabeça, dor de garganta, diarreia, dores
+                      musculares, perda do olfato ou do paladar;</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="form-group dataallow">
+                    <input type="checkbox" id="smv_ClientDataCovid3" name="smv_ClientDataCovid3" value="1"
+                      smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
+                    <label for="smv_ClientDataCovid3" class="gray-25 size-small" smv-langtext="piscocovid3">até ao
+                      dia
+                      do Jogo não tiver conhecimento que estou infetado com o SARS-CoV-2 (vírus da
+                      COVID-19);</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="form-group dataallow">
+                    <input type="checkbox" id="smv_ClientDataCovid4" name="smv_ClientDataCovid4" value="1"
+                      smv-type="piscocovid" onclick="javascript:smv_checkFormClientData()">
+                    <label for="smv_ClientDataCovid4" class="gray-25 size-small" smv-langtext="piscocovid4">não
+                      tiver
+                      conhecimento que nos 14 dias anteriores ao Jogo tive contacto com pessoas infetadas com o
+                      SARS-CoV-2 (vírus da COVID-19) ou sob suspeita de estarem infetadas;</label>
+                    <p id="smv_cdatacovidpiscoerr"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="form-group dataallow">
+                    <h5>
+                      <a href="javascript:smv_EXIT_RGPD()" smv-langtext="rgpdclientdatatitle"
+                        class="btn__verMais">Política de Proteção de Dados</a>
+                    </h5>
+
+                    <input type="checkbox" id="smv_ClientDataIsRGPD" name="smv_ClientDataIsRGPD" value="1"
+                      onclick="javascript:smv_checkFormClientData()">
+                    <label for="smv_ClientDataIsRGPD" class="gray-25 size-small" smv-langtext="rgpdagreetext">Li e
+                      aceito</label>
+                    <p id="smv_userdatargbderr"></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <ul class="politicas-dados">
+                <li>
+                  <input class="inp-cbx-rgpd" name="politica-privacidade" id="politica-privacidade" type="checkbox"
+                    style="display: none;" />
+                  <label class="cbx-rgpd" for="politica-privacidade">
+                    <p>
+                      Li e compreendo as <a href="#" target="_blank" class="btn-link">Condições de Venda e a Política de
+                        Privacidade</a>
+                    </p>
+                    <span class="icone-check">
+                      <svg width="10px" height="10px" viewbox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                  <span for="smv_PayDataPisco_Privacy" generated="true" class="input-validate" style="display:none;">You
+                    must accept the
+                    Privacy Policy.</span>
+                </li>
+
+                <li>
+                  <input class="inp-cbx-rgpd" name="partilhar-dados" id="partilhar-dados" type="checkbox"
+                    style="display: none;" />
+                  <label class="cbx-rgpd" for="partilhar-dados">
+                    <p>
+                      Quero subscrever a Newsletter
+                    </p>
+                    <span class="icone-check">
+                      <svg width="10px" height="10px" viewbox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+              </ul> -->
+            </form>
+
+            <div class="container-btn">
+              <a href="checkout-carrinho.html" class="btn btn-secondary">
+                <span>Cancelar compra</span>
+              </a>
+              <a href="checkout-confirm.html" class="btn btn-secondary">
+                <span>Pagar</span>
+              </a>
+            </div>
+
+            <div class="container-btn container-btn-mobile">
+              <a href="index.html " class="btn">
+                <span>Cancelar compra</span>
+              </a>
+              <a href="checkout-dados-pagamento.html " class="btn btn-secondary">
+                <i><img src="images/svg/check-icon.svg" alt=""></i>
+                <span>Pagar</span>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="resumo-compra col-lg-5">
+            <h2>Resumo da Compra</h2>
+
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col " smv-langtext="lblqtabrv">Produto</th>
+                  <th scope="col " smv-langtext="lblticket">Detalhes</th>
+                  <th scope="col " smv-langtext="lblvalue">Valor</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><span><strong>VITÓRIA SC x SC BRAGA</strong></span> <span>Adepto</span></td>
+
+                  <td><span>Setor Sul</span> <span>Lugar 5</span></td>
+
+                  <td><span>30,00€</span></td>
+                </tr>
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <td colspan="2"><span smv-langtext="total">Total</span></td>
+                  <td><span>200,00</span>€</td>
+                </tr>
+              </tfoot>
+
+            </table>
+
+            <a href="#" class="btn-link">Alterar</a>
+          </div>
+
+          <div class="accordion resumo-compra-mobile col-md-12" id="accordionExample">
+            <div class="btn btn-block btn-resumo-compra">
+              <span>Resumo da Compra</span>
+              <button type="button" class="btn-dados-faturacao" data-toggle="collapse" data-target="#resumoCompra"
+                role="button" aria-expanded="false" aria-controls="resumoCompra"></button>
+            </div>
+
+            <div id="resumoCompra" class="collapse show dados-pagamento-box" aria-labelledby="headingOne"
+              data-parent="#accordionExample">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col " smv-langtext="lblqtabrv">Produto</th>
+                    <th scope="col " smv-langtext="lblticket">Detalhes</th>
+                    <th scope="col " smv-langtext="lblvalue">Valor</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td><span><strong>VITÓRIA SC x SC BRAGA</strong></span> <span>Adepto</span></td>
+
+                    <td><span>Setor Sul</span> <span>Lugar 5</span></td>
+
+                    <td><span>30,00€</span></td>
+                  </tr>
+                </tbody>
+
+                <tfoot>
+                  <tr>
+                    <td colspan="2"><span smv-langtext="total">Total</span></td>
+                    <td><span>200,00</span>€</td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+
+              </table>
+
+              <a href="#" class="btn-link">Alterar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li><a href="#">Termos e Compromissos</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+
+        <ul class="footerList footerList__center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li>
+            <span>Apoio ao cliente</span>
+            <a href="#">helpdesk@smartticketing.pt</a>
+          </li>
+        </ul>
+
+        <ul class="payList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <li class="logo-meowallet"><img src="images/svg/meowallet-blue.svg" alt="MEO Wallet"></li>
+          <li class="logo-visa"><img src="images/payment-visa.png" alt="Visa"></li>
+          <li class="logo-mastercard"><img src="images/payment-mastercard.png" alt="Mastercard"></li>
+          <li class="logo-multibanco"><img src="images/svg/multibanco-white.svg" alt="Multibanco"></li>
+          <li class="logo-visa"><img src="images/svg/mbway.svg" alt="Multibanco"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <ul class="footerList col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <span>SmartFan.Tickets</span>
+              <a href="#">contato@contato.pt</a>
+            </li>
+          </ul>
+
+          <div class="logoSmartmove col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <a href="http://www.smartmove.pt/pt/" target="_blank"><img src="images/svg/smartmove_rodape.svg"
+                alt="Smartmove"></a>
+          </div>
+
+          <ul class="socialmedia_list col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <li>
+              <a href="https://www.linkedin.com/company/smartmove---servi-os-de-mobilidade-s.a." target="_blank"
+                class="icon-socialmedia"><img src="images/linkedin.png" alt="Linkedin"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/menu.js"></script>
+  <script src="js/popUpLogin.js"></script>
+</body>
+
+</html>
