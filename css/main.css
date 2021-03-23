@@ -8457,7 +8457,7 @@ header .socialMedias_header img {
 }
 
 .proximos-jogos .jogos {
-  width: 49%;
+  width: 100%;
   display: inline-block;
 }
 
@@ -8465,6 +8465,14 @@ header .socialMedias_header img {
   .proximos-jogos .jogos {
     width: 100%;
   }
+}
+
+.proximos-jogos .jogos__item--infos .infos__team img {
+  height: 4.5rem;
+}
+
+.proximos-jogos .jogos__item--infos .infos__team span {
+  font-weight: 700;
 }
 
 .vantagens-socio-container {
