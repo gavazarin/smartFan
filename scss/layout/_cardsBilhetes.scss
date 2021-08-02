@@ -2,6 +2,7 @@
   @include flex(row, center, center, center);
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
+
   li {
     margin: 0 .5rem;
   }
@@ -9,35 +10,51 @@
 
 .pc-tab {
   width: 100%;
+
   input {
     display: none;
   }
+
   section {
-    .tab1,
-    .tab2,
-    .tab3,
-    .tab4 {
+
+    #gamescomp1,
+    #gamescomp2,
+    #gamescomp3,
+    #gamescomp4,
+    #gamescomp5,
+    #gamescomp6,
+    #gamescomp7,
+    #gamescomp8 {
       display: none;
     }
   }
 }
 
-#tab1:checked~section .tab1,
-#tab2:checked~section .tab2,
-#tab3:checked~section .tab3,
-#tab4:checked~section .tab4 {
+#comp1:checked~section #gamescomp1,
+#comp2:checked~section #gamescomp2,
+#comp3:checked~section #gamescomp3,
+#comp4:checked~section #gamescomp4,
+#comp5:checked~section #gamescomp5,
+#comp6:checked~section #gamescomp6,
+#comp7:checked~section #gamescomp7,
+#comp8:checked~section #gamescomp8 {
   display: block;
   animation: entrar-tab-content .3s ease-in;
 }
 
-#tab1:checked~nav .tab1 label,
-#tab2:checked~nav .tab2 label,
-#tab3:checked~nav .tab3 label,
-#tab4:checked~nav .tab4 label {
+#comp1:checked~nav .comp1 label,
+#comp2:checked~nav .comp2 label,
+#comp3:checked~nav .comp3 label,
+#comp4:checked~nav .comp4 label,
+#comp5:checked~nav .comp5 label,
+#comp6:checked~nav .comp6 label,
+#comp7:checked~nav .comp7 label,
+#comp8:checked~nav .comp8 label {
   img {
     opacity: 1;
     transition: all .3s ease-in-out;
   }
+
   &:before {
     transform: scale(1, 1);
     transition: all .3s ease-in;
@@ -47,14 +64,17 @@
 label {
   cursor: pointer;
   position: relative;
+
   img {
     height: 4.2rem;
     opacity: .7;
     transition: all .3s ease-in-out;
+
     @include sm {
       height: 3rem;
     }
   }
+
   &:before {
     content: '';
     width: 100%;
@@ -65,6 +85,7 @@ label {
     transform-origin: 0 0;
     transition: all .3s ease-in;
   }
+
   &:hover {
     img {
       opacity: 1;
@@ -85,50 +106,60 @@ label {
   position: relative;
   @include flex(row, flex-start, center, center);
   flex-wrap: wrap;
+
   @include sm {
     margin-bottom: 1.5rem;
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   &__item {
-    padding: 0 .5rem;
+    padding: 0 .8rem;
     text-align: left;
+
     @include md {
       padding-bottom: 1.5rem;
       position: relative;
     }
   }
+
   &__item--infos {
     padding: 1.5rem 0;
     margin-bottom: 1.5rem;
-    border-radius: 1rem;
+    border: 1px solid #F0F4F6;
     background-color: $white-01;
     @include flex(row, space-between, center, center);
     flex-wrap: wrap;
     text-align: center;
     position: relative;
     overflow-y: hidden;
+    box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+
     @include md {
       margin-bottom: .5rem;
     }
+
     li {
       padding: 0 .5rem;
       text-align: center;
     }
+
     .div-hover {
       width: 100%;
       height: 100%;
       @include absolute(0, auto, auto, 0);
       background-color: rgba(3, 39, 90, 0.5);
       @include flex(column, center, center, center);
-      border-radius: 1rem;
       transform: translateY(100%);
       transition: all .3s ease-out;
+
       @include md {
         display: none;
       }
     }
+
     &:hover {
       .div-hover {
         transform: translateY(0);
@@ -136,40 +167,50 @@ label {
       }
     }
   }
+
   .infos__team {
     @include flex(column, center, center, center);
+
     img {
       height: 3.5rem;
       margin-bottom: .5rem;
     }
+
     span {
       @include font(1rem, 300, 1em);
       color: $black-01;
     }
   }
+
   .infos__list {
     @include flex(column, center, center, center);
     color: $black-01;
+
     &--liga,
     &--local {
-      @include font(1.2rem, 300, 1em);
+      @include font(1.3rem, 300, 1em);
     }
+
     &--data {
-      @include font(1.2rem, 700, 1em);
+      @include font(1.3rem, 700, 1em);
       text-transform: uppercase;
       margin: .5rem 0;
     }
   }
+
   .div-btnMobile {
     display: none;
+
     @include md {
       display: block;
       width: 100%;
       margin-top: 1.5rem;
     }
   }
+
   &__verMais {
     text-align: center;
+
     @include md {
       margin: 1.5rem 0;
     }
@@ -181,23 +222,27 @@ label {
   height: auto;
   @include flex(row, center, center, center);
   padding: 3rem 0;
+
   img {
     width: 8rem;
     height: auto;
     margin: 0 .5rem;
   }
+
   h1 {
     width: 25%;
     color: $secondary-01;
     margin: 0 .5rem;
     text-align: center;
-    border:none;
+    border: none;
   }
+
   @include sm {
     h1 {
       width: 50%;
     }
   }
+
   @include xs {
     h1 {
       width: 65%;
@@ -216,6 +261,7 @@ label {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

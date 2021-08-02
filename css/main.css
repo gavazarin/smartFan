@@ -2079,7 +2079,7 @@ h3 {
 .breadcrumb {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
@@ -2115,6 +2115,7 @@ h3 {
   line-height: 1.4em;
   text-transform: uppercase;
   position: relative;
+  pointer-events: none;
 }
 
 .breadcrumb a:before {
@@ -2288,6 +2289,10 @@ form select:disabled {
   opacity: .7;
 }
 
+form .form-control {
+  font-size: 1.4rem;
+}
+
 form .input-single {
   width: 19%;
   padding: .5rem;
@@ -2367,6 +2372,17 @@ form span.form-error {
 .container-input .info-cartao:hover .member-card {
   display: inline-block;
   transition: all .3s ease-in-out;
+}
+
+.form-error-modal {
+  width: 100%;
+  background-color: #f0f0f0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #F34605;
+  text-align: center;
 }
 
 @keyframes animation-card {
@@ -2594,6 +2610,21 @@ form span.form-error {
 
 .btn[disabled]:hover {
   background: #AFAFAF;
+}
+
+.text-center {
+  text-align: center;
+  color: #F34605;
+}
+
+.menos-zoom-link {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  display: inline-block;
+  color: #F37402;
+  padding: .4rem 0;
+  margin: .8rem 0;
 }
 
 .cbx,
@@ -3018,8 +3049,9 @@ table .btn {
   width: auto;
 }
 
-.table-escolher-cadeira th:first-child,
-.table-escolher-cadeira td:first-child {
+.table-escolher-cadeira th:first-child, .table-escolher-cadeira th:nth-child(2),
+.table-escolher-cadeira td:first-child,
+.table-escolher-cadeira td:nth-child(2) {
   text-align: left;
 }
 
@@ -3353,33 +3385,49 @@ table .btn {
   display: none;
 }
 
-.pc-tab section .tab1,
-.pc-tab section .tab2,
-.pc-tab section .tab3,
-.pc-tab section .tab4 {
+.pc-tab section #gamescomp1,
+.pc-tab section #gamescomp2,
+.pc-tab section #gamescomp3,
+.pc-tab section #gamescomp4,
+.pc-tab section #gamescomp5,
+.pc-tab section #gamescomp6,
+.pc-tab section #gamescomp7,
+.pc-tab section #gamescomp8 {
   display: none;
 }
 
-#tab1:checked ~ section .tab1,
-#tab2:checked ~ section .tab2,
-#tab3:checked ~ section .tab3,
-#tab4:checked ~ section .tab4 {
+#comp1:checked ~ section #gamescomp1,
+#comp2:checked ~ section #gamescomp2,
+#comp3:checked ~ section #gamescomp3,
+#comp4:checked ~ section #gamescomp4,
+#comp5:checked ~ section #gamescomp5,
+#comp6:checked ~ section #gamescomp6,
+#comp7:checked ~ section #gamescomp7,
+#comp8:checked ~ section #gamescomp8 {
   display: block;
   animation: entrar-tab-content .3s ease-in;
 }
 
-#tab1:checked ~ nav .tab1 label img,
-#tab2:checked ~ nav .tab2 label img,
-#tab3:checked ~ nav .tab3 label img,
-#tab4:checked ~ nav .tab4 label img {
+#comp1:checked ~ nav .comp1 label img,
+#comp2:checked ~ nav .comp2 label img,
+#comp3:checked ~ nav .comp3 label img,
+#comp4:checked ~ nav .comp4 label img,
+#comp5:checked ~ nav .comp5 label img,
+#comp6:checked ~ nav .comp6 label img,
+#comp7:checked ~ nav .comp7 label img,
+#comp8:checked ~ nav .comp8 label img {
   opacity: 1;
   transition: all .3s ease-in-out;
 }
 
-#tab1:checked ~ nav .tab1 label:before,
-#tab2:checked ~ nav .tab2 label:before,
-#tab3:checked ~ nav .tab3 label:before,
-#tab4:checked ~ nav .tab4 label:before {
+#comp1:checked ~ nav .comp1 label:before,
+#comp2:checked ~ nav .comp2 label:before,
+#comp3:checked ~ nav .comp3 label:before,
+#comp4:checked ~ nav .comp4 label:before,
+#comp5:checked ~ nav .comp5 label:before,
+#comp6:checked ~ nav .comp6 label:before,
+#comp7:checked ~ nav .comp7 label:before,
+#comp8:checked ~ nav .comp8 label:before {
   transform: scale(1, 1);
   transition: all .3s ease-in;
 }
@@ -3451,7 +3499,7 @@ label:hover img {
 }
 
 .jogos__item {
-  padding: 0 .5rem;
+  padding: 0 .8rem;
   text-align: left;
 }
 
@@ -3465,7 +3513,7 @@ label:hover img {
 .jogos__item--infos {
   padding: 1.5rem 0;
   margin-bottom: 1.5rem;
-  border-radius: 1rem;
+  border: 1px solid #F0F4F6;
   background-color: #F9F9F9;
   display: flex;
   flex-direction: row;
@@ -3476,6 +3524,7 @@ label:hover img {
   text-align: center;
   position: relative;
   overflow-y: hidden;
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
 }
 
 @media (max-width: 992px) {
@@ -3503,7 +3552,6 @@ label:hover img {
   justify-content: center;
   align-items: center;
   align-content: center;
-  border-radius: 1rem;
   transform: translateY(100%);
   transition: all .3s ease-out;
 }
@@ -3549,13 +3597,13 @@ label:hover img {
 }
 
 .jogos .infos__list--liga, .jogos .infos__list--local {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1em;
 }
 
 .jogos .infos__list--data {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   line-height: 1em;
   text-transform: uppercase;
@@ -10067,12 +10115,33 @@ ul.resumo-setor li:hover {
   align-content: center;
 }
 
+.fluxoPagamentos .header-ingresso-info .timer-count {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #F37402;
+  font-weight: 600;
+  padding: 1.5rem;
+}
+
 .fluxoPagamentos .bilhetes-dados .row {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.fluxoPagamentos .bilhetes-dados .dgs-data {
+  padding: 1.5rem;
+  border-radius: 4px;
+  background-color: #F9F9F9;
+  border: 1px solid #AFAFAF;
+  margin: 1.6rem 0;
+}
+
+.fluxoPagamentos .bilhetes-dados .form-text {
+  font-size: 1.4rem;
+  color: #707070;
 }
 
 .bilhetes-content {
@@ -10087,6 +10156,42 @@ ul.resumo-setor li:hover {
 
 .bilhetes-content .form-control {
   font-size: 1.6rem;
+}
+
+.bilhetes-content .dados-pagamento-heading {
+  position: relative;
+  width: 50%;
+  margin: 5rem auto 0;
+}
+
+.bilhetes-content .dados-pagamento-heading h1 {
+  text-align: left;
+  border-bottom: 2px solid #F34605;
+}
+
+.bilhetes-content .dados-pagamento-heading .btn-dados-faturacao {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+
+@media (max-width: 992px) {
+  .bilhetes-content .dados-pagamento-heading {
+    width: 100%;
+  }
+}
+
+.bilhetes-content .dados-pagamento-box {
+  width: 75%;
+  margin: 0 auto 2rem;
+}
+
+@media (max-width: 992px) {
+  .bilhetes-content .dados-pagamento-box {
+    width: 100%;
+  }
 }
 
 .container-btn {
@@ -10161,7 +10266,7 @@ ul.resumo-setor li:hover {
   max-height: 500px;
   margin-bottom: 1.6rem;
   padding-right: 5px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -10189,6 +10294,16 @@ ul.resumo-setor li:hover {
   transition: all .3s ease-in;
 }
 
+.escolher-ingresso-column1 .bilhetes-types .button-action {
+  color: #03275A;
+  opacity: 1;
+}
+
+.escolher-ingresso-column1 .bilhetes-types .button-action:hover {
+  opacity: .6;
+  text-decoration: none;
+}
+
 @media (max-width: 992px) {
   .escolher-ingresso-column1 {
     margin-bottom: 2.4rem;
@@ -10212,8 +10327,12 @@ ul.resumo-setor li:hover {
 }
 
 .escolher-ingresso-box h2 {
-  margin-bottom: 0;
+  border-bottom: 3px solid #03275A;
+  background: rgba(3, 39, 90, 0.8);
+  color: #fff;
+  margin-bottom: 1.5rem;
   padding: .8rem 0rem;
+  border-radius: 4px;
 }
 
 .escolher-ingresso-box h2 a {
@@ -10423,6 +10542,7 @@ ul.resumo-setor li:hover {
 }
 
 .escolher-ingresso-box .escolher-ingresso-quantidade .resumo-setor li h2 {
+  width: 100%;
   margin-bottom: 0;
   margin-right: 1.2rem;
 }
@@ -10741,6 +10861,11 @@ ul.resumo-setor li:hover {
 .bilhetes-dados .cp-wrapper p {
   width: 50%;
   margin-bottom: 0;
+}
+
+.bilhetes-dados .cp-wrapper form span.form-error {
+  width: 100%;
+  margin-top: 4px;
 }
 
 .bilhetes-dados .dataallow {
@@ -11067,6 +11192,31 @@ ul.resumo-setor li:hover {
   align-items: center;
   align-content: center;
   border-top: 2px solid #03275A;
+}
+
+.accordion-detalhes .sales-detalhes .info-tipo,
+.accordion-detalhes .sales-detalhes .info-detalhes {
+  text-align: center;
+  color: #03275A;
+}
+
+.accordion-detalhes .sales-detalhes .info-tipo {
+  font-weight: 900;
+}
+
+.accordion-detalhes .sales-detalhes .info-detalhes {
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.accordion-detalhes .sales-detalhes table th:first-child,
+.accordion-detalhes .sales-detalhes table td:first-child {
+  text-align: left;
+}
+
+.accordion-detalhes .sales-detalhes table th:last-child,
+.accordion-detalhes .sales-detalhes table td:last-child {
+  text-align: right;
 }
 
 .clube-detalhes {

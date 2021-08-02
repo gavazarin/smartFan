@@ -118,6 +118,38 @@
     @include flex(column, flex-start, center, center);
     border-top: 2px solid $primary-01;
   }
+
+  .sales-detalhes {
+
+    .info-tipo,
+    .info-detalhes {
+      text-align: center;
+      color: $primary-01;
+    }
+
+    .info-tipo {
+      font-weight: 900;
+    }
+
+    .info-detalhes {
+      font-weight: 400;
+      margin: 1rem 0;
+    }
+
+    table {
+
+      th,
+      td {
+        &:first-child {
+          text-align: left;
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
 }
 
 .clube-detalhes {

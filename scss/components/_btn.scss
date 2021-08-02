@@ -188,3 +188,18 @@
     }
   }
 }
+
+// btn voltar - vsc
+.text-center {
+  text-align: center;
+  color: $secondary-01;
+}
+
+.menos-zoom-link {
+  @include font(1.4rem, 700, 1.2em);
+  display: inline-block;
+  color: $secondary-02;
+  padding: .4rem 0;
+  margin: .8rem 0;
+
+}

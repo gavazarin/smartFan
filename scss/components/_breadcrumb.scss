@@ -1,5 +1,5 @@
 .breadcrumb {
-    @include flex(row, flex-start, center, center);
+    @include flex(row, center, center, center);
 
     &-item {
         display: flex;
@@ -30,6 +30,7 @@
         @include font(1.4rem, 900, 1.4em);
         text-transform: uppercase;
         position: relative;
+        pointer-events: none;
 
         &:before {
             content: '';
