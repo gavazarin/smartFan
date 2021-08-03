@@ -35,6 +35,28 @@
       color: $gray-02;
     }
   }
+
+  .timer-count {
+    max-width: 1840px;
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+    text-transform: none;
+    margin: 1.5rem auto;
+    padding: 0 2rem;
+
+    [smv-countdown="timer"] {
+      font-weight: 900;
+    }
+  }
+
+  h3.form-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: none;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .bilhetes-content {

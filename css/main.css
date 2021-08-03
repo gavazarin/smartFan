@@ -10144,6 +10144,28 @@ ul.resumo-setor li:hover {
   color: #707070;
 }
 
+.fluxoPagamentos .timer-count {
+  max-width: 1840px;
+  width: 100%;
+  text-align: left;
+  font-weight: 400;
+  text-transform: none;
+  margin: 1.5rem auto;
+  padding: 0 2rem;
+}
+
+.fluxoPagamentos .timer-count [smv-countdown="timer"] {
+  font-weight: 900;
+}
+
+.fluxoPagamentos h3.form-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: none;
+  width: 100%;
+  text-align: left;
+}
+
 .bilhetes-content {
   width: 100%;
   position: relative;
