@@ -3374,7 +3374,7 @@ table .btn {
 }
 
 .nav__ligas li {
-  margin: 0 .5rem;
+  margin: 0 1.2rem;
 }
 
 .pc-tab {
@@ -3720,6 +3720,15 @@ label:hover img {
   width: 30%;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.mainContent .div-wait .row,
+.mainContent .div-error .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .icon-animate {
@@ -10147,15 +10156,21 @@ ul.resumo-setor li:hover {
 .fluxoPagamentos .timer-count {
   max-width: 1840px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-weight: 400;
   text-transform: none;
-  margin: 1.5rem auto;
+  margin: 3rem auto .5rem;
   padding: 0 2rem;
 }
 
 .fluxoPagamentos .timer-count [smv-countdown="timer"] {
   font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  .fluxoPagamentos .timer-count {
+    margin-top: .5rem;
+  }
 }
 
 .fluxoPagamentos h3.form-text {
@@ -10220,7 +10235,7 @@ ul.resumo-setor li:hover {
   width: 100%;
   position: sticky;
   bottom: 0;
-  padding: 2.4rem .8rem;
+  padding: 2.4rem .8rem 4rem;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: row;

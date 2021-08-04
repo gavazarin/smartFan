@@ -39,14 +39,18 @@
   .timer-count {
     max-width: 1840px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-weight: 400;
     text-transform: none;
-    margin: 1.5rem auto;
+    margin: 3rem auto .5rem;
     padding: 0 2rem;
 
     [smv-countdown="timer"] {
       font-weight: 900;
+    }
+
+    @include sm {
+      margin-top: .5rem;
     }
   }
 
@@ -107,7 +111,7 @@
   width: 100%;
   position: sticky;
   bottom: 0;
-  padding: 2.4rem .8rem;
+  padding: 2.4rem .8rem 4rem;
   background-color: #FFFFFF;
   @include flex(row, center, center, center);
 
